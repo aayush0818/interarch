@@ -278,6 +278,18 @@ import swe130 from "@/assets/sage-whisper-residence-extra-130.jpeg.asset.json";
 import swe13 from "@/assets/sage-whisper-residence-extra-13.jpeg.asset.json";
 import swe91 from "@/assets/sage-whisper-residence-extra-91.jpeg.asset.json";
 
+// Cloudline Penthouse Residence — Residential Interior
+import cl2493 from "@/assets/cloudline-PAB2493-HDR.jpg.asset.json";
+import cl2316 from "@/assets/cloudline-PAB2316-HDR.jpg.asset.json";
+import cl2454 from "@/assets/cloudline-PAB2454-HDR.jpg.asset.json";
+import cl2478 from "@/assets/cloudline-PAB2478-HDR.jpg.asset.json";
+import cl2166 from "@/assets/cloudline-PAB2166-HDR.jpg.asset.json";
+import cl2298 from "@/assets/cloudline-PAB2298-HDR.jpg.asset.json";
+import cl2406 from "@/assets/cloudline-PAB2406-HDR.jpg.asset.json";
+import cl2472 from "@/assets/cloudline-PAB2472-HDR.jpg.asset.json";
+import cl2203 from "@/assets/cloudline-PAB2203-HDR.jpg.asset.json";
+import cl2304 from "@/assets/cloudline-PAB2304-HDR.jpg.asset.json";
+
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
   nr66.url,
