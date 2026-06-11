@@ -1,0 +1,18 @@
+{
+  "buildCommand": "vite build --config vite.config.vercel.ts",
+  "outputDirectory": "dist/client",
+  "framework": null,
+  "functions": {
+    "api/index.mjs": {
+      "includeFiles": "dist/server/**",
+      "memory": 1024
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/__l5e/:path*",
+      "destination": "https://project--abbbfba6-a117-4288-989e-fa1b11111309.lovable.app/__l5e/:path*"
+    },
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}

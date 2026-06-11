@@ -1,0 +1,187 @@
+import { useMemo, useState } from "react";
+import { createFileRoute, Link, redirect } from "@tanstack/react-router";
+import { Header } from "@/components/home/Header";
+import { Footer } from "@/components/home/Footer";
+import { CustomCursor } from "@/components/home/CustomCursor";
+import { CinematicHero } from "@/components/motion/CinematicHero";
+import { Reveal } from "@/components/motion/Reveal";
+import { projectsByCategory, type Project } from "@/data/projects";
+import { realImages } from "@/data/realImages";
+
+const work1 = realImages.institutional.aerial;
+const work3 = realImages.residential.exterior;
+
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+const architectureSectors = ["all", "hospitality", "commercial", "institutional", "industrial", "workplace", "residential"] as const;
+const interiorSectors = ["all", "residential", "commercial"] as const;
+
+type ArchitectureFilter = (typeof architectureSectors)[number];
+type InteriorFilter = (typeof interiorSectors)[number];
+
+export const Route = createFileRoute("/projects/$category")({
+  beforeLoad: ({ params }) => {
+    const c = params.category.toLowerCase();
+    if (c !== "architecture" && c !== "interiors") throw redirect({ to: "/projects" });
+  },
+  head: ({ params }) => ({
+    meta: [
+      { title: `${cap(params.category)} — Projects · IDL` },
+      { name: "description", content: `Selected ${params.category.toLowerCase()} projects by Interarch Design Labs.` },
+      { property: "og:title", content: `${cap(params.category)} — Projects · IDL` },
+      { property: "og:description", content: `Selected ${params.category.toLowerCase()} work.` },
+    ],
+  }),
+  component: CategoryPage,
+});
+
+function CategoryPage() {
+  const { category } = Route.useParams();
+  const cat = category.toLowerCase() as "architecture" | "interiors";
+  const list = projectsByCategory(cat);
+  const hero = cat === "architecture" ? work1 : work3;
+  const other = cat === "architecture" ? "interiors" : "architecture";
+  const [interiorFilter, setInteriorFilter] = useState<InteriorFilter>("all");
+  const [architectureFilter, setArchitectureFilter] = useState<ArchitectureFilter>("all");
+
+  const filteredList = useMemo(() => {
+    const bySector = (items: Project[], sector: string) => items.filter((project) => project.sector.toLowerCase() === sector);
+    if (cat === "interiors") return interiorFilter === "all" ? list : bySector(list, interiorFilter);
+    return architectureFilter === "all" ? list : bySector(list, architectureFilter);
+  }, [architectureFilter, cat, interiorFilter, list]);
+
+  const layout = (i: number): "wide" | "narrow" | "tall" => {
+    const m = i % 5;
+    if (m === 0) return "wide";
+    if (m === 3) return "tall";
+    return "narrow";
+  };
+
+  return (
+    <>
+      <CustomCursor />
+      <Header />
+      <main className="idlx-page">
+        <CinematicHero
+          image={hero}
+          alt={cap(cat)}
+          eyebrow={`— Projects · ${cap(cat)}`}
+          title={cap(cat) + "."}
+          meta={`${filteredList.length} works`}
+          height="tall"
+        />
+
+        <div className="idlx-archive">
+          <aside className="idlx-archive-rail">
+            <span>— Category</span>
+            <Link to="/projects" data-hover>All projects</Link>
+            <Link
+              to="/projects/$category"
+              params={{ category: "architecture" }}
+              data-hover
+              className={cat === "architecture" ? "is-on" : ""}
+            >
+              Architecture
+            </Link>
+            <Link
+              to="/projects/$category"
+              params={{ category: "interiors" }}
+              data-hover
+              className={cat === "interiors" ? "is-on" : ""}
+            >
+              Interiors
+            </Link>
+
+            {cat === "interiors" && (
+              <>
+                <span className="idlx-archive-rail-gap">— Sector</span>
+                <button type="button" className={interiorFilter === "all" ? "is-on" : ""} onClick={() => setInteriorFilter("all")} data-hover>
+                  All Interiors
+                </button>
+                <button type="button" className={interiorFilter === "residential" ? "is-on" : ""} onClick={() => setInteriorFilter("residential")} data-hover>
+                  Residential
+                </button>
+                <button type="button" className={interiorFilter === "commercial" ? "is-on" : ""} onClick={() => setInteriorFilter("commercial")} data-hover>
+                  Commercial
+                </button>
+              </>
+            )}
+
+            {cat === "architecture" && (
+              <>
+                <span className="idlx-archive-rail-gap">— Sector</span>
+                <button type="button" className={architectureFilter === "all" ? "is-on" : ""} onClick={() => setArchitectureFilter("all")} data-hover>
+                  All Architecture
+                </button>
+                <button type="button" className={architectureFilter === "hospitality" ? "is-on" : ""} onClick={() => setArchitectureFilter("hospitality")} data-hover>
+                  Hospitality
+                </button>
+                <button type="button" className={architectureFilter === "commercial" ? "is-on" : ""} onClick={() => setArchitectureFilter("commercial")} data-hover>
+                  Commercial
+                </button>
+                <button type="button" className={architectureFilter === "institutional" ? "is-on" : ""} onClick={() => setArchitectureFilter("institutional")} data-hover>
+                  Institutional
+                </button>
+                <button type="button" className={architectureFilter === "industrial" ? "is-on" : ""} onClick={() => setArchitectureFilter("industrial")} data-hover>
+                  Industrial
+                </button>
+              </>
+            )}
+
+            <span className="idlx-archive-rail-gap">— Count</span>
+            <span style={{ fontFamily: "var(--serif)", fontSize: 30, color: "var(--idlx-ink)" }}>{String(filteredList.length).padStart(2, "0")}</span>
+          </aside>
+
+          <div className="idlx-archive-grid">
+            {filteredList.length === 0 ? (
+              <Reveal>
+                <div className="idlx-pcard2">
+                  <div className="idlx-pcard2-cap">
+                    <span className="idlx-pcard2-name">No projects added yet</span>
+                    <span className="idlx-pcard2-meta">This category is currently empty.</span>
+                  </div>
+                </div>
+              </Reveal>
+            ) : (
+              filteredList.map((p, i) => {
+                const kind = layout(i);
+                const cls = kind === "wide" ? "idlx-archive-cell idlx-archive-cell--wide" : "idlx-archive-cell";
+                const imgCls =
+                  kind === "wide"
+                    ? "idlx-pcard2-img idlx-pcard2-img--wide"
+                    : kind === "tall"
+                      ? "idlx-pcard2-img idlx-pcard2-img--tall"
+                      : "idlx-pcard2-img";
+                const meta = [p.location, p.year].filter(Boolean).join(" · ");
+
+                return (
+                  <div key={p.slug} className={cls}>
+                    <Reveal delay={(i % 3) * 0.05}>
+                      <Link to="/project/$slug" params={{ slug: p.slug }} className="idlx-pcard2" data-hover>
+                        <div className={imgCls}>
+                          <img src={p.cover} alt={p.name} loading="lazy" />
+                        </div>
+                        <div className="idlx-pcard2-cap">
+                          <span className="idlx-pcard2-name">{p.name}</span>
+                          {meta ? <span className="idlx-pcard2-meta">{meta}</span> : <span className="idlx-pcard2-meta">{p.sector}</span>}
+                        </div>
+                      </Link>
+                    </Reveal>
+                  </div>
+                );
+              })
+            )}
+          </div>
+        </div>
+
+        <section className="idlx-cta idlx-section--bordered">
+          <Reveal>
+            <Link to="/projects/$category" params={{ category: other }} className="idlx-cta-link" data-hover>
+              View {cap(other)} →
+            </Link>
+          </Reveal>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
