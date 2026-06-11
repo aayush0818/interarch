@@ -156,6 +156,10 @@ import er_n51 from "@/assets/energize-resort-nashik-extra-51.jpg.asset.json";
 import er_n60 from "@/assets/energize-resort-nashik-extra-60.jpg.asset.json";
 import er_n78 from "@/assets/energize-resort-nashik-extra-78.jpg.asset.json";
 import er_n81 from "@/assets/energize-resort-nashik-extra-81.jpg.asset.json";
+import noirResidenceCoverUpload from "@/assets/noir-residence-cover-upload.png.asset.json";
+import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.json";
+import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
+import skylineResidenceCoverUpload from "@/assets/skyline-residence-cover-upload.png.asset.json";
 
 // Aditya Birla Cancer Center — Commercial Architecture
 import abcc1 from "@/assets/abcc-1-4.jpg.asset.json";
@@ -555,7 +559,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: er_n8.url,
+    cover: energizeResortCoverUpload.url,
     gallery: energizeResortNashikGallery,
     description: "Hospitality architecture project in Nashik — Energise Boutique Resorts.",
   },
@@ -626,7 +630,7 @@ export const projects: Project[] = [
   },
   {
     slug: "blush-and-bronze-residence",
-    name: "A Bronze Residence",
+    name: "Amber Residence",
     sector: "Residential",
     location: "",
     year: "",
@@ -639,7 +643,7 @@ export const projects: Project[] = [
   },
   {
     slug: "cloudline-penthouse-residence",
-    name: "A Penthouse Residence",
+    name: "Aerie Penthouse",
     sector: "Residential",
     location: "",
     year: "",
@@ -652,7 +656,7 @@ export const projects: Project[] = [
   },
   {
     slug: "sage-whisper-residence",
-    name: "A Sage Residence",
+    name: "Verdant Residence",
     sector: "Residential",
     location: "",
     year: "",
@@ -665,7 +669,7 @@ export const projects: Project[] = [
   },
   {
     slug: "onyx-and-ivory-marbled-maison",
-    name: "A Marbled Maison",
+    name: "Marbled Maison",
     sector: "Residential",
     location: "",
     year: "",
@@ -678,14 +682,14 @@ export const projects: Project[] = [
   },
   {
     slug: "saffron-and-stone-skyline-residence",
-    name: "A Skyline Residence",
+    name: "Horizon Residence",
     sector: "Residential",
     location: "",
     year: "",
     area: "",
     scope: "",
     category: "Interiors",
-    cover: sf2.url,
+    cover: skylineResidenceCoverUpload.url,
     gallery: saffronStoneGallery,
     description: "",
   },
@@ -711,7 +715,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: gcb3.url,
+    cover: goldCornetCoverUpload.url,
     gallery: goldCornetBoutiqueGallery,
     description: "Commercial interior project for Gold Cornet Boutique.",
   },
@@ -815,7 +819,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: nr66.url,
+    cover: noirResidenceCoverUpload.url,
     gallery: noirResidenceGallery,
     description: "",
   },
