@@ -289,6 +289,22 @@ import cl2406 from "@/assets/cloudline-PAB2406-HDR.jpg.asset.json";
 import cl2472 from "@/assets/cloudline-PAB2472-HDR.jpg.asset.json";
 import cl2203 from "@/assets/cloudline-PAB2203-HDR.jpg.asset.json";
 import cl2304 from "@/assets/cloudline-PAB2304-HDR.jpg.asset.json";
+import cl2028 from "@/assets/cloudline-PAB2028-HDR.jpg.asset.json";
+import cl2460 from "@/assets/cloudline-PAB2460-HDR.jpg.asset.json";
+import cl2295 from "@/assets/cloudline-PAB2295-HDR.jpg.asset.json";
+
+// Bharoso — Shree Lallubhai Seth Arogya Mandir, Savarkundla (Architecture / Commercial)
+import bharoso1 from "@/assets/bharoso-savarkundla-1.jpg.asset.json";
+import bharoso2 from "@/assets/bharoso-savarkundla-2.jpg.asset.json";
+
+// Metro Hospital — Delhi (Architecture / Commercial)
+import metroDel1 from "@/assets/metro-hospital-delhi-1.jpg.asset.json";
+import metroDel2 from "@/assets/metro-hospital-delhi-2.jpg.asset.json";
+
+// Tata Rallis — Bangalore (Architecture / Institutional)
+import tataRallis1 from "@/assets/tata-rallis-bangalore-1.jpg.asset.json";
+import tataRallis2 from "@/assets/tata-rallis-bangalore-2.jpg.asset.json";
+import tataRallis3 from "@/assets/tata-rallis-bangalore-3.jpg.asset.json";
 
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
@@ -336,7 +352,10 @@ const onyxIvoryGallery = [ox1.url, ox2.url, ox3.url, ox4.url, ox5.url, ox6.url, 
 const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url, er10.url];
 const blushBronzeResidenceGallery = [bb3.url, bb1.url, bb2.url, bb4.url, bb5.url, bb6.url, bb7.url];
 const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url];
-const cloudlinePenthouseGallery = [cl2406.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url, cl2493.url];
+const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url, cl2493.url];
+const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url];
+const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
+const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url];
 
 export type Project = {
   slug: string;
@@ -677,6 +696,45 @@ export const projects: Project[] = [
     cover: abcc1.url,
     gallery: adityaBirlaCancerCenterGallery,
     description: "",
+  },
+  {
+    slug: "shree-lallubhai-seth-arogya-mandir-savarkundla",
+    name: "Shree Lallubhai Seth Arogya Mandir Hospital / Savarkundla",
+    sector: "Commercial",
+    location: "Savarkundla",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: bharoso1.url,
+    gallery: bharosoSavarkundlaGallery,
+    description: "A community hospital — 'Bharoso' — composed with a rhythmic brick-and-stone facade, layered volumes and a softly lit entry, anchoring trust and care within a civic-scale presence.",
+  },
+  {
+    slug: "metro-hospital-delhi",
+    name: "Metro Hospital — Delhi",
+    sector: "Commercial",
+    location: "Delhi",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: metroDel1.url,
+    gallery: metroHospitalDelhiGallery,
+    description: "A multi-speciality hospital expressed through floor-to-ceiling glazing, slender vertical fins and a green-fringed crown — a contemporary urban landmark designed for clarity, calm and round-the-clock care.",
+  },
+  {
+    slug: "tata-rallis-bangalore",
+    name: "Tata Rallis — Bangalore",
+    sector: "Institutional",
+    location: "Bangalore",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: tataRallis2.url,
+    gallery: tataRallisBangaloreGallery,
+    description: "An institutional campus shaped by a tilted glazed prism, a deep coffered porte-cochère and rhythmic stone facades — a confident civic-scale workplace balancing weight, light and landscape.",
   },
 ];
 
