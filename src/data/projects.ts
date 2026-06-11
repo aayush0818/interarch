@@ -587,7 +587,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mvvpl-hilltop-hotel",
-    name: "MVVPL — Hilltop Hotel & Spa",
+    name: "MVVPL — Hotel",
     sector: "Hospitality",
     location: "",
     year: "",
@@ -600,7 +600,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mvvpl-clubhouse",
-    name: "MVVPL — Garden Clubhouse",
+    name: "MVVPL — Clubhouse",
     sector: "Hospitality",
     location: "",
     year: "",
