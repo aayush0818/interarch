@@ -6,7 +6,7 @@ import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
 import { journalPosts } from "@/data/siteContent";
 
-export const Route = createFileRoute("/news/journal/$slug")({
+export const Route = createFileRoute("/journal/news/$slug")({
   beforeLoad: ({ params }) => {
     if (!journalPosts.find((p) => p.slug === params.slug)) throw redirect({ to: "/news/journal" });
   },

@@ -8,7 +8,7 @@ import { realImages } from "@/data/realImages";
 
 const hero = realImages.institutional.pool;
 
-export const Route = createFileRoute("/news/awards")({ component: AwardsPage });
+export const Route = createFileRoute("/journal/awards")({ component: AwardsPage });
 
 function AwardsPage() {
   return (

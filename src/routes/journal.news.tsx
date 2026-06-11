@@ -4,7 +4,7 @@ import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
 import { journalPosts, pageImages } from "@/data/siteContent";
 
-export const Route = createFileRoute("/news/journal")({ component: JournalPage });
+export const Route = createFileRoute("/journal/news")({ component: JournalPage });
 
 function JournalPage() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
