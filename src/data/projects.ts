@@ -89,6 +89,18 @@ import pidilite3 from "@/assets/pidilite-rd-taloja-3.jpg.asset.json";
 import pidilite4 from "@/assets/pidilite-rd-taloja-4.jpg.asset.json";
 import pidilite5 from "@/assets/pidilite-rd-taloja-5.jpg.asset.json";
 
+// MVVPL Hotel (Architecture · Hospitality)
+import mvvplHotel1 from "@/assets/mvvpl-hotel-1.jpeg.asset.json";
+import mvvplHotel2 from "@/assets/mvvpl-hotel-2.jpeg.asset.json";
+import mvvplHotel3 from "@/assets/mvvpl-hotel-3.jpeg.asset.json";
+
+// MVVPL Clubhouse (Architecture · Hospitality)
+import mvvplClub1 from "@/assets/mvvpl-clubhouse-1.jpg.asset.json";
+import mvvplClub2 from "@/assets/mvvpl-clubhouse-2.jpg.asset.json";
+import mvvplClub3 from "@/assets/mvvpl-clubhouse-3.jpg.asset.json";
+import mvvplClub4 from "@/assets/mvvpl-clubhouse-4.jpg.asset.json";
+import mvvplClub5 from "@/assets/mvvpl-clubhouse-5.jpg.asset.json";
+
 // Divya Enclave — Hospitality Architecture
 import de1 from "@/assets/divya-enclave-1.jpg.asset.json";
 import de2 from "@/assets/divya-enclave-2.jpg.asset.json";
@@ -572,6 +584,32 @@ export const projects: Project[] = [
     cover: pidilite1.url,
     gallery: [pidilite1.url, pidilite2.url, pidilite3.url, pidilite4.url, pidilite5.url],
     description: "Industrial architecture project — Pidilite Research & Development Centre at Taloja. A campus of brick-clad volumes arranged around a central landscaped court, linked by colonnaded walkways and framed by glazed laboratory wings.",
+  },
+  {
+    slug: "mvvpl-hilltop-hotel",
+    name: "MVVPL — Hilltop Hotel & Spa",
+    sector: "Hospitality",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: mvvplHotel1.url,
+    gallery: [mvvplHotel1.url, mvvplHotel2.url, mvvplHotel3.url],
+    description: "Hospitality architecture set into a mountain horizon — twin curvilinear wings frame a central pool court, with palm-lined terraces and circular skylights crowning the roofscape.",
+  },
+  {
+    slug: "mvvpl-clubhouse",
+    name: "MVVPL — Garden Clubhouse",
+    sector: "Hospitality",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: mvvplClub1.url,
+    gallery: [mvvplClub1.url, mvvplClub2.url, mvvplClub3.url, mvvplClub4.url, mvvplClub5.url],
+    description: "Hospitality clubhouse with a long, low-slung pavilion of timber-clad mullions and arched glazing, opening onto a flowering landscape and a sheltered water court.",
   },
   {
     slug: "emerald-reverie-classical-penthouse",
