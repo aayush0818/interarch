@@ -318,6 +318,18 @@ import viaVapi2 from "@/assets/via-auditorium-vapi-2.jpg.asset.json";
 import viaVapi3 from "@/assets/via-auditorium-vapi-3.jpg.asset.json";
 import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 
+// Quest (Ajay Seth) — Institutional (Architecture)
+import quest97 from "@/assets/quest-clubhouse-97.jpg.asset.json";
+import quest99 from "@/assets/quest-clubhouse-99.jpg.asset.json";
+import quest96 from "@/assets/quest-clubhouse-96.jpg.asset.json";
+import quest18 from "@/assets/quest-clubhouse-18.jpg.asset.json";
+import quest42 from "@/assets/quest-clubhouse-42.jpg.asset.json";
+import quest38 from "@/assets/quest-clubhouse-38.jpg.asset.json";
+import quest82 from "@/assets/quest-clubhouse-82.jpg.asset.json";
+import quest23 from "@/assets/quest-clubhouse-23.jpg.asset.json";
+import quest83 from "@/assets/quest-clubhouse-83.jpg.asset.json";
+import quest80 from "@/assets/quest-clubhouse-80.jpg.asset.json";
+
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
   nr66.url,
@@ -371,6 +383,7 @@ const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis
 const iigInstituteColabaGallery = [iigColaba1.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
+const questAjaySethGallery = [quest97.url, quest99.url, quest96.url, quest18.url, quest42.url, quest38.url, quest82.url, quest23.url, quest83.url, quest80.url];
 
 export type Project = {
   slug: string;
@@ -490,6 +503,19 @@ export const projects: Project[] = [
     cover: viaVapi1.url,
     gallery: viaAuditoriumVapiGallery,
     description: "An auditorium for the Vapi Industries Association — a sculpted gabled volume in stone and glass, framed by deep fluted piers and a quiet landscape edge.",
+  },
+  {
+    slug: "quest-ajay-seth",
+    name: "Quest — Ajay Seth",
+    sector: "Institutional",
+    location: "",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: quest97.url,
+    gallery: questAjaySethGallery,
+    description: "A hillside institutional pavilion in dressed stone and arched colonnades — twin volumes set against the Sahyadris, with luminous interiors, double-height staircases and a generous community floor for gathering, reflection and play.",
   },
   {
     slug: "energize-resort-nashik",
