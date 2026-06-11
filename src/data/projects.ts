@@ -336,6 +336,7 @@ const onyxIvoryGallery = [ox1.url, ox2.url, ox3.url, ox4.url, ox5.url, ox6.url, 
 const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url, er10.url];
 const blushBronzeResidenceGallery = [bb3.url, bb1.url, bb2.url, bb4.url, bb5.url, bb6.url, bb7.url];
 const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url];
+const cloudlinePenthouseGallery = [cl2406.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url, cl2493.url];
 
 export type Project = {
   slug: string;
