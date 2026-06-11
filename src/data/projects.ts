@@ -306,6 +306,18 @@ import tataRallis1 from "@/assets/tata-rallis-bangalore-1.jpg.asset.json";
 import tataRallis2 from "@/assets/tata-rallis-bangalore-2.jpg.asset.json";
 import tataRallis3 from "@/assets/tata-rallis-bangalore-3.jpg.asset.json";
 
+// IIG Institute — Colaba (Architecture · Institutional)
+import iigColaba1 from "@/assets/iig-institute-colaba-1.jpg.asset.json";
+
+// Gandhi Peace Centre — Pune (Architecture · Institutional)
+import gandhiPeace1 from "@/assets/gandhi-peace-centre-pune-1.jpeg.asset.json";
+
+// VIA Auditorium — Vapi (Architecture · Institutional)
+import viaVapi1 from "@/assets/via-auditorium-vapi-1.jpg.asset.json";
+import viaVapi2 from "@/assets/via-auditorium-vapi-2.jpg.asset.json";
+import viaVapi3 from "@/assets/via-auditorium-vapi-3.jpg.asset.json";
+import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
+
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
   nr66.url,
@@ -356,6 +368,9 @@ const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.ur
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
 const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url];
+const iigInstituteColabaGallery = [iigColaba1.url];
+const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
+const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
 
 export type Project = {
   slug: string;
@@ -426,8 +441,8 @@ export const projects: Project[] = [
   },
   {
     slug: "adarsh-vidya-mandir-rajasthan",
-    name: "Adarsh Vidya Mandir, Rajasthan",
-    sector: "Hospitality",
+    name: "Adarsh Vidya Mandir School — Rajasthan",
+    sector: "Institutional",
     location: "Rajasthan",
     year: "",
     area: "",
@@ -435,7 +450,46 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: avm1.url,
     gallery: adarshVidyaMandirGallery,
-    description: "Hospitality architecture project in Rajasthan for Adarsh Vidya Mandir.",
+    description: "An institutional school campus in Rajasthan composed with rhythmic brick piers, calm plastered volumes and a vertical green spine — a warm, civic-scaled learning environment.",
+  },
+  {
+    slug: "iig-institute-colaba",
+    name: "IIG Institute — Colaba",
+    sector: "Institutional",
+    location: "Colaba",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: iigColaba1.url,
+    gallery: iigInstituteColabaGallery,
+    description: "A stone-clad institutional tower with cantilevered volumes, vertical fins and warm interior glow — a confident urban landmark within the Colaba skyline.",
+  },
+  {
+    slug: "gandhi-peace-centre-pune",
+    name: "Gandhi Peace Centre — Pune",
+    sector: "Institutional",
+    location: "Pune",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: gandhiPeace1.url,
+    gallery: gandhiPeaceCentrePuneGallery,
+    description: "A civic centre crowned by a sweeping elliptical canopy, screen-printed murals of Gandhian heritage and cascading greens — a contemplative institutional landmark for Pune.",
+  },
+  {
+    slug: "via-auditorium-vapi",
+    name: "VIA Auditorium — Vapi",
+    sector: "Institutional",
+    location: "Vapi",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Architecture",
+    cover: viaVapi1.url,
+    gallery: viaAuditoriumVapiGallery,
+    description: "An auditorium for the Vapi Industries Association — a sculpted gabled volume in stone and glass, framed by deep fluted piers and a quiet landscape edge.",
   },
   {
     slug: "energize-resort-nashik",
