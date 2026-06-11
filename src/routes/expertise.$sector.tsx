@@ -30,16 +30,7 @@ export const Route = createFileRoute("/expertise/$sector")({
 function SectorPage() {
   const { sector } = Route.useParams();
   const data = sectors.find((s) => s.slug === sector)!;
-  // Map slug to old sector name for project list — gracefully empty otherwise
-  const sectorMap: Record<string, string> = {
-    residential: "Residential",
-    commercial: "Commercial",
-    institutional: "Institutional",
-    hospitality: "Hospitality",
-    industrial: "Industrial",
-    workplace: "Workplace",
-  };
-  const list = projectsBySector(sectorMap[sector] ?? data.name);
+  const list = projectsBySector(data.name);
 
   return (
     <>
