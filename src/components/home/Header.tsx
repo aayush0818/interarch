@@ -56,13 +56,13 @@ const NAV: NavItem[] = [
     ],
   },
   {
-    label: "News",
-    to: "/news",
+    label: "Journal",
+    to: "/journal",
     image: navNews,
-    blurb: "A refined journal and awards archive with publication-like pacing.",
+    blurb: "A refined archive of press articles featuring IDL and awards earned by the studio.",
     children: [
-      { label: "Journal", to: "/news/journal" },
-      { label: "Awards", to: "/news/awards" },
+      { label: "News", to: "/journal/news" },
+      { label: "Awards", to: "/journal/awards" },
     ],
   },
   {

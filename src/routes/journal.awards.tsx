@@ -16,7 +16,7 @@ function AwardsPage() {
       <CustomCursor />
       <Header />
       <main className="idlx-page">
-        <CinematicHero image={hero} alt="Awards" eyebrow="— News · Awards" title={"Quiet\nrecognition."} height="tall" />
+        <CinematicHero image={hero} alt="Awards" eyebrow="— Journal · Awards" title={"Quiet\nrecognition."} height="tall" />
         <section className="idlx-section">
           <div className="idlx-awards">
             {recognitionList.map((r) => (

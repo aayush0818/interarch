@@ -12,7 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as StudioRouteImport } from './routes/studio'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as PracticeRouteImport } from './routes/practice'
-import { Route as NewsRouteImport } from './routes/news'
+import { Route as JournalRouteImport } from './routes/journal'
 import { Route as ExpertiseRouteImport } from './routes/expertise'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
@@ -24,11 +24,11 @@ import { Route as ProjectSlugRouteImport } from './routes/project.$slug'
 import { Route as PracticeProcessRouteImport } from './routes/practice.process'
 import { Route as PracticeJournalRouteImport } from './routes/practice.journal'
 import { Route as PracticeHistoryRouteImport } from './routes/practice.history'
-import { Route as NewsJournalRouteImport } from './routes/news.journal'
-import { Route as NewsAwardsRouteImport } from './routes/news.awards'
+import { Route as JournalNewsRouteImport } from './routes/journal.news'
+import { Route as JournalAwardsRouteImport } from './routes/journal.awards'
 import { Route as ExpertiseSectorRouteImport } from './routes/expertise.$sector'
 import { Route as PracticeJournalSlugRouteImport } from './routes/practice.journal.$slug'
-import { Route as NewsJournalSlugRouteImport } from './routes/news.journal.$slug'
+import { Route as JournalNewsSlugRouteImport } from './routes/journal.news.$slug'
 
 const StudioRoute = StudioRouteImport.update({
   id: '/studio',
@@ -45,9 +45,9 @@ const PracticeRoute = PracticeRouteImport.update({
   path: '/practice',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NewsRoute = NewsRouteImport.update({
-  id: '/news',
-  path: '/news',
+const JournalRoute = JournalRouteImport.update({
+  id: '/journal',
+  path: '/journal',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExpertiseRoute = ExpertiseRouteImport.update({
@@ -105,15 +105,15 @@ const PracticeHistoryRoute = PracticeHistoryRouteImport.update({
   path: '/history',
   getParentRoute: () => PracticeRoute,
 } as any)
-const NewsJournalRoute = NewsJournalRouteImport.update({
-  id: '/journal',
-  path: '/journal',
-  getParentRoute: () => NewsRoute,
+const JournalNewsRoute = JournalNewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => JournalRoute,
 } as any)
-const NewsAwardsRoute = NewsAwardsRouteImport.update({
+const JournalAwardsRoute = JournalAwardsRouteImport.update({
   id: '/awards',
   path: '/awards',
-  getParentRoute: () => NewsRoute,
+  getParentRoute: () => JournalRoute,
 } as any)
 const ExpertiseSectorRoute = ExpertiseSectorRouteImport.update({
   id: '/$sector',
@@ -125,23 +125,23 @@ const PracticeJournalSlugRoute = PracticeJournalSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => PracticeJournalRoute,
 } as any)
-const NewsJournalSlugRoute = NewsJournalSlugRouteImport.update({
+const JournalNewsSlugRoute = JournalNewsSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
-  getParentRoute: () => NewsJournalRoute,
+  getParentRoute: () => JournalNewsRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRouteWithChildren
-  '/news': typeof NewsRouteWithChildren
+  '/journal': typeof JournalRouteWithChildren
   '/practice': typeof PracticeRouteWithChildren
   '/projects': typeof ProjectsRouteWithChildren
   '/studio': typeof StudioRouteWithChildren
   '/expertise/$sector': typeof ExpertiseSectorRoute
-  '/news/awards': typeof NewsAwardsRoute
-  '/news/journal': typeof NewsJournalRouteWithChildren
+  '/journal/awards': typeof JournalAwardsRoute
+  '/journal/news': typeof JournalNewsRouteWithChildren
   '/practice/history': typeof PracticeHistoryRoute
   '/practice/journal': typeof PracticeJournalRouteWithChildren
   '/practice/process': typeof PracticeProcessRoute
@@ -150,20 +150,20 @@ export interface FileRoutesByFullPath {
   '/studio/about': typeof StudioAboutRoute
   '/studio/history': typeof StudioHistoryRoute
   '/studio/team': typeof StudioTeamRoute
-  '/news/journal/$slug': typeof NewsJournalSlugRoute
+  '/journal/news/$slug': typeof JournalNewsSlugRoute
   '/practice/journal/$slug': typeof PracticeJournalSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRouteWithChildren
-  '/news': typeof NewsRouteWithChildren
+  '/journal': typeof JournalRouteWithChildren
   '/practice': typeof PracticeRouteWithChildren
   '/projects': typeof ProjectsRouteWithChildren
   '/studio': typeof StudioRouteWithChildren
   '/expertise/$sector': typeof ExpertiseSectorRoute
-  '/news/awards': typeof NewsAwardsRoute
-  '/news/journal': typeof NewsJournalRouteWithChildren
+  '/journal/awards': typeof JournalAwardsRoute
+  '/journal/news': typeof JournalNewsRouteWithChildren
   '/practice/history': typeof PracticeHistoryRoute
   '/practice/journal': typeof PracticeJournalRouteWithChildren
   '/practice/process': typeof PracticeProcessRoute
@@ -172,7 +172,7 @@ export interface FileRoutesByTo {
   '/studio/about': typeof StudioAboutRoute
   '/studio/history': typeof StudioHistoryRoute
   '/studio/team': typeof StudioTeamRoute
-  '/news/journal/$slug': typeof NewsJournalSlugRoute
+  '/journal/news/$slug': typeof JournalNewsSlugRoute
   '/practice/journal/$slug': typeof PracticeJournalSlugRoute
 }
 export interface FileRoutesById {
@@ -180,13 +180,13 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRouteWithChildren
-  '/news': typeof NewsRouteWithChildren
+  '/journal': typeof JournalRouteWithChildren
   '/practice': typeof PracticeRouteWithChildren
   '/projects': typeof ProjectsRouteWithChildren
   '/studio': typeof StudioRouteWithChildren
   '/expertise/$sector': typeof ExpertiseSectorRoute
-  '/news/awards': typeof NewsAwardsRoute
-  '/news/journal': typeof NewsJournalRouteWithChildren
+  '/journal/awards': typeof JournalAwardsRoute
+  '/journal/news': typeof JournalNewsRouteWithChildren
   '/practice/history': typeof PracticeHistoryRoute
   '/practice/journal': typeof PracticeJournalRouteWithChildren
   '/practice/process': typeof PracticeProcessRoute
@@ -195,7 +195,7 @@ export interface FileRoutesById {
   '/studio/about': typeof StudioAboutRoute
   '/studio/history': typeof StudioHistoryRoute
   '/studio/team': typeof StudioTeamRoute
-  '/news/journal/$slug': typeof NewsJournalSlugRoute
+  '/journal/news/$slug': typeof JournalNewsSlugRoute
   '/practice/journal/$slug': typeof PracticeJournalSlugRoute
 }
 export interface FileRouteTypes {
@@ -204,13 +204,13 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/expertise'
-    | '/news'
+    | '/journal'
     | '/practice'
     | '/projects'
     | '/studio'
     | '/expertise/$sector'
-    | '/news/awards'
-    | '/news/journal'
+    | '/journal/awards'
+    | '/journal/news'
     | '/practice/history'
     | '/practice/journal'
     | '/practice/process'
@@ -219,20 +219,20 @@ export interface FileRouteTypes {
     | '/studio/about'
     | '/studio/history'
     | '/studio/team'
-    | '/news/journal/$slug'
+    | '/journal/news/$slug'
     | '/practice/journal/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/contact'
     | '/expertise'
-    | '/news'
+    | '/journal'
     | '/practice'
     | '/projects'
     | '/studio'
     | '/expertise/$sector'
-    | '/news/awards'
-    | '/news/journal'
+    | '/journal/awards'
+    | '/journal/news'
     | '/practice/history'
     | '/practice/journal'
     | '/practice/process'
@@ -241,20 +241,20 @@ export interface FileRouteTypes {
     | '/studio/about'
     | '/studio/history'
     | '/studio/team'
-    | '/news/journal/$slug'
+    | '/journal/news/$slug'
     | '/practice/journal/$slug'
   id:
     | '__root__'
     | '/'
     | '/contact'
     | '/expertise'
-    | '/news'
+    | '/journal'
     | '/practice'
     | '/projects'
     | '/studio'
     | '/expertise/$sector'
-    | '/news/awards'
-    | '/news/journal'
+    | '/journal/awards'
+    | '/journal/news'
     | '/practice/history'
     | '/practice/journal'
     | '/practice/process'
@@ -263,7 +263,7 @@ export interface FileRouteTypes {
     | '/studio/about'
     | '/studio/history'
     | '/studio/team'
-    | '/news/journal/$slug'
+    | '/journal/news/$slug'
     | '/practice/journal/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -271,7 +271,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   ExpertiseRoute: typeof ExpertiseRouteWithChildren
-  NewsRoute: typeof NewsRouteWithChildren
+  JournalRoute: typeof JournalRouteWithChildren
   PracticeRoute: typeof PracticeRouteWithChildren
   ProjectsRoute: typeof ProjectsRouteWithChildren
   StudioRoute: typeof StudioRouteWithChildren
@@ -301,11 +301,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PracticeRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/news': {
-      id: '/news'
-      path: '/news'
-      fullPath: '/news'
-      preLoaderRoute: typeof NewsRouteImport
+    '/journal': {
+      id: '/journal'
+      path: '/journal'
+      fullPath: '/journal'
+      preLoaderRoute: typeof JournalRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/expertise': {
@@ -385,19 +385,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PracticeHistoryRouteImport
       parentRoute: typeof PracticeRoute
     }
-    '/news/journal': {
-      id: '/news/journal'
-      path: '/journal'
-      fullPath: '/news/journal'
-      preLoaderRoute: typeof NewsJournalRouteImport
-      parentRoute: typeof NewsRoute
+    '/journal/news': {
+      id: '/journal/news'
+      path: '/news'
+      fullPath: '/journal/news'
+      preLoaderRoute: typeof JournalNewsRouteImport
+      parentRoute: typeof JournalRoute
     }
-    '/news/awards': {
-      id: '/news/awards'
+    '/journal/awards': {
+      id: '/journal/awards'
       path: '/awards'
-      fullPath: '/news/awards'
-      preLoaderRoute: typeof NewsAwardsRouteImport
-      parentRoute: typeof NewsRoute
+      fullPath: '/journal/awards'
+      preLoaderRoute: typeof JournalAwardsRouteImport
+      parentRoute: typeof JournalRoute
     }
     '/expertise/$sector': {
       id: '/expertise/$sector'
@@ -413,12 +413,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PracticeJournalSlugRouteImport
       parentRoute: typeof PracticeJournalRoute
     }
-    '/news/journal/$slug': {
-      id: '/news/journal/$slug'
+    '/journal/news/$slug': {
+      id: '/journal/news/$slug'
       path: '/$slug'
-      fullPath: '/news/journal/$slug'
-      preLoaderRoute: typeof NewsJournalSlugRouteImport
-      parentRoute: typeof NewsJournalRoute
+      fullPath: '/journal/news/$slug'
+      preLoaderRoute: typeof JournalNewsSlugRouteImport
+      parentRoute: typeof JournalNewsRoute
     }
   }
 }
@@ -435,29 +435,30 @@ const ExpertiseRouteWithChildren = ExpertiseRoute._addFileChildren(
   ExpertiseRouteChildren,
 )
 
-interface NewsJournalRouteChildren {
-  NewsJournalSlugRoute: typeof NewsJournalSlugRoute
+interface JournalNewsRouteChildren {
+  JournalNewsSlugRoute: typeof JournalNewsSlugRoute
 }
 
-const NewsJournalRouteChildren: NewsJournalRouteChildren = {
-  NewsJournalSlugRoute: NewsJournalSlugRoute,
+const JournalNewsRouteChildren: JournalNewsRouteChildren = {
+  JournalNewsSlugRoute: JournalNewsSlugRoute,
 }
 
-const NewsJournalRouteWithChildren = NewsJournalRoute._addFileChildren(
-  NewsJournalRouteChildren,
+const JournalNewsRouteWithChildren = JournalNewsRoute._addFileChildren(
+  JournalNewsRouteChildren,
 )
 
-interface NewsRouteChildren {
-  NewsAwardsRoute: typeof NewsAwardsRoute
-  NewsJournalRoute: typeof NewsJournalRouteWithChildren
+interface JournalRouteChildren {
+  JournalAwardsRoute: typeof JournalAwardsRoute
+  JournalNewsRoute: typeof JournalNewsRouteWithChildren
 }
 
-const NewsRouteChildren: NewsRouteChildren = {
-  NewsAwardsRoute: NewsAwardsRoute,
-  NewsJournalRoute: NewsJournalRouteWithChildren,
+const JournalRouteChildren: JournalRouteChildren = {
+  JournalAwardsRoute: JournalAwardsRoute,
+  JournalNewsRoute: JournalNewsRouteWithChildren,
 }
 
-const NewsRouteWithChildren = NewsRoute._addFileChildren(NewsRouteChildren)
+const JournalRouteWithChildren =
+  JournalRoute._addFileChildren(JournalRouteChildren)
 
 interface PracticeJournalRouteChildren {
   PracticeJournalSlugRoute: typeof PracticeJournalSlugRoute
@@ -518,7 +519,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   ExpertiseRoute: ExpertiseRouteWithChildren,
-  NewsRoute: NewsRouteWithChildren,
+  JournalRoute: JournalRouteWithChildren,
   PracticeRoute: PracticeRouteWithChildren,
   ProjectsRoute: ProjectsRouteWithChildren,
   StudioRoute: StudioRouteWithChildren,
@@ -527,3 +528,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
