@@ -267,6 +267,16 @@ import bb7 from "@/assets/blush-bronze-residence-7.jpeg.asset.json";
 import sw1 from "@/assets/sage-whisper-residence-1.jpeg.asset.json";
 import sw2 from "@/assets/sage-whisper-residence-2.jpeg.asset.json";
 import sw3 from "@/assets/sage-whisper-residence-3.jpeg.asset.json";
+import swe90 from "@/assets/sage-whisper-residence-extra-90.jpeg.asset.json";
+import swe2 from "@/assets/sage-whisper-residence-extra-2.jpeg.asset.json";
+import swe56 from "@/assets/sage-whisper-residence-extra-56.jpeg.asset.json";
+import swe75 from "@/assets/sage-whisper-residence-extra-75.jpeg.asset.json";
+import swe27 from "@/assets/sage-whisper-residence-extra-27.jpeg.asset.json";
+import swe45 from "@/assets/sage-whisper-residence-extra-45.jpeg.asset.json";
+import swe124 from "@/assets/sage-whisper-residence-extra-124.jpeg.asset.json";
+import swe130 from "@/assets/sage-whisper-residence-extra-130.jpeg.asset.json";
+import swe13 from "@/assets/sage-whisper-residence-extra-13.jpeg.asset.json";
+import swe91 from "@/assets/sage-whisper-residence-extra-91.jpeg.asset.json";
 
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
