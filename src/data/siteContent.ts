@@ -41,6 +41,10 @@ import meril2 from "@/assets/meril-3.jpg.asset.json";
 
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
 import mb56_2 from "@/assets/meril-bld-5-6-2.png.asset.json";
+import pidilite1 from "@/assets/pidilite-rd-taloja-1.jpg.asset.json";
+import pidilite2 from "@/assets/pidilite-rd-taloja-2.jpg.asset.json";
+import pidilite3 from "@/assets/pidilite-rd-taloja-3.jpg.asset.json";
+import pidilite4 from "@/assets/pidilite-rd-taloja-4.jpg.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
@@ -242,12 +246,30 @@ export const sectors = [
   },
   {
     slug: "commercial",
-    name: "Commercial Interiors",
+    name: "Commercial",
     image: solitaa1.url,
     gallery: [solitaa1.url, gcb1.url, biguine1.url, jadepink1.url, monster1.url, palak1.url, ratanshi1.url, solitaa2.url, gcb2.url],
     short: "Workplaces and retail that translate brand identity into spatial performance.",
     statement:
       "Workplaces and retail environments that translate brand identity into spatial performance. Our interiors support productivity, culture and adaptability — designed for now and future growth.",
+  },
+  {
+    slug: "hospitality",
+    name: "Hospitality",
+    image: energize1.url,
+    gallery: [energize1.url, energize2.url, energize3.url, divya1.url, divya2.url, avm1.url, meril1.url, meril2.url],
+    short: "Hotels and retreats choreographed through warmth, sequence and view.",
+    statement:
+      "Bespoke hospitality interiors that elevate lifestyle — choreographed through warmth, sequence, tactility and view. Arrival, pause and aftertaste, shaped as a single architectural experience.",
+  },
+  {
+    slug: "industrial",
+    name: "Industrial",
+    image: pidilite1.url,
+    gallery: [pidilite1.url, pidilite2.url, pidilite3.url, pidilite4.url, mb56_1.url, mb56_2.url],
+    short: "Factories and R&D campuses shaped with rigour, light and material intelligence.",
+    statement:
+      "Industrial buildings — R&D centres, factories and process-led campuses — designed with the same discipline and material care as our finest interiors. Performance and presence, unified.",
   },
   {
     slug: "institutional",
@@ -259,41 +281,14 @@ export const sectors = [
       "Buildings that serve public life with clarity and durability. We design institutional projects for long-term performance, with efficiency, accessibility and civic presence as guiding principles.",
   },
   {
-    slug: "hospitality",
-    name: "Hospitality",
-    image: energize1.url,
-    gallery: [energize1.url, energize2.url, energize3.url, divya1.url, divya2.url, avm1.url, meril1.url, meril2.url],
-    short: "Hotels and retreats choreographed through warmth, sequence and view.",
-    statement:
-      "Bespoke hospitality interiors that elevate lifestyle — choreographed through warmth, sequence, tactility and view. Arrival, pause and aftertaste, shaped as a single architectural experience.",
-  },
-
-  {
-    slug: "industrial",
-    name: "Master Planning",
-    image: mb56_1.url,
-    gallery: [mb56_1.url, mb56_2.url, merilAcad1.url, dcp1.url],
-    short: "Integrated planning that brings coherence to large-scale developments.",
-    statement:
-      "Integrated planning solutions that bring coherence and clarity to large-scale developments — campuses, mixed-use neighbourhoods and institutional grounds composed for long, useful life.",
-  },
-  {
     slug: "workplace",
-    name: "Sustainability",
-    image: merilAcad2.url,
-    gallery: [merilAcad2.url, energize2.url, divya1.url, dcp2.url, apj2.url],
-    short: "Passive, daylit, long-life buildings — IGBC Gold among our certifications.",
+    name: "Workplace",
+    image: dcp1.url,
+    gallery: [dcp1.url, dcp2.url, monster1.url, palak1.url, solitaa1.url, gcb1.url],
+    short: "Offices and workspaces where culture, focus and collaboration are made spatial.",
     statement:
-      "For us, sustainability is a form of respect — for land, material and time. A building is truly sustainable when it adapts, ages well, and remains meaningful for decades. We combine traditional wisdom with modern engineering to create spaces that breathe with their surroundings rather than resist them.",
-    bullets: [
-      "Passive design strategies for climate responsiveness.",
-      "Use of natural light and ventilation.",
-      "Conscious material selection for longevity.",
-      "Energy-efficient systems and green building practices.",
-      "IGBC Gold Certification for one of our projects — proof of our commitment to responsible design.",
-    ],
+      "Workplaces that balance the needs of individuals and teams — culture made visible through architecture, light and material. Considered, calm interiors that scale with how a company actually works.",
   },
-
 ];
 
 /* =================================================================

@@ -30,16 +30,7 @@ export const Route = createFileRoute("/expertise/$sector")({
 function SectorPage() {
   const { sector } = Route.useParams();
   const data = sectors.find((s) => s.slug === sector)!;
-  // Map slug to old sector name for project list — gracefully empty otherwise
-  const sectorMap: Record<string, string> = {
-    residential: "Residential",
-    commercial: "Commercial",
-    institutional: "Institutional",
-    hospitality: "Hospitality",
-    industrial: "Industrial",
-    workplace: "Workplace",
-  };
-  const list = projectsBySector(sectorMap[sector] ?? data.name);
+  const list = projectsBySector(data.name);
 
   return (
     <>
@@ -93,7 +84,7 @@ function SectorPage() {
           </div>
         ) : null}
 
-        {data.bullets ? (
+        {(data as { bullets?: string[] }).bullets ? (
           <section className="idlx-section idlx-section--bordered">
             <div className="idlx-manifesto">
               <Reveal>
@@ -102,7 +93,7 @@ function SectorPage() {
               </Reveal>
               <Reveal delay={0.18} className="idlx-manifesto-body">
                 <ul className="idlx-bullets">
-                  {data.bullets.map((b) => (
+                  {(data as { bullets?: string[] }).bullets!.map((b: string) => (
                     <li key={b}>{b}</li>
                   ))}
                 </ul>

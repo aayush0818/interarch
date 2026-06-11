@@ -8,24 +8,24 @@ import { realImages } from "@/data/realImages";
 const hero = realImages.commercial.boutiquePanorama;
 const awardsHero = realImages.institutional.pool;
 
-export const Route = createFileRoute("/news")({ component: NewsPage });
+export const Route = createFileRoute("/journal")({ component: JournalIndexPage });
 
-function NewsPage() {
+function JournalIndexPage() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  if (pathname !== "/news") return <Outlet />;
+  if (pathname !== "/journal") return <Outlet />;
 
   return (
     <>
       <CustomCursor />
       <Header />
       <main className="idlx-page">
-        <CinematicHero image={hero} alt="News" eyebrow="— News" title={"Journal and\nawards."} height="tall" />
+        <CinematicHero image={hero} alt="Journal" eyebrow="— Journal" title={"News and\nawards."} height="tall" />
         <section className="idlx-diptych" style={{ height: "70svh", minHeight: 520 }}>
-          <Link to="/news/journal" className="idlx-diptych-half">
-            <img src={hero} alt="Journal" />
-            <div className="idlx-diptych-label"><span className="idlx-diptych-sub">— 01</span><span>Journal</span></div>
+          <Link to="/journal/news" className="idlx-diptych-half">
+            <img src={hero} alt="News" />
+            <div className="idlx-diptych-label"><span className="idlx-diptych-sub">— 01</span><span>News</span></div>
           </Link>
-          <Link to="/news/awards" className="idlx-diptych-half">
+          <Link to="/journal/awards" className="idlx-diptych-half">
             <img src={awardsHero} alt="Awards" />
             <div className="idlx-diptych-label"><span className="idlx-diptych-sub">— 02</span><span>Awards</span></div>
           </Link>

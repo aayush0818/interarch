@@ -220,16 +220,16 @@ body {
 }
 .idl-logo-mark {
   width: auto;
-  height: 72px;
-  max-height: calc(100% - 24px);
-  max-width: 220px;
+  height: 104px;
+  max-height: calc(100% - 16px);
+  max-width: 280px;
   display: block;
   object-fit: contain;
   filter: brightness(0) invert(1);
   transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .idl-header.is-scrolled .idl-logo-mark {
-  height: 52px;
+  height: 76px;
   filter: none;
 }
 .idl-header.is-menu .idl-logo-mark { filter: brightness(0) invert(1); }
@@ -300,16 +300,16 @@ body {
 @media (max-width: 1024px) {
   .idl-header { height: 90px; padding: 0 32px; }
   .idl-header.is-scrolled { height: 72px; }
-  .idl-logo-mark { height: 60px; max-width: 180px; }
-  .idl-header.is-scrolled .idl-logo-mark { height: 46px; }
+  .idl-logo-mark { height: 84px; max-width: 220px; }
+  .idl-header.is-scrolled .idl-logo-mark { height: 64px; }
 }
 
 /* Responsive: mobile — hide centre nav, keep logo + (scrolled only) menu + search */
 @media (max-width: 768px) {
   .idl-header { height: 80px; padding: 0 20px; grid-template-columns: 1fr auto; gap: 16px; }
   .idl-header.is-scrolled { height: 66px; }
-  .idl-logo-mark { height: 52px; max-width: 150px; }
-  .idl-header.is-scrolled .idl-logo-mark { height: 42px; }
+  .idl-logo-mark { height: 72px; max-width: 200px; }
+  .idl-header.is-scrolled .idl-logo-mark { height: 56px; }
   .idl-topnav { display: none; }
 }
 
@@ -1199,9 +1199,9 @@ body {
   border-bottom: 0.5px solid rgba(245, 237, 224, 0.14);
 }
 .idl-footer-logo {
-  height: 30px;
+  height: 72px;
   width: auto;
-  opacity: 0.92;
+  opacity: 0.95;
   filter: brightness(0) invert(1);
 }
 .idl-footer-statement {

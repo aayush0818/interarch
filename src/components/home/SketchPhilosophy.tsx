@@ -166,6 +166,7 @@ export function SketchPhilosophy() {
               height={H}
               preserveAspectRatio="xMidYMid slice"
               clipPath="url(#sketchClip)"
+              style={{ mixBlendMode: "multiply" }}
             />
             <line
               ref={lineRef}

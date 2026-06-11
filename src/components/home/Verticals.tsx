@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { realImages } from "@/data/realImages";
+import mb56 from "@/assets/meril-bld-5-6-1.png.asset.json";
+import dcp from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
 
 const { institutional: inst, residential: res, commercial: com } = realImages;
 
@@ -17,12 +19,6 @@ const items = [
     img: com.lounge,
   },
   {
-    name: "Institutional",
-    href: "/expertise/institutional",
-    desc: "Buildings that serve public life with clarity and durability. Schools, civic centres and cultural landmarks designed for long-term relevance, efficiency and civic presence.",
-    img: inst.aerial,
-  },
-  {
     name: "Hospitality",
     href: "/expertise/hospitality",
     desc: "Bespoke hospitality interiors that elevate lifestyle — choreographed through warmth, sequence, tactility and the careful art of arrival.",
@@ -31,14 +27,20 @@ const items = [
   {
     name: "Industrial",
     href: "/expertise/industrial",
-    desc: "Functional environments designed with the same rigour and material intelligence as our finest interiors. Performance and presence, unified.",
-    img: inst.tower,
+    desc: "Factories, R&D campuses and process-led architecture designed with the same rigour and material intelligence as our finest interiors. Performance and presence, unified.",
+    img: mb56.url,
+  },
+  {
+    name: "Institutional",
+    href: "/expertise/institutional",
+    desc: "Buildings that serve public life with clarity and durability. Schools, civic centres and cultural landmarks designed for long-term relevance, efficiency and civic presence.",
+    img: inst.aerial,
   },
   {
     name: "Workplace",
     href: "/expertise/workplace",
-    desc: "Spaces that balance the needs of individuals and teams. Culture made visible through architecture and interior design.",
-    img: com.boardroom,
+    desc: "Offices and workspaces that balance the needs of individuals and teams — culture made visible through architecture, light and material.",
+    img: dcp.url,
   },
 ];
 

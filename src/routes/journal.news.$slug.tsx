@@ -6,14 +6,14 @@ import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
 import { journalPosts } from "@/data/siteContent";
 
-export const Route = createFileRoute("/news/journal/$slug")({
+export const Route = createFileRoute("/journal/news/$slug")({
   beforeLoad: ({ params }) => {
-    if (!journalPosts.find((p) => p.slug === params.slug)) throw redirect({ to: "/news/journal" });
+    if (!journalPosts.find((p) => p.slug === params.slug)) throw redirect({ to: "/journal/news" });
   },
-  component: EssayPage,
+  component: ArticlePage,
 });
 
-function EssayPage() {
+function ArticlePage() {
   const { slug } = Route.useParams();
   const post = journalPosts.find((p) => p.slug === slug)!;
   const ref = useRef<HTMLDivElement>(null);
@@ -25,7 +25,7 @@ function EssayPage() {
       <Header />
       <motion.div className="idlx-essay-progress" style={{ scaleX: scrollYProgress }} />
       <article className="idlx-page idlx-essay" ref={ref}>
-        <Link to="/news/journal" className="idlx-essay-back" data-hover>← Journal</Link>
+        <Link to="/journal/news" className="idlx-essay-back" data-hover>← News</Link>
         <header>
           <span className="idlx-jrn-meta">{post.category} · {post.date}</span>
           <h1>{post.title}</h1>
@@ -35,7 +35,7 @@ function EssayPage() {
           <p>Every building begins not with a line, but with a question. Why this room, why this window, why this view?</p>
           <p>We talk to the people who will use the space long before the brief is fixed. Habits that drawings miss become the real plan.</p>
           <blockquote className="idlx-essay-pull">Clarity is not minimalism. It is the discipline of leaving in only what matters.</blockquote>
-          <p>The essay around {post.title.toLowerCase()} follows the same principle: slower reading, stronger imagery, and fewer distractions.</p>
+          <p>The article around {post.title.toLowerCase()} follows the same principle: slower reading, stronger imagery, and fewer distractions.</p>
         </div>
       </article>
       <Footer />
