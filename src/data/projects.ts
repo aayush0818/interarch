@@ -267,6 +267,16 @@ import bb7 from "@/assets/blush-bronze-residence-7.jpeg.asset.json";
 import sw1 from "@/assets/sage-whisper-residence-1.jpeg.asset.json";
 import sw2 from "@/assets/sage-whisper-residence-2.jpeg.asset.json";
 import sw3 from "@/assets/sage-whisper-residence-3.jpeg.asset.json";
+import swe90 from "@/assets/sage-whisper-residence-extra-90.jpeg.asset.json";
+import swe2 from "@/assets/sage-whisper-residence-extra-2.jpeg.asset.json";
+import swe56 from "@/assets/sage-whisper-residence-extra-56.jpeg.asset.json";
+import swe75 from "@/assets/sage-whisper-residence-extra-75.jpeg.asset.json";
+import swe27 from "@/assets/sage-whisper-residence-extra-27.jpeg.asset.json";
+import swe45 from "@/assets/sage-whisper-residence-extra-45.jpeg.asset.json";
+import swe124 from "@/assets/sage-whisper-residence-extra-124.jpeg.asset.json";
+import swe130 from "@/assets/sage-whisper-residence-extra-130.jpeg.asset.json";
+import swe13 from "@/assets/sage-whisper-residence-extra-13.jpeg.asset.json";
+import swe91 from "@/assets/sage-whisper-residence-extra-91.jpeg.asset.json";
 
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
@@ -313,7 +323,7 @@ const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf4.url, sf5.url, sf6.ur
 const onyxIvoryGallery = [ox1.url, ox2.url, ox3.url, ox4.url, ox5.url, ox6.url, ox7.url, ox8.url, ox9.url, ox10.url];
 const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url, er10.url];
 const blushBronzeResidenceGallery = [bb3.url, bb1.url, bb2.url, bb4.url, bb5.url, bb6.url, bb7.url];
-const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url];
+const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url];
 
 export type Project = {
   slug: string;
