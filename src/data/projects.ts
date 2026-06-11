@@ -254,6 +254,20 @@ import er8 from "@/assets/emerald-125.jpeg.asset.json";
 import er9 from "@/assets/emerald-008-2.jpeg.asset.json";
 import er10 from "@/assets/emerald-013.jpeg.asset.json";
 
+// Blush & Bronze Residence — Residential Interior
+import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
+import bb2 from "@/assets/blush-bronze-residence-2.jpeg.asset.json";
+import bb3 from "@/assets/blush-bronze-residence-3.jpeg.asset.json";
+import bb4 from "@/assets/blush-bronze-residence-4.jpeg.asset.json";
+import bb5 from "@/assets/blush-bronze-residence-5.jpeg.asset.json";
+import bb6 from "@/assets/blush-bronze-residence-6.jpeg.asset.json";
+import bb7 from "@/assets/blush-bronze-residence-7.jpeg.asset.json";
+
+// Sage Whisper Residence — Residential Interior
+import sw1 from "@/assets/sage-whisper-residence-1.jpeg.asset.json";
+import sw2 from "@/assets/sage-whisper-residence-2.jpeg.asset.json";
+import sw3 from "@/assets/sage-whisper-residence-3.jpeg.asset.json";
+
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
   nr66.url,
@@ -298,6 +312,8 @@ const sereneHeightsGallery = [sh1.url, sh2.url, sh3.url, sh4.url, sh5.url, sh6.u
 const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url, sf9.url, sf10.url];
 const onyxIvoryGallery = [ox1.url, ox2.url, ox3.url, ox4.url, ox5.url, ox6.url, ox7.url, ox8.url, ox9.url, ox10.url];
 const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url, er10.url];
+const blushBronzeResidenceGallery = [bb3.url, bb1.url, bb2.url, bb4.url, bb5.url, bb6.url, bb7.url];
+const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url];
 
 export type Project = {
   slug: string;
@@ -417,6 +433,32 @@ export const projects: Project[] = [
     cover: er1.url,
     gallery: emeraldReverieGallery,
     description: "",
+  },
+  {
+    slug: "blush-and-bronze-residence",
+    name: "Blush & Bronze Residence",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Interiors",
+    cover: bb3.url,
+    gallery: blushBronzeResidenceGallery,
+    description: "A warm residential interior shaped by blush upholstery, bronze accents, marble surfaces and a calm contemporary palette.",
+  },
+  {
+    slug: "sage-whisper-residence",
+    name: "Sage Whisper Residence",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Interiors",
+    cover: sw3.url,
+    gallery: sageWhisperResidenceGallery,
+    description: "A soft, airy home with sage cabinetry, pale stone, delicate detailing and a quiet pastel mood.",
   },
   {
     slug: "onyx-and-ivory-marbled-maison",
