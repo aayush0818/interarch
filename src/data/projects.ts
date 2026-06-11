@@ -322,6 +322,16 @@ import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 import quest97 from "@/assets/quest-clubhouse-97.jpg.asset.json";
 import quest99 from "@/assets/quest-clubhouse-99.jpg.asset.json";
 import quest96 from "@/assets/quest-clubhouse-96.jpg.asset.json";
+import quest94 from "@/assets/quest-clubhouse-94.jpg.asset.json";
+import quest67 from "@/assets/quest-clubhouse-67.jpg.asset.json";
+import quest77 from "@/assets/quest-clubhouse-77.jpg.asset.json";
+import quest72 from "@/assets/quest-clubhouse-72.jpg.asset.json";
+import quest65 from "@/assets/quest-clubhouse-65.jpg.asset.json";
+import quest47 from "@/assets/quest-clubhouse-47.jpg.asset.json";
+import quest45 from "@/assets/quest-clubhouse-45.jpg.asset.json";
+import quest57 from "@/assets/quest-clubhouse-57.jpg.asset.json";
+import quest51 from "@/assets/quest-clubhouse-51.jpg.asset.json";
+import quest50 from "@/assets/quest-clubhouse-50.jpg.asset.json";
 import quest18 from "@/assets/quest-clubhouse-18.jpg.asset.json";
 import quest42 from "@/assets/quest-clubhouse-42.jpg.asset.json";
 import quest38 from "@/assets/quest-clubhouse-38.jpg.asset.json";
@@ -383,7 +393,7 @@ const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis
 const iigInstituteColabaGallery = [iigColaba1.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
-const questAjaySethGallery = [quest97.url, quest99.url, quest96.url, quest18.url, quest42.url, quest38.url, quest82.url, quest23.url, quest83.url, quest80.url];
+const questAjaySethGallery = [quest67.url, quest77.url, quest72.url, quest65.url, quest94.url, quest97.url, quest99.url, quest47.url, quest45.url, quest57.url, quest96.url, quest51.url, quest50.url, quest18.url, quest42.url, quest38.url, quest82.url, quest23.url, quest83.url, quest80.url];
 
 export type Project = {
   slug: string;
