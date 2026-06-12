@@ -74,9 +74,9 @@ export const aboutCopy = {
   eyebrow: "— About",
   headline: "A contemporary legacy in architecture and interiors.",
   intro:
-    "Interarch Design Labs — a contemporary legacy in architecture and interiors, where rigorous intent meets modern refinement. Our work is founded on a simple conviction: design must answer how life is lived. We translate that conviction into buildings and interiors that are purposeful, considered, and quietly luxurious.",
+    "Interarch Design Labs — a contemporary legacy in architecture and interiors, where rigorous intent meets modern refinement. Our work is founded on a simple conviction: design must answer how life is lived. We translate that conviction into buildings and interiors that are purposeful, considered, and quietly luxurious. From civic campuses to private homes, hospitality to healthcare, we create environments with the kind of clarity and care that lasts.",
   body:
-    "From civic campuses to private homes, hospitality to healthcare, we create environments with the kind of clarity and care that lasts. The union brings a deliberately broad skill set — grounded in context, enriched by material sensitivity, and driven by a pragmatic elegance.",
+    "The union brings a deliberately broad skill set grounded in context, enriched by material sensitivity, and driven by a pragmatic elegance.",
   signoff: "Simple. Considered. Enduring. This is Interarch Design Labs.",
   legacy:
     "IDL is the union of two legacy firms — Interarch (founded in 1989 by Ar. Dipak Thaker and Ar. Murtuza Rangwala) and Kala Design (led by Ar. Hussain Rangwala and Ar. Rohit Gojia). Together, we bring forward a shared philosophy: that design should not chase trends, but serve intent. Our practice spans architecture, interiors, planning, and engineering, but our foundation is singular — a deep respect for context, craft, and collaboration.",
@@ -85,13 +85,13 @@ export const aboutCopy = {
 export const mission = {
   eyebrow: "— Mission",
   text:
-    "To create meaningful spaces that reflect the people who live, work, and move through them — shaped with clarity, care, and a deep sense of intent.",
+    "To create meaningful spaces that reflect the people who live, work, and move through them, shaped with clarity, care, and a deep sense of intent.",
 };
 
 export const vision = {
   eyebrow: "— Vision",
   text:
-    "To define a contemporary architectural language for India and beyond — one where design feels personal, principles remain timeless, and form emerges from purpose rather than trend.",
+    "To define a contemporary architectural language for India and beyond, one where design feels personal, principles remain timeless, and form emerges from purpose rather than trend.",
 };
 
 export const values = [
@@ -103,11 +103,11 @@ export const values = [
 
 export const idlStudioNarrative = {
   eyebrow: "— IDL Studio",
-  headline: "For us, design is a journey — not a checklist.",
+  headline: "For us, design is a journey, not a checklist.",
   body: [
     "Interarch Design Labs brings together over four decades of architectural and interior design experience. Born from the merger of Interarch and Kala Design, the studio blends legacy thinking with contemporary innovation.",
     "It begins with listening: to people, to context, to the story the site already carries. Ideas evolve through sketches, conversations, and collaboration. Materials are chosen not only for utility but for character and longevity. Details are refined until the design feels inevitable.",
-    "And once built, our spaces don't just function — they grow, adapt, and live alongside you.",
+    "And once built, our spaces don't just function, they grow, adapt, and live alongside you.",
   ],
 };
 
