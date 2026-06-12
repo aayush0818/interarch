@@ -11,7 +11,7 @@ export const Route = createFileRoute("/expertise")({
   head: () => ({
     meta: [
       { title: "Expertise — Interarch Design Labs" },
-      { name: "description", content: "Six disciplines. One sensibility — residential, commercial, institutional, hospitality, master planning and sustainability." },
+      { name: "description", content: "Six disciplines. One sensibility — residential, commercial, hospitality, industrial, institutional and workplace." },
       { property: "og:title", content: "Expertise — IDL" },
       { property: "og:description", content: "Six disciplines. One sensibility." },
       { property: "og:image", content: sectors[0]?.image },

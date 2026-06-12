@@ -79,7 +79,7 @@ function ProjectsPage() {
                 A growing record of work across India, the Middle East and Africa — composed with the same care from a private residence to a civic campus.
               </p>
               <p className="idlx-body idlx-body--lg">
-                {arch} architecture projects · {intr} interior projects · across residential, hospitality, institutional and workplace.
+                {arch} architecture projects · {intr} interior projects · across residential, commercial, hospitality, industrial, institutional and workplace.
               </p>
             </Reveal>
           </div>

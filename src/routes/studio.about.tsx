@@ -184,7 +184,7 @@ function AboutPage() {
       <Marquee speed={50}>
         <span>— Mumbai · Ahmedabad · India · Middle East · Africa</span>
         <span>— Architecture · Interiors · Planning · Engineering</span>
-        <span>— Residential · Hospitality · Institutional · Workplace</span>
+        <span>— Residential · Commercial · Hospitality · Industrial · Institutional · Workplace</span>
       </Marquee>
 
       {/* Culture / Internships / Mentorship / Working at IDL */}

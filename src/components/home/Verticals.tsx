@@ -9,37 +9,37 @@ const items = [
   {
     name: "Residential",
     href: "/expertise/residential",
-    desc: "Apartments, bungalows and villas conceived for privacy, openness and a seamless connection to the outdoors. Every decision, from plan to finish, supports daily life with calm precision.",
+    desc: "Apartments, bungalows and villas — composed around light, view, and movement.",
     img: res.gallery,
   },
   {
     name: "Commercial",
     href: "/expertise/commercial",
-    desc: "Workplaces and retail environments that translate brand identity into spatial performance. Designed for productivity, culture and adaptability — now and into future growth.",
+    desc: "Workplaces and retail that translate brand identity into spatial performance.",
     img: com.lounge,
   },
   {
     name: "Hospitality",
     href: "/expertise/hospitality",
-    desc: "Bespoke hospitality interiors that elevate lifestyle — choreographed through warmth, sequence, tactility and the careful art of arrival.",
+    desc: "Hotels and retreats choreographed through warmth, sequence and view.",
     img: realImages.brand.hospitalityPoolsideResort,
   },
   {
     name: "Industrial",
     href: "/expertise/industrial",
-    desc: "Factories, R&D campuses and process-led architecture designed with the same rigour and material intelligence as our finest interiors. Performance and presence, unified.",
+    desc: "Factories and R&D campuses shaped with rigour, light and material intelligence.",
     img: mb56.url,
   },
   {
     name: "Institutional",
     href: "/expertise/institutional",
-    desc: "Buildings that serve public life with clarity and durability. Schools, civic centres and cultural landmarks designed for long-term relevance, efficiency and civic presence.",
+    desc: "Civic buildings designed for long life, accessibility and quiet presence.",
     img: inst.aerial,
   },
   {
     name: "Workplace",
     href: "/expertise/workplace",
-    desc: "Offices and workspaces that balance the needs of individuals and teams — culture made visible through architecture, light and material.",
+    desc: "Offices and workspaces where culture, focus and collaboration are made spatial.",
     img: dcp.url,
   },
 ];

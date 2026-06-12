@@ -74,9 +74,9 @@ export const aboutCopy = {
   eyebrow: "— About",
   headline: "A contemporary legacy in architecture and interiors.",
   intro:
-    "Interarch Design Labs — a contemporary legacy in architecture and interiors, where rigorous intent meets modern refinement. Our work is founded on a simple conviction: design must answer how life is lived. We translate that conviction into buildings and interiors that are purposeful, considered, and quietly luxurious.",
+    "Interarch Design Labs — a contemporary legacy in architecture and interiors, where rigorous intent meets modern refinement. Our work is founded on a simple conviction: design must answer how life is lived. We translate that conviction into buildings and interiors that are purposeful, considered, and quietly luxurious. From civic campuses to private homes, hospitality to healthcare, we create environments with the kind of clarity and care that lasts.",
   body:
-    "From civic campuses to private homes, hospitality to healthcare, we create environments with the kind of clarity and care that lasts. The union brings a deliberately broad skill set — grounded in context, enriched by material sensitivity, and driven by a pragmatic elegance.",
+    "The union brings a deliberately broad skill set grounded in context, enriched by material sensitivity, and driven by a pragmatic elegance.",
   signoff: "Simple. Considered. Enduring. This is Interarch Design Labs.",
   legacy:
     "IDL is the union of two legacy firms — Interarch (founded in 1989 by Ar. Dipak Thaker and Ar. Murtuza Rangwala) and Kala Design (led by Ar. Hussain Rangwala and Ar. Rohit Gojia). Together, we bring forward a shared philosophy: that design should not chase trends, but serve intent. Our practice spans architecture, interiors, planning, and engineering, but our foundation is singular — a deep respect for context, craft, and collaboration.",
@@ -85,13 +85,13 @@ export const aboutCopy = {
 export const mission = {
   eyebrow: "— Mission",
   text:
-    "To create meaningful spaces that reflect the people who live, work, and move through them — shaped with clarity, care, and a deep sense of intent.",
+    "To create meaningful spaces that reflect the people who live, work, and move through them, shaped with clarity, care, and a deep sense of intent.",
 };
 
 export const vision = {
   eyebrow: "— Vision",
   text:
-    "To define a contemporary architectural language for India and beyond — one where design feels personal, principles remain timeless, and form emerges from purpose rather than trend.",
+    "To define a contemporary architectural language for India and beyond, one where design feels personal, principles remain timeless, and form emerges from purpose rather than trend.",
 };
 
 export const values = [
@@ -103,11 +103,11 @@ export const values = [
 
 export const idlStudioNarrative = {
   eyebrow: "— IDL Studio",
-  headline: "For us, design is a journey — not a checklist.",
+  headline: "For us, design is a journey, not a checklist.",
   body: [
     "Interarch Design Labs brings together over four decades of architectural and interior design experience. Born from the merger of Interarch and Kala Design, the studio blends legacy thinking with contemporary innovation.",
     "It begins with listening: to people, to context, to the story the site already carries. Ideas evolve through sketches, conversations, and collaboration. Materials are chosen not only for utility but for character and longevity. Details are refined until the design feels inevitable.",
-    "And once built, our spaces don't just function — they grow, adapt, and live alongside you.",
+    "And once built, our spaces don't just function, they grow, adapt, and live alongside you.",
   ],
 };
 
@@ -130,13 +130,13 @@ export const rangeOfExperience = {
 };
 
 export const recognitionList = [
-  { year: "—", award: "IGBC Gold Certification", note: "For pioneering sustainable development." },
   { year: "2001", award: "A+D Spectrum Architecture Awards", note: "Excellence in Architecture." },
   { year: "2008", award: "Association of Real Estate Agents Award", note: "Architectural contribution." },
   { year: "2010", award: "Chief Minister of Maharashtra Award", note: "Babasaheb Ambedkar Bhavan." },
   { year: "2014–15", award: "AICA Asia Fest", note: "Commendation for architectural design." },
   { year: "2015", award: "Rachana Sansad Diamond Jubilee Felicitation", note: "Recognition for service to architecture." },
   { year: "25 yrs", award: "Service to DRDO, Ministry of Defence", note: "A testament to trust and long-standing partnerships." },
+  { year: "—", award: "IGBC Gold Certification", note: "For pioneering sustainable development." },
 ];
 
 export const cultureBlocks = [
@@ -144,25 +144,25 @@ export const cultureBlocks = [
     eyebrow: "— Culture & Process",
     title: "Not a hierarchy. A dialogue.",
     body:
-      "IDL is built on mentorship, openness, and collaboration. Young designers learn from practice; seasoned architects stay inspired by new perspectives. We value process as much as outcomes — the sketch before the line, the question before the answer, the conversation before the decision.",
+      "IDL is not a hierarchy but a dialogue. Led by four partners with decades of combined experience, the studio is built on mentorship, openness, and collaboration. Young designers learn from practice, while seasoned architects stay inspired by new perspectives. We value process as much as outcomes: the sketch before the line, the question before the answer, the conversation before the decision. Because architecture is not an object to be delivered, it is an experience to be lived.",
   },
   {
     eyebrow: "— Internships",
     title: "The next generation shapes the future.",
     body:
-      "Our internships offer hands-on exposure to architecture, interiors, material exploration, and project processes across scales. Every intern works on live projects, guided by our team, with the experience tailored to their strengths.",
+      "We believe the next generation shapes the future of design. Our internships offer hands-on exposure to architecture, interiors, material exploration, and project processes across scales. Every intern works on live projects, guided by our team, and the experience is tailored to their strengths and interests.",
   },
   {
     eyebrow: "— Design Mentorship",
     title: "Over 100 years of combined experience.",
     body:
-      "Mentorship is central to IDL. Our leadership guides young designers through real-world complexity, design thinking, and craft refinement — teaching not just technique, but values: sustainability, cultural awareness, strategic clarity.",
+      "Mentorship is central to IDL. With over 100 years of combined experience, our leadership guides young designers through real-world complexity, design thinking, and craft refinement. We teach not just technique, but values — sustainability, cultural awareness, and strategic clarity.",
   },
   {
     eyebrow: "— Working at IDL",
     title: "Curiosity leads. Craft shapes the outcome.",
     body:
-      "Work at IDL is a dialogue — between disciplines, generations, and perspectives. Our teams collaborate across architecture, interiors, and strategy to solve complex challenges with rigour and creativity. We value what takes time, because thoughtful design demands it.",
+      "Work at IDL is a dialogue, between disciplines, generations, and perspectives. Our teams collaborate across architecture, interiors, and strategy to solve complex challenges with rigor and creativity. Curiosity leads the process. Craft shapes the outcome. We value what takes time, because thoughtful design demands it.",
   },
 ];
 
@@ -173,9 +173,9 @@ export const teamCopy = {
   eyebrow: "— Our Team",
   headline: "Heritage and reinvention. Independent voices, one vision.",
   intro:
-    "Interarch Design Labs was formed by the convergence of Interarch and Kala Design. Today it is led by four partners whose combined experience spans decades and disciplines. Together with a growing studio across Mumbai and Ahmedabad, we deliver architecture, interiors, master planning and spatial strategy to clients in India, the Middle East and Africa.",
+    "Interarch Design Labs is led by four partners whose individual expertise forms a unified approach to architecture and interiors. Their perspectives, spanning decades of practice, shape the studio's commitment to clarity, context, and purposeful design.",
   collective:
-    "Supported by a multidisciplinary team of architects, interior designers, visualisers, project managers and delivery specialists.",
+    "They are supported by a multidisciplinary team of architects, interior designers, visualisers, project managers, and delivery specialists. Together, the studio brings technical depth, material sensitivity, and thoughtful execution to every project.",
 };
 
 export const partners = [
@@ -183,19 +183,19 @@ export const partners = [
     name: "Dipak Thaker",
     role: "Director · IDL",
     image: partner1,
-    years: "30+ years",
+    years: "40+ years",
     line: "Structure, process, and buildability held together with long-view precision.",
     bio:
-      "Dipak Thaker brings over three decades of experience in architecture and interior design, having led projects across residential, commercial, institutional, and industrial sectors. His work is defined by strong planning logic, technical depth, and execution precision, particularly on largescale and complex developments. Dipak has been instrumental in shaping projects from concept to completion, ensuring design intent is carried through every stage of construction. At IDL, he anchors the practice with structure, process, and a deep understanding of buildability.",
+      "Dipak Thaker brings over four decades of experience in architecture and interior design, having led projects across residential, commercial, institutional, and industrial sectors. His work is defined by strong planning logic, technical depth, and execution precision, particularly on large-scale and complex developments. Dipak has been instrumental in shaping projects from concept to completion, ensuring design intent is carried through every stage of construction. At IDL, he anchors the practice with structure, process, and a deep understanding of buildability.",
   },
   {
     name: "Murtaza Rangwala",
     role: "Director · IDL",
     image: partner2,
-    years: "Decades of experience",
+    years: "30+ years",
     line: "Calm leadership, operational rigour, and dependable delivery across every stage.",
     bio:
-      "Murtaza Rangwala has spent decades building a practice rooted in consistency, discipline, and long-term client trust. His experience spans a wide range of architectural and interior projects, where he has played a critical role in project coordination, detailing, and on-site execution. Known for his calm leadership and hands-on involvement, Murtaza ensures that every project is delivered with clarity and control. At IDL, he strengthens the firms foundation through operational rigor and dependable project delivery.",
+      "Murtaza Rangwala has spent decades building a practice rooted in consistency, discipline, and long-term client trust. His experience spans a wide range of architectural and interior projects, where he has played a critical role in project coordination, detailing, and on-site execution. Known for his calm leadership and hands-on involvement, Murtaza ensures that every project is delivered with clarity and control. At IDL, he strengthens the firm's foundation through operational rigour and dependable project delivery.",
   },
   {
     name: "Hussain Rangwala",
@@ -210,7 +210,7 @@ export const partners = [
     name: "Rohit Gojia",
     role: "Director · IDL",
     image: partner4,
-    years: "Interior-focused leadership",
+    years: "Contemporary practice",
     line: "Modern living translated into clear, material-led interior narratives.",
     bio:
       "Rohit Gojia is driven by a strong understanding of modern living and interior environments. His work spans residential and interior-focused projects, with a sharp eye for materials, finishes, and user experience. Known for translating client aspirations into clear design narratives, Rohit brings creativity grounded in practicality. At IDL, he adds a contemporary interior perspective, shaping spaces that are functional, expressive, and deeply liveable.",
@@ -328,7 +328,7 @@ export const milestones = [
     title: "Civic Recognition",
     image: inst.pool,
     text:
-      "A proud cultural and civic recognition was received for contributions to architecture and the built environment, felicitated by government and civic leaders for design impact on Babasaheb Ambedkar Bhavan and other public works.",
+      "A proud cultural and civic recognition was received for contributions to architecture and the built environment, felicitated by government and civic leaders for design impact.",
   },
   {
     year: "2014–15",
@@ -349,7 +349,7 @@ export const milestones = [
     title: "Interarch Design Labs",
     image: inst.palm,
     text:
-      "With over three decades of practice, IDL has grown into a multidisciplinary studio delivering across architecture, interiors, engineering and master planning. From bungalows and corporate campuses to large institutional projects, the firm continues to uphold its founding philosophy — innovative design rooted in tradition, delivered with sensitivity to clients and context.",
+      "With over three decades of practice, IDL has grown into a multidisciplinary studio delivering across architecture, interiors, engineering, and master planning. From bungalows and corporate campuses to large institutional projects, the firm continues to uphold its founding philosophy, innovative design rooted in tradition, delivered with sensitivity to clients and context.",
   },
 ];
 
@@ -393,11 +393,11 @@ export const processPhases = [
    DESIGN APPROACH
    ================================================================= */
 export const designApproach = [
-  { title: "Clarity", body: "Clarity is not minimalism — it is intention. Removing what doesn't matter so the essential can define the space. This is how we create environments that feel calm, intuitive, and timeless." },
-  { title: "Intent", body: "Good design is deliberate. Every material, proportion, and gesture exists for a reason — shaped by how people will live, move, and experience the space." },
-  { title: "People & Place", body: "We start with listening — to the site, the client, and the cultural pulse of a place. Architecture, for us, is not imposed but uncovered through conversation and context." },
-  { title: "Sustainability", body: "We don't chase trends. We design for longevity — combining traditional wisdom with modern engineering to create spaces that breathe with their surroundings rather than resist them." },
-  { title: "Craft & Collaboration", body: "Design at IDL is a collective act. Four partners, one team, many hands — united by curiosity and respect for material craft. We embrace authenticity — the grain of wood, the honesty of joinery, the human mark of craft." },
+  { title: "Clarity", body: "Clarity is not minimalism, it is intention. Removing what doesn't matter so the essential can define the space. This is how we create environments that feel calm, intuitive, and timeless." },
+  { title: "Intent", body: "Good design is deliberate. Every material, proportion, and gesture exists for a reason, shaped by how people will live, move, and experience the space." },
+  { title: "People & Place", body: "We start with listening, to the site, the client, and the cultural pulse of a place. Architecture, for us, is not imposed but uncovered through conversation and context. Our work spans cities and landscapes across India and beyond, yet each project returns to the same question: What does this place need to become its best self?" },
+  { title: "Sustainability", body: "For us, sustainability is a form of respect, for land, material, and time. A building is truly sustainable when it adapts, ages well, and remains meaningful for decades. We combine traditional wisdom with modern engineering to create spaces that breathe with their surroundings rather than resist them. We don't chase trends. We design for longevity." },
+  { title: "Craft & Collaboration", body: "Design at IDL is a collective act. Four partners, one team, many hands, united by curiosity and respect for material craft. Whether we are co-creating with artisans or coordinating with consultants, every project carries the imprint of the people who built it. We embrace authenticity, the grain of wood, the honesty of joinery, the human mark of craft." },
 ];
 
 /* =================================================================
