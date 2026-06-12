@@ -328,7 +328,7 @@ export const milestones = [
     title: "Civic Recognition",
     image: inst.pool,
     text:
-      "A proud cultural and civic recognition was received for contributions to architecture and the built environment, felicitated by government and civic leaders for design impact on Babasaheb Ambedkar Bhavan and other public works.",
+      "A proud cultural and civic recognition was received for contributions to architecture and the built environment, felicitated by government and civic leaders for design impact.",
   },
   {
     year: "2014–15",
@@ -349,7 +349,7 @@ export const milestones = [
     title: "Interarch Design Labs",
     image: inst.palm,
     text:
-      "With over three decades of practice, IDL has grown into a multidisciplinary studio delivering across architecture, interiors, engineering and master planning. From bungalows and corporate campuses to large institutional projects, the firm continues to uphold its founding philosophy — innovative design rooted in tradition, delivered with sensitivity to clients and context.",
+      "With over three decades of practice, IDL has grown into a multidisciplinary studio delivering across architecture, interiors, engineering, and master planning. From bungalows and corporate campuses to large institutional projects, the firm continues to uphold its founding philosophy, innovative design rooted in tradition, delivered with sensitivity to clients and context.",
   },
 ];
 
@@ -393,11 +393,11 @@ export const processPhases = [
    DESIGN APPROACH
    ================================================================= */
 export const designApproach = [
-  { title: "Clarity", body: "Clarity is not minimalism — it is intention. Removing what doesn't matter so the essential can define the space. This is how we create environments that feel calm, intuitive, and timeless." },
-  { title: "Intent", body: "Good design is deliberate. Every material, proportion, and gesture exists for a reason — shaped by how people will live, move, and experience the space." },
-  { title: "People & Place", body: "We start with listening — to the site, the client, and the cultural pulse of a place. Architecture, for us, is not imposed but uncovered through conversation and context." },
-  { title: "Sustainability", body: "We don't chase trends. We design for longevity — combining traditional wisdom with modern engineering to create spaces that breathe with their surroundings rather than resist them." },
-  { title: "Craft & Collaboration", body: "Design at IDL is a collective act. Four partners, one team, many hands — united by curiosity and respect for material craft. We embrace authenticity — the grain of wood, the honesty of joinery, the human mark of craft." },
+  { title: "Clarity", body: "Clarity is not minimalism, it is intention. Removing what doesn't matter so the essential can define the space. This is how we create environments that feel calm, intuitive, and timeless." },
+  { title: "Intent", body: "Good design is deliberate. Every material, proportion, and gesture exists for a reason, shaped by how people will live, move, and experience the space." },
+  { title: "People & Place", body: "We start with listening, to the site, the client, and the cultural pulse of a place. Architecture, for us, is not imposed but uncovered through conversation and context. Our work spans cities and landscapes across India and beyond, yet each project returns to the same question: What does this place need to become its best self?" },
+  { title: "Sustainability", body: "For us, sustainability is a form of respect, for land, material, and time. A building is truly sustainable when it adapts, ages well, and remains meaningful for decades. We combine traditional wisdom with modern engineering to create spaces that breathe with their surroundings rather than resist them. We don't chase trends. We design for longevity." },
+  { title: "Craft & Collaboration", body: "Design at IDL is a collective act. Four partners, one team, many hands, united by curiosity and respect for material craft. Whether we are co-creating with artisans or coordinating with consultants, every project carries the imprint of the people who built it. We embrace authenticity, the grain of wood, the honesty of joinery, the human mark of craft." },
 ];
 
 /* =================================================================
