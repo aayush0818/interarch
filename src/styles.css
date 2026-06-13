@@ -700,6 +700,43 @@ body {
   max-width: 320px;
   margin-top: 16px;
 }
+.v-desc-text--quiet {
+  margin-top: 14px;
+  color: color-mix(in oklab, var(--muted) 80%, transparent);
+  border-top: 1px solid color-mix(in oklab, var(--fg) 12%, transparent);
+  padding-top: 14px;
+  font-style: normal;
+}
+.v-desc-text--quiet em { font-style: italic; color: var(--fg); margin-right: 4px; }
+
+.v-tabs {
+  display: inline-flex;
+  gap: 28px;
+  padding: 0 0 24px 48px;
+  border-bottom: 1px solid color-mix(in oklab, var(--fg) 10%, transparent);
+  margin-bottom: 24px;
+}
+.v-tab {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--muted) 80%, transparent);
+  cursor: none;
+  transition: color var(--t-hover);
+}
+.v-tab.active, .v-tab:hover { color: var(--fg); }
+.v-tab.active { position: relative; }
+.v-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -25px;
+  height: 1px;
+  background: var(--fg);
+}
 .v-desc-btn {
   display: inline-block;
   margin-top: 24px;

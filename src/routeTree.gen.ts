@@ -13,7 +13,6 @@ import { Route as StudioRouteImport } from './routes/studio'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as JournalRouteImport } from './routes/journal'
-import { Route as ExpertiseRouteImport } from './routes/expertise'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StudioTeamRouteImport } from './routes/studio.team'
@@ -26,7 +25,6 @@ import { Route as PracticeJournalRouteImport } from './routes/practice.journal'
 import { Route as PracticeHistoryRouteImport } from './routes/practice.history'
 import { Route as JournalNewsRouteImport } from './routes/journal.news'
 import { Route as JournalAwardsRouteImport } from './routes/journal.awards'
-import { Route as ExpertiseSectorRouteImport } from './routes/expertise.$sector'
 import { Route as PracticeJournalSlugRouteImport } from './routes/practice.journal.$slug'
 import { Route as JournalNewsSlugRouteImport } from './routes/journal.news.$slug'
 
@@ -48,11 +46,6 @@ const PracticeRoute = PracticeRouteImport.update({
 const JournalRoute = JournalRouteImport.update({
   id: '/journal',
   path: '/journal',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ExpertiseRoute = ExpertiseRouteImport.update({
-  id: '/expertise',
-  path: '/expertise',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -115,11 +108,6 @@ const JournalAwardsRoute = JournalAwardsRouteImport.update({
   path: '/awards',
   getParentRoute: () => JournalRoute,
 } as any)
-const ExpertiseSectorRoute = ExpertiseSectorRouteImport.update({
-  id: '/$sector',
-  path: '/$sector',
-  getParentRoute: () => ExpertiseRoute,
-} as any)
 const PracticeJournalSlugRoute = PracticeJournalSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -134,12 +122,10 @@ const JournalNewsSlugRoute = JournalNewsSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
-  '/expertise': typeof ExpertiseRouteWithChildren
   '/journal': typeof JournalRouteWithChildren
   '/practice': typeof PracticeRouteWithChildren
   '/projects': typeof ProjectsRouteWithChildren
   '/studio': typeof StudioRouteWithChildren
-  '/expertise/$sector': typeof ExpertiseSectorRoute
   '/journal/awards': typeof JournalAwardsRoute
   '/journal/news': typeof JournalNewsRouteWithChildren
   '/practice/history': typeof PracticeHistoryRoute
@@ -156,12 +142,10 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
-  '/expertise': typeof ExpertiseRouteWithChildren
   '/journal': typeof JournalRouteWithChildren
   '/practice': typeof PracticeRouteWithChildren
   '/projects': typeof ProjectsRouteWithChildren
   '/studio': typeof StudioRouteWithChildren
-  '/expertise/$sector': typeof ExpertiseSectorRoute
   '/journal/awards': typeof JournalAwardsRoute
   '/journal/news': typeof JournalNewsRouteWithChildren
   '/practice/history': typeof PracticeHistoryRoute
@@ -179,12 +163,10 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
-  '/expertise': typeof ExpertiseRouteWithChildren
   '/journal': typeof JournalRouteWithChildren
   '/practice': typeof PracticeRouteWithChildren
   '/projects': typeof ProjectsRouteWithChildren
   '/studio': typeof StudioRouteWithChildren
-  '/expertise/$sector': typeof ExpertiseSectorRoute
   '/journal/awards': typeof JournalAwardsRoute
   '/journal/news': typeof JournalNewsRouteWithChildren
   '/practice/history': typeof PracticeHistoryRoute
@@ -203,12 +185,10 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/contact'
-    | '/expertise'
     | '/journal'
     | '/practice'
     | '/projects'
     | '/studio'
-    | '/expertise/$sector'
     | '/journal/awards'
     | '/journal/news'
     | '/practice/history'
@@ -225,12 +205,10 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/contact'
-    | '/expertise'
     | '/journal'
     | '/practice'
     | '/projects'
     | '/studio'
-    | '/expertise/$sector'
     | '/journal/awards'
     | '/journal/news'
     | '/practice/history'
@@ -247,12 +225,10 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/contact'
-    | '/expertise'
     | '/journal'
     | '/practice'
     | '/projects'
     | '/studio'
-    | '/expertise/$sector'
     | '/journal/awards'
     | '/journal/news'
     | '/practice/history'
@@ -270,7 +246,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
-  ExpertiseRoute: typeof ExpertiseRouteWithChildren
   JournalRoute: typeof JournalRouteWithChildren
   PracticeRoute: typeof PracticeRouteWithChildren
   ProjectsRoute: typeof ProjectsRouteWithChildren
@@ -306,13 +281,6 @@ declare module '@tanstack/react-router' {
       path: '/journal'
       fullPath: '/journal'
       preLoaderRoute: typeof JournalRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/expertise': {
-      id: '/expertise'
-      path: '/expertise'
-      fullPath: '/expertise'
-      preLoaderRoute: typeof ExpertiseRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -399,13 +367,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof JournalAwardsRouteImport
       parentRoute: typeof JournalRoute
     }
-    '/expertise/$sector': {
-      id: '/expertise/$sector'
-      path: '/$sector'
-      fullPath: '/expertise/$sector'
-      preLoaderRoute: typeof ExpertiseSectorRouteImport
-      parentRoute: typeof ExpertiseRoute
-    }
     '/practice/journal/$slug': {
       id: '/practice/journal/$slug'
       path: '/$slug'
@@ -422,18 +383,6 @@ declare module '@tanstack/react-router' {
     }
   }
 }
-
-interface ExpertiseRouteChildren {
-  ExpertiseSectorRoute: typeof ExpertiseSectorRoute
-}
-
-const ExpertiseRouteChildren: ExpertiseRouteChildren = {
-  ExpertiseSectorRoute: ExpertiseSectorRoute,
-}
-
-const ExpertiseRouteWithChildren = ExpertiseRoute._addFileChildren(
-  ExpertiseRouteChildren,
-)
 
 interface JournalNewsRouteChildren {
   JournalNewsSlugRoute: typeof JournalNewsSlugRoute
@@ -518,7 +467,6 @@ const StudioRouteWithChildren =
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
-  ExpertiseRoute: ExpertiseRouteWithChildren,
   JournalRoute: JournalRouteWithChildren,
   PracticeRoute: PracticeRouteWithChildren,
   ProjectsRoute: ProjectsRouteWithChildren,

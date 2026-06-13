@@ -31,20 +31,6 @@ const NAV: NavItem[] = [
     ],
   },
   {
-    label: "Expertise",
-    to: "/expertise",
-    image: navContact,
-    blurb: "Residential, commercial, institutional, hospitality, industrial, and workplace design.",
-    children: [
-      { label: "Residential", to: "/expertise/$sector", params: { sector: "residential" } },
-      { label: "Commercial", to: "/expertise/$sector", params: { sector: "commercial" } },
-      { label: "Institutional", to: "/expertise/$sector", params: { sector: "institutional" } },
-      { label: "Hospitality", to: "/expertise/$sector", params: { sector: "hospitality" } },
-      { label: "Industrial", to: "/expertise/$sector", params: { sector: "industrial" } },
-      { label: "Workplace", to: "/expertise/$sector", params: { sector: "workplace" } },
-    ],
-  },
-  {
     label: "Studio",
     to: "/studio/about",
     image: navStory,
