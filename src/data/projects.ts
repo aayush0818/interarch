@@ -717,7 +717,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: goldCornetCoverUpload.url,
     gallery: goldCornetBoutiqueGallery,
-    description: "Commercial interior project for Gold Cornet Boutique.",
+    description: "Layered with visual moments, the boutique unfolds like a curated collection — rich in character, immersive in atmosphere and distinctly memorable.",
   },
   {
     slug: "jean-claude-biguine-salon-spa",
@@ -743,7 +743,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: sl3.url,
     gallery: solitaaGallery,
-    description: "",
+    description: "A luxury retail destination designed to highlight the brilliance and prestige of fine diamonds. Refined materials, strategic lighting and understated elegance create an atmosphere of exclusivity and trust.",
   },
   {
     slug: "ratanshi-kheraj-sarees-thane",
@@ -756,7 +756,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: rk3.url,
     gallery: ratanshiKherajGallery,
-    description: "",
+    description: "Designed to celebrate colour, craft and movement, the space unfolds as a contemporary retail experience where every collection is given room to be seen, explored and remembered.",
   },
   {
     slug: "palak-jewellers",
@@ -769,7 +769,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: pj3.url,
     gallery: palakJewellersGallery,
-    description: "",
+    description: "Designed around privacy and precision, the project combines hospitality with professionalism — creating a setting where trust and craftsmanship become part of the experience.",
   },
   {
     slug: "meril-club-house-vapi",
@@ -795,7 +795,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: jp3.url,
     gallery: jadePinkGallery,
-    description: "",
+    description: "Conceived as a contemporary retail experience, the space encourages discovery through openness, rhythm and display. Every corner is designed to let colour, craftsmanship and movement become part of the shopping journey.",
   },
   {
     slug: "monster",
@@ -808,7 +808,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: mo3.url,
     gallery: monsterGallery,
-    description: "",
+    description: "Designed as an extension of the brand itself, the space blurs the line between workplace and experience. Bold graphics, layered lighting and collaborative zones create an environment that feels immersive and unmistakably distinct.",
   },
   {
     slug: "noir-residence",
@@ -834,7 +834,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: bg3.url,
     gallery: bodyGoalsGallery,
-    description: "",
+    description: "The project reimagines fitness through clarity and focus — balancing high-performance zones with a clean spatial rhythm that encourages movement without distraction.",
   },
   {
     slug: "aditya-birla-cancer-center",
