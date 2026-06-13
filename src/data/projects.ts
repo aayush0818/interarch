@@ -756,7 +756,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: rk3.url,
     gallery: ratanshiKherajGallery,
-    description: "",
+    description: "Designed to celebrate colour, craft and movement, the space unfolds as a contemporary retail experience where every collection is given room to be seen, explored and remembered.",
   },
   {
     slug: "palak-jewellers",
