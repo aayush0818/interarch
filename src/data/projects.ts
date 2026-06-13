@@ -795,7 +795,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: jp3.url,
     gallery: jadePinkGallery,
-    description: "",
+    description: "Conceived as a contemporary retail experience, the space encourages discovery through openness, rhythm and display. Every corner is designed to let colour, craftsmanship and movement become part of the shopping journey.",
   },
   {
     slug: "monster",
