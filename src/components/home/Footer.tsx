@@ -3,7 +3,7 @@ import logo from "@/assets/idl-logo.png";
 
 const navLinks = [
   { label: "Projects", to: "/projects" },
-  { label: "Expertise", to: "/expertise" },
+  
   { label: "Studio", to: "/studio/about" },
   { label: "Journal", to: "/journal" },
   { label: "Contact", to: "/contact" },
