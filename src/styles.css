@@ -437,7 +437,7 @@ body {
   z-index: 150;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #6f7a73;
+  background: #4a3b32;
   color: #f5ede0;
   overflow: hidden;
 }
@@ -451,11 +451,11 @@ body {
   min-height: 0;
 }
 .idl-mega-left {
-  background: #6f7a73;
+  background: #4a3b32;
   border-right: 1px solid rgba(245, 237, 224, 0.08);
 }
 .idl-mega-right {
-  background: #5f6a64;
+  background: #3f3129;
 }
 .idl-mega-eyebrow {
   font-family: var(--sans);
@@ -495,7 +495,7 @@ body {
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  background: #ffffff;
+  background: #e8dfd5;
   padding: 18px;
   border-radius: 2px;
 }
@@ -504,7 +504,7 @@ body {
   height: 100%;
   object-fit: contain;
   display: block;
-  background: #ffffff;
+  background: #e8dfd5;
 }
 
 
