@@ -743,7 +743,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: sl3.url,
     gallery: solitaaGallery,
-    description: "",
+    description: "A luxury retail destination designed to highlight the brilliance and prestige of fine diamonds. Refined materials, strategic lighting and understated elegance create an atmosphere of exclusivity and trust.",
   },
   {
     slug: "ratanshi-kheraj-sarees-thane",
