@@ -483,7 +483,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: de3.url,
     gallery: divyaEnclaveGallery,
-    description: "",
+    description: "A community-centric clubhouse that brings leisure, wellness, and social interaction together. Designed as an extension of everyday living, it offers spaces that encourage gathering and recreation.",
   },
   {
     slug: "adarsh-vidya-mandir-rajasthan",
@@ -561,7 +561,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: energizeResortCoverUpload.url,
     gallery: energizeResortNashikGallery,
-    description: "Hospitality architecture project in Nashik — Energise Boutique Resorts.",
+    description: "A hospitality destination designed around relaxation, recreation, and connection with nature. The project creates immersive experiences through thoughtful planning, landscape integration, and inviting communal spaces.",
   },
   {
     slug: "meril-bld-5-and-6",
@@ -600,7 +600,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: mvvplHotel1.url,
     gallery: [mvvplHotel1.url, mvvplHotel2.url, mvvplHotel3.url],
-    description: "Hospitality architecture set into a mountain horizon — twin curvilinear wings frame a central pool court, with palm-lined terraces and circular skylights crowning the roofscape.",
+    description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
   },
   {
     slug: "mvvpl-clubhouse",
@@ -613,7 +613,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: mvvplClub1.url,
     gallery: [mvvplClub1.url, mvvplClub2.url, mvvplClub3.url, mvvplClub4.url, mvvplClub5.url],
-    description: "Hospitality clubhouse with a long, low-slung pavilion of timber-clad mullions and arched glazing, opening onto a flowering landscape and a sheltered water court.",
+    description: "A vibrant social destination designed to foster community and shared experiences. The architecture blends recreation, wellness, and gathering spaces into a cohesive lifestyle environment.",
   },
   {
     slug: "emerald-reverie-classical-penthouse",
@@ -782,7 +782,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: mc3.url,
     gallery: merilGallery,
-    description: "",
+    description: "A wellness-focused clubhouse designed as a retreat within the workplace ecosystem. Through landscape integration, leisure amenities, and carefully crafted spaces, it promotes balance, relaxation, and community interaction.",
   },
   {
     slug: "jade-pink-ahmedabad",
