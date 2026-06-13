@@ -769,7 +769,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: pj3.url,
     gallery: palakJewellersGallery,
-    description: "",
+    description: "Designed around privacy and precision, the project combines hospitality with professionalism — creating a setting where trust and craftsmanship become part of the experience.",
   },
   {
     slug: "meril-club-house-vapi",
