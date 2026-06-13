@@ -834,7 +834,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: bg3.url,
     gallery: bodyGoalsGallery,
-    description: "",
+    description: "The project reimagines fitness through clarity and focus — balancing high-performance zones with a clean spatial rhythm that encourages movement without distraction.",
   },
   {
     slug: "aditya-birla-cancer-center",
