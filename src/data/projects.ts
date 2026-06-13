@@ -808,7 +808,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: mo3.url,
     gallery: monsterGallery,
-    description: "",
+    description: "Designed as an extension of the brand itself, the space blurs the line between workplace and experience. Bold graphics, layered lighting and collaborative zones create an environment that feels immersive and unmistakably distinct.",
   },
   {
     slug: "noir-residence",
