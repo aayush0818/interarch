@@ -65,51 +65,81 @@ function ProjectPage() {
           </section>
         )}
 
-        {/* Photo essay — driven by each project's own gallery.
-            Pattern repeats: [full, pair, full, pair, ...] then trailing singles. */}
-        <section className="idlx-mono-photo">
-          {(() => {
-            const blocks: React.ReactNode[] = [];
-            let i = 0;
-            let key = 0;
-            let useFull = true;
-            while (i < gallery.length) {
-              if (useFull) {
-                blocks.push(
-                  <ClipReveal key={key++}>
-                    <div className="idlx-mono-fig idlx-mono-fig--full">
-                      <img src={gallery[i]} alt={`${project.name} — ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
-                    </div>
-                  </ClipReveal>
-                );
-                i += 1;
-              } else if (i + 1 < gallery.length) {
-                blocks.push(
-                  <div className="idlx-mono-pair" key={key++}>
-                    <ClipReveal>
-                      <div className="idlx-mono-fig"><img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" /></div>
-                    </ClipReveal>
-                    <ClipReveal delay={0.1}>
-                      <div className="idlx-mono-fig"><img src={gallery[i + 1]} alt={`${project.name}`} loading="eager" decoding="async" /></div>
-                    </ClipReveal>
+        {/* Photo essay — facilities (when defined) or default gallery rhythm. */}
+        {project.facilities && project.facilities.length > 0 ? (
+          <section className="idlx-mono-photo idlx-facilities">
+            {project.facilities.map((f, fi) => (
+              <div key={f.name} className="idlx-facility">
+                <Reveal>
+                  <header className="idlx-facility-head">
+                    <span className="idlx-facility-index">— Facility · {String(fi + 1).padStart(2, "0")}</span>
+                    <h2 className="idlx-facility-name">{f.name}</h2>
+                    <p className="idlx-facility-desc">{f.description}</p>
+                  </header>
+                </Reveal>
+                {f.images && f.images.length > 0 && (
+                  <div className="idlx-facility-media">
+                    {f.images.map((src, ii) => {
+                      const isFull = ii % 3 === 0;
+                      return (
+                        <ClipReveal key={ii} delay={(ii % 3) * 0.05}>
+                          <div className={`idlx-mono-fig${isFull ? " idlx-mono-fig--full" : ""}`}>
+                            <img src={src} alt={`${f.name} — ${String(ii + 1).padStart(2, "0")}`} loading="lazy" decoding="async" />
+                          </div>
+                        </ClipReveal>
+                      );
+                    })}
                   </div>
-                );
-                i += 2;
-              } else {
-                blocks.push(
-                  <ClipReveal key={key++}>
-                    <div className="idlx-mono-fig idlx-mono-fig--inset">
-                      <img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" style={{ aspectRatio: "16/10", objectFit: "cover" }} />
+                )}
+              </div>
+            ))}
+          </section>
+        ) : (
+          <section className="idlx-mono-photo">
+            {(() => {
+              const blocks: React.ReactNode[] = [];
+              let i = 0;
+              let key = 0;
+              let useFull = true;
+              while (i < gallery.length) {
+                if (useFull) {
+                  blocks.push(
+                    <ClipReveal key={key++}>
+                      <div className="idlx-mono-fig idlx-mono-fig--full">
+                        <img src={gallery[i]} alt={`${project.name} — ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+                      </div>
+                    </ClipReveal>
+                  );
+                  i += 1;
+                } else if (i + 1 < gallery.length) {
+                  blocks.push(
+                    <div className="idlx-mono-pair" key={key++}>
+                      <ClipReveal>
+                        <div className="idlx-mono-fig"><img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" /></div>
+                      </ClipReveal>
+                      <ClipReveal delay={0.1}>
+                        <div className="idlx-mono-fig"><img src={gallery[i + 1]} alt={`${project.name}`} loading="eager" decoding="async" /></div>
+                      </ClipReveal>
                     </div>
-                  </ClipReveal>
-                );
-                i += 1;
+                  );
+                  i += 2;
+                } else {
+                  blocks.push(
+                    <ClipReveal key={key++}>
+                      <div className="idlx-mono-fig idlx-mono-fig--inset">
+                        <img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" style={{ aspectRatio: "16/10", objectFit: "cover" }} />
+                      </div>
+                    </ClipReveal>
+                  );
+                  i += 1;
+                }
+                useFull = !useFull;
               }
-              useFull = !useFull;
-            }
-            return blocks;
-          })()}
-        </section>
+              return blocks;
+            })()}
+          </section>
+        )}
+
 
         {/* Pager */}
         <nav className="idlx-pager">
