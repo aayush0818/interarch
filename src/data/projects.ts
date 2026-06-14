@@ -565,7 +565,7 @@ export const projects: Project[] = [
   },
   {
     slug: "meril-bld-5-and-6",
-    name: "Meril Bld 5&6",
+    name: "Meril Park 2\n",
     sector: "Industrial",
     location: "",
     year: "",
