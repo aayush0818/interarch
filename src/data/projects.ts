@@ -444,7 +444,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: ma3.url,
     gallery: merilAcademyGallery,
-    description: "Institutional architecture project in Vapi for Meril Academy.",
+    description: "A contemporary learning environment shaped by fluid architecture, openness, and connection. Designed to inspire growth and collaboration, the academy creates spaces that nurture education beyond the classroom.",
   },
   {
     slug: "d-cp-office-belapur",
@@ -457,7 +457,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: dcp1.url,
     gallery: dcpOfficeBelapurGallery,
-    description: "Institutional architecture project in Belapur for D CP Office.",
+    description: "A modern civic landmark that reflects transparency, authority, and public service. The design combines operational efficiency with a strong architectural identity suited for a contemporary urban institution.",
   },
   {
     slug: "apj-abdul-kalam-auditorium-pune",
@@ -470,7 +470,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: apj1.url,
     gallery: apjAuditoriumGallery,
-    description: "",
+    description: "A purpose-built venue designed to enhance learning, dialogue, and large-scale gatherings. Its thoughtful planning ensures comfort, visibility, and a seamless audience experience.",
   },
   {
     slug: "divya-enclave",
@@ -496,7 +496,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: avm1.url,
     gallery: adarshVidyaMandirGallery,
-    description: "An institutional school campus in Rajasthan composed with rhythmic brick piers, calm plastered volumes and a vertical green spine — a warm, civic-scaled learning environment.",
+    description: "Designed around accessibility, comfort, and learning, the school creates a nurturing educational environment where architecture supports curiosity, growth, and future aspirations.",
   },
   {
     slug: "iig-institute-colaba",
@@ -509,7 +509,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: iigColaba1.url,
     gallery: iigInstituteColabaGallery,
-    description: "A stone-clad institutional tower with cantilevered volumes, vertical fins and warm interior glow — a confident urban landmark within the Colaba skyline.",
+    description: "A contemporary academic institution designed to support innovation, research, and professional development. The architecture fosters collaboration while establishing a strong educational presence within the urban context.",
   },
   {
     slug: "gandhi-peace-centre-pune",
@@ -522,7 +522,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: gandhiPeace1.url,
     gallery: gandhiPeaceCentrePuneGallery,
-    description: "A civic centre crowned by a sweeping elliptical canopy, screen-printed murals of Gandhian heritage and cascading greens — a contemplative institutional landmark for Pune.",
+    description: "An institution dedicated to reflection, dialogue, and cultural preservation. The architecture expresses openness and harmony while creating meaningful spaces for learning, exhibitions, and community engagement.",
   },
   {
     slug: "via-auditorium-vapi",
@@ -535,7 +535,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: viaVapi1.url,
     gallery: viaAuditoriumVapiGallery,
-    description: "An auditorium for the Vapi Industries Association — a sculpted gabled volume in stone and glass, framed by deep fluted piers and a quiet landscape edge.",
+    description: "A cultural destination designed to bring communities together through shared experiences. The architecture balances functionality, acoustics, and presence to create a memorable venue for performance and engagement.",
   },
   {
     slug: "quest-ajay-seth",
@@ -548,7 +548,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: quest67.url,
     gallery: questAjaySethGallery,
-    description: "A hillside institutional pavilion in dressed stone and arched colonnades — twin volumes set against the Sahyadris, with luminous interiors, double-height staircases and a generous community floor for gathering, reflection and play.",
+    description: "Set within a natural landscape, the project combines timeless architectural character with modern functionality. Designed as a place for interaction, learning, and retreat, it offers a balanced and inspiring environment.",
   },
   {
     slug: "energize-resort-nashik",
@@ -847,7 +847,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: abcc1.url,
     gallery: adityaBirlaCancerCenterGallery,
-    description: "",
+    description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
   },
   {
     slug: "shree-lallubhai-seth-arogya-mandir-savarkundla",
@@ -860,7 +860,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: bharoso1.url,
     gallery: bharosoSavarkundlaGallery,
-    description: "A community hospital — 'Bharoso' — composed with a rhythmic brick-and-stone facade, layered volumes and a softly lit entry, anchoring trust and care within a civic-scale presence.",
+    description: "The architecture balances operational efficiency with a reassuring visual identity, creating an environment built around care and trust.",
   },
   {
     slug: "metro-hospital-delhi",
@@ -873,7 +873,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: metroDel1.url,
     gallery: metroHospitalDelhiGallery,
-    description: "A multi-speciality hospital expressed through floor-to-ceiling glazing, slender vertical fins and a green-fringed crown — a contemporary urban landmark designed for clarity, calm and round-the-clock care.",
+    description: "A contemporary healthcare facility designed to combine medical efficiency with a welcoming and human-centred environment.",
   },
   {
     slug: "tata-rallis-bangalore",
@@ -886,7 +886,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: tataRallis2.url,
     gallery: tataRallisBangaloreGallery,
-    description: "An institutional campus shaped by a tilted glazed prism, a deep coffered porte-cochère and rhythmic stone facades — a confident civic-scale workplace balancing weight, light and landscape.",
+    description: "A research-driven campus designed to encourage innovation, collaboration, and scientific advancement. The architecture brings together efficiency, flexibility, and contemporary design to support future-focused work environments.",
   },
 ];
 
