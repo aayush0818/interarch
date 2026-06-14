@@ -78,7 +78,7 @@ import apj6 from "@/assets/apj-auditorium-6.jpg.asset.json";
 import apj7 from "@/assets/apj-auditorium-7.jpg.asset.json";
 import apj8 from "@/assets/apj-auditorium-8.jpg.asset.json";
 
-// Meril Bld 5&6 (Architecture · Industrial)
+// Meril Park 2 (Architecture · Industrial)
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
 import mb56_2 from "@/assets/meril-bld-5-6-2.png.asset.json";
 
@@ -565,7 +565,7 @@ export const projects: Project[] = [
   },
   {
     slug: "meril-bld-5-and-6",
-    name: "Meril Bld 5&6",
+    name: "Meril Park 2\n",
     sector: "Industrial",
     location: "",
     year: "",

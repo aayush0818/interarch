@@ -2184,7 +2184,7 @@ a:hover .img-reveal-wrap .img-parallax {
 .idlx-pcard2-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.4s var(--idlx-ease); }
 .idlx-pcard2:hover .idlx-pcard2-img img { transform: scale(1.04); }
 .idlx-pcard2-cap { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-top: 18px; }
-.idlx-pcard2-name { font-family: var(--serif); font-weight: 300; font-size: clamp(20px, 1.8vw, 26px); color: var(--idlx-ink); }
+.idlx-pcard2-name { font-family: var(--serif); font-weight: 300; font-size: clamp(20px, 1.8vw, 26px); color: var(--idlx-ink); white-space: pre-line; }
 .idlx-pcard2-meta { font-family: var(--sans); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--idlx-mute); white-space: nowrap; }
 @media (max-width: 900px) {
   .idlx-archive { grid-template-columns: 1fr; }
