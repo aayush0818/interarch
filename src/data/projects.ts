@@ -435,6 +435,15 @@ import mapleGateRev02 from "@/assets/maple-main-gate-rev1-02.jpeg.asset.json";
 import mapleGateAerial from "@/assets/maple-main-gate-aerial.jpeg.asset.json";
 import mapleGateNight from "@/assets/maple-main-gate-night.jpeg.asset.json";
 import mapleNeedlePlant from "@/assets/maple-needle-plant.jpeg.asset.json";
+import mapleNeedle2A from "@/assets/maple-needle-plant-2a.jpeg.asset.json";
+import mapleNeedle3A from "@/assets/maple-needle-plant-3a.jpeg.asset.json";
+import mapleSales01 from "@/assets/maple-sales-01.jpg.asset.json";
+import mapleSales02 from "@/assets/maple-sales-02.jpeg.asset.json";
+import mapleSales03 from "@/assets/maple-sales-03.jpg.asset.json";
+import mapleSales04 from "@/assets/maple-sales-04.jpg.asset.json";
+import mapleSales05 from "@/assets/maple-sales-05.jpeg.asset.json";
+import mapleWarehouse01 from "@/assets/maple-warehouse-01.jpeg.asset.json";
+import mapleWarehouse02 from "@/assets/maple-warehouse-02.jpeg.asset.json";
 
 export type Facility = {
   name: string;
