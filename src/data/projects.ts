@@ -82,6 +82,15 @@ import apj8 from "@/assets/apj-auditorium-8.jpg.asset.json";
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
 import mb56_2 from "@/assets/meril-bld-5-6-2.png.asset.json";
 
+// Meril Park 1 (Architecture · Industrial)
+import mp1_front from "@/assets/meril-park-1-main-building-front-view-new.jpg.asset.json";
+import mp1_side from "@/assets/meril-park-1-main-building-side-view.jpg.asset.json";
+import mp1_night from "@/assets/meril-park-1-night-view-main-bulding.jpg.asset.json";
+import mp1_4 from "@/assets/meril-park-1-4.jpg.asset.json";
+import mp1_5 from "@/assets/meril-park-1-5.jpg.asset.json";
+import mp1_6 from "@/assets/meril-park-1-6.jpg.asset.json";
+import mp1_reception from "@/assets/meril-park-1-reception-4.jpg.asset.json";
+
 // Pidilite R&D Centre — Taloja (Architecture · Industrial)
 import pidilite1 from "@/assets/pidilite-rd-taloja-1.jpg.asset.json";
 import pidilite2 from "@/assets/pidilite-rd-taloja-2.jpg.asset.json";
