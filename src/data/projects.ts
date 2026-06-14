@@ -596,7 +596,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: mb56_1.url,
     gallery: merilBld56Gallery,
-    description: "",
+    description: "The architecture reflects a forward-looking corporate culture, combining openness, functionality, and a strong visual presence.",
   },
   {
     slug: "pidilite-rd-centre-taloja",
@@ -609,7 +609,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: pidilite3.url,
     gallery: [pidilite1.url, pidilite2.url, pidilite3.url, pidilite4.url, pidilite5.url],
-    description: "Industrial architecture project — Pidilite Research & Development Centre at Taloja. A campus of brick-clad volumes arranged around a central landscaped court, linked by colonnaded walkways and framed by glazed laboratory wings.",
+    description: "Dynamic volumes, elevated forms, and layered façades create a workplace that reflects experimentation, creativity, and technological advancement.",
   },
   {
     slug: "mvvpl-hilltop-hotel",
