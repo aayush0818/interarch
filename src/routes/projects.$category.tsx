@@ -19,6 +19,9 @@ type ArchitectureFilter = (typeof architectureSectors)[number];
 type InteriorFilter = (typeof interiorSectors)[number];
 
 export const Route = createFileRoute("/projects/$category")({
+  validateSearch: (search: Record<string, unknown>): { sector?: string } => ({
+    sector: typeof search.sector === "string" ? search.sector.toLowerCase() : undefined,
+  }),
   beforeLoad: ({ params }) => {
     const c = params.category.toLowerCase();
     if (c !== "architecture" && c !== "interiors") throw redirect({ to: "/projects" });
@@ -36,18 +39,22 @@ export const Route = createFileRoute("/projects/$category")({
 
 function CategoryPage() {
   const { category } = Route.useParams();
+  const { sector } = Route.useSearch();
   const cat = category.toLowerCase() as "architecture" | "interiors";
   const list = projectsByCategory(cat);
   const hero = cat === "architecture" ? work1 : work3;
   const other = cat === "architecture" ? "interiors" : "architecture";
-  const [interiorFilter, setInteriorFilter] = useState<InteriorFilter>("all");
-  const [architectureFilter, setArchitectureFilter] = useState<ArchitectureFilter>("all");
+  const initialInterior: InteriorFilter = (interiorSectors as readonly string[]).includes(sector ?? "") ? (sector as InteriorFilter) : "all";
+  const initialArch: ArchitectureFilter = (architectureSectors as readonly string[]).includes(sector ?? "") ? (sector as ArchitectureFilter) : "all";
+  const [interiorFilter, setInteriorFilter] = useState<InteriorFilter>(initialInterior);
+  const [architectureFilter, setArchitectureFilter] = useState<ArchitectureFilter>(initialArch);
 
   const filteredList = useMemo(() => {
-    const bySector = (items: Project[], sector: string) => items.filter((project) => project.sector.toLowerCase() === sector);
+    const bySector = (items: Project[], s: string) => items.filter((project) => project.sector.toLowerCase() === s);
     if (cat === "interiors") return interiorFilter === "all" ? list : bySector(list, interiorFilter);
     return architectureFilter === "all" ? list : bySector(list, architectureFilter);
   }, [architectureFilter, cat, interiorFilter, list]);
+
 
   const layout = (i: number): "wide" | "narrow" | "tall" => {
     const m = i % 5;
