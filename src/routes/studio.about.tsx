@@ -3,7 +3,7 @@ import { CinematicHero } from "@/components/motion/CinematicHero";
 import { MaskText } from "@/components/motion/MaskText";
 import { Reveal } from "@/components/motion/Reveal";
 import { Marquee } from "@/components/motion/Marquee";
-import { realImages } from "@/data/realImages";
+
 
 import heroImg from "@/assets/idl/PAB8838-HDR.jpg.asset.json";
 import cultureImg from "@/assets/idl/PAB9126-HDR.jpg.asset.json";
