@@ -28,24 +28,28 @@ const groups: Group[] = [
     items: [
       {
         name: "Residential",
+        sectorSlug: "residential",
         tagline: "Homes shaped around people, light and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
         img: res.exterior,
       },
       {
         name: "Commercial",
+        sectorSlug: "commercial",
         tagline: "Workplaces built to evolve with the businesses they hold.",
         feature: { name: "Monster HQ", location: "Mumbai" },
         img: com.reception,
       },
       {
         name: "Hospitality",
+        sectorSlug: "hospitality",
         tagline: "Destinations remembered long after the stay.",
         feature: { name: "Energize Resort", location: "Nashik" },
         img: realImages.brand.hospitalityPoolsideResort,
       },
       {
         name: "Institutional",
+        sectorSlug: "institutional",
         tagline: "Civic architecture built to last generations.",
         feature: { name: "Babasaheb Ambedkar Bhavan", location: "Mumbai" },
         img: inst.aerial,
@@ -59,12 +63,14 @@ const groups: Group[] = [
     items: [
       {
         name: "Residential",
+        sectorSlug: "residential",
         tagline: "Interiors shaped by the lives lived within.",
         feature: { name: "Atelier Residence", location: "Mumbai" },
         img: res.gallery,
       },
       {
         name: "Commercial",
+        sectorSlug: "commercial",
         tagline: "Workplaces where culture becomes spatial.",
         feature: { name: "Jade Pink Boutique", location: "Mumbai" },
         img: com.lounge,
