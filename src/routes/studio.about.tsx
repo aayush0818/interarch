@@ -72,6 +72,20 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Full bleed image */}
+      <div className="idlx-split">
+        <div className="idlx-split-img">
+          <Reveal>
+            <img src={boardroomImg.url} alt="IDL studio boardroom" loading="lazy" />
+          </Reveal>
+        </div>
+        <div className="idlx-split-img">
+          <Reveal>
+            <img src={mvvImg.url} alt="IDL studio interior detail" loading="lazy" />
+          </Reveal>
+        </div>
+      </div>
+
       {/* Pullquote */}
       <section className="idlx-pullquote idlx-section--bordered">
         <Reveal>
