@@ -6,10 +6,7 @@ const { institutional: inst, residential: res, commercial: com } = realImages;
 
 type Vertical = {
   name: string;
-  headline: string;
-  intro: string;
-  onLabel: string;
-  onText: string;
+  tagline: string;
   feature: { name: string; location: string };
   img: string;
 };
@@ -29,45 +26,25 @@ const groups: Group[] = [
     items: [
       {
         name: "Residential",
-        headline: "Spaces that breathe with the rhythm of life.",
-        intro:
-          "A home is never just a structure. It is where memories are built over decades and where architecture quietly shapes everyday life. We design residences that balance aspiration with practicality.",
-        onLabel: "On residential.",
-        onText:
-          "Homes shaped around people, routines and place — balancing privacy, openness and natural light to feel timeless and deeply personal.",
+        tagline: "Homes shaped around people, light and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
         img: res.exterior,
       },
       {
         name: "Commercial",
-        headline: "Buildings that evolve with the work they hold.",
-        intro:
-          "Businesses change. Buildings must keep pace. Our commercial projects support growth and adaptability while shaping a clear architectural identity for the organisations they serve.",
-        onLabel: "On commercial.",
-        onText:
-          "From offices to mixed-use developments, we create environments that support business growth while delivering a lasting architectural presence.",
+        tagline: "Workplaces built to evolve with the businesses they hold.",
         feature: { name: "Monster HQ", location: "Mumbai" },
         img: com.reception,
       },
       {
         name: "Hospitality",
-        headline: "Destinations remembered long after the stay.",
-        intro:
-          "The best hospitality spaces stay with you. Through planning, atmosphere and detail, we craft destinations that feel welcoming, intuitive and deeply tied to the experience they hold.",
-        onLabel: "On hospitality.",
-        onText:
-          "Compositions of arrival, connection and belonging — architecture that feels distinctive yet quietly timeless.",
+        tagline: "Destinations remembered long after the stay.",
         feature: { name: "Energize Resort", location: "Nashik" },
         img: realImages.brand.hospitalityPoolsideResort,
       },
       {
         name: "Institutional",
-        headline: "Civic spaces built to last generations.",
-        intro:
-          "Institutional architecture carries a singular responsibility — to serve thousands, perform consistently, and stay relevant across decades. We design for enduring public use.",
-        onLabel: "On institutional.",
-        onText:
-          "Educational, civic and public buildings rooted in functionality, accessibility and enduring value for the communities they serve.",
+        tagline: "Civic architecture built to last generations.",
         feature: { name: "Babasaheb Ambedkar Bhavan", location: "Mumbai" },
         img: inst.aerial,
       },
@@ -80,23 +57,13 @@ const groups: Group[] = [
     items: [
       {
         name: "Residential",
-        headline: "Interiors shaped by the lives lived within.",
-        intro:
-          "Great interiors are not defined by trends but by how naturally they become part of everyday life. Our residential interiors are designed around the people who live in them.",
-        onLabel: "On residential.",
-        onText:
-          "Through planning, material richness and detail, we create homes that feel comfortable, refined and unmistakably personal.",
+        tagline: "Interiors shaped by the lives lived within.",
         feature: { name: "Atelier Residence", location: "Mumbai" },
         img: res.gallery,
       },
       {
         name: "Commercial",
-        headline: "Workplaces where culture becomes spatial.",
-        intro:
-          "A workplace is more than desks and meeting rooms. It reflects culture, shapes collaboration, and frames how people experience an organisation every day.",
-        onLabel: "On commercial.",
-        onText:
-          "Workplaces and retail environments that turn brand values into spatial experiences — balancing function, culture and a strong visual identity.",
+        tagline: "Workplaces where culture becomes spatial.",
         feature: { name: "Jade Pink Boutique", location: "Mumbai" },
         img: com.lounge,
       },
@@ -116,81 +83,28 @@ export function Verticals() {
 
   return (
     <section className="vx-section">
-      <div className="vx-grid">
-        {/* LEFT — discipline + sector + CTA */}
-        <aside className="vx-rail">
-          <nav className="vx-rail-top">
-            <div className="vx-block">
-              <span className="vx-eyebrow">Discipline</span>
-              <div className="vx-discipline">
-                {groups.map((g, i) => (
-                  <button
-                    key={g.key}
-                    type="button"
-                    className={`vx-discipline-btn${i === groupIdx ? " is-active" : ""}`}
-                    data-hover
-                    onClick={() => {
-                      setGroupIdx(i);
-                      setActive(0);
-                    }}
-                  >
-                    {g.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="vx-block vx-block--sector">
-              <span className="vx-eyebrow">Sector</span>
-              <div className="vx-sector-list">
-                {items.map((it, i) => (
-                  <button
-                    key={`${group.key}-${it.name}`}
-                    type="button"
-                    className={`vx-sector-btn${i === idx ? " is-active" : ""}`}
-                    data-hover
-                    onMouseEnter={() => setActive(i)}
-                    onFocus={() => setActive(i)}
-                    onClick={() => setActive(i)}
-                  >
-                    {it.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </nav>
-
-          <a className="vx-cta" href={group.href} data-hover>
-            <span>Explore {group.label}</span>
-            <span className="vx-cta-rule" aria-hidden />
-          </a>
-        </aside>
-
-        {/* MIDDLE — editorial copy */}
-        <div className="vx-copy">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`${group.key}-${current.name}-copy`}
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={FADE}
-              className="vx-copy-inner"
+      <header className="vx-head">
+        <span className="vx-eyebrow">( 02 ) — Disciplines</span>
+        <div className="vx-disc-row">
+          {groups.map((g, i) => (
+            <button
+              key={g.key}
+              type="button"
+              className={`vx-disc-tab${i === groupIdx ? " is-active" : ""}`}
+              data-hover
+              onClick={() => {
+                setGroupIdx(i);
+                setActive(0);
+              }}
             >
-              <span className="vx-num">( {String(idx + 1).padStart(2, "0")} )</span>
-              <h2 className="vx-headline">{current.headline}</h2>
-              <p className="vx-intro">{current.intro}</p>
-
-              <div className="vx-on">
-                <p className="vx-on-text">
-                  <strong className="vx-on-label">{current.onLabel}</strong> {current.onText}
-                </p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
+              {g.label}
+            </button>
+          ))}
         </div>
+      </header>
 
-        {/* RIGHT — dominant image */}
+      <div className="vx-grid">
+        {/* LEFT — dominant image */}
         <div className="vx-media">
           <div className="vx-media-frame">
             <AnimatePresence mode="wait">
@@ -202,16 +116,71 @@ export function Verticals() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                width={1200}
-                height={1500}
+                width={1400}
+                height={1600}
                 loading="lazy"
               />
             </AnimatePresence>
           </div>
-          <div className="vx-media-badge">
-            <p className="vx-media-badge-name">{current.feature.name}</p>
-            <p className="vx-media-badge-loc">{current.feature.location}</p>
-          </div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`${group.key}-${current.name}-badge`}
+              className="vx-media-badge"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={FADE}
+            >
+              <p className="vx-media-badge-name">{current.feature.name}</p>
+              <p className="vx-media-badge-loc">{current.feature.location}</p>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* RIGHT — sector list */}
+        <div className="vx-list">
+          <ul className="vx-sectors">
+            {items.map((it, i) => {
+              const isActive = i === idx;
+              return (
+                <li key={`${group.key}-${it.name}`} className={`vx-row${isActive ? " is-active" : ""}`}>
+                  <button
+                    type="button"
+                    className="vx-row-btn"
+                    data-hover
+                    onMouseEnter={() => setActive(i)}
+                    onFocus={() => setActive(i)}
+                    onClick={() => setActive(i)}
+                  >
+                    <span className="vx-row-num">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="vx-row-body">
+                      <span className="vx-row-name">{it.name}</span>
+                      <AnimatePresence initial={false}>
+                        {isActive && (
+                          <motion.span
+                            key="tag"
+                            className="vx-row-tag"
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={FADE}
+                          >
+                            {it.tagline}
+                          </motion.span>
+                        )}
+                      </AnimatePresence>
+                    </span>
+                    <span className="vx-row-rule" aria-hidden />
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+
+          <a className="vx-cta" href={group.href} data-hover>
+            <span>Explore {group.label}</span>
+            <span className="vx-cta-rule" aria-hidden />
+          </a>
         </div>
       </div>
     </section>
