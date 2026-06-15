@@ -812,7 +812,8 @@ body {
 
 @media (max-width: 1024px) {
   .vx-grid { grid-template-columns: 1fr; gap: 48px; }
-  .vx-list { position: static; }
+  .vx-list, .vx-media { position: static; }
+  .vx-media { order: -1; }
   .vx-head { flex-direction: column; align-items: flex-start; gap: 20px; }
 }
 
