@@ -233,8 +233,8 @@ function AboutPage() {
 
       {/* Strip */}
       <div className="idlx-split">
-        <div className="idlx-split-img"><img src={teamHero} alt="The leadership" /></div>
-        <div className="idlx-split-img"><img src={work2} alt="Architectural detail" /></div>
+        <div className="idlx-split-img"><img src={receptionImg.url} alt="Studio reception" loading="lazy" /></div>
+        <div className="idlx-split-img"><img src={cafeImg.url} alt="Studio cafe and breakout" loading="lazy" /></div>
       </div>
 
       {/* CTA */}
