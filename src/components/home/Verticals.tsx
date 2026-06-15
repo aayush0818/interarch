@@ -91,29 +91,28 @@ export function Verticals() {
 
   return (
     <section className="vx-section">
-      <header className="vx-head">
-        <span className="vx-eyebrow">( 02 ) — Disciplines</span>
-        <div className="vx-disc-row">
-          {groups.map((g, i) => (
-            <button
-              key={g.key}
-              type="button"
-              className={`vx-disc-tab${i === groupIdx ? " is-active" : ""}`}
-              data-hover
-              onClick={() => {
-                setGroupIdx(i);
-                setActive(0);
-              }}
-            >
-              {g.label}
-            </button>
-          ))}
-        </div>
-      </header>
-
       <div className="vx-grid">
-        {/* LEFT — sector list */}
+        {/* LEFT — discipline tabs + sector list */}
         <div className="vx-list">
+          <span className="vx-eyebrow">( 02 ) — Disciplines</span>
+
+          <div className="vx-disc-row">
+            {groups.map((g, i) => (
+              <button
+                key={g.key}
+                type="button"
+                className={`vx-disc-tab${i === groupIdx ? " is-active" : ""}`}
+                data-hover
+                onClick={() => {
+                  setGroupIdx(i);
+                  setActive(0);
+                }}
+              >
+                {g.label}
+              </button>
+            ))}
+          </div>
+
           <ul className="vx-sectors">
             {items.map((it, i) => {
               const isActive = i === idx;
@@ -159,7 +158,7 @@ export function Verticals() {
           </Link>
         </div>
 
-        {/* RIGHT — dominant image */}
+        {/* RIGHT — contained image */}
         <div className="vx-media">
           <div className="vx-media-frame">
             <AnimatePresence mode="wait">
@@ -171,25 +170,23 @@ export function Verticals() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                width={1400}
-                height={1600}
                 loading="lazy"
               />
             </AnimatePresence>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={`${group.key}-${current.name}-badge`}
+                className="vx-media-badge"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={FADE}
+              >
+                <p className="vx-media-badge-name">{current.feature.name}</p>
+                <p className="vx-media-badge-loc">{current.feature.location}</p>
+              </motion.div>
+            </AnimatePresence>
           </div>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`${group.key}-${current.name}-badge`}
-              className="vx-media-badge"
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              transition={FADE}
-            >
-              <p className="vx-media-badge-name">{current.feature.name}</p>
-              <p className="vx-media-badge-loc">{current.feature.location}</p>
-            </motion.div>
-          </AnimatePresence>
         </div>
       </div>
     </section>
