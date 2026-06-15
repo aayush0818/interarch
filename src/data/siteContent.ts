@@ -72,42 +72,41 @@ export const pageImages = {
    ================================================================= */
 export const aboutCopy = {
   eyebrow: "— About",
-  headline: "A contemporary legacy in architecture and interiors.",
+  headline: "A multidisciplinary practice, shaped by four decades of intent.",
   intro:
-    "Interarch Design Labs — a contemporary legacy in architecture and interiors, where rigorous intent meets modern refinement. Our work is founded on a simple conviction: design must answer how life is lived. We translate that conviction into buildings and interiors that are purposeful, considered, and quietly luxurious. From civic campuses to private homes, hospitality to healthcare, we create environments with the kind of clarity and care that lasts.",
+    "Interarch Design Labs is a multidisciplinary architecture and interior design practice shaped by over four decades of experience in the built environment. Formed through the coming together of Interarch and Kala Design Studio, the practice brings together decades of experience across architecture, interiors, planning, and design strategy.",
   body:
-    "The union brings a deliberately broad skill set grounded in context, enriched by material sensitivity, and driven by a pragmatic elegance.",
-  signoff: "Simple. Considered. Enduring. This is Interarch Design Labs.",
+    "We believe meaningful design emerges from understanding. Understanding people, understanding context, and understanding the purpose a space is meant to serve. Our process is thoughtful and deliberate. Ideas are questioned, refined, and challenged until they arrive at their clearest expression. Every line, material, and detail is considered through the lens of longevity, functionality, and human experience.",
+  signoff:
+    "Because great design is not measured by how it appears on day one, but by how it continues to perform, inspire, and endure over time.",
   legacy:
-    "IDL is the union of two legacy firms — Interarch (founded in 1989 by Ar. Dipak Thaker and Ar. Murtuza Rangwala) and Kala Design (led by Ar. Hussain Rangwala and Ar. Rohit Gojia). Together, we bring forward a shared philosophy: that design should not chase trends, but serve intent. Our practice spans architecture, interiors, planning, and engineering, but our foundation is singular — a deep respect for context, craft, and collaboration.",
+    "Whether designing a private residence, a workplace, a hospitality destination, or an institutional campus, our goal remains the same: to create spaces that feel relevant today and remain valuable for years to come.",
 };
 
 export const mission = {
   eyebrow: "— Mission",
   text:
-    "To create meaningful spaces that reflect the people who live, work, and move through them, shaped with clarity, care, and a deep sense of intent.",
+    "To deliver architecture and interior design solutions that balance creativity, functionality, technical excellence, and long-term value. We work closely with clients, consultants, and stakeholders to transform ideas into spaces that are thoughtfully designed, efficiently executed, and built to perform beyond expectations.",
 };
 
 export const vision = {
   eyebrow: "— Vision",
   text:
-    "To define a contemporary architectural language for India and beyond, one where design feels personal, principles remain timeless, and form emerges from purpose rather than trend.",
+    "To be a practice that shapes the built environment through design that remains relevant, responsible, and valuable for generations. We envision a future where architecture and interiors are judged not only by how they look, but by how effectively they serve people, communities, businesses, and the changing needs of society.",
 };
 
 export const values = [
-  { n: "01", title: "Integrity of Intent", body: "Nothing is ornamental when everything has purpose." },
-  { n: "02", title: "Clarity in Craft", body: "Simplicity, precision, and detail guide every decision." },
-  { n: "03", title: "Responsibility to Context", body: "Every space respects its environment — physical, cultural, and human." },
-  { n: "04", title: "Designed Around You", body: "Our work is led by the lives and stories of the people we design for." },
+  { n: "01", title: "Understanding Before Designing", body: "Every project begins with listening, learning, and understanding the people, context, and purpose behind it." },
+  { n: "02", title: "Purpose In Every Decision", body: "From concept to execution, every detail is intentional and contributes to a larger vision." },
+  { n: "03", title: "Built To Endure", body: "We create spaces that remain relevant, functional, and valuable long after they are completed." },
 ];
 
 export const idlStudioNarrative = {
-  eyebrow: "— IDL Studio",
-  headline: "For us, design is a journey, not a checklist.",
+  eyebrow: "— Life at IDL",
+  headline: "A studio defined by the people who create it.",
   body: [
-    "Interarch Design Labs brings together over four decades of architectural and interior design experience. Born from the merger of Interarch and Kala Design, the studio blends legacy thinking with contemporary innovation.",
-    "It begins with listening: to people, to context, to the story the site already carries. Ideas evolve through sketches, conversations, and collaboration. Materials are chosen not only for utility but for character and longevity. Details are refined until the design feels inevitable.",
-    "And once built, our spaces don't just function, they grow, adapt, and live alongside you.",
+    "At IDL, we have built a culture that values curiosity, collaboration, and continuous learning. Our studio brings together architects, interior designers, thinkers, makers, and problem-solvers who share a common passion for creating meaningful design.",
+    "We believe the best ideas emerge through dialogue. Every project becomes an opportunity to challenge assumptions, explore possibilities, and push creative boundaries while remaining grounded in practical realities.",
   ],
 };
 
@@ -141,28 +140,28 @@ export const recognitionList = [
 
 export const cultureBlocks = [
   {
-    eyebrow: "— Culture & Process",
-    title: "Not a hierarchy. A dialogue.",
+    eyebrow: "— Design Process",
+    title: "Collaborative, transparent, detail-driven.",
     body:
-      "IDL is not a hierarchy but a dialogue. Led by four partners with decades of combined experience, the studio is built on mentorship, openness, and collaboration. Young designers learn from practice, while seasoned architects stay inspired by new perspectives. We value process as much as outcomes: the sketch before the line, the question before the answer, the conversation before the decision. Because architecture is not an object to be delivered, it is an experience to be lived.",
-  },
-  {
-    eyebrow: "— Internships",
-    title: "The next generation shapes the future.",
-    body:
-      "We believe the next generation shapes the future of design. Our internships offer hands-on exposure to architecture, interiors, material exploration, and project processes across scales. Every intern works on live projects, guided by our team, and the experience is tailored to their strengths and interests.",
+      "From research and concept development to execution and delivery, every stage is approached with equal attention and rigor. We believe thoughtful outcomes are achieved through careful listening, strategic thinking, and disciplined execution.",
   },
   {
     eyebrow: "— Design Mentorship",
-    title: "Over 100 years of combined experience.",
+    title: "Knowledge is our most valuable resource.",
     body:
-      "Mentorship is central to IDL. With over 100 years of combined experience, our leadership guides young designers through real-world complexity, design thinking, and craft refinement. We teach not just technique, but values — sustainability, cultural awareness, and strategic clarity.",
+      "Through active mentorship and hands-on learning, young designers work alongside experienced professionals, gaining exposure to real projects, real challenges, and meaningful opportunities for growth.",
   },
   {
-    eyebrow: "— Working at IDL",
-    title: "Curiosity leads. Craft shapes the outcome.",
+    eyebrow: "— Internships",
+    title: "More than a learning experience.",
     body:
-      "Work at IDL is a dialogue, between disciplines, generations, and perspectives. Our teams collaborate across architecture, interiors, and strategy to solve complex challenges with rigor and creativity. Curiosity leads the process. Craft shapes the outcome. We value what takes time, because thoughtful design demands it.",
+      "Internships at IDL are an opportunity to become part of a design culture that values curiosity, initiative, and experimentation. Interns are encouraged to contribute, ask questions, and participate in the creative process from day one.",
+  },
+  {
+    eyebrow: "— Careers at IDL",
+    title: "A team that believes in collective growth.",
+    body:
+      "Working at IDL means being part of a team where ideas are welcomed, contributions are valued, and learning never stops. We celebrate creativity, encourage ownership, and strive to create an environment where talented individuals can do their best work — because great spaces are created by great teams.",
   },
 ];
 

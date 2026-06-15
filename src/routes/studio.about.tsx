@@ -3,13 +3,23 @@ import { CinematicHero } from "@/components/motion/CinematicHero";
 import { MaskText } from "@/components/motion/MaskText";
 import { Reveal } from "@/components/motion/Reveal";
 import { Marquee } from "@/components/motion/Marquee";
-import { realImages } from "@/data/realImages";
 
-const studioHero = realImages.institutional.aerial;
-const studioCulture = realImages.residential.stair;
-const teamHero = realImages.residential.exterior;
-const work2 = realImages.residential.atrium;
-const work4 = realImages.residential.doubleheight;
+
+import heroImg from "@/assets/idl/PAB8838-HDR.jpg.asset.json";
+import cultureImg from "@/assets/idl/PAB9126-HDR.jpg.asset.json";
+import teamImg from "@/assets/idl/PAB9071-HDR.jpg.asset.json";
+import work2Img from "@/assets/idl/PAB9081-HDR.jpg.asset.json";
+import work4Img from "@/assets/idl/PAB9186-HDR.jpg.asset.json";
+import mvvImg from "@/assets/idl/PAB9056-HDR.jpg.asset.json";
+import cafeImg from "@/assets/idl/PAB9171-HDR.jpg.asset.json";
+import receptionImg from "@/assets/idl/PAB9041-HDR.jpg.asset.json";
+import boardroomImg from "@/assets/idl/PAB9021-HDR.jpg.asset.json";
+
+const studioHero = heroImg.url;
+const studioCulture = cultureImg.url;
+const teamHero = teamImg.url;
+const work2 = work2Img.url;
+const work4 = work4Img.url;
 
 import {
   aboutCopy,
@@ -61,6 +71,20 @@ function AboutPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* Full bleed image */}
+      <div className="idlx-split">
+        <div className="idlx-split-img">
+          <Reveal>
+            <img src={boardroomImg.url} alt="IDL studio boardroom" loading="lazy" />
+          </Reveal>
+        </div>
+        <div className="idlx-split-img">
+          <Reveal>
+            <img src={mvvImg.url} alt="IDL studio interior detail" loading="lazy" />
+          </Reveal>
+        </div>
+      </div>
 
       {/* Pullquote */}
       <section className="idlx-pullquote idlx-section--bordered">
@@ -209,8 +233,8 @@ function AboutPage() {
 
       {/* Strip */}
       <div className="idlx-split">
-        <div className="idlx-split-img"><img src={teamHero} alt="The leadership" /></div>
-        <div className="idlx-split-img"><img src={work2} alt="Architectural detail" /></div>
+        <div className="idlx-split-img"><img src={receptionImg.url} alt="Studio reception" loading="lazy" /></div>
+        <div className="idlx-split-img"><img src={cafeImg.url} alt="Studio cafe and breakout" loading="lazy" /></div>
       </div>
 
       {/* CTA */}
