@@ -30,6 +30,7 @@ import {
   rangeOfExperience,
   recognitionList,
   cultureBlocks,
+  partners,
 } from "@/data/siteContent";
 
 export const Route = createFileRoute("/studio/about")({
@@ -237,13 +238,38 @@ function AboutPage() {
         <div className="idlx-split-img"><img src={cafeImg.url} alt="Studio cafe and breakout" loading="lazy" /></div>
       </div>
 
+      {/* Leadership */}
+      <section className="idlx-section idlx-section--bordered">
+        <Reveal>
+          <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> The Minds Behind IDL</span>
+          <h2 className="idlx-h2" style={{ marginTop: 24, maxWidth: 760 }}>Four ways of thinking. Four ways of seeing. One mark that holds us all.</h2>
+        </Reveal>
+        <div style={{ height: 60 }} />
+        <div className="idlx-team-grid">
+          {partners.map((p, i) => (
+            <Reveal key={p.name} delay={(i % 2) * 0.1}>
+              <div className="idlx-portrait">
+                <div className="idlx-portrait-img">
+                  <img src={p.image} alt={p.name} loading="lazy" />
+                </div>
+                <div className="idlx-portrait-cap">
+                  <span className="idlx-portrait-role">{p.role} · {p.years}</span>
+                  <span className="idlx-portrait-name">{p.name}</span>
+                  <p className="idlx-portrait-bio">{p.bio}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="idlx-cta idlx-section--bordered">
         <Reveal>
-          <p className="idlx-lead" style={{ maxWidth: 720 }}>Meet the four partners — and the studio behind every project.</p>
+          <p className="idlx-lead" style={{ maxWidth: 720 }}>Let's create something that lasts.</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <Link to="/studio/team" className="idlx-cta-link" data-hover>The leadership →</Link>
+          <Link to="/contact" className="idlx-cta-link" data-hover>Contact the Studio →</Link>
         </Reveal>
         <img src={work4} alt="" loading="lazy" style={{ display: "none" }} />
       </section>

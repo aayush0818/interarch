@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { AnimatePresence, motion } from "framer-motion";
 import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { Marquee } from "@/components/motion/Marquee";
@@ -22,11 +20,7 @@ export const Route = createFileRoute("/studio/team")({
   component: TeamPage,
 });
 
-const EASE = [0.22, 1, 0.36, 1] as const;
-
 function TeamPage() {
-  const [open, setOpen] = useState<string | null>(null);
-
   return (
     <>
       <CinematicHero
@@ -50,42 +44,21 @@ function TeamPage() {
 
       <section className="idlx-section--sm" style={{ padding: "0 clamp(28px,6vw,100px) clamp(120px,16vw,180px)" }}>
         <div className="idlx-team-grid">
-          {partners.map((p, i) => {
-            const isOpen = open === p.name;
-            return (
-              <Reveal key={p.name} delay={(i % 2) * 0.1} duration={1.2}>
-                <button
-                  type="button"
-                  className="idlx-portrait"
-                  data-hover
-                  onClick={() => setOpen(isOpen ? null : p.name)}
-                  style={{ background: "none", border: "none", padding: 0, textAlign: "left", width: "100%" }}
-                >
-                  <div className="idlx-portrait-img">
-                    <img src={p.image} alt={p.name} loading="lazy" />
-                  </div>
-                  <div className="idlx-portrait-cap">
-                    <span className="idlx-portrait-role">{p.role} · {p.years}</span>
-                    <span className="idlx-portrait-name">{p.name}</span>
-                    <span className="idlx-body" style={{ fontStyle: "italic", color: "var(--idlx-mute)", marginTop: 4 }}>{p.line}</span>
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.p
-                          className="idlx-portrait-bio"
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.6, ease: EASE }}
-                        >
-                          {p.bio}
-                        </motion.p>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                </button>
-              </Reveal>
-            );
-          })}
+          {partners.map((p, i) => (
+            <Reveal key={p.name} delay={(i % 2) * 0.1} duration={1.2}>
+              <div className="idlx-portrait" data-hover>
+                <div className="idlx-portrait-img">
+                  <img src={p.image} alt={p.name} loading="lazy" />
+                </div>
+                <div className="idlx-portrait-cap">
+                  <span className="idlx-portrait-role">{p.role} · {p.years}</span>
+                  <span className="idlx-portrait-name">{p.name}</span>
+                  <span className="idlx-body" style={{ fontStyle: "italic", color: "var(--idlx-mute)", marginTop: 4 }}>{p.line}</span>
+                  <p className="idlx-portrait-bio">{p.bio}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 

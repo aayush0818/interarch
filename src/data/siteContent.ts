@@ -78,7 +78,7 @@ export const aboutCopy = {
   body:
     "We believe meaningful design emerges from understanding. Understanding people, understanding context, and understanding the purpose a space is meant to serve. Our process is thoughtful and deliberate. Ideas are questioned, refined, and challenged until they arrive at their clearest expression. Every line, material, and detail is considered through the lens of longevity, functionality, and human experience.",
   signoff:
-    "Because great design is not measured by how it appears on day one, but by how it continues to perform, inspire, and endure over time.",
+    "Design is not about creating landmarks. It is about creating places that people return to, remember, and make their own.",
   legacy:
     "Whether designing a private residence, a workplace, a hospitality destination, or an institutional campus, our goal remains the same: to create spaces that feel relevant today and remain valuable for years to come.",
 };
@@ -117,7 +117,7 @@ export const rangeOfExperience = {
   partners: [
     { y: "40+", note: "years of architectural experience — Ar. Dipak Thaker" },
     { y: "30+", note: "years of interior expertise — Ar. Murtuza Rangwala" },
-    { y: "—", note: "Contemporary, detail-led design sensibilities — Ar. Hussain Rangwala & Ar. Rohit Gojia" },
+    { y: "—", note: "Contemporary, detail-led design sensibilities — Ar. Rohit Gojia & Ar. Hussain Rangwala" },
   ],
   fields: [
     "Residential villas, retreats, and apartments",
@@ -129,13 +129,13 @@ export const rangeOfExperience = {
 };
 
 export const recognitionList = [
-  { year: "2001", award: "A+D Spectrum Architecture Awards", note: "Excellence in Architecture." },
-  { year: "2008", award: "Association of Real Estate Agents Award", note: "Architectural contribution." },
-  { year: "2010", award: "Chief Minister of Maharashtra Award", note: "Babasaheb Ambedkar Bhavan." },
-  { year: "2014–15", award: "AICA Asia Fest", note: "Commendation for architectural design." },
-  { year: "2015", award: "Rachana Sansad Diamond Jubilee Felicitation", note: "Recognition for service to architecture." },
-  { year: "25 yrs", award: "Service to DRDO, Ministry of Defence", note: "A testament to trust and long-standing partnerships." },
-  { year: "—", award: "IGBC Gold Certification", note: "For pioneering sustainable development." },
+  { year: "2001", award: "A+D Spectrum Architecture Awards", note: "Recognition for Excellence in Architecture — awarded for creative contribution and design excellence, recognised by one of India's leading architectural publications and industry platforms." },
+  { year: "2008", award: "Association of Real Estate Agents Appreciation Award", note: "Recognition for Professional Contribution — honouring commitment, industry support, and contributions towards advancing the built environment and real estate sector." },
+  { year: "2009", award: "25 Years of Service – DRDO, Ministry of Defence", note: "A Legacy of Enduring Trust — presented in recognition of a long-standing association spanning over twenty-five years with one of India's most respected defence organisations." },
+  { year: "2010", award: "Chief Minister's Recognition – Babasaheb Ambedkar Bhavan", note: "Recognition for Public Impact — acknowledging architectural contributions towards projects of cultural and civic significance in Maharashtra." },
+  { year: "2014–15", award: "AICA Asia Fest Commendation Award", note: "Commendation for Architectural Excellence — recognised by an international jury for the Educational Bio Medical Academy project, celebrating innovation and design quality." },
+  { year: "2015", award: "Rachana Sansad Diamond Jubilee Felicitation", note: "Honouring Contribution to Architecture — presented by one of India's most respected architectural institutions in recognition of professional achievements and contribution to the discipline." },
+  { year: "—", award: "Grohe Bath & Design Awards", note: "Excellence in Design Innovation — recognising outstanding design thinking, detailing, and execution across contemporary architectural and interior projects." },
 ];
 
 export const cultureBlocks = [
@@ -172,7 +172,7 @@ export const teamCopy = {
   eyebrow: "— Our Team",
   headline: "Heritage and reinvention. Independent voices, one vision.",
   intro:
-    "Interarch Design Labs is led by four partners whose individual expertise forms a unified approach to architecture and interiors. Their perspectives, spanning decades of practice, shape the studio's commitment to clarity, context, and purposeful design.",
+    "Interarch Design Labs is led by four partners whose combined experience spans decades of work across architecture, interiors, and the built environment. Their individual expertise and perspectives form the foundation of the practice, bringing depth of knowledge, creative insight, and strategic thinking to every project. Bound by a shared design philosophy and commitment to excellence, they continue to shape a practice that values context, purpose, and lasting impact above all else.",
   collective:
     "They are supported by a multidisciplinary team of architects, interior designers, visualisers, project managers, and delivery specialists. Together, the studio brings technical depth, material sensitivity, and thoughtful execution to every project.",
 };
@@ -180,39 +180,39 @@ export const teamCopy = {
 export const partners = [
   {
     name: "Dipak Thaker",
-    role: "Director · IDL",
+    role: "Director — IDL",
     image: partner1,
     years: "40+ years",
     line: "Structure, process, and buildability held together with long-view precision.",
     bio:
-      "Dipak Thaker brings over four decades of experience in architecture and interior design, having led projects across residential, commercial, institutional, and industrial sectors. His work is defined by strong planning logic, technical depth, and execution precision, particularly on large-scale and complex developments. Dipak has been instrumental in shaping projects from concept to completion, ensuring design intent is carried through every stage of construction. At IDL, he anchors the practice with structure, process, and a deep understanding of buildability.",
+      "Dipak Thaker brings over three decades of experience across residential, commercial, institutional, and industrial projects. Known for his technical expertise and strategic approach, he has led numerous developments from concept to completion. At IDL, he provides the depth of knowledge and practical insight that ensures design excellence is matched by execution excellence.",
   },
   {
-    name: "Murtaza Rangwala",
-    role: "Director · IDL",
+    name: "Murtuza Rangwala",
+    role: "Director — IDL",
     image: partner2,
     years: "30+ years",
     line: "Calm leadership, operational rigour, and dependable delivery across every stage.",
     bio:
-      "Murtaza Rangwala has spent decades building a practice rooted in consistency, discipline, and long-term client trust. His experience spans a wide range of architectural and interior projects, where he has played a critical role in project coordination, detailing, and on-site execution. Known for his calm leadership and hands-on involvement, Murtaza ensures that every project is delivered with clarity and control. At IDL, he strengthens the firm's foundation through operational rigour and dependable project delivery.",
-  },
-  {
-    name: "Hussain Rangwala",
-    role: "Director · IDL",
-    image: partner3,
-    years: "Contemporary practice",
-    line: "A modern design voice shaped by proportion, context, and spatial clarity.",
-    bio:
-      "Hussain Rangwala represents a contemporary design voice shaped by strong architectural fundamentals and evolving spatial sensibilities. His work focuses on residential and commercial projects where context, proportion, and detailing define the outcome. Hussain brings a refined approach to layouts, material selection, and spatial flow, ensuring each project feels both thoughtful and relevant. At IDL, he contributes design direction that bridges legacy expertise with modern architectural expression.",
+      "Murtuza Rangwala has built his career on consistency, trust, and a deep commitment to quality. With extensive experience across architecture and interiors, he is known for his meticulous approach to project delivery and client relationships. At IDL, he brings operational clarity, dependable leadership, and a strong focus on achieving successful project outcomes.",
   },
   {
     name: "Rohit Gojia",
-    role: "Director · IDL",
+    role: "Director — IDL",
     image: partner4,
     years: "Contemporary practice",
     line: "Modern living translated into clear, material-led interior narratives.",
     bio:
-      "Rohit Gojia is driven by a strong understanding of modern living and interior environments. His work spans residential and interior-focused projects, with a sharp eye for materials, finishes, and user experience. Known for translating client aspirations into clear design narratives, Rohit brings creativity grounded in practicality. At IDL, he adds a contemporary interior perspective, shaping spaces that are functional, expressive, and deeply liveable.",
+      "Rohit Gojia brings a modern understanding of interiors, materials, and user experience. His approach combines creativity with practicality, translating ideas into spaces that are thoughtful, refined, and highly liveable. At IDL, he strengthens the practice through a fresh perspective on contemporary design and spatial experiences.",
+  },
+  {
+    name: "Hussain Rangwala",
+    role: "Director — IDL",
+    image: partner3,
+    years: "Contemporary practice",
+    line: "A contemporary design perspective grounded in strong architectural thinking.",
+    bio:
+      "Hussain Rangwala represents a contemporary design perspective grounded in strong architectural thinking. His work focuses on creating spaces that balance functionality, context, and experience. At IDL, he contributes a forward-looking approach that bridges established expertise with evolving design sensibilities.",
   },
 ];
 
