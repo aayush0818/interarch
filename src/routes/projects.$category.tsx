@@ -60,7 +60,7 @@ function CategoryPage() {
   const { sector } = Route.useSearch();
   const cat = category.toLowerCase() as "architecture" | "interiors";
   const list = projectsByCategory(cat);
-  const hero = cat === "architecture" ? work1 : work3;
+  const hero = cat === "architecture" ? (archHeroes[architectureFilter] ?? archCommercial.url) : (interiorHeroes[interiorFilter] ?? intResidential.url);
   const other = cat === "architecture" ? "interiors" : "architecture";
   const initialInterior: InteriorFilter = (interiorSectors as readonly string[]).includes(sector ?? "") ? (sector as InteriorFilter) : "all";
   const initialArch: ArchitectureFilter = (architectureSectors as readonly string[]).includes(sector ?? "") ? (sector as ArchitectureFilter) : "all";
