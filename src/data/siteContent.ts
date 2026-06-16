@@ -117,7 +117,7 @@ export const rangeOfExperience = {
   partners: [
     { y: "40+", note: "years of architectural experience — Ar. Dipak Thaker" },
     { y: "30+", note: "years of interior expertise — Ar. Murtuza Rangwala" },
-    { y: "—", note: "Contemporary, detail-led design sensibilities — Ar. Hussain Rangwala & Ar. Rohit Gojia" },
+    { y: "—", note: "Contemporary, detail-led design sensibilities — Ar. Rohit Gojia & Ar. Hussain Rangwala" },
   ],
   fields: [
     "Residential villas, retreats, and apartments",
