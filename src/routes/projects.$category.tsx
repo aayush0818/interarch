@@ -60,12 +60,12 @@ function CategoryPage() {
   const { sector } = Route.useSearch();
   const cat = category.toLowerCase() as "architecture" | "interiors";
   const list = projectsByCategory(cat);
-  const hero = cat === "architecture" ? (archHeroes[architectureFilter] ?? archCommercial.url) : (interiorHeroes[interiorFilter] ?? intResidential.url);
   const other = cat === "architecture" ? "interiors" : "architecture";
   const initialInterior: InteriorFilter = (interiorSectors as readonly string[]).includes(sector ?? "") ? (sector as InteriorFilter) : "all";
   const initialArch: ArchitectureFilter = (architectureSectors as readonly string[]).includes(sector ?? "") ? (sector as ArchitectureFilter) : "all";
   const [interiorFilter, setInteriorFilter] = useState<InteriorFilter>(initialInterior);
   const [architectureFilter, setArchitectureFilter] = useState<ArchitectureFilter>(initialArch);
+  const hero = cat === "architecture" ? (archHeroes[architectureFilter] ?? archCommercial.url) : (interiorHeroes[interiorFilter] ?? intResidential.url);
 
   const filteredList = useMemo(() => {
     const bySector = (items: Project[], s: string) => items.filter((project) => project.sector.toLowerCase() === s);
