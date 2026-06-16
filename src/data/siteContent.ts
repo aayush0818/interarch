@@ -306,7 +306,7 @@ export const milestones = [
     title: "A+D Spectrum Architecture Awards",
     image: res.gallery,
     text:
-      "Recognition came early when IDL participated in the A+D & Spectrum Paints Architecture Awards, with the jury praising the firm's creative approach and contribution to the contemporary design dialogue.",
+      "Recognition came early when IDL participated in the A+D & Spectrum Paints Architecture Awards, with the jury praising the firm's creative approach and contribution to contemporary design dialogue.",
   },
   {
     year: "2008",
