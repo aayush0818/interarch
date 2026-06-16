@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import { realImages } from "@/data/realImages";
-
-const { institutional: inst, residential: res, commercial: com } = realImages;
+import archCommercial from "@/assets/verticals/arch-commercial.png.asset.json";
+import archInstitutional from "@/assets/verticals/arch-institutional.png.asset.json";
+import archResidential from "@/assets/verticals/arch-residential.png.asset.json";
+import hospitalityImg from "@/assets/verticals/hospitality.png.asset.json";
+import intResidential from "@/assets/verticals/int-residential.png.asset.json";
+import intCommercial from "@/assets/verticals/int-commercial.png.asset.json";
 
 type Vertical = {
   name: string;
@@ -31,28 +34,28 @@ const groups: Group[] = [
         sectorSlug: "residential",
         tagline: "Homes shaped around people, light and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
-        img: res.exterior,
+        img: archResidential.url,
       },
       {
         name: "Commercial",
         sectorSlug: "commercial",
         tagline: "Workplaces built to evolve with the businesses they hold.",
-        feature: { name: "Monster HQ", location: "Mumbai" },
-        img: com.reception,
+        feature: { name: "Meril Corporate HQ", location: "Vapi" },
+        img: archCommercial.url,
       },
       {
         name: "Hospitality",
         sectorSlug: "hospitality",
         tagline: "Destinations remembered long after the stay.",
         feature: { name: "Energize Resort", location: "Nashik" },
-        img: realImages.brand.hospitalityPoolsideResort,
+        img: hospitalityImg.url,
       },
       {
         name: "Institutional",
         sectorSlug: "institutional",
         tagline: "Civic architecture built to last generations.",
-        feature: { name: "Babasaheb Ambedkar Bhavan", location: "Mumbai" },
-        img: inst.aerial,
+        feature: { name: "Kanu Desai VIA Auditorium", location: "Vapi" },
+        img: archInstitutional.url,
       },
     ],
   },
@@ -66,14 +69,14 @@ const groups: Group[] = [
         sectorSlug: "residential",
         tagline: "Interiors shaped by the lives lived within.",
         feature: { name: "Atelier Residence", location: "Mumbai" },
-        img: res.gallery,
+        img: intResidential.url,
       },
       {
         name: "Commercial",
         sectorSlug: "commercial",
         tagline: "Workplaces where culture becomes spatial.",
-        feature: { name: "Jade Pink Boutique", location: "Mumbai" },
-        img: com.lounge,
+        feature: { name: "Monster Energy HQ", location: "Mumbai" },
+        img: intCommercial.url,
       },
     ],
   },

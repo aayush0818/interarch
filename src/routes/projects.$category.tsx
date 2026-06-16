@@ -7,9 +7,27 @@ import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { projectsByCategory, type Project } from "@/data/projects";
 import { realImages } from "@/data/realImages";
+import archCommercial from "@/assets/verticals/arch-commercial.png.asset.json";
+import archInstitutional from "@/assets/verticals/arch-institutional.png.asset.json";
+import archResidential from "@/assets/verticals/arch-residential.png.asset.json";
+import hospitalityImg from "@/assets/verticals/hospitality.png.asset.json";
+import intResidential from "@/assets/verticals/int-residential.png.asset.json";
+import intCommercial from "@/assets/verticals/int-commercial.png.asset.json";
 
-const work1 = realImages.institutional.aerial;
-const work3 = realImages.residential.exterior;
+const archHeroes: Record<string, string> = {
+  all: archCommercial.url,
+  commercial: archCommercial.url,
+  institutional: archInstitutional.url,
+  residential: archResidential.url,
+  hospitality: hospitalityImg.url,
+  industrial: realImages.institutional.aerial,
+  workplace: archCommercial.url,
+};
+const interiorHeroes: Record<string, string> = {
+  all: intResidential.url,
+  residential: intResidential.url,
+  commercial: intCommercial.url,
+};
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 const architectureSectors = ["all", "hospitality", "commercial", "institutional", "industrial", "workplace", "residential"] as const;
@@ -42,12 +60,12 @@ function CategoryPage() {
   const { sector } = Route.useSearch();
   const cat = category.toLowerCase() as "architecture" | "interiors";
   const list = projectsByCategory(cat);
-  const hero = cat === "architecture" ? work1 : work3;
   const other = cat === "architecture" ? "interiors" : "architecture";
   const initialInterior: InteriorFilter = (interiorSectors as readonly string[]).includes(sector ?? "") ? (sector as InteriorFilter) : "all";
   const initialArch: ArchitectureFilter = (architectureSectors as readonly string[]).includes(sector ?? "") ? (sector as ArchitectureFilter) : "all";
   const [interiorFilter, setInteriorFilter] = useState<InteriorFilter>(initialInterior);
   const [architectureFilter, setArchitectureFilter] = useState<ArchitectureFilter>(initialArch);
+  const hero = cat === "architecture" ? (archHeroes[architectureFilter] ?? archCommercial.url) : (interiorHeroes[interiorFilter] ?? intResidential.url);
 
   const filteredList = useMemo(() => {
     const bySector = (items: Project[], s: string) => items.filter((project) => project.sector.toLowerCase() === s);
