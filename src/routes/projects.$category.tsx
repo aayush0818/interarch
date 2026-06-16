@@ -7,9 +7,27 @@ import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { projectsByCategory, type Project } from "@/data/projects";
 import { realImages } from "@/data/realImages";
+import archCommercial from "@/assets/verticals/arch-commercial.png.asset.json";
+import archInstitutional from "@/assets/verticals/arch-institutional.png.asset.json";
+import archResidential from "@/assets/verticals/arch-residential.png.asset.json";
+import hospitalityImg from "@/assets/verticals/hospitality.png.asset.json";
+import intResidential from "@/assets/verticals/int-residential.png.asset.json";
+import intCommercial from "@/assets/verticals/int-commercial.png.asset.json";
 
-const work1 = realImages.institutional.aerial;
-const work3 = realImages.residential.exterior;
+const archHeroes: Record<string, string> = {
+  all: archCommercial.url,
+  commercial: archCommercial.url,
+  institutional: archInstitutional.url,
+  residential: archResidential.url,
+  hospitality: hospitalityImg.url,
+  industrial: realImages.institutional.aerial,
+  workplace: archCommercial.url,
+};
+const interiorHeroes: Record<string, string> = {
+  all: intResidential.url,
+  residential: intResidential.url,
+  commercial: intCommercial.url,
+};
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 const architectureSectors = ["all", "hospitality", "commercial", "institutional", "industrial", "workplace", "residential"] as const;
