@@ -511,6 +511,16 @@ import porticoHouse7 from "@/assets/portico-house-7.jpg.asset.json";
 import porticoHouse8 from "@/assets/portico-house-8.jpg.asset.json";
 import porticoHouse9 from "@/assets/portico-house-9.jpg.asset.json";
 import porticoHouse10 from "@/assets/portico-house-10.jpg.asset.json";
+import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
+import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
+import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
+import panoramaHouse3 from "@/assets/panorama-house-3.jpg.asset.json";
+import panoramaHouse4 from "@/assets/panorama-house-4.jpg.asset.json";
+import panoramaHouse5 from "@/assets/panorama-house-5.jpg.asset.json";
+import panoramaHouse6 from "@/assets/panorama-house-6.jpg.asset.json";
+import panoramaHouse7 from "@/assets/panorama-house-7.jpg.asset.json";
+import panoramaHouse8 from "@/assets/panorama-house-8.jpg.asset.json";
+import panoramaHouse9 from "@/assets/panorama-house-9.jpg.asset.json";
 
 export type Facility = {
   name: string;
@@ -912,6 +922,19 @@ export const projects: Project[] = [
     cover: porticoHouse1.url,
     gallery: [porticoHouse1.url, porticoHouse2.url, porticoHouse3.url, porticoHouse4.url, porticoHouse5.url, porticoHouse6.url, porticoHouse7.url, porticoHouse8.url, porticoHouse9.url, porticoHouse10.url],
     description: "Set within expansive greens, the architecture embraces outdoor living through deep verandas, framed views, and seamless transitions.",
+  },
+  {
+    slug: "panorama-house",
+    name: "Panorama House",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: panoramaHouseHero.url,
+    gallery: [panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse2.url, panoramaHouse3.url, panoramaHouse4.url, panoramaHouse5.url, panoramaHouse6.url, panoramaHouse7.url, panoramaHouse8.url, panoramaHouse9.url],
+    description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
   },
   {
     slug: "lantern-villa",
