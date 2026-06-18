@@ -478,6 +478,20 @@ import mapleSales05 from "@/assets/maple-sales-05.jpeg.asset.json";
 import mapleWarehouse01 from "@/assets/maple-warehouse-01.jpeg.asset.json";
 import mapleWarehouse02 from "@/assets/maple-warehouse-02.jpeg.asset.json";
 
+// Linear Estate — Architecture · Residential
+import linearEstate1 from "@/assets/linear-estate-1.jpg.asset.json";
+import linearEstate2 from "@/assets/linear-estate-2.jpg.asset.json";
+import linearEstate3 from "@/assets/linear-estate-3.jpg.asset.json";
+import linearEstate4 from "@/assets/linear-estate-4.jpg.asset.json";
+import linearEstate5 from "@/assets/linear-estate-5.jpg.asset.json";
+import linearEstate6 from "@/assets/linear-estate-6.jpg.asset.json";
+import linearEstate7 from "@/assets/linear-estate-7.jpg.asset.json";
+import linearEstate8 from "@/assets/linear-estate-8.jpg.asset.json";
+
+// Lantern Villa — Architecture · Residential
+import lanternVilla1 from "@/assets/lantern-villa-1.jpg.asset.json";
+import lanternVilla2 from "@/assets/lantern-villa-2.jpg.asset.json";
+
 export type Facility = {
   name: string;
   description: string;
