@@ -392,6 +392,19 @@ import atriumHouse7 from "@/assets/atrium-house-7.jpg.asset.json";
 // The Ivory Estate — Architecture · Residential
 import ivoryEstate1 from "@/assets/ivory-estate-1.jpg.asset.json";
 import ivoryEstate2 from "@/assets/ivory-estate-2.jpg.asset.json";
+// Altura Residence — Architecture · Residential
+import alturaResidence1 from "@/assets/altura-residence-1.jpeg.asset.json";
+import alturaResidence2 from "@/assets/altura-residence-2.jpeg.asset.json";
+import alturaResidence3 from "@/assets/altura-residence-3.jpeg.asset.json";
+// Courtyard Twins — Architecture · Residential
+import courtyardTwins1 from "@/assets/courtyard-twins-1.jpeg.asset.json";
+import courtyardTwins2 from "@/assets/courtyard-twins-2.jpeg.asset.json";
+import courtyardTwins3 from "@/assets/courtyard-twins-3.jpeg.asset.json";
+import courtyardTwins4 from "@/assets/courtyard-twins-4.jpeg.asset.json";
+// The Ridge House — Architecture · Residential
+import ridgeHouse1 from "@/assets/ridge-house-1.jpg.asset.json";
+import ridgeHouse2 from "@/assets/ridge-house-2.jpg.asset.json";
+import ridgeHouse3 from "@/assets/ridge-house-3.jpg.asset.json";
 
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
@@ -800,6 +813,45 @@ export const projects: Project[] = [
     cover: ivoryEstate1.url,
     gallery: [ivoryEstate1.url, ivoryEstate2.url],
     description: "The Ivory Estate is conceived as a modern-day manor, rooted in classical principles yet designed for contemporary living. Framed by towering columns, crisp architectural lines, and a palette of understated whites, the residence exudes a sense of permanence and grace. Every element has been composed to create an architecture that feels timeless, dignified, and unmistakably grand.",
+  },
+  {
+    slug: "altura-residence",
+    name: "Altura Residence",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: alturaResidence1.url,
+    gallery: [alturaResidence1.url, alturaResidence2.url, alturaResidence3.url],
+    description: "This residence is conceived as a contemporary retreat where architecture becomes a statement of structure and restraint. Defined by its dramatic angular profile and floor-to-ceiling transparency, the residence balances solid and void with remarkable precision. Every elevation is composed to frame light, landscape, and movement, resulting in a home that feels both monumental and effortlessly liveable.",
+  },
+  {
+    slug: "courtyard-twins",
+    name: "Courtyard Twins",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: courtyardTwins1.url,
+    gallery: [courtyardTwins1.url, courtyardTwins2.url, courtyardTwins3.url, courtyardTwins4.url],
+    description: "The Twin Frame bungalows transform the idea of paired living into a cohesive architectural statement. Framed by bold geometric forms and softened through natural materials and light, the design celebrates proportion, rhythm, and visual continuity. Generous terraces, open interiors, and shared landscape elements bring a resort-like quality to everyday living, creating homes that are both private and connected.",
+  },
+  {
+    slug: "the-ridge-house",
+    name: "The Ridge House",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: ridgeHouse1.url,
+    gallery: [ridgeHouse1.url, ridgeHouse2.url, ridgeHouse3.url],
+    description: "Positioned within a lush natural setting, the residence is designed around openness, views, and outdoor living. Clean architectural forms sit comfortably within the landscape, creating a calm and understated retreat.",
   },
   {
     slug: "emerald-reverie-classical-penthouse",
