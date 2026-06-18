@@ -137,6 +137,9 @@ function CategoryPage() {
                 <button type="button" className={architectureFilter === "all" ? "is-on" : ""} onClick={() => setArchitectureFilter("all")} data-hover>
                   All Architecture
                 </button>
+                <button type="button" className={architectureFilter === "residential" ? "is-on" : ""} onClick={() => setArchitectureFilter("residential")} data-hover>
+                  Residential
+                </button>
                 <button type="button" className={architectureFilter === "hospitality" ? "is-on" : ""} onClick={() => setArchitectureFilter("hospitality")} data-hover>
                   Hospitality
                 </button>
