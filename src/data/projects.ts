@@ -954,7 +954,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2.url,
-    gallery: [lanternVilla1.url, lanternVilla2.url],
+    gallery: [lanternVilla1.url, lanternVilla2.url, lanternVilla3.url, lanternVilla4.url, lanternVilla5.url, lanternVilla6.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",
   },
   {
