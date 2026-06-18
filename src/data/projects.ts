@@ -508,6 +508,17 @@ import porticoHouse10 from "@/assets/portico-house-10.jpg.asset.json";
 import porticoHouse11 from "@/assets/portico-house-11.jpg.asset.json";
 import porticoHouse12 from "@/assets/portico-house-12.jpg.asset.json";
 
+import pavilionEstate1 from "@/assets/pavilion-estate-1.jpg.asset.json";
+import pavilionEstate2 from "@/assets/pavilion-estate-2.jpg.asset.json";
+import pavilionEstate3 from "@/assets/pavilion-estate-3.jpg.asset.json";
+import pavilionEstate4 from "@/assets/pavilion-estate-4.jpg.asset.json";
+import pavilionEstate5 from "@/assets/pavilion-estate-5.jpg.asset.json";
+import pavilionEstate6 from "@/assets/pavilion-estate-6.jpg.asset.json";
+import pavilionEstate7 from "@/assets/pavilion-estate-7.jpg.asset.json";
+import pavilionEstate8 from "@/assets/pavilion-estate-8.jpg.asset.json";
+import pavilionEstate9 from "@/assets/pavilion-estate-9.jpg.asset.json";
+import pavilionEstate10 from "@/assets/pavilion-estate-10.jpg.asset.json";
+
 import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
 import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
 import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
