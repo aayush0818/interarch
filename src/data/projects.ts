@@ -511,6 +511,16 @@ import porticoHouse7 from "@/assets/portico-house-7.jpg.asset.json";
 import porticoHouse8 from "@/assets/portico-house-8.jpg.asset.json";
 import porticoHouse9 from "@/assets/portico-house-9.jpg.asset.json";
 import porticoHouse10 from "@/assets/portico-house-10.jpg.asset.json";
+import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
+import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
+import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
+import panoramaHouse3 from "@/assets/panorama-house-3.jpg.asset.json";
+import panoramaHouse4 from "@/assets/panorama-house-4.jpg.asset.json";
+import panoramaHouse5 from "@/assets/panorama-house-5.jpg.asset.json";
+import panoramaHouse6 from "@/assets/panorama-house-6.jpg.asset.json";
+import panoramaHouse7 from "@/assets/panorama-house-7.jpg.asset.json";
+import panoramaHouse8 from "@/assets/panorama-house-8.jpg.asset.json";
+import panoramaHouse9 from "@/assets/panorama-house-9.jpg.asset.json";
 
 export type Facility = {
   name: string;
