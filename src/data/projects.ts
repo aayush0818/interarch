@@ -928,7 +928,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: porticoHouse1.url,
-    gallery: [porticoHouse1.url, porticoHouse2.url, porticoHouse3.url, porticoHouse4.url, porticoHouse5.url, porticoHouse6.url, porticoHouse7.url, porticoHouse8.url, porticoHouse9.url, porticoHouse10.url],
+    gallery: [porticoHouse1.url, porticoHouse2.url, porticoHouse3.url, porticoHouse4.url, porticoHouse5.url, porticoHouse6.url, porticoHouse7.url, porticoHouse8.url, porticoHouse9.url, porticoHouse10.url, porticoHouse11.url, porticoHouse12.url],
     description: "Set within expansive greens, the architecture embraces outdoor living through deep verandas, framed views, and seamless transitions.",
   },
   {
