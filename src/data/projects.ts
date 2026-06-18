@@ -380,6 +380,18 @@ import proximus2 from "@/assets/proximus-2.jpg.asset.json";
 // Glasswood Retreat — Architecture · Residential
 import glasswood1 from "@/assets/glasswood-1.jpg.asset.json";
 import glasswood2 from "@/assets/glasswood-2.jpg.asset.json";
+import glasswood3 from "@/assets/glasswood-3.jpg.asset.json";
+// The Atrium House — Architecture · Residential
+import atriumHouse1 from "@/assets/atrium-house-1.jpg.asset.json";
+import atriumHouse2 from "@/assets/atrium-house-2.jpg.asset.json";
+import atriumHouse3 from "@/assets/atrium-house-3.jpg.asset.json";
+import atriumHouse4 from "@/assets/atrium-house-4.jpg.asset.json";
+import atriumHouse5 from "@/assets/atrium-house-5.jpg.asset.json";
+import atriumHouse6 from "@/assets/atrium-house-6.png.asset.json";
+import atriumHouse7 from "@/assets/atrium-house-7.jpg.asset.json";
+// The Ivory Estate — Architecture · Residential
+import ivoryEstate1 from "@/assets/ivory-estate-1.jpg.asset.json";
+import ivoryEstate2 from "@/assets/ivory-estate-2.jpg.asset.json";
 
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
 const noirResidenceGallery = [
@@ -760,8 +772,34 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: glasswood1.url,
-    gallery: [glasswood1.url, glasswood2.url],
+    gallery: [glasswood1.url, glasswood2.url, glasswood3.url],
     description: "A low-slung residence where glass, timber tones, and landscape merge into a single architectural experience. Designed as a collection of transparent living spaces, the home blurs the line between indoors and outdoors.",
+  },
+  {
+    slug: "the-atrium-house",
+    name: "The Atrium House",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: atriumHouse1.url,
+    gallery: [atriumHouse1.url, atriumHouse2.url, atriumHouse3.url, atriumHouse4.url, atriumHouse5.url, atriumHouse6.url, atriumHouse7.url],
+    description: "Organized around a dramatic central volume, the residence celebrates openness, symmetry, and grand-scale living.",
+  },
+  {
+    slug: "the-ivory-estate",
+    name: "The Ivory Estate",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: ivoryEstate1.url,
+    gallery: [ivoryEstate1.url, ivoryEstate2.url],
+    description: "The Ivory Estate is conceived as a modern-day manor, rooted in classical principles yet designed for contemporary living. Framed by towering columns, crisp architectural lines, and a palette of understated whites, the residence exudes a sense of permanence and grace. Every element has been composed to create an architecture that feels timeless, dignified, and unmistakably grand.",
   },
   {
     slug: "emerald-reverie-classical-penthouse",
