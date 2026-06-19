@@ -32,7 +32,7 @@ const groups: Group[] = [
       {
         name: "Residential",
         sectorSlug: "residential",
-        tagline: "Homes shaped around people, light and place.",
+        tagline: "Homes designed as enduring expressions of lifestyle, context and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
         img: archResidential.url,
       },
