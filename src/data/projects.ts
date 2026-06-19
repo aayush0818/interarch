@@ -450,8 +450,10 @@ const divyaEnclaveGallery = [de1.url, de2.url, de3.url, de4.url, de5.url, de6.ur
 const adarshVidyaMandirGallery = [avm1.url, avm2.url];
 const energizeResortNashikGallery = [er_n2.url, er_n3.url, er_n4.url, er_n5.url, er_n6.url, er_n7.url, er_n8.url, er_n9.url, er_n10.url, er_n13.url, er_n18.url, er_n5b.url, er_n21.url, er_n22.url, er_n23.url, er_n26.url, er_n29.url, er_n34.url, er_n35.url, er_n45.url, er_n48.url, er_n49.url, er_n51.url, er_n60.url, er_n78.url, er_n81.url];
 const goldCornetBoutiqueGallery = [gcb1.url, gcb2.url, gcb3.url, gcb4.url, gcb5.url, gcb6.url, gcb7.url, gcb8.url, gcb9.url, gcb10.url];
-const adityaBirlaCancerCenterGallery = [abcc1.url, abcc2.url, abcc3.url, abcc4.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url];
+const adityaBirlaAsthavinayakGallery = [abAstha1.url, abAstha2.url, abAstha3.url, abAstha4.url, abAstha5.url];
+const adityaBirlaCancerCenterGallery = [abcc1.url, abcc2.url, abcc3.url, abcc4.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url, abcc10.url, abcc11.url, abcc12.url];
 const monsterGallery = [mo1.url, mo2.url, mo3.url, mo4.url, mo5.url, mo7.url, mo9.url, mo11.url, mo14.url, mo15.url];
+
 const jadePinkGallery = [jp1.url, jp2.url, jp3.url, jp4.url, jp5.url, jp6.url, jp7.url, jp8.url, jp9.url];
 const palakJewellersGallery = [pj1.url, pj2.url, pj3.url, pj4.url, pj5.url, pj6.url];
 const ratanshiKherajGallery = [rk1.url, rk2.url, rk3.url, rk4.url, rk5.url, rk6.url, rk7.url];
