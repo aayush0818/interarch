@@ -78,7 +78,7 @@ export const aboutCopy = {
   body:
     "We believe meaningful design emerges from understanding. Understanding people, understanding context, and understanding the purpose a space is meant to serve. Our process is thoughtful and deliberate. Ideas are questioned, refined, and challenged until they arrive at their clearest expression. Every line, material, and detail is considered through the lens of longevity, functionality, and human experience.",
   signoff:
-    "Design is not about creating landmarks. It is about creating places that people return to, remember, and make their own.",
+    "\n",
   legacy:
     "Whether designing a private residence, a workplace, a hospitality destination, or an institutional campus, our goal remains the same: to create spaces that feel relevant today and remain valuable for years to come.",
 };
