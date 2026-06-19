@@ -1,6 +1,4 @@
-import { realImages } from "@/data/realImages";
-
-const heroImg = realImages.brand.homepageHeroResidentialEstate;
+import heroImg from "@/assets/verticals/arch-residential.jpg";
 
 export function Hero() {
   return (
@@ -8,8 +6,8 @@ export function Hero() {
       <img
         src={heroImg}
         alt="Interarch Design Labs residential project aerial view"
-        width={1092}
-        height={768}
+        width={1800}
+        height={1200}
         loading="eager"
         fetchPriority="high"
       />

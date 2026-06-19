@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import archCommercial from "@/assets/verticals/arch-commercial.png.asset.json";
-import archInstitutional from "@/assets/verticals/arch-institutional.png.asset.json";
-import archResidential from "@/assets/verticals/arch-residential.png.asset.json";
-import hospitalityImg from "@/assets/verticals/hospitality.png.asset.json";
-import intResidential from "@/assets/verticals/int-residential.png.asset.json";
-import intCommercial from "@/assets/verticals/int-commercial.png.asset.json";
+import archCommercial from "@/assets/verticals/arch-commercial-new.png";
+import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
+import archResidential from "@/assets/verticals/arch-residential.jpg";
+import hospitalityImg from "@/assets/verticals/arch-hospitality.jpg";
+import intResidential from "@/assets/verticals/int-residential.jpg";
+import intCommercial from "@/assets/verticals/int-commercial.jpg";
 
 type Vertical = {
   name: string;
@@ -34,28 +34,28 @@ const groups: Group[] = [
         sectorSlug: "residential",
         tagline: "Homes designed as enduring expressions of lifestyle, context and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
-        img: archResidential.url,
+        img: archResidential,
       },
       {
         name: "Commercial",
         sectorSlug: "commercial",
         tagline: "Workplaces and business environments designed to balance performance, presence, and experience.",
         feature: { name: "Meril Corporate HQ", location: "Vapi" },
-        img: archCommercial.url,
+        img: archCommercial,
       },
       {
         name: "Hospitality",
         sectorSlug: "hospitality",
         tagline: "Destinations crafted to elevate comfort, atmosphere, and memorable guest experiences",
         feature: { name: "Energize Resort", location: "Nashik" },
-        img: hospitalityImg.url,
+        img: hospitalityImg,
       },
       {
         name: "Institutional",
         sectorSlug: "institutional",
         tagline: "Spaces that serve communities through thoughtful planning, longevity, and purpose.",
         feature: { name: "Kanu Desai VIA Auditorium", location: "Vapi" },
-        img: archInstitutional.url,
+        img: archInstitutional,
       },
     ],
   },
@@ -69,14 +69,14 @@ const groups: Group[] = [
         sectorSlug: "residential",
         tagline: "Thoughtfully composed interiors that bring warmth, character, and everyday functionality together.",
         feature: { name: "Atelier Residence", location: "Mumbai" },
-        img: intResidential.url,
+        img: intResidential,
       },
       {
         name: "Commercial",
         sectorSlug: "commercial",
         tagline: "Interior environments designed to reflect brand identity while enhancing the way people work and interact.",
         feature: { name: "Monster Energy HQ", location: "Mumbai" },
-        img: intCommercial.url,
+        img: intCommercial,
       },
     ],
   },

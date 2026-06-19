@@ -7,26 +7,26 @@ import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { projectsByCategory, type Project } from "@/data/projects";
 import { realImages } from "@/data/realImages";
-import archCommercial from "@/assets/verticals/arch-commercial.png.asset.json";
-import archInstitutional from "@/assets/verticals/arch-institutional.png.asset.json";
-import archResidential from "@/assets/verticals/arch-residential.png.asset.json";
-import hospitalityImg from "@/assets/verticals/hospitality.png.asset.json";
-import intResidential from "@/assets/verticals/int-residential.png.asset.json";
-import intCommercial from "@/assets/verticals/int-commercial.png.asset.json";
+import archCommercial from "@/assets/verticals/arch-commercial-new.png";
+import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
+import archResidential from "@/assets/verticals/arch-residential.jpg";
+import hospitalityImg from "@/assets/verticals/arch-hospitality.jpg";
+import intResidential from "@/assets/verticals/int-residential.jpg";
+import intCommercial from "@/assets/verticals/int-commercial.jpg";
 
 const archHeroes: Record<string, string> = {
-  all: archCommercial.url,
-  commercial: archCommercial.url,
-  institutional: archInstitutional.url,
-  residential: archResidential.url,
-  hospitality: hospitalityImg.url,
+  all: archResidential,
+  commercial: archCommercial,
+  institutional: archInstitutional,
+  residential: archResidential,
+  hospitality: hospitalityImg,
   industrial: realImages.institutional.aerial,
-  workplace: archCommercial.url,
+  workplace: archCommercial,
 };
 const interiorHeroes: Record<string, string> = {
-  all: intResidential.url,
-  residential: intResidential.url,
-  commercial: intCommercial.url,
+  all: intResidential,
+  residential: intResidential,
+  commercial: intCommercial,
 };
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
@@ -65,7 +65,7 @@ function CategoryPage() {
   const initialArch: ArchitectureFilter = (architectureSectors as readonly string[]).includes(sector ?? "") ? (sector as ArchitectureFilter) : "all";
   const [interiorFilter, setInteriorFilter] = useState<InteriorFilter>(initialInterior);
   const [architectureFilter, setArchitectureFilter] = useState<ArchitectureFilter>(initialArch);
-  const hero = cat === "architecture" ? (archHeroes[architectureFilter] ?? archCommercial.url) : (interiorHeroes[interiorFilter] ?? intResidential.url);
+  const hero = cat === "architecture" ? (archHeroes[architectureFilter] ?? archCommercial) : (interiorHeroes[interiorFilter] ?? intResidential);
 
   const filteredList = useMemo(() => {
     const bySector = (items: Project[], s: string) => items.filter((project) => project.sector.toLowerCase() === s);
