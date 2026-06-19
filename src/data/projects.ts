@@ -1238,6 +1238,13 @@ export const projects: Project[] = [
     cover: abcc10.url,
     gallery: adityaBirlaCancerCenterGallery,
     description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
+    facilities: [
+      {
+        name: "Project Gallery",
+        description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
+        images: adityaBirlaCancerCenterGallery,
+      },
+    ],
   },
 
   {
