@@ -24,40 +24,41 @@ const NAV: NavItem[] = [
     label: "Projects",
     to: "/projects",
     image: navWork,
-    blurb: "Architecture and interiors presented as a calm, image-led archive.",
+    blurb: "A portfolio of spaces shaped by context, purpose, and the people who inhabit them.",
     children: [
       { label: "Architecture", to: "/projects/$category", params: { category: "architecture" } },
-      { label: "Interiors", to: "/projects/$category", params: { category: "interiors" } },
+      { label: "Interior", to: "/projects/$category", params: { category: "interiors" } },
     ],
   },
   {
-    label: "Studio",
+    label: "About IDL",
     to: "/studio/about",
     image: navStory,
-    blurb: "Legacy, team, and history shaped into a quieter documentary-like experience.",
+    blurb: "The people, philosophy, and process behind over three decades of design.",
     children: [
-      { label: "About Us", to: "/studio/about" },
-      { label: "Our Directors", to: "/studio/team" },
-      { label: "History", to: "/studio/history" },
+      { label: "Studio", to: "/studio/about" },
+      { label: "Directors", to: "/studio/team" },
+      { label: "Legacy", to: "/studio/history" },
     ],
   },
   {
-    label: "Journal",
+    label: "Awards & Recognition",
     to: "/journal",
     image: navNews,
-    blurb: "A refined archive of press articles featuring IDL and awards earned by the studio.",
+    blurb: "Awards, publications, milestones, and the partnerships that have shaped our journey.",
     children: [
-      { label: "News", to: "/journal/news" },
+      { label: "Media Recognition", to: "/journal/news" },
       { label: "Awards", to: "/journal/awards" },
     ],
   },
   {
-    label: "Contact",
+    label: "Contact Us",
     to: "/contact",
     image: navTeam,
-    blurb: "Wherever you are, we design for you.",
+    blurb: "Whether you're building something new or reimagining what exists, we'd love to hear from you.",
   },
 ];
+
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -144,12 +145,12 @@ export function Header() {
         </nav>
 
         <div className="idl-header-right">
-          <button className="idl-menu-btn" data-hover type="button" onClick={() => (open ? closeAll() : setOpen(true))} aria-expanded={open} aria-controls="idl-mega-menu">
-            <span className="idl-menu-btn-label">{open ? "Close" : "Menu"}</span>
+          <button className="idl-menu-btn" data-hover type="button" onClick={() => (open ? closeAll() : setOpen(true))} aria-expanded={open} aria-controls="idl-mega-menu" aria-label={open ? "Close menu" : "Open menu"}>
             <span className="idl-menu-btn-icon" aria-hidden>
               <span /><span />
             </span>
           </button>
+
           <button type="button" className="idl-icon-btn" aria-label="Search" data-hover>
             <SearchIcon />
           </button>
@@ -189,11 +190,23 @@ export function Header() {
                   return (
                     <motion.li key={item.label} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: EASE, delay: 0.12 + i * 0.06 }} className={`idl-mega-nav-row${isActive ? " is-active" : ""}`}>
                       {hasKids ? (
-                        <button type="button" className="idl-mega-nav-link" data-hover aria-expanded={isActive} onClick={() => setActiveIdx(isActive ? null : i)} onMouseEnter={() => setActiveIdx(i)}>
+                        <Link to={item.to!} className="idl-mega-nav-link" data-hover onClick={closeAll} onMouseEnter={() => setActiveIdx(i)}>
                           <span className="idl-mega-nav-index">{String(i + 1).padStart(2, "0")}</span>
                           <span className="idl-mega-nav-label">{item.label}</span>
-                          <span className="idl-mega-nav-caret" aria-hidden>{isActive ? "—" : "+"}</span>
-                        </button>
+                          <button
+                            type="button"
+                            className="idl-mega-nav-caret"
+                            aria-label={isActive ? "Collapse" : "Expand"}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              setActiveIdx(isActive ? null : i);
+                            }}
+                          >
+                            {isActive ? "—" : "+"}
+                          </button>
+                        </Link>
+
                       ) : (
                         <Link to={item.to!} className="idl-mega-nav-link" data-hover onClick={closeAll} onMouseEnter={() => setActiveIdx(i)}>
                           <span className="idl-mega-nav-index">{String(i + 1).padStart(2, "0")}</span>

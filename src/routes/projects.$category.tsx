@@ -5,6 +5,8 @@ import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
 import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
+import { MaskText } from "@/components/motion/MaskText";
+
 import { projectsByCategory, type Project } from "@/data/projects";
 import { realImages } from "@/data/realImages";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
@@ -28,6 +30,38 @@ const interiorHeroes: Record<string, string> = {
   residential: intResidential,
   commercial: intCommercial,
 };
+
+const sectorContent: Record<"architecture" | "interiors", Record<string, { title: string; body: string }>> = {
+  architecture: {
+    residential: {
+      title: "On residential.",
+      body: "Homes shaped around people, routines and place. We design residences that balance privacy, openness and natural light, creating environments that feel timeless, personal and deeply connected to everyday living.",
+    },
+    commercial: {
+      title: "On commercial.",
+      body: "Buildings that express identity through clarity and purpose. From offices to mixed-use developments, we create commercial environments that support business growth while delivering lasting architectural presence.",
+    },
+    hospitality: {
+      title: "On hospitality.",
+      body: "Destinations designed around experience, comfort and memory. Every hospitality project is carefully composed to create a sense of arrival, connection and belonging through architecture that feels both distinctive and timeless.",
+    },
+    institutional: {
+      title: "On institutional.",
+      body: "Spaces that serve communities with responsibility and longevity. We design educational, civic and public buildings that prioritise functionality, accessibility and enduring value for generations to come.",
+    },
+  },
+  interiors: {
+    residential: {
+      title: "On residential.",
+      body: "Interiors crafted to reflect the lives lived within them. Through thoughtful planning, material richness and attention to detail, we create homes that feel comfortable, refined and deeply personal.",
+    },
+    commercial: {
+      title: "On commercial.",
+      body: "Workplaces and retail environments that transform brand values into spatial experiences. Designed to support productivity, culture and engagement, each space balances functionality with a strong visual identity.",
+    },
+  },
+};
+
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 const architectureSectors = ["all", "hospitality", "commercial", "institutional", "industrial", "workplace", "residential"] as const;
@@ -94,6 +128,26 @@ function CategoryPage() {
           meta={`${filteredList.length} works`}
           height="tall"
         />
+
+        {(() => {
+          const activeSector = cat === "architecture" ? architectureFilter : interiorFilter;
+          const content = sectorContent[cat]?.[activeSector];
+          if (!content) return null;
+          return (
+            <section className="idlx-section">
+              <div className="idlx-manifesto">
+                <Reveal>
+                  <MaskText as="h2" className="idlx-h2" delay={0.05}>{content.title}</MaskText>
+                </Reveal>
+                <Reveal delay={0.15} className="idlx-manifesto-body">
+                  <p className="idlx-lead">{content.body}</p>
+                </Reveal>
+              </div>
+            </section>
+          );
+        })()}
+
+
 
         <div className="idlx-archive">
           <aside className="idlx-archive-rail">

@@ -125,25 +125,26 @@ export function SketchPhilosophy() {
             </div>
             <div className="reveal-line">
               <span className="reveal-line-inner" ref={l1}>
-                Not just spaces.
+                Design is not about creating landmarks.
               </span>
             </div>
             <div className="reveal-line">
               <span className="reveal-line-inner" ref={l2}>
-                Stories, shaped with care,
+                It is about creating places that people
               </span>
             </div>
             <div className="reveal-line">
               <span className="reveal-line-inner" ref={l3}>
-                clarity, and the way you live.
+                return to, remember, and make their own.
               </span>
             </div>
             <div className="m-rule" ref={ruleRef} />
             <div className="m-body" ref={bodyRef}>
-              Designed around you.
+              &nbsp;
             </div>
           </div>
         </div>
+
 
         {/* Sketch drawing (bottom) */}
         <div className="sketch-drawing-area">

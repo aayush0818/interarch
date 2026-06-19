@@ -15,8 +15,9 @@ export function Footer() {
       <div className="idl-footer-top">
         <img src={logo} alt="Interarch Design Labs" className="idl-footer-logo" />
         <p className="idl-footer-statement">
-          Architecture, interiors and spatial strategy — shaped with clarity, care, and intent.
+          Spaces that work beautifully today and endure tomorrow.
         </p>
+
       </div>
 
       <div className="idl-footer-grid">
