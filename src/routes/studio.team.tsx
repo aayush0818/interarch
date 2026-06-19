@@ -12,9 +12,9 @@ const teamHero = heroAsset.url;
 export const Route = createFileRoute("/studio/team")({
   head: () => ({
     meta: [
-      { title: "Team — Studio · Interarch Design Labs" },
+      { title: "Our Directors — Studio · Interarch Design Labs" },
       { name: "description", content: teamCopy.intro.slice(0, 160) },
-      { property: "og:title", content: "Team — Studio · IDL" },
+      { property: "og:title", content: "Our Directors — Studio · IDL" },
       { property: "og:description", content: teamCopy.intro.slice(0, 160) },
       { property: "og:image", content: teamHero },
     ],
