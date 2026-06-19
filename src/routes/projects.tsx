@@ -6,10 +6,11 @@ import { CustomCursor } from "@/components/home/CustomCursor";
 import { Reveal } from "@/components/motion/Reveal";
 import { MaskText } from "@/components/motion/MaskText";
 import { projects } from "@/data/projects";
-import { realImages } from "@/data/realImages";
+import archSplitAsset from "@/assets/projects/arch-split.jpg.asset.json";
+import interiorSplitAsset from "@/assets/projects/interior-split.jpg.asset.json";
 
-const work1 = realImages.institutional.aerial;
-const work3 = realImages.residential.exterior;
+const work1 = archSplitAsset.url;
+const work3 = interiorSplitAsset.url;
 
 
 export const Route = createFileRoute("/projects")({
