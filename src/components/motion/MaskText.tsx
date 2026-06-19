@@ -10,10 +10,11 @@ type Props = {
   duration?: number;
   className?: string;
   as?: "h1" | "h2" | "h3" | "p" | "div" | "span";
+  style?: React.CSSProperties;
 };
 
-/** Splits children string into lines on `\n` and mask-reveals each line. */
-export function MaskText({ children, delay = 0, stagger = 0.08, duration = 1.1, className = "", as = "h1" }: Props) {
+/** Splits children string into `\n` and mask-reveals each line. */
+export function MaskText({ children, delay = 0, stagger = 0.08, duration = 1.1, className = "", as = "h1", style }: Props) {
   const lines = Array.isArray(children)
     ? children
     : typeof children === "string"
@@ -21,7 +22,7 @@ export function MaskText({ children, delay = 0, stagger = 0.08, duration = 1.1, 
     : [children];
   const Tag = as as any;
   return (
-    <Tag className={className}>
+    <Tag className={className} style={style}>
       {lines.map((line, i) => (
         <span key={i} className="idlx-mask-line">
           <motion.span

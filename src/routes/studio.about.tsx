@@ -14,6 +14,7 @@ import mvvImg from "@/assets/idl/PAB9056-HDR.jpg.asset.json";
 import cafeImg from "@/assets/idl/PAB9171-HDR.jpg.asset.json";
 import receptionImg from "@/assets/idl/PAB9041-HDR.jpg.asset.json";
 import boardroomImg from "@/assets/idl/PAB9021-HDR.jpg.asset.json";
+import manifestoImg from "@/assets/PAB9021-HDR_1.jpg.asset.json";
 
 const studioHero = heroImg.url;
 const studioCulture = cultureImg.url;
@@ -60,13 +61,23 @@ function AboutPage() {
       {/* Manifesto */}
       <section className="idlx-section">
         <div className="idlx-manifesto">
-          <Reveal>
-            <MaskText as="h2" className="idlx-h2">
-              {`Interarch Design Labs is a multidisciplinary architecture and interior deisgn practice.\n`}
-            </MaskText>
-          </Reveal>
+          <div>
+            <Reveal>
+              <MaskText as="h2" className="idlx-h2" style={{ fontSize: "clamp(34px, 5vw, 78px)" }}>
+                {`Interarch Design Labs is a multidisciplinary architecture and interior design practice.\n`}
+              </MaskText>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <img
+                src={manifestoImg.url}
+                alt="Interarch Design Labs studio interior"
+                loading="lazy"
+                style={{ marginTop: "clamp(24px, 3vw, 48px)", width: "100%", maxWidth: "540px", display: "block" }}
+              />
+            </Reveal>
+          </div>
           <Reveal delay={0.15} className="idlx-manifesto-body">
-            <p className="idlx-lead">{aboutCopy.intro}</p>
+            <p className="idlx-body idlx-body--lg">{aboutCopy.intro}</p>
             <p className="idlx-body idlx-body--lg">{aboutCopy.body}</p>
             <p className="idlx-body idlx-body--lg">{aboutCopy.legacy}</p>
           </Reveal>
