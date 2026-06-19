@@ -62,7 +62,7 @@ function AboutPage() {
         <div className="idlx-manifesto">
           <Reveal>
             <MaskText as="h2" className="idlx-h2">
-              {`Where rigorous intent\nmeets modern refinement.`}
+              {`Interarch Design Labs is a multidisciplinary architecture and interior deisgn practice.\n`}
             </MaskText>
           </Reveal>
           <Reveal delay={0.15} className="idlx-manifesto-body">
