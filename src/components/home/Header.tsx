@@ -36,8 +36,8 @@ const NAV: NavItem[] = [
     image: navStory,
     blurb: "Legacy, team, and history shaped into a quieter documentary-like experience.",
     children: [
-      { label: "About", to: "/studio/about" },
-      { label: "Team", to: "/studio/team" },
+      { label: "About Us", to: "/studio/about" },
+      { label: "Our Directors", to: "/studio/team" },
       { label: "History", to: "/studio/history" },
     ],
   },
