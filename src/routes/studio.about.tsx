@@ -5,7 +5,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Marquee } from "@/components/motion/Marquee";
 
 
-import heroImg from "@/assets/idl/PAB8838-HDR.jpg.asset.json";
+import heroImg from "@/assets/idl/PAB9031-HDR.jpg.asset.json";
 import cultureImg from "@/assets/idl/PAB9126-HDR.jpg.asset.json";
 import teamImg from "@/assets/idl/PAB9071-HDR.jpg.asset.json";
 import work2Img from "@/assets/idl/PAB9081-HDR.jpg.asset.json";
