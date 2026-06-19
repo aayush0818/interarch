@@ -176,19 +176,6 @@ export function Verticals() {
                 loading="lazy"
               />
             </AnimatePresence>
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`${group.key}-${current.name}-badge`}
-                className="vx-media-badge"
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={FADE}
-              >
-                <p className="vx-media-badge-name">{current.feature.name}</p>
-                <p className="vx-media-badge-loc">{current.feature.location}</p>
-              </motion.div>
-            </AnimatePresence>
           </div>
         </div>
       </div>
