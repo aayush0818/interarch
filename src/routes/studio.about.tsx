@@ -14,6 +14,7 @@ import mvvImg from "@/assets/idl/PAB9056-HDR.jpg.asset.json";
 import cafeImg from "@/assets/idl/PAB9171-HDR.jpg.asset.json";
 import receptionImg from "@/assets/idl/PAB9041-HDR.jpg.asset.json";
 import boardroomImg from "@/assets/idl/PAB9021-HDR.jpg.asset.json";
+import manifestoImg from "@/assets/PAB9021-HDR_1.jpg.asset.json";
 
 const studioHero = heroImg.url;
 const studioCulture = cultureImg.url;
