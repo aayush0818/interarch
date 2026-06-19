@@ -2039,7 +2039,8 @@ a:hover .img-reveal-wrap .img-parallax {
 }
 .idlx-split--reverse { direction: rtl; }
 .idlx-split--reverse > * { direction: ltr; }
-.idlx-split-img { position: relative; overflow: hidden; min-height: 60vh; }
+.idlx-split-img { position: relative; overflow: hidden; min-height: 60vh; height: 100%; }
+.idlx-split-img > * { width: 100%; height: 100%; }
 .idlx-split-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.6s var(--idlx-ease); }
 .idlx-split:hover .idlx-split-img img { transform: scale(1.03); }
 .idlx-split-body {
@@ -2048,7 +2049,7 @@ a:hover .img-reveal-wrap .img-parallax {
 }
 @media (max-width: 900px) {
   .idlx-split, .idlx-split--reverse { grid-template-columns: 1fr; direction: ltr; min-height: 0; }
-  .idlx-split-img { min-height: 50svh; }
+  .idlx-split-img { min-height: 50svh; height: auto; }
 }
 
 /* Awards rail */
