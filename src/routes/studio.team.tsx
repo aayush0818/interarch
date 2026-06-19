@@ -34,15 +34,23 @@ function TeamPage() {
       />
 
       <section className="idlx-section">
-        <div className="idlx-manifesto">
-          <Reveal>
-            <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> Meet the leadership</span>
+        <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1.1fr)", gap: "clamp(32px, 6vw, 96px)", alignItems: "center", padding: "0 clamp(28px,6vw,100px)" }}>
+          <Reveal duration={1.2}>
+            <div className="idlx-portrait-img" style={{ aspectRatio: "3 / 4", overflow: "hidden" }}>
+              <img src={directorsAsset.url} alt="The IDL directors" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </div>
           </Reveal>
-          <Reveal delay={0.12} className="idlx-manifesto-body">
-            <p className="idlx-lead">{teamCopy.intro}</p>
-          </Reveal>
+          <div className="idlx-manifesto" style={{ margin: 0 }}>
+            <Reveal>
+              <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> Meet the leadership</span>
+            </Reveal>
+            <Reveal delay={0.12} className="idlx-manifesto-body">
+              <p className="idlx-lead">{teamCopy.intro}</p>
+            </Reveal>
+          </div>
         </div>
       </section>
+
 
       <section className="idlx-section--sm" style={{ padding: "0 clamp(28px,6vw,100px) clamp(120px,16vw,180px)" }}>
         <div className="idlx-team-grid">
