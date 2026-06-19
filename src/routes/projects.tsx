@@ -73,18 +73,19 @@ function ProjectsPage() {
           <div className="idlx-manifesto">
             <Reveal>
               <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> The archive</span>
-              <MaskText as="h2" className="idlx-h2" delay={0.1}>{`Two disciplines.\nOne register.`}</MaskText>
+              <MaskText as="h2" className="idlx-h2" delay={0.1}>{`A Legacy of Work.\nAn Evolving Practice.`}</MaskText>
             </Reveal>
             <Reveal delay={0.18} className="idlx-manifesto-body">
               <p className="idlx-lead">
-                A growing record of work across India, the Middle East and Africa — composed with the same care from a private residence to a civic campus.
+                Over the years, our portfolio has grown across disciplines, sectors, and geographies, shaped by a belief that good design should be both meaningful and enduring. From architecture to interiors, every project reflects a thoughtful response to the people, place, and purpose behind it.
               </p>
               <p className="idlx-body idlx-body--lg">
-                {arch} architecture projects · {intr} interior projects · across residential, commercial, hospitality, industrial, institutional and workplace.
+                Residential • Commercial • Institutional • Industrial • Hospitality
               </p>
             </Reveal>
           </div>
         </section>
+
       </main>
       <Footer />
     </>
