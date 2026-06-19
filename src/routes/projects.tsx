@@ -42,7 +42,7 @@ function ProjectsPage() {
       <main className="idlx-page">
         <div className="idlx-diptych">
           <Link to="/projects/$category" params={{ category: "architecture" }} className="idlx-diptych-half">
-            <img src={work1} alt="Architecture projects" />
+            <img src={work1} alt="Architecture projects" style={{ objectPosition: "center 65%" }} />
             <motion.div
               className="idlx-diptych-label"
               initial={{ opacity: 0, y: 24 }}
