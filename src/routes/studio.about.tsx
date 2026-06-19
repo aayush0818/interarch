@@ -64,7 +64,7 @@ function AboutPage() {
           <div>
             <Reveal>
             <MaskText as="h2" className="idlx-h2" style={{ fontSize: "clamp(34px, 5vw, 78px)" }}>
-              {`Where rigorous intent\nmeets modern refinement.`}
+              {`Interarch Design Labs is a multidisciplinary architecture and interior design practice.\n`}
             </MaskText>
             </Reveal>
             <Reveal delay={0.1}>

@@ -74,7 +74,7 @@ export const aboutCopy = {
   eyebrow: "— About",
   headline: "A multidisciplinary practice, shaped by four decades of intent.",
   intro:
-    "Interarch Design Labs is a multidisciplinary architecture and interior design practice shaped by over four decades of experience in the built environment. Formed through the coming together of Interarch and Kala Design Studio, the practice brings together decades of experience across architecture, interiors, planning, and design strategy.",
+    "Shaped by over four decades of experience in the built environment. Formed through the coming together of Interarch and Kala Design Studio, the practice brings together decades of experience across architecture, interiors, planning, and design strategy.",
   body:
     "We believe meaningful design emerges from understanding. Understanding people, understanding context, and understanding the purpose a space is meant to serve. Our process is thoughtful and deliberate. Ideas are questioned, refined, and challenged until they arrive at their clearest expression. Every line, material, and detail is considered through the lens of longevity, functionality, and human experience.",
   signoff:
