@@ -24,40 +24,41 @@ const NAV: NavItem[] = [
     label: "Projects",
     to: "/projects",
     image: navWork,
-    blurb: "Architecture and interiors presented as a calm, image-led archive.",
+    blurb: "A portfolio of spaces shaped by context, purpose, and the people who inhabit them.",
     children: [
       { label: "Architecture", to: "/projects/$category", params: { category: "architecture" } },
-      { label: "Interiors", to: "/projects/$category", params: { category: "interiors" } },
+      { label: "Interior", to: "/projects/$category", params: { category: "interiors" } },
     ],
   },
   {
-    label: "Studio",
+    label: "About IDL",
     to: "/studio/about",
     image: navStory,
-    blurb: "Legacy, team, and history shaped into a quieter documentary-like experience.",
+    blurb: "The people, philosophy, and process behind over three decades of design.",
     children: [
-      { label: "About Us", to: "/studio/about" },
-      { label: "Our Directors", to: "/studio/team" },
-      { label: "History", to: "/studio/history" },
+      { label: "Studio", to: "/studio/about" },
+      { label: "Directors", to: "/studio/team" },
+      { label: "Legacy", to: "/studio/history" },
     ],
   },
   {
-    label: "Journal",
+    label: "Awards & Recognition",
     to: "/journal",
     image: navNews,
-    blurb: "A refined archive of press articles featuring IDL and awards earned by the studio.",
+    blurb: "Awards, publications, milestones, and the partnerships that have shaped our journey.",
     children: [
-      { label: "News", to: "/journal/news" },
+      { label: "Media Recognition", to: "/journal/news" },
       { label: "Awards", to: "/journal/awards" },
     ],
   },
   {
-    label: "Contact",
+    label: "Contact Us",
     to: "/contact",
     image: navTeam,
-    blurb: "Wherever you are, we design for you.",
+    blurb: "Whether you're building something new or reimagining what exists, we'd love to hear from you.",
   },
 ];
+
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
