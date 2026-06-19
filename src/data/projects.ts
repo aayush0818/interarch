@@ -617,7 +617,15 @@ export const projects: Project[] = [
     cover: abAstha1.url,
     gallery: adityaBirlaAsthavinayakGallery,
     description: "A spiritual destination designed to celebrate faith, culture, and collective experience. Through carefully planned landscapes, gathering spaces, and traditional architectural elements, the project creates a serene and immersive environment.",
+    facilities: [
+      {
+        name: "Project Gallery",
+        description: "A spiritual destination designed to celebrate faith, culture, and collective experience. Through carefully planned landscapes, gathering spaces, and traditional architectural elements, the project creates a serene and immersive environment.",
+        images: adityaBirlaAsthavinayakGallery,
+      },
+    ],
   },
+
   {
     slug: "divya-enclave",
     name: "Divya Enclave",
