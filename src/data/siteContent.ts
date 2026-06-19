@@ -170,7 +170,7 @@ export const cultureBlocks = [
    ================================================================= */
 export const teamCopy = {
   eyebrow: "— Our Team",
-  headline: "Heritage and reinvention. Independent voices, one vision.",
+  headline: "Four ways of Thinking. Four ways of seeing. One mark that holds us all.",
   intro:
     "Interarch Design Labs is led by four partners whose combined experience spans decades of work across architecture, interiors, and the built environment. Their individual expertise and perspectives form the foundation of the practice, bringing depth of knowledge, creative insight, and strategic thinking to every project. Bound by a shared design philosophy and commitment to excellence, they continue to shape a practice that values context, purpose, and lasting impact above all else.",
   collective:
