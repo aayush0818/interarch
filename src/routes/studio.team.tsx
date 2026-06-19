@@ -3,9 +3,11 @@ import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { Marquee } from "@/components/motion/Marquee";
 import { partners, teamCopy, pageImages } from "@/data/siteContent";
-import { realImages } from "@/data/realImages";
+import heroAsset from "@/assets/idl/PAB9000-HDR.jpg.asset.json";
+import directorsAsset from "@/assets/idl/DSC00260.jpg.asset.json";
 
-const teamHero = realImages.commercial.lounge;
+const teamHero = heroAsset.url;
+
 
 export const Route = createFileRoute("/studio/team")({
   head: () => ({
