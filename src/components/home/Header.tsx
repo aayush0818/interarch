@@ -145,12 +145,12 @@ export function Header() {
         </nav>
 
         <div className="idl-header-right">
-          <button className="idl-menu-btn" data-hover type="button" onClick={() => (open ? closeAll() : setOpen(true))} aria-expanded={open} aria-controls="idl-mega-menu">
-            <span className="idl-menu-btn-label">{open ? "Close" : "Menu"}</span>
+          <button className="idl-menu-btn" data-hover type="button" onClick={() => (open ? closeAll() : setOpen(true))} aria-expanded={open} aria-controls="idl-mega-menu" aria-label={open ? "Close menu" : "Open menu"}>
             <span className="idl-menu-btn-icon" aria-hidden>
               <span /><span />
             </span>
           </button>
+
           <button type="button" className="idl-icon-btn" aria-label="Search" data-hover>
             <SearchIcon />
           </button>
@@ -190,11 +190,23 @@ export function Header() {
                   return (
                     <motion.li key={item.label} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: EASE, delay: 0.12 + i * 0.06 }} className={`idl-mega-nav-row${isActive ? " is-active" : ""}`}>
                       {hasKids ? (
-                        <button type="button" className="idl-mega-nav-link" data-hover aria-expanded={isActive} onClick={() => setActiveIdx(isActive ? null : i)} onMouseEnter={() => setActiveIdx(i)}>
+                        <Link to={item.to!} className="idl-mega-nav-link" data-hover onClick={closeAll} onMouseEnter={() => setActiveIdx(i)}>
                           <span className="idl-mega-nav-index">{String(i + 1).padStart(2, "0")}</span>
                           <span className="idl-mega-nav-label">{item.label}</span>
-                          <span className="idl-mega-nav-caret" aria-hidden>{isActive ? "—" : "+"}</span>
-                        </button>
+                          <button
+                            type="button"
+                            className="idl-mega-nav-caret"
+                            aria-label={isActive ? "Collapse" : "Expand"}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              setActiveIdx(isActive ? null : i);
+                            }}
+                          >
+                            {isActive ? "—" : "+"}
+                          </button>
+                        </Link>
+
                       ) : (
                         <Link to={item.to!} className="idl-mega-nav-link" data-hover onClick={closeAll} onMouseEnter={() => setActiveIdx(i)}>
                           <span className="idl-mega-nav-index">{String(i + 1).padStart(2, "0")}</span>
