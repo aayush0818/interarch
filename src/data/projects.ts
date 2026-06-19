@@ -1221,16 +1221,17 @@ export const projects: Project[] = [
   {
     slug: "aditya-birla-cancer-center",
     name: "Aditya Birla Cancer Center",
-    sector: "Commercial",
+    sector: "Institutional",
     location: "",
     year: "",
     area: "",
-    scope: "",
+    scope: "Architecture",
     category: "Architecture",
-    cover: abcc1.url,
+    cover: abcc10.url,
     gallery: adityaBirlaCancerCenterGallery,
     description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
   },
+
   {
     slug: "shree-lallubhai-seth-arogya-mandir-savarkundla",
     name: "Shree Lallubhai Seth Arogya Mandir Hospital / Savarkundla",
