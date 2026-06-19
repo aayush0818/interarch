@@ -67,14 +67,14 @@ const groups: Group[] = [
       {
         name: "Residential",
         sectorSlug: "residential",
-        tagline: "Interiors shaped by the lives lived within.",
+        tagline: "Thoughtfully composed interiors that bring warmth, character, and everyday functionality together.",
         feature: { name: "Atelier Residence", location: "Mumbai" },
         img: intResidential.url,
       },
       {
         name: "Commercial",
         sectorSlug: "commercial",
-        tagline: "Workplaces where culture becomes spatial.",
+        tagline: "Interior environments designed to reflect brand identity while enhancing the way people work and interact.",
         feature: { name: "Monster Energy HQ", location: "Mumbai" },
         img: intCommercial.url,
       },
