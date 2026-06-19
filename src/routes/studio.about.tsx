@@ -63,9 +63,9 @@ function AboutPage() {
         <div className="idlx-manifesto">
           <div>
             <Reveal>
-              <MaskText as="h2" className="idlx-h2" style={{ fontSize: "clamp(34px, 5vw, 78px)" }}>
-                {`Interarch Design Labs is a multidisciplinary architecture and interior design practice.\n`}
-              </MaskText>
+            <MaskText as="h2" className="idlx-h2" style={{ fontSize: "clamp(34px, 5vw, 78px)" }}>
+              {`Where rigorous intent\nmeets modern refinement.`}
+            </MaskText>
             </Reveal>
             <Reveal delay={0.1}>
               <img
