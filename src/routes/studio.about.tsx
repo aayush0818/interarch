@@ -127,8 +127,8 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={0.2}>
             <div className="idlx-mvv-block">
-              <span className="idlx-eyebrow">— Values</span>
-              <p className="idlx-body">Four principles that hold every project — small or civic — to the same line of intent.</p>
+              <span className="idlx-eyebrow"></span>
+              <p className="idlx-body">{"\n"}</p>
             </div>
           </Reveal>
         </div>
