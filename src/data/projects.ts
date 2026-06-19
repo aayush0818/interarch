@@ -170,6 +170,13 @@ import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.j
 import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
 import skylineResidenceCoverUpload from "@/assets/skyline-residence-cover-upload.png.asset.json";
 
+// Aditya Birla Asthavinayak — Institutional Architecture
+import abAstha1 from "@/assets/uploads/aditya-birla-asthavinayak-1.png.asset.json";
+import abAstha2 from "@/assets/uploads/aditya-birla-asthavinayak-2.png.asset.json";
+import abAstha3 from "@/assets/uploads/aditya-birla-asthavinayak-3.png.asset.json";
+import abAstha4 from "@/assets/uploads/aditya-birla-asthavinayak-4.png.asset.json";
+import abAstha5 from "@/assets/uploads/aditya-birla-asthavinayak-5.png.asset.json";
+
 // Aditya Birla Cancer Center — Commercial Architecture
 import abcc1 from "@/assets/abcc-1-4.jpg.asset.json";
 import abcc2 from "@/assets/abcc-2-5.jpg.asset.json";
@@ -180,6 +187,10 @@ import abcc6 from "@/assets/abcc-6-4.jpg.asset.json";
 import abcc7 from "@/assets/abcc-7-3.jpg.asset.json";
 import abcc8 from "@/assets/abcc-8-4.jpg.asset.json";
 import abcc9 from "@/assets/abcc-9-3.jpg.asset.json";
+import abcc10 from "@/assets/uploads/aditya-birla-cancer-centre-10.jpeg.asset.json";
+import abcc11 from "@/assets/uploads/aditya-birla-cancer-centre-11.jpeg.asset.json";
+import abcc12 from "@/assets/uploads/aditya-birla-cancer-centre-12.jpeg.asset.json";
+
 
 // Monster — Commercial Interior
 import mo1 from "@/assets/monster-001.jpg.asset.json";
