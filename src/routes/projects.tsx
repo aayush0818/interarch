@@ -55,7 +55,7 @@ function ProjectsPage() {
             </motion.div>
           </Link>
           <Link to="/projects/$category" params={{ category: "interiors" }} className="idlx-diptych-half">
-            <img src={work3} alt="Interior projects" />
+            <img src={work3} alt="Interior projects" style={{ objectPosition: "center center" }} />
             <motion.div
               className="idlx-diptych-label"
               initial={{ opacity: 0, y: 24 }}
