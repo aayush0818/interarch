@@ -13,8 +13,9 @@ import work4Img from "@/assets/idl/PAB9186-HDR.jpg.asset.json";
 import mvvImg from "@/assets/idl/PAB9056-HDR.jpg.asset.json";
 import cafeImg from "@/assets/idl/PAB9171-HDR.jpg.asset.json";
 import receptionImg from "@/assets/idl/PAB9041-HDR.jpg.asset.json";
-import boardroomImg from "@/assets/idl/PAB9021-HDR.jpg.asset.json";
+import boardroomImg from "@/assets/idl/about-split-1.png.asset.json";
 import manifestoImg from "@/assets/PAB9021-HDR_1.jpg.asset.json";
+import splitTwoImg from "@/assets/idl/about-split-2.png.asset.json";
 
 const studioHero = heroImg.url;
 const studioCulture = cultureImg.url;
@@ -93,7 +94,7 @@ function AboutPage() {
         </div>
         <div className="idlx-split-img">
           <Reveal>
-            <img src={mvvImg.url} alt="IDL studio interior detail" loading="lazy" />
+            <img src={splitTwoImg.url} alt="IDL studio interior detail" loading="lazy" />
           </Reveal>
         </div>
       </div>
