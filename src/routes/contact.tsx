@@ -100,7 +100,7 @@ function ContactPage() {
             {contactCopy.studios.map((s) => (
               <div key={s.city} style={{ marginTop: 18 }}>
                 <strong>{s.city}</strong>
-                <p>{s.address}</p>
+                <p style={{ whiteSpace: "pre-line" }}>{s.address}</p>
               </div>
             ))}
           </Reveal>
@@ -111,13 +111,54 @@ function ContactPage() {
             </p>
           </Reveal>
           <Reveal delay={0.18}>
-            <h3>Regions</h3>
-            <p style={{ marginTop: 10 }}>{contactCopy.regions}</p>
+            <h3>Follow</h3>
+            <p style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 6 }}>
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>Instagram → @interarchdesignlabs</a>
+              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>LinkedIn → Interarch Design Lab</a>
+            </p>
           </Reveal>
           <Reveal delay={0.24}>
-            <div className="idlx-contact-img">
-              <img src={realImages.commercial.reception} alt="Interarch Design Labs interior" loading="lazy" />
+            <h3>Visit</h3>
+            <div style={{ marginTop: 14, width: "100%", aspectRatio: "4 / 3", overflow: "hidden", border: "1px solid var(--stone)" }}>
+              <iframe
+                title="Interarch Design Lab — Mumbai office location"
+                src={contactCopy.mapEmbed}
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: "block" }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </div>
+            <p style={{ marginTop: 10 }}>
+              <a href={contactCopy.mapLink} target="_blank" rel="noreferrer" data-hover>Open in Google Maps →</a>
+            </p>
+          </Reveal>
+          <Reveal delay={0.3}>
+            <h3>Latest from Instagram</h3>
+            <div style={{ marginTop: 14, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
+              {[0, 1, 2, 3, 4, 5].map((i) => (
+                <a
+                  key={i}
+                  href={contactCopy.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-hover
+                  style={{ display: "block", aspectRatio: "1 / 1", overflow: "hidden", background: "var(--stone)" }}
+                >
+                  <img
+                    src={realImages.commercial.reception}
+                    alt="Instagram post"
+                    loading="lazy"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                  />
+                </a>
+              ))}
+            </div>
+            <p style={{ marginTop: 10 }}>
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>View feed on Instagram →</a>
+            </p>
           </Reveal>
         </aside>
       </main>
