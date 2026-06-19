@@ -5,6 +5,8 @@ import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
 import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
+import { MaskText } from "@/components/motion/MaskText";
+
 import { projectsByCategory, type Project } from "@/data/projects";
 import { realImages } from "@/data/realImages";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
