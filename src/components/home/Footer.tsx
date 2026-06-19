@@ -2,11 +2,11 @@ import { Link } from "@tanstack/react-router";
 import logo from "@/assets/idl-logo.png";
 
 const navLinks = [
-  { label: "Projects", to: "/projects" },
-  
-  { label: "Studio", to: "/studio/about" },
-  { label: "Journal", to: "/journal" },
-  { label: "Contact", to: "/contact" },
+  { label: "Projects", to: "/projects" as const },
+  { label: "Studio", to: "/studio/about" as const },
+  { label: "Awards", to: "/awards" as const },
+  { label: "Media Recognition", to: "/media-recognition" as const },
+  { label: "Contact", to: "/contact" as const },
 ];
 
 export function Footer() {
@@ -17,14 +17,16 @@ export function Footer() {
         <p className="idl-footer-statement">
           Spaces that work beautifully today and endure tomorrow.
         </p>
-
       </div>
 
       <div className="idl-footer-grid">
         <div className="idl-footer-col">
-          <span className="idl-footer-label">Studios</span>
-          <p>Mumbai, Maharashtra</p>
-          <p>Ahmedabad, Gujarat</p>
+          <span className="idl-footer-label">Studio</span>
+          <p>Interarch Design Lab</p>
+          <p>Unit No 205, Peninsula Centre,</p>
+          <p>Co-Op Premises Society Ltd,</p>
+          <p>Dr. S. S. Rao Marg, Parel East,</p>
+          <p>Mumbai, Maharashtra 400012</p>
         </div>
 
         <div className="idl-footer-col">
@@ -39,7 +41,8 @@ export function Footer() {
         <div className="idl-footer-col">
           <span className="idl-footer-label">Connect</span>
           <a href="mailto:hello@interarchlabs.com" data-hover>hello@interarchlabs.com</a>
-          <p>India · Middle East · Africa</p>
+          <a href="https://www.instagram.com/interarchdesignlabs" target="_blank" rel="noreferrer" data-hover>Instagram</a>
+          <a href="https://www.linkedin.com/company/interarch-design-lab/" target="_blank" rel="noreferrer" data-hover>LinkedIn</a>
         </div>
       </div>
 

@@ -8,21 +8,21 @@ const items = [
     category: "Civic Recognition",
     date: "2010",
     headline: "Chief Minister of Maharashtra Award — Babasaheb Ambedkar Bhavan",
-    href: "/journal/awards",
+    href: "/awards",
   },
   {
     img: inst.tower,
     category: "Institutional Trust",
     date: "25 Years",
     headline: "25 years of continuous service to DRDO, Ministry of Defence",
-    href: "/journal/awards",
+    href: "/awards",
   },
   {
     img: com.reception,
     category: "Academy of Architecture",
     date: "2015",
     headline: "Rachana Sansad Diamond Jubilee felicitation of Ar. Dipak Thaker",
-    href: "/journal/awards",
+    href: "/awards",
   },
 ];
 
@@ -32,7 +32,7 @@ export function Recognition() {
       <div className="recognition-grid">
         <div className="recognition-left">
           <h2 className="recognition-title">Awards</h2>
-          <a className="idl-pill" href="/journal/awards" data-hover>
+          <a className="idl-pill" href="/awards" data-hover>
             View archive
           </a>
         </div>

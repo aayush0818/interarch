@@ -1037,7 +1037,7 @@ body {
   font-family: var(--serif);
   font-style: italic;
   font-weight: 300;
-  font-size: clamp(36px, 5.4vw, 72px);
+  font-size: clamp(24px, 3.6vw, 48px);
   line-height: 1.1;
   color: var(--fg);
   letter-spacing: -0.01em;

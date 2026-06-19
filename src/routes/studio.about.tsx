@@ -49,7 +49,7 @@ function AboutPage() {
         alt="Interarch Design Labs studio"
         eyebrow={aboutCopy.eyebrow}
         title={aboutCopy.headline}
-        meta="Mumbai · Ahmedabad — Est. 1989"
+        meta="Mumbai — Est. 1989"
       />
 
       {/* Manifesto */}
@@ -190,7 +190,7 @@ function AboutPage() {
 
       {/* Marquee */}
       <Marquee speed={50}>
-        <span>— Mumbai · Ahmedabad · India · Middle East · Africa</span>
+        <span>— Mumbai · India</span>
         <span>— Architecture · Interiors · Planning · Engineering</span>
         <span>— Residential · Commercial · Hospitality · Industrial · Institutional · Workplace</span>
       </Marquee>

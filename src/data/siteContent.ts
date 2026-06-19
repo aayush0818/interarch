@@ -406,13 +406,21 @@ export const contactCopy = {
   eyebrow: "— Contact",
   headline: "Wherever you are, we design for you.",
   subline:
-    "With projects across India and around the world, we'd love to shape your next space with care, clarity, and intent.",
+    "We'd love to shape your next space with care, clarity, and intent.",
   studios: [
-    { city: "Mumbai", address: "Interarch Design Labs\nMumbai, Maharashtra, India" },
-    { city: "Ahmedabad", address: "Interarch Design Labs\nAhmedabad, Gujarat, India" },
+    {
+      city: "Mumbai",
+      address:
+        "Interarch Design Lab\nUnit No 205, Peninsula Centre, Co-Op Premises Society Ltd,\nDr. S. S. Rao Marg, Parel East,\nMumbai, Maharashtra 400012",
+    },
   ],
   email: "hello@interarchlabs.com",
-  regions: "Projects across India, the Middle East & Africa.",
+  instagram: "https://www.instagram.com/interarchdesignlabs",
+  linkedin: "https://www.linkedin.com/company/interarch-design-lab/",
+  mapEmbed:
+    "https://www.google.com/maps?q=Peninsula+Centre,+Dr.+S.+S.+Rao+Marg,+Parel+East,+Mumbai,+Maharashtra+400012&output=embed",
+  mapLink:
+    "https://www.google.com/maps/search/?api=1&query=Peninsula+Centre+Dr+S+S+Rao+Marg+Parel+East+Mumbai+400012",
 };
 
 /* =================================================================
