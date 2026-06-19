@@ -170,6 +170,13 @@ import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.j
 import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
 import skylineResidenceCoverUpload from "@/assets/skyline-residence-cover-upload.png.asset.json";
 
+// Aditya Birla Asthavinayak — Institutional Architecture
+import abAstha1 from "@/assets/uploads/aditya-birla-asthavinayak-1.png.asset.json";
+import abAstha2 from "@/assets/uploads/aditya-birla-asthavinayak-2.png.asset.json";
+import abAstha3 from "@/assets/uploads/aditya-birla-asthavinayak-3.png.asset.json";
+import abAstha4 from "@/assets/uploads/aditya-birla-asthavinayak-4.png.asset.json";
+import abAstha5 from "@/assets/uploads/aditya-birla-asthavinayak-5.png.asset.json";
+
 // Aditya Birla Cancer Center — Commercial Architecture
 import abcc1 from "@/assets/abcc-1-4.jpg.asset.json";
 import abcc2 from "@/assets/abcc-2-5.jpg.asset.json";
@@ -180,6 +187,10 @@ import abcc6 from "@/assets/abcc-6-4.jpg.asset.json";
 import abcc7 from "@/assets/abcc-7-3.jpg.asset.json";
 import abcc8 from "@/assets/abcc-8-4.jpg.asset.json";
 import abcc9 from "@/assets/abcc-9-3.jpg.asset.json";
+import abcc10 from "@/assets/uploads/aditya-birla-cancer-centre-10.jpeg.asset.json";
+import abcc11 from "@/assets/uploads/aditya-birla-cancer-centre-11.jpeg.asset.json";
+import abcc12 from "@/assets/uploads/aditya-birla-cancer-centre-12.jpeg.asset.json";
+
 
 // Monster — Commercial Interior
 import mo1 from "@/assets/monster-001.jpg.asset.json";
@@ -439,8 +450,10 @@ const divyaEnclaveGallery = [de1.url, de2.url, de3.url, de4.url, de5.url, de6.ur
 const adarshVidyaMandirGallery = [avm1.url, avm2.url];
 const energizeResortNashikGallery = [er_n2.url, er_n3.url, er_n4.url, er_n5.url, er_n6.url, er_n7.url, er_n8.url, er_n9.url, er_n10.url, er_n13.url, er_n18.url, er_n5b.url, er_n21.url, er_n22.url, er_n23.url, er_n26.url, er_n29.url, er_n34.url, er_n35.url, er_n45.url, er_n48.url, er_n49.url, er_n51.url, er_n60.url, er_n78.url, er_n81.url];
 const goldCornetBoutiqueGallery = [gcb1.url, gcb2.url, gcb3.url, gcb4.url, gcb5.url, gcb6.url, gcb7.url, gcb8.url, gcb9.url, gcb10.url];
-const adityaBirlaCancerCenterGallery = [abcc1.url, abcc2.url, abcc3.url, abcc4.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url];
+const adityaBirlaAsthavinayakGallery = [abAstha1.url, abAstha2.url, abAstha3.url, abAstha4.url, abAstha5.url];
+const adityaBirlaCancerCenterGallery = [abcc1.url, abcc2.url, abcc3.url, abcc4.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url, abcc10.url, abcc11.url, abcc12.url];
 const monsterGallery = [mo1.url, mo2.url, mo3.url, mo4.url, mo5.url, mo7.url, mo9.url, mo11.url, mo14.url, mo15.url];
+
 const jadePinkGallery = [jp1.url, jp2.url, jp3.url, jp4.url, jp5.url, jp6.url, jp7.url, jp8.url, jp9.url];
 const palakJewellersGallery = [pj1.url, pj2.url, pj3.url, pj4.url, pj5.url, pj6.url];
 const ratanshiKherajGallery = [rk1.url, rk2.url, rk3.url, rk4.url, rk5.url, rk6.url, rk7.url];
@@ -593,6 +606,27 @@ export const projects: Project[] = [
     description: "A purpose-built venue designed to enhance learning, dialogue, and large-scale gatherings. Its thoughtful planning ensures comfort, visibility, and a seamless audience experience.",
   },
   {
+    slug: "aditya-birla-asthavinayak",
+    name: "Aditya Birla Asthavinayak",
+    sector: "Institutional",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: abAstha1.url,
+    gallery: adityaBirlaAsthavinayakGallery,
+    description: "A spiritual destination designed to celebrate faith, culture, and collective experience. Through carefully planned landscapes, gathering spaces, and traditional architectural elements, the project creates a serene and immersive environment.",
+    facilities: [
+      {
+        name: "Project Gallery",
+        description: "A spiritual destination designed to celebrate faith, culture, and collective experience. Through carefully planned landscapes, gathering spaces, and traditional architectural elements, the project creates a serene and immersive environment.",
+        images: adityaBirlaAsthavinayakGallery,
+      },
+    ],
+  },
+
+  {
     slug: "divya-enclave",
     name: "Divya Enclave",
     sector: "Hospitality",
@@ -605,6 +639,7 @@ export const projects: Project[] = [
     gallery: divyaEnclaveGallery,
     description: "A community-centric clubhouse that brings leisure, wellness, and social interaction together. Designed as an extension of everyday living, it offers spaces that encourage gathering and recreation.",
   },
+
   {
     slug: "adarsh-vidya-mandir-rajasthan",
     name: "Adarsh Vidya Mandir School — Rajasthan",
@@ -1194,16 +1229,17 @@ export const projects: Project[] = [
   {
     slug: "aditya-birla-cancer-center",
     name: "Aditya Birla Cancer Center",
-    sector: "Commercial",
+    sector: "Institutional",
     location: "",
     year: "",
     area: "",
-    scope: "",
+    scope: "Architecture",
     category: "Architecture",
-    cover: abcc1.url,
+    cover: abcc10.url,
     gallery: adityaBirlaCancerCenterGallery,
     description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
   },
+
   {
     slug: "shree-lallubhai-seth-arogya-mandir-savarkundla",
     name: "Shree Lallubhai Seth Arogya Mandir Hospital / Savarkundla",
