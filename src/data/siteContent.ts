@@ -549,4 +549,18 @@ export const mediaRecognitionPosts = [
       mediaIndiasHot1002.url,
     ],
   },
+  {
+    slug: "society-interiors-2001",
+    category: "Society Interiors",
+    date: "May–June 2001",
+    title: "Society Interiors 2001",
+    dek: "‘Flying Colours’ — the May–June 2001 issue features Hindustan Inks and Resins Limited's corporate complex at Vapi, designed by Ar. Dipak Thaker.",
+    coverImage: mediaSocietyInteriors2001Cover.url,
+    galleryImages: [
+      mediaSocietyInteriors2001Cover.url,
+      mediaSocietyInteriors20012.url,
+      mediaSocietyInteriors20013.url,
+      mediaSocietyInteriors20014.url,
+    ],
+  },
 ];
