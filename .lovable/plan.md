@@ -1,76 +1,70 @@
-## Scope
+## Goal
 
-Two deliverables, no redesign and no desktop changes.
+Fix sitewide lag (desktop + mobile) and do a proper mobile pass across every section — not just the ones called out. Keep the existing design language; this is performance + responsiveness work, not a redesign.
 
-1. End-to-end mobile polish across every route and shared component.
-2. Replace the placeholder 6-image grid on the Contact page with the official Elfsight Instagram feed for @interarchdesignlabs, and surface a clear LinkedIn link alongside it.
+## Sitewide performance — what's slowing the whole site down
 
----
+1. **Lenis smooth-scroll on every page.** Runs a RAF loop forever, intercepts wheel + touch, and compounds with framer-motion scroll listeners. Heavy even on desktop.
+2. **CustomCursor RAF loop runs always**, including on mobile where it's invisible. Listens on every mousemove, writes `transform` 60×/s.
+3. **SketchPhilosophy scroll handler** does `getBoundingClientRect` + builds a 50-point SVG polygon with sin/cos every scroll frame, and sets multiple inline styles. Easily the most expensive scroll listener on the home page.
+4. **Hero ken-burns** uses `will-change: transform` permanently — forces a huge GPU layer on the LCP image for the entire session.
+5. **Lots of `cursor: none` rules** force the browser to manage a hidden cursor across the whole tree; combined with `data-hover` listeners this thrashes on hover.
+6. **`backdrop-blur` over moving content** in the header / overlays causes per-frame re-sampling. (Known cause of jank.)
+7. **Reveal/MaskText components** likely attach IntersectionObservers per element; harmless individually, but many of them on a long page add up.
 
-## 1. Mobile Optimization Pass
+## Sitewide perf fixes (apply on all pages, desktop + mobile)
 
-Approach: changes are made in `src/styles.css` (where the bulk of the layout lives via custom CSS classes) plus targeted inline-style fixes in the route/component files. Desktop breakpoints (≥ 901px) are not touched. All work happens inside existing `@media (max-width: 900px)` / `(max-width: 600px)` / `(max-width: 480px)` blocks, extended as needed.
+- **Throttle Lenis sensibly and disable it on touch devices.**
+  - Desktop: keep Lenis but with `smoothTouch: false`, `wheelMultiplier: 1`, `lerp: 0.1`, and stop the RAF when the tab is hidden (`visibilitychange`).
+  - Touch / coarse pointer / ≤768px: do not instantiate Lenis at all — render children only, use native scroll.
+- **CustomCursor: skip on touch/coarse-pointer and respect `prefers-reduced-motion`.** Early-return — no DOM, no listeners, no RAF.
+- **Rewrite SketchPhilosophy's scroll loop:**
+  - Replace per-frame `getBoundingClientRect` with a single `IntersectionObserver` + a lightweight `scroll` handler that only runs while the section is in view.
+  - Reduce polygon points from 49 → ~16, cache the points array, only `setAttribute` when the value actually changes.
+  - Wrap the section in `content-visibility: auto` so it's skipped entirely when off-screen.
+  - On mobile, replace the whole scroll-driven thing with a static stacked layout (see below).
+- **Hero image:** drop `will-change: transform` after the ken-burns animation ends (use `animation-fill-mode: forwards` + remove the hint on `animationend`), and add `fetchpriority="high"` + `decoding="async"`.
+- **Remove global `cursor: none`** from large containers; apply it only to the body on desktop. Keep `data-hover` styling but stop forcing custom cursor management on every element.
+- **Replace any `backdrop-blur`** sitting over animated content (hero overlay, sticky header on scroll) with a solid/semi-opaque background or a `text-shadow` for legibility.
+- **Add `loading="lazy"` + `decoding="async"`** to every non-LCP image (projects grid, recognition, awards thumbnails, footer).
+- **Honor `prefers-reduced-motion: reduce`** across hero ken-burns, Reveal, MaskText, and SketchPhilosophy — render the final state, no animation.
 
-### Per-page review checklist
-Each of the following gets a hands-on review at 360, 390, 414, 768 widths via Playwright screenshots before/after:
+## Mobile audit (every section, not just the ones mentioned)
 
-- Homepage — Hero, HoverImageNav, FeaturedWorks, Verticals, SketchPhilosophy, Recognition, Clients marquee
-- Projects index (`/projects`) + category pages (`/projects/architecture`, `/projects/interior`)
-- Project detail (`/project/$slug`) — hero, image pairs, gallery, meta block
-- Studio (`/studio`, `/studio/about`, `/studio/team`, `/studio/history`)
-- Practice routes (history, process, journal index + slug)
-- Awards (`/awards`)
-- Media & Recognition index + slug
-- Contact
-- Header / mobile nav drawer
-- Footer
+I'll walk the site at 375px and 414px widths and fix what's broken. Anticipated issues based on the code already reviewed:
 
-### Issue categories the pass targets
-- **Typography**: clamp() hero/heading sizes so nothing overflows ≤ 360px; add `overflow-wrap: anywhere` / `hyphens: auto` to long words (project names, addresses); cap line-length with `max-width` in rem.
-- **Layout**: collapse multi-column grids to single column at ≤ 600px where they currently squeeze; tighten section vertical padding on mobile (reduce from desktop `clamp` floors); ensure `padding-inline` uses safe gutters (min 20px).
-- **Images**: remove fixed `aspect-ratio` overrides that crop on narrow screens for `idlx-mono-*`, project hero, gallery pairs; switch to `height: auto` on mobile while keeping desktop ratios.
-- **Navigation**: verify Header mobile drawer covers full viewport, scroll locks body, all links route, close on route change; tap targets ≥ 44px.
-- **Interactive**: button/anchor min-height 44px; form inputs full-width with 16px font (prevents iOS zoom); marquee speed/gap retuned for narrow screens; Google Map iframe keeps `aspect-ratio: 4/3` but switches to `3/4` ≤ 480px so it isn't a thin strip.
-- **Galleries / sliders**: confirm touch scrolling, snap points, and no horizontal page overflow (`overflow-x: hidden` on `body` as a safety net only after individual fixes).
-- **Footer**: stack columns, keep social links tappable.
+- **Header / nav** — keep the hamburger always visible (already requested earlier), verify drawer height on small phones, tap targets ≥44px, fix any z-index conflict now that the cursor is gone.
+- **Hero** — tighten side paddings to `clamp(20px, 5vw, 40px)`, prevent headline/sub/scroll-indicator from stacking on top of each other on 360px screens.
+- **SketchPhilosophy** — replace the 1200×220 SVG + sticky stage with a static stacked layout: eyebrow → philosophy lines → short rule → skyline image. No scroll math.
+- **FeaturedWorks** — single column at ≤900px (already there); verify `wide` cards don't crop the subject, "View Project →" label sits inside the card.
+- **Verticals** — likely overflows horizontally on small phones; collapse to a single-column list, reduce type scale.
+- **Recognition / Clients** — wrap into 2-column logo strips on small phones, ensure logos don't clip.
+- **Footer** — stack columns, increase line-height, ensure links are tappable.
+- **Projects index + category pages** — verify filter chips wrap, project cards stack, no horizontal scroll.
+- **Project detail (`/project/$slug`)** — hero image, gallery, metadata block all need a mobile pass; ensure the lightbox prev/next/close are thumb-sized.
+- **Awards** — buttons in the new lightbox ≥44px, image stacks cleanly under text, no card frame regressions.
+- **Media & Recognition** — check the slideshow controls and the article body width.
+- **Studio (about / history / team)** — stack the team grid (1 column under 600px is already in place), audit history timeline for overflow.
+- **Practice (history / journal / process)** — long-form pages: tighten line-length, reduce side padding, ensure imagery isn't cropped weirdly.
+- **Contact** — form fields full-width, Instagram embed stacks left as previously fixed.
+- **Global** — audit every `padding: 0 40px` style and replace with `clamp(20px, 5vw, 40px)` to kill horizontal overflow at 360px.
 
-### Verification
-Playwright runs at 360×780, 390×844, 414×896, 768×1024 capturing each route. Each screenshot is reviewed for overflow, cropping, tap-target, and spacing regressions. No desktop screenshots change.
+## Out of scope
 
----
+- No visual redesign. No changes to brand, palette, typography, or section structure.
+- No changes to backend/data.
 
-## 2. Instagram Feed (Contact page)
+## Verification
 
-Replace the placeholder 3×2 grid (lines 138–162 of `src/routes/contact.tsx`) with the Elfsight widget.
-
-- Load the Elfsight platform script once via a `<script>` tag added in `src/routes/__root.tsx` head (async). Avoid double-loading on client navigation.
-- Render the widget container: `<div className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e" data-elfsight-app-lazy />` inside a styled wrapper that matches the site's section rhythm (same `<Reveal>` block, same `h3`, same spacing tokens).
-- Section copy updated to: heading "Instagram", lead "Follow our latest projects, publications, studio updates, and architectural insights.", followed by the widget, then explicit Instagram + LinkedIn links.
-- Wrapper styling: `min-height` reserved to prevent layout jump while widget loads; border + padding consistent with surrounding panels; mobile padding tightened so widget cards aren't cramped.
-- The existing "Follow" block (lines 113–119) keeps both Instagram and LinkedIn anchors; nothing else on the page changes.
-
-### Verification
-- Playwright loads `/contact`, waits for the Elfsight container to mount, screenshots desktop + 390px mobile.
-- Confirm clicking through opens real Instagram posts (Elfsight default behaviour).
-- Confirm LinkedIn anchor opens `https://www.linkedin.com/company/interarch-design-lab/` in a new tab.
-- Confirm Google Map still renders and "Open in Google Maps" link works.
-
----
+- Walk every route on desktop and on a 375px mobile viewport.
+- DevTools Performance: confirm idle CPU drops (no more constant Lenis + cursor RAFs on mobile; reduced scripting time on desktop).
+- Confirm no horizontal scroll on any page at 360px.
+- Confirm no console errors and that all interactive elements (menu, lightbox, project links) work.
 
 ## Technical notes
 
-- Files expected to change:
-  - `src/styles.css` — extended `@media` blocks for mobile fixes (no desktop rule changes).
-  - `src/routes/__root.tsx` — add Elfsight `<script src="https://elfsightcdn.com/platform.js" async />` in head.
-  - `src/routes/contact.tsx` — swap placeholder grid for Elfsight container, refine copy, keep LinkedIn link.
-  - Minor inline-style tweaks in: `src/routes/project.$slug.tsx`, `src/routes/projects.$category.tsx`, `src/routes/studio.*`, `src/routes/awards.tsx`, `src/routes/media-recognition*.tsx`, `src/components/home/{Header,Footer,Hero,FeaturedWorks,Verticals,SketchPhilosophy,Recognition,Clients}.tsx` — only where a CSS-only fix is insufficient.
-- No new dependencies. No data/schema changes. No edits to desktop styles.
-- No changes to animations, copy (outside the Instagram section), routing, or visual identity.
-
----
-
-## Out of scope
-- Redesigning any section.
-- Replacing the Elfsight widget with a custom Instagram Graph API integration.
-- Adding new pages or restructuring IA.
-- Desktop layout adjustments.
+- Touch detection helper (reused): `(window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768)`.
+- Reduced-motion helper: `window.matchMedia('(prefers-reduced-motion: reduce)').matches`.
+- `SmoothScroll` and `CustomCursor` become no-op wrappers on touch.
+- `SketchPhilosophy` gets two code paths: existing desktop animation (optimized) + new static mobile layout.
+- Mobile CSS rules added to existing `@media` blocks in `src/styles.css` — no new files, no token changes.
