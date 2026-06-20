@@ -383,6 +383,7 @@ import cl2295 from "@/assets/cloudline-PAB2295-HDR.jpg.asset.json";
 // Bharoso — Shree Lallubhai Seth Arogya Mandir, Savarkundla (Architecture / Commercial)
 import bharoso1 from "@/assets/bharoso-savarkundla-1.jpg.asset.json";
 import bharoso2 from "@/assets/bharoso-savarkundla-2.jpg.asset.json";
+import bharoso3 from "@/assets/shree-lallubhai-seth-arogya-mandir-3.jpg.asset.json";
 
 // Metro Hospital — Delhi (Architecture / Commercial)
 import metroDel1 from "@/assets/metro-hospital-delhi-1.jpg.asset.json";
