@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Header } from "@/components/home/Header";
@@ -7,7 +7,6 @@ import { CustomCursor } from "@/components/home/CustomCursor";
 import { MaskText } from "@/components/motion/MaskText";
 import { Reveal } from "@/components/motion/Reveal";
 import { contactCopy } from "@/data/siteContent";
-import { realImages } from "@/data/realImages";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
