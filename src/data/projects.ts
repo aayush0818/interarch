@@ -9,10 +9,6 @@ import bg9 from "@/assets/bodygoals-9.jpg.asset.json";
 import bg10 from "@/assets/bodygoals-10.jpg.asset.json";
 import bg11 from "@/assets/bodygoals-11.jpg.asset.json";
 import bg12 from "@/assets/bodygoals-12.jpg.asset.json";
-import bg16 from "@/assets/bodygoals-16.jpg.asset.json";
-import bg17 from "@/assets/bodygoals-17.jpg.asset.json";
-import bg18 from "@/assets/bodygoals-18.jpg.asset.json";
-import bg19 from "@/assets/bodygoals-19.jpg.asset.json";
 
 // Noir Residence — Residential Interior
 import nr2 from "@/assets/noir-residence-2.jpeg.asset.json";
@@ -35,7 +31,7 @@ import nr56 from "@/assets/noir-residence-56.jpeg.asset.json";
 import nr57 from "@/assets/noir-residence-57.jpeg.asset.json";
 import nr64 from "@/assets/noir-residence-64.jpeg.asset.json";
 import nr65 from "@/assets/noir-residence-65.jpeg.asset.json";
-import nr66 from "@/assets/noir-residence-66.jpeg.asset.json";
+
 
 // Meril Club House — Vapi (Architecture · Hospitality)
 import mc1 from "@/assets/meril-1.jpg.asset.json";
@@ -459,9 +455,8 @@ import ridgeHouse1 from "@/assets/ridge-house-1.jpg.asset.json";
 import ridgeHouse2 from "@/assets/ridge-house-2.jpg.asset.json";
 import ridgeHouse3 from "@/assets/ridge-house-3.jpg.asset.json";
 
-const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url, bg16.url, bg17.url, bg18.url, bg19.url];
+const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url];
 const noirResidenceGallery = [
-  nr66.url,
   nr65.url,
   nr64.url,
   nr57.url,
@@ -1178,7 +1173,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: goldCornetCoverUpload.url,
+    cover: gcb1.url,
     gallery: goldCornetBoutiqueGallery,
     description: "Layered with visual moments, the boutique unfolds like a curated collection — rich in character, immersive in atmosphere and distinctly memorable.",
   },
@@ -1191,7 +1186,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: jcb3.url,
+    cover: jcb1.url,
     gallery: biguineGallery,
     description: "",
   },
@@ -1204,7 +1199,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: sl3.url,
+    cover: sl1.url,
     gallery: solitaaGallery,
     description: "A luxury retail destination designed to highlight the brilliance and prestige of fine diamonds. Refined materials, strategic lighting and understated elegance create an atmosphere of exclusivity and trust.",
   },
@@ -1217,7 +1212,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: rk3.url,
+    cover: rk1.url,
     gallery: ratanshiKherajGallery,
     description: "Designed to celebrate colour, craft and movement, the space unfolds as a contemporary retail experience where every collection is given room to be seen, explored and remembered.",
   },
@@ -1230,7 +1225,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: pj3.url,
+    cover: pj1.url,
     gallery: palakJewellersGallery,
     description: "Designed around privacy and precision, the project combines hospitality with professionalism — creating a setting where trust and craftsmanship become part of the experience.",
   },
@@ -1256,7 +1251,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: jp3.url,
+    cover: jp1.url,
     gallery: jadePinkGallery,
     description: "Conceived as a contemporary retail experience, the space encourages discovery through openness, rhythm and display. Every corner is designed to let colour, craftsmanship and movement become part of the shopping journey.",
   },
@@ -1295,7 +1290,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: bg3.url,
+    cover: bg9.url,
     gallery: bodyGoalsGallery,
     description: "The project reimagines fitness through clarity and focus — balancing high-performance zones with a clean spatial rhythm that encourages movement without distraction.",
   },
