@@ -285,7 +285,7 @@ import ox8 from "@/assets/onyx-049.jpeg.asset.json";
 import ox9 from "@/assets/onyx-028.jpeg.asset.json";
 import ox10 from "@/assets/onyx-026.jpeg.asset.json";
 
-// Emerald Reverie — A Classical Penthouse (Residential Interior)
+// Emerald Reverie — House of symmetry (Residential Interior)
 import er1 from "@/assets/emerald-024-2.jpeg.asset.json";
 import er2 from "@/assets/emerald-014.jpeg.asset.json";
 import er3 from "@/assets/emerald-029.jpeg.asset.json";
