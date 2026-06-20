@@ -84,7 +84,6 @@ body {
   object-fit: cover;
   object-position: center center;
   animation: kenburns 12s ease-out forwards;
-  will-change: transform;
 }
 @keyframes kenburns {
   from { transform: scale(1); }
