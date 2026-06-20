@@ -251,7 +251,7 @@ import jcb5 from "@/assets/biguine-9-2.jpg.asset.json";
 import jcb6 from "@/assets/biguine-5-4.jpg.asset.json";
 import jcb7 from "@/assets/biguine-2-3.jpg.asset.json";
 
-// Serene Heights — Residential Interior
+// The crafted home — Residential Interior
 import sh1 from "@/assets/serene-pab3226-hdr.jpg.asset.json";
 import sh2 from "@/assets/serene-pab2833-hdr.jpg.asset.json";
 import sh3 from "@/assets/serene-pab3145-hdr.jpg.asset.json";
@@ -273,7 +273,7 @@ import sf8 from "@/assets/saffron-39.jpeg.asset.json";
 import sf9 from "@/assets/saffron-76.jpeg.asset.json";
 import sf10 from "@/assets/saffron-77.jpeg.asset.json";
 
-// Onyx & Ivory — A Marbled Maison (Residential Interior)
+// Onyx & Ivory — The walnut house (Residential Interior)
 import ox1 from "@/assets/onyx-008.jpeg.asset.json";
 import ox2 from "@/assets/onyx-021.jpeg.asset.json";
 import ox3 from "@/assets/onyx-012.jpeg.asset.json";
@@ -285,7 +285,7 @@ import ox8 from "@/assets/onyx-049.jpeg.asset.json";
 import ox9 from "@/assets/onyx-028.jpeg.asset.json";
 import ox10 from "@/assets/onyx-026.jpeg.asset.json";
 
-// Emerald Reverie — A Classical Penthouse (Residential Interior)
+// Emerald Reverie — House of symmetry (Residential Interior)
 import er1 from "@/assets/emerald-024-2.jpeg.asset.json";
 import er2 from "@/assets/emerald-014.jpeg.asset.json";
 import er3 from "@/assets/emerald-029.jpeg.asset.json";
@@ -1007,7 +1007,7 @@ export const projects: Project[] = [
   },
   {
     slug: "emerald-reverie-classical-penthouse",
-    name: "A Classical Penthouse",
+    name: "House of symmetry",
     sector: "Residential",
     location: "",
     year: "",
@@ -1020,7 +1020,7 @@ export const projects: Project[] = [
   },
   {
     slug: "blush-and-bronze-residence",
-    name: "Amber Residence",
+    name: "East wing house",
     sector: "Residential",
     location: "",
     year: "",
@@ -1033,7 +1033,7 @@ export const projects: Project[] = [
   },
   {
     slug: "cloudline-penthouse-residence",
-    name: "Aerie Penthouse",
+    name: "The lightwell residence",
     sector: "Residential",
     location: "",
     year: "",
@@ -1046,7 +1046,7 @@ export const projects: Project[] = [
   },
   {
     slug: "sage-whisper-residence",
-    name: "Verdant Residence",
+    name: "The house of stone",
     sector: "Residential",
     location: "",
     year: "",
@@ -1059,7 +1059,7 @@ export const projects: Project[] = [
   },
   {
     slug: "onyx-and-ivory-marbled-maison",
-    name: "Marbled Maison",
+    name: "The walnut house",
     sector: "Residential",
     location: "",
     year: "",
@@ -1072,7 +1072,7 @@ export const projects: Project[] = [
   },
   {
     slug: "saffron-and-stone-skyline-residence",
-    name: "Horizon Residence",
+    name: "Monochrome luxe",
     sector: "Residential",
     location: "",
     year: "",
@@ -1085,7 +1085,7 @@ export const projects: Project[] = [
   },
   {
     slug: "serene-heights",
-    name: "Serene Heights",
+    name: "The crafted home",
     sector: "Residential",
     location: "",
     year: "",
