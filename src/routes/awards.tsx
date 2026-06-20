@@ -2,11 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
-import { CinematicHero } from "@/components/motion/CinematicHero";
+import { MaskText } from "@/components/motion/MaskText";
+import { Reveal } from "@/components/motion/Reveal";
 import { recognitionList } from "@/data/siteContent";
-import { realImages } from "@/data/realImages";
-
-const hero = realImages.institutional.pool;
 
 export const Route = createFileRoute("/awards")({
   head: () => ({
@@ -23,18 +21,36 @@ function AwardsPage() {
     <>
       <CustomCursor />
       <Header />
-      <main className="idlx-page">
-        <CinematicHero image={hero} alt="Awards" eyebrow="— Awards" title={"Quiet\nrecognition."} height="tall" />
-        <section className="idlx-section">
-          <div className="idlx-awards">
-            {recognitionList.map((r) => (
-              <div key={r.award} className="idlx-award-row">
-                <span className="idlx-award-year">{r.year}</span>
-                <span className="idlx-award-name">{r.award}</span>
-                <span className="idlx-award-note">{r.note}</span>
-              </div>
-            ))}
-          </div>
+      <main className="idlx-page idlx-media-page">
+        <header className="idlx-media-head">
+          <Reveal>
+            <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> Awards</span>
+          </Reveal>
+          <MaskText as="h1" className="idlx-media-title" delay={0.15}>
+            Quiet recognition.
+          </MaskText>
+          <Reveal delay={0.3}>
+            <p className="idlx-media-lede">
+              Honours, commendations and acknowledgements gathered across three decades of practice.
+            </p>
+          </Reveal>
+        </header>
+
+        <section className="idlx-media-shelf">
+          {recognitionList.map((r, i) => (
+            <Reveal key={r.award} delay={0.05 * i}>
+              <article className="idlx-media-card idlx-award-card">
+                <div className="idlx-media-card-cover idlx-award-cover">
+                  <span className="idlx-award-year-mark">{r.year}</span>
+                </div>
+                <div className="idlx-media-card-body">
+                  <span className="idlx-jrn-meta">Recognition · {r.year}</span>
+                  <h2 className="idlx-media-card-title">{r.award}</h2>
+                  <p className="idlx-media-card-dek">{r.note}</p>
+                </div>
+              </article>
+            </Reveal>
+          ))}
         </section>
       </main>
       <Footer />

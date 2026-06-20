@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import logo from "@/assets/idl-logo.png";
 import { realImages } from "@/data/realImages";
@@ -76,6 +76,8 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => {
@@ -108,7 +110,8 @@ export function Header() {
   };
 
   const active = useMemo(() => (activeIdx !== null ? NAV[activeIdx] : null), [activeIdx]);
-  const headerClass = `idl-header${scrolled ? " is-scrolled" : ""}${open ? " is-menu" : ""}`;
+  const solid = !isHome || scrolled;
+  const headerClass = `idl-header${solid ? " is-scrolled" : ""}${open ? " is-menu" : ""}`;
 
   return (
     <>

@@ -54,8 +54,6 @@ function MediaPage() {
                 <div className="idlx-media-card-body">
                   <span className="idlx-jrn-meta">{post.category} · {post.date}</span>
                   <h2 className="idlx-media-card-title">{post.title}</h2>
-                  <p className="idlx-media-card-dek">{post.dek}</p>
-                  <span className="idlx-cta-link">View publication →</span>
                 </div>
               </Link>
             </Reveal>
