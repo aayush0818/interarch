@@ -136,28 +136,26 @@ function ContactPage() {
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <h3>Latest from Instagram</h3>
-            <div style={{ marginTop: 14, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
-              {[0, 1, 2, 3, 4, 5].map((i) => (
-                <a
-                  key={i}
-                  href={contactCopy.instagram}
-                  target="_blank"
-                  rel="noreferrer"
-                  data-hover
-                  style={{ display: "block", aspectRatio: "1 / 1", overflow: "hidden", background: "var(--stone)" }}
-                >
-                  <img
-                    src={realImages.commercial.reception}
-                    alt="Instagram post"
-                    loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-                  />
-                </a>
-              ))}
-            </div>
+            <h3>Instagram</h3>
             <p style={{ marginTop: 10 }}>
-              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>View feed on Instagram →</a>
+              Follow our latest projects, publications, studio updates, and architectural insights.
+            </p>
+            <div
+              className="idlx-ig-feed"
+              style={{ marginTop: 18, minHeight: 320, border: "1px solid var(--stone)", padding: 8, background: "var(--bg)" }}
+            >
+              <div
+                className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
+                data-elfsight-app-lazy
+              />
+            </div>
+            <p style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 6 }}>
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>
+                Instagram → @interarchdesignlabs
+              </a>
+              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>
+                LinkedIn → Interarch Design Lab
+              </a>
             </p>
           </Reveal>
         </aside>
