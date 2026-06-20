@@ -2,6 +2,8 @@ import { Outlet, Link, createFileRoute, useRouterState } from "@tanstack/react-r
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
+import { MaskText } from "@/components/motion/MaskText";
+import { Reveal } from "@/components/motion/Reveal";
 import { mediaRecognitionPosts } from "@/data/siteContent";
 
 export const Route = createFileRoute("/media-recognition")({
@@ -17,33 +19,48 @@ export const Route = createFileRoute("/media-recognition")({
 function MediaPage() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   if (pathname !== "/media-recognition") return <Outlet />;
-  const [feature, ...rest] = mediaRecognitionPosts;
 
   return (
     <>
       <CustomCursor />
       <Header />
-      <main className="idlx-page">
-        <div className="idlx-jrn">
-          <Link to="/media-recognition/$slug" params={{ slug: feature.slug }} className="idlx-jrn-feature" data-hover>
-            <div className="idlx-jrn-feature-img"><img src={feature.coverImage} alt={feature.title} /></div>
-            <div className="idlx-jrn-feature-body">
-              <span className="idlx-jrn-meta">— Featured · {feature.category} · {feature.date}</span>
-              <h2 className="idlx-jrn-feature-title">{feature.title}</h2>
-              <p className="idlx-jrn-feature-dek">{feature.dek}</p>
-              <span className="idlx-cta-link" style={{ alignSelf: "start" }}>View publication →</span>
-            </div>
-          </Link>
-          <div className="idlx-jrn-grid">
-            {rest.map((post) => (
-              <Link key={post.slug} to="/media-recognition/$slug" params={{ slug: post.slug }} className="idlx-jrn-card" data-hover>
-                <div className="idlx-jrn-card-img"><img src={post.coverImage} alt={post.title} loading="lazy" /></div>
-                <span className="idlx-jrn-meta">{post.category} · {post.date}</span>
-                <h3 className="idlx-jrn-card-title">{post.title}</h3>
+      <main className="idlx-page idlx-media-page">
+        <header className="idlx-media-head">
+          <Reveal>
+            <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> Media Recognition</span>
+          </Reveal>
+          <MaskText as="h1" className="idlx-media-title" delay={0.15}>
+            Published, profiled, archived.
+          </MaskText>
+          <Reveal delay={0.3}>
+            <p className="idlx-media-lede">
+              A selection of magazines, books and cover features that have carried the studio's work into print.
+            </p>
+          </Reveal>
+        </header>
+
+        <section className="idlx-media-shelf">
+          {mediaRecognitionPosts.map((post, i) => (
+            <Reveal key={post.slug} delay={0.05 * i}>
+              <Link
+                to="/media-recognition/$slug"
+                params={{ slug: post.slug }}
+                className="idlx-media-card"
+                data-hover
+              >
+                <div className="idlx-media-card-cover">
+                  <img src={post.coverImage} alt={post.title} loading={i < 2 ? "eager" : "lazy"} />
+                </div>
+                <div className="idlx-media-card-body">
+                  <span className="idlx-jrn-meta">{post.category} · {post.date}</span>
+                  <h2 className="idlx-media-card-title">{post.title}</h2>
+                  <p className="idlx-media-card-dek">{post.dek}</p>
+                  <span className="idlx-cta-link">View publication →</span>
+                </div>
               </Link>
-            ))}
-          </div>
-        </div>
+            </Reveal>
+          ))}
+        </section>
       </main>
       <Footer />
     </>

@@ -56,6 +56,15 @@ import mediaLuxuryApartmentsCover from "@/assets/media/media-50-luxury-apartment
 import mediaLuxuryApartments2 from "@/assets/media/media-50-luxury-apartments-2.png.asset.json";
 import mediaLuxuryApartments3 from "@/assets/media/media-50-luxury-apartments-3.png.asset.json";
 import mediaLuxuryApartments4 from "@/assets/media/media-50-luxury-apartments-4.png.asset.json";
+import mediaLuxuryApartments5 from "@/assets/media/media-50-luxury-apartments-5.png.asset.json";
+import mediaLuxuryApartments6 from "@/assets/media/media-50-luxury-apartments-6.png.asset.json";
+import mediaCorporateOfficesCover from "@/assets/media/media-corporate-offices-cover.png.asset.json";
+import mediaCorporateOffices2 from "@/assets/media/media-corporate-offices-2.png.asset.json";
+import mediaCorporateOffices3 from "@/assets/media/media-corporate-offices-3.png.asset.json";
+import mediaCorporateOffices4 from "@/assets/media/media-corporate-offices-4.png.asset.json";
+import mediaCorporateOffices5 from "@/assets/media/media-corporate-offices-5.png.asset.json";
+import mediaTop50DesignersCover from "@/assets/media/media-top-50-designers-cover.png.asset.json";
+import mediaTop50Designers2 from "@/assets/media/media-top-50-designers-2.png.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
@@ -493,6 +502,35 @@ export const mediaRecognitionPosts = [
       mediaLuxuryApartments2.url,
       mediaLuxuryApartments3.url,
       mediaLuxuryApartments4.url,
+      mediaLuxuryApartments5.url,
+      mediaLuxuryApartments6.url,
+    ],
+  },
+  {
+    slug: "corporate-offices-in-india",
+    category: "Publication",
+    date: "White Flag",
+    title: "Corporate Offices in India",
+    dek: "Published by White Flag, this volume features Interarch's corporate work — including the Micro Inks, Vapi headquarters — alongside studio profile and project spreads.",
+    coverImage: mediaCorporateOfficesCover.url,
+    galleryImages: [
+      mediaCorporateOfficesCover.url,
+      mediaCorporateOffices2.url,
+      mediaCorporateOffices3.url,
+      mediaCorporateOffices4.url,
+      mediaCorporateOffices5.url,
+    ],
+  },
+  {
+    slug: "top-50-interior-designers",
+    category: "Commercial Design",
+    date: "Nov 2013",
+    title: "Top 50 Interior Designers",
+    dek: "India's 50 most influential interior designers in the commercial space — Commercial Design magazine cover story featuring Dipak Thaker of Interarch / DID Consultants.",
+    coverImage: mediaTop50DesignersCover.url,
+    galleryImages: [
+      mediaTop50DesignersCover.url,
+      mediaTop50Designers2.url,
     ],
   },
 ];
