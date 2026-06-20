@@ -1031,6 +1031,7 @@ export const projects: Project[] = [
     cover: hoa1.url,
     gallery: houseOfArchesGallery,
     description: "Soft curves, muted tones, and understated detailing define a home that feels calm, inviting, and timeless. The interiors embrace contemporary minimalism while introducing warmth through texture, natural materials, and gentle architectural gestures.",
+    imageFit: "contain",
   },
   {
     slug: "emerald-reverie-classical-penthouse",
