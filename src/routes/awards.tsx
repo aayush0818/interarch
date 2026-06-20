@@ -41,7 +41,11 @@ function AwardsPage() {
             <Reveal key={r.award} delay={0.05 * i}>
               <article className="idlx-media-card idlx-award-card">
                 <div className="idlx-media-card-cover idlx-award-cover">
-                  <span className="idlx-award-year-mark">{r.year}</span>
+                  {r.image ? (
+                    <img src={r.image} alt={r.award} loading="lazy" />
+                  ) : (
+                    <span className="idlx-award-year-mark">{r.year}</span>
+                  )}
                 </div>
                 <div className="idlx-media-card-body">
                   <span className="idlx-jrn-meta">Recognition · {r.year}</span>

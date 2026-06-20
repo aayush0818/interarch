@@ -68,6 +68,16 @@ import mediaSocietyInteriors20117 from "@/assets/media/media-society-interiors-2
 import mediaSocietyInteriors20118 from "@/assets/media/media-society-interiors-2011-8.png.asset.json";
 import mediaIndiasHot100Cover from "@/assets/media/media-indias-hot-100-cover.png.asset.json";
 import mediaIndiasHot1002 from "@/assets/media/media-indias-hot-100-2.png.asset.json";
+import mediaSocietyInteriors2001Cover from "@/assets/media/media-society-interiors-2001-cover.png.asset.json";
+import mediaSocietyInteriors20012 from "@/assets/media/media-society-interiors-2001-2.png.asset.json";
+import mediaSocietyInteriors20013 from "@/assets/media/media-society-interiors-2001-3.png.asset.json";
+import mediaSocietyInteriors20014 from "@/assets/media/media-society-interiors-2001-4.png.asset.json";
+import awardAdSpectrum2001 from "@/assets/awards/award-ad-spectrum-2001.jpg.asset.json";
+import awardArea2008 from "@/assets/awards/award-area-2008.jpg.asset.json";
+import awardArea2008Framed from "@/assets/awards/award-area-2008-framed.jpg.asset.json";
+import awardDrdo2009 from "@/assets/awards/award-drdo-silver-jubilee-2009.jpg.asset.json";
+import awardAica2010 from "@/assets/awards/award-aica-asia-fest-2010.jpg.asset.json";
+import awardRachana2015 from "@/assets/awards/award-rachana-sansad-2015.jpg.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
@@ -152,12 +162,12 @@ export const rangeOfExperience = {
 };
 
 export const recognitionList = [
-  { year: "2001", award: "A+D Spectrum Architecture Awards", note: "Recognition for Excellence in Architecture — awarded for creative contribution and design excellence, recognised by one of India's leading architectural publications and industry platforms." },
-  { year: "2008", award: "Association of Real Estate Agents Appreciation Award", note: "Recognition for Professional Contribution — honouring commitment, industry support, and contributions towards advancing the built environment and real estate sector." },
-  { year: "2009", award: "25 Years of Service – DRDO, Ministry of Defence", note: "A Legacy of Enduring Trust — presented in recognition of a long-standing association spanning over twenty-five years with one of India's most respected defence organisations." },
+  { year: "2001", award: "A+D & Spectrum Paints Architecture Awards", note: "Architecture + Design (A+D), The National Journal of Architecture, and Spectrum Paints appreciated the participation of Ar. Dipak P. Thakar — the jury's response to the creative involvement was very positive.", image: awardAdSpectrum2001.url },
+  { year: "2008", award: "AREA — Memento of Appreciation", note: "The Association of Real Estate Agents acknowledged Ar. Dipak Thaker's support, commitment, and contribution to the success of the 3rd AREA Real Estate Conference held on 27th November 2008.", image: awardArea2008.url },
+  { year: "2009", award: "25 Years Silver Jubilee — DRDO, Ministry of Defence", note: "Presented by the Chief Construction Engineer (R&D) South, Secunderabad, on 26th November 2009, in recognition of a long-standing association of over twenty-five years with the Defence R&D Organisation, Ministry of Defence.", image: awardDrdo2009.url },
   { year: "2010", award: "Chief Minister's Recognition – Babasaheb Ambedkar Bhavan", note: "Recognition for Public Impact — acknowledging architectural contributions towards projects of cultural and civic significance in Maharashtra." },
-  { year: "2014–15", award: "AICA Asia Fest Commendation Award", note: "Commendation for Architectural Excellence — recognised by an international jury for the Educational Bio Medical Academy project, celebrating innovation and design quality." },
-  { year: "2015", award: "Rachana Sansad Diamond Jubilee Felicitation", note: "Honouring Contribution to Architecture — presented by one of India's most respected architectural institutions in recognition of professional achievements and contribution to the discipline." },
+  { year: "2014–15", award: "AICA — Artists in Concrete Awards, Asia Fest", note: "The panel of judges recommended a Commendation Award in the Architecture category for DID Consultants, Architects & Engineers — for the Educational Bio Medical Academy project, endorsed by an international jury.", image: awardAica2010.url },
+  { year: "2015", award: "Rachana Sansad's Academy of Architecture — Diamond Jubilee Felicitation", note: "Rachana Sansad's Academy of Architecture felicitated Ar. Dipak Thaker as an esteemed alumnus during their Diamond Jubilee Celebration, recognising his significant contribution to the profession of architecture.", image: awardRachana2015.url },
   { year: "—", award: "Grohe Bath & Design Awards", note: "Excellence in Design Innovation — recognising outstanding design thinking, detailing, and execution across contemporary architectural and interior projects." },
 ];
 
@@ -537,6 +547,20 @@ export const mediaRecognitionPosts = [
     galleryImages: [
       mediaIndiasHot100Cover.url,
       mediaIndiasHot1002.url,
+    ],
+  },
+  {
+    slug: "society-interiors-2001",
+    category: "Society Interiors",
+    date: "May–June 2001",
+    title: "Society Interiors 2001",
+    dek: "‘Flying Colours’ — the May–June 2001 issue features Hindustan Inks and Resins Limited's corporate complex at Vapi, designed by Ar. Dipak Thaker.",
+    coverImage: mediaSocietyInteriors2001Cover.url,
+    galleryImages: [
+      mediaSocietyInteriors2001Cover.url,
+      mediaSocietyInteriors20012.url,
+      mediaSocietyInteriors20013.url,
+      mediaSocietyInteriors20014.url,
     ],
   },
 ];
