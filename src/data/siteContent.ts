@@ -56,6 +56,15 @@ import mediaLuxuryApartmentsCover from "@/assets/media/media-50-luxury-apartment
 import mediaLuxuryApartments2 from "@/assets/media/media-50-luxury-apartments-2.png.asset.json";
 import mediaLuxuryApartments3 from "@/assets/media/media-50-luxury-apartments-3.png.asset.json";
 import mediaLuxuryApartments4 from "@/assets/media/media-50-luxury-apartments-4.png.asset.json";
+import mediaLuxuryApartments5 from "@/assets/media/media-50-luxury-apartments-5.png.asset.json";
+import mediaLuxuryApartments6 from "@/assets/media/media-50-luxury-apartments-6.png.asset.json";
+import mediaCorporateOfficesCover from "@/assets/media/media-corporate-offices-cover.png.asset.json";
+import mediaCorporateOffices2 from "@/assets/media/media-corporate-offices-2.png.asset.json";
+import mediaCorporateOffices3 from "@/assets/media/media-corporate-offices-3.png.asset.json";
+import mediaCorporateOffices4 from "@/assets/media/media-corporate-offices-4.png.asset.json";
+import mediaCorporateOffices5 from "@/assets/media/media-corporate-offices-5.png.asset.json";
+import mediaTop50DesignersCover from "@/assets/media/media-top-50-designers-cover.png.asset.json";
+import mediaTop50Designers2 from "@/assets/media/media-top-50-designers-2.png.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
