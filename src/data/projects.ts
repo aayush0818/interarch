@@ -63,6 +63,8 @@ import ma10 from "@/assets/meril-academy-vapi-10.jpg.asset.json";
 import ma11 from "@/assets/meril-academy-vapi-11.jpg.asset.json";
 import ma12 from "@/assets/meril-academy-vapi-12.jpg.asset.json";
 import ma13 from "@/assets/meril-academy-vapi-13.jpg.asset.json";
+import ma14 from "@/assets/meril-academy-vapi-14.jpg.asset.json";
+import ma15 from "@/assets/meril-academy-vapi-15.jpg.asset.json";
 
 // D CP Office — Belapur (Architecture · Institutional)
 import dcp1 from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
@@ -79,6 +81,7 @@ import apj5 from "@/assets/apj-auditorium-5.jpg.asset.json";
 import apj6 from "@/assets/apj-auditorium-6.jpg.asset.json";
 import apj7 from "@/assets/apj-auditorium-7.jpg.asset.json";
 import apj8 from "@/assets/apj-auditorium-8.jpg.asset.json";
+import apj9 from "@/assets/apj-auditorium-9.jpg.asset.json";
 
 // Meril Park 2 (Architecture · Industrial)
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
