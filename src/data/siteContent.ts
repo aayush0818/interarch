@@ -78,6 +78,7 @@ import awardArea2008Framed from "@/assets/awards/award-area-2008-framed.jpg.asse
 import awardDrdo2009 from "@/assets/awards/award-drdo-silver-jubilee-2009.jpg.asset.json";
 import awardAica2010 from "@/assets/awards/award-aica-asia-fest-2010.jpg.asset.json";
 import awardRachana2015 from "@/assets/awards/award-rachana-sansad-2015.jpg.asset.json";
+import awardGrohe from "@/assets/awards/award-grohe-bath-design.jpg.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
