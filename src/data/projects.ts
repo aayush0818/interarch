@@ -419,26 +419,17 @@ import viaVapi3 from "@/assets/via-auditorium-vapi-3.jpg.asset.json";
 import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 
 // Quest (Ajay Seth) — Institutional (Architecture)
-import quest97 from "@/assets/quest-clubhouse-97.jpg.asset.json";
-import quest99 from "@/assets/quest-clubhouse-99.jpg.asset.json";
-import quest96 from "@/assets/quest-clubhouse-96.jpg.asset.json";
-import quest94 from "@/assets/quest-clubhouse-94.jpg.asset.json";
-import quest67 from "@/assets/quest-clubhouse-67.jpg.asset.json";
-import quest77 from "@/assets/quest-clubhouse-77.jpg.asset.json";
-import quest72 from "@/assets/quest-clubhouse-72.jpg.asset.json";
-import quest65 from "@/assets/quest-clubhouse-65.jpg.asset.json";
-import quest47 from "@/assets/quest-clubhouse-47.jpg.asset.json";
-import quest45 from "@/assets/quest-clubhouse-45.jpg.asset.json";
-import quest57 from "@/assets/quest-clubhouse-57.jpg.asset.json";
-import quest51 from "@/assets/quest-clubhouse-51.jpg.asset.json";
-import quest50 from "@/assets/quest-clubhouse-50.jpg.asset.json";
-import quest18 from "@/assets/quest-clubhouse-18.jpg.asset.json";
-import quest42 from "@/assets/quest-clubhouse-42.jpg.asset.json";
-import quest38 from "@/assets/quest-clubhouse-38.jpg.asset.json";
-import quest82 from "@/assets/quest-clubhouse-82.jpg.asset.json";
-import quest23 from "@/assets/quest-clubhouse-23.jpg.asset.json";
-import quest83 from "@/assets/quest-clubhouse-83.jpg.asset.json";
-import quest80 from "@/assets/quest-clubhouse-80.jpg.asset.json";
+import quest38n from "@/assets/quest-clubhouse-38-2.jpg.asset.json";
+import quest65n from "@/assets/quest-clubhouse-65-2.jpg.asset.json";
+import quest23n from "@/assets/quest-clubhouse-23-2.jpg.asset.json";
+import quest67n from "@/assets/quest-clubhouse-67-2.jpg.asset.json";
+import quest2n from "@/assets/quest-clubhouse-2.jpg.asset.json";
+import quest18n from "@/assets/quest-clubhouse-18-2.jpg.asset.json";
+import quest82n from "@/assets/quest-clubhouse-82-2.jpg.asset.json";
+import quest83n from "@/assets/quest-clubhouse-83-2.jpg.asset.json";
+import quest91n from "@/assets/quest-clubhouse-91.jpg.asset.json";
+import quest96n from "@/assets/quest-clubhouse-96-2.jpg.asset.json";
+
 
 // Laxmi Kunj — Architecture · Residential
 import laxmiKunj1 from "@/assets/laxmi-kunj-1.jpg.asset.json";
@@ -529,7 +520,7 @@ const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis
 const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
-const questAjaySethGallery = [quest67.url, quest77.url, quest72.url, quest65.url, quest94.url, quest97.url, quest99.url, quest47.url, quest45.url, quest57.url, quest96.url, quest51.url, quest50.url, quest18.url, quest42.url, quest38.url, quest82.url, quest23.url, quest83.url, quest80.url];
+const questAjaySethGallery = [quest38n.url, quest65n.url, quest23n.url, quest67n.url, quest2n.url, quest18n.url, quest82n.url, quest83n.url, quest91n.url, quest96n.url];
 
 // Maple Industrial Park — Vapi (Architecture · Industrial)
 import mapleGate01 from "@/assets/maple-main-gate-01.jpeg.asset.json";
@@ -759,7 +750,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Architecture",
-    cover: quest67.url,
+    cover: quest38n.url,
     gallery: questAjaySethGallery,
     description: "Set within a natural landscape, the project combines timeless architectural character with modern functionality. Designed as a place for interaction, learning, and retreat, it offers a balanced and inspiring environment.",
   },
