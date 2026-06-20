@@ -156,7 +156,7 @@ import gcb10 from "@/assets/gold-cornet-boutique-7584.jpg.asset.json";
 
 import er_n2 from "@/assets/energize-resort-nashik-2.jpg.asset.json";
 import er_n3 from "@/assets/energize-resort-nashik-3.jpg.asset.json";
-import er_n4 from "@/assets/energize-resort-nashik-4.jpg.asset.json";
+
 import er_n5 from "@/assets/energize-resort-nashik-5.jpg.asset.json";
 import er_n6 from "@/assets/energize-resort-nashik-6.jpg.asset.json";
 import er_n7 from "@/assets/energize-resort-nashik-7.jpg.asset.json";
