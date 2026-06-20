@@ -324,7 +324,16 @@ const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
 import hos2 from "@/assets/house-of-stone-093.jpg.asset.json";
 import hos3 from "@/assets/house-of-stone-082.jpg.asset.json";
-const houseOfStoneGallery = [hos1.url, hos2.url, hos3.url];
+import hos4 from "@/assets/house-of-stone-027.jpeg.asset.json";
+import hos5 from "@/assets/house-of-stone-031.jpeg.asset.json";
+import hos6 from "@/assets/house-of-stone-016.jpeg.asset.json";
+import hos7 from "@/assets/house-of-stone-025.jpeg.asset.json";
+import hos8 from "@/assets/house-of-stone-004.jpeg.asset.json";
+import hos9 from "@/assets/house-of-stone-059.jpeg.asset.json";
+import hos10 from "@/assets/house-of-stone-122.jpeg.asset.json";
+import hos11 from "@/assets/house-of-stone-130-2.jpeg.asset.json";
+import hos12 from "@/assets/house-of-stone-067.jpeg.asset.json";
+const houseOfStoneGallery = [hos1.url, hos4.url, hos5.url, hos6.url, hos7.url, hos2.url, hos3.url, hos8.url, hos9.url, hos10.url, hos11.url, hos12.url];
 
 // Blush & Bronze Residence — Residential Interior
 import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
