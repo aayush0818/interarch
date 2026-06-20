@@ -2396,12 +2396,16 @@ a:hover .img-reveal-wrap .img-parallax {
 
 /* Essay */
 .idlx-essay { max-width: 720px; margin: 0 auto; padding: clamp(120px, 16vw, 200px) clamp(28px, 6vw, 60px) clamp(80px, 12vw, 160px); }
+.idlx-media-essay { max-width: 980px; }
 .idlx-essay-back { font-family: var(--sans); font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; text-decoration: none; color: var(--idlx-brown); margin-bottom: 40px; display: inline-block; }
 .idlx-essay h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(36px, 5vw, 64px); line-height: 1.08; letter-spacing: -0.015em; margin: 12px 0 24px; }
 .idlx-essay-dek { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(20px, 2vw, 26px); color: var(--idlx-brown); margin-bottom: 60px; }
 .idlx-essay-body p { font-family: var(--serif); font-weight: 300; font-size: 19px; line-height: 1.65; color: var(--idlx-brown); margin: 0 0 26px; }
 .idlx-essay-body p:first-of-type::first-letter { font-size: 4em; float: left; line-height: 0.92; padding: 6px 14px 0 0; font-weight: 400; color: var(--idlx-ink); }
 .idlx-essay-pull { font-family: var(--serif); font-weight: 300; font-style: italic; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.3; padding: 40px 0; margin: 32px 0; border-top: 1px solid var(--idlx-line); border-bottom: 1px solid var(--idlx-line); color: var(--idlx-ink); }
+.idlx-media-gallery { display: grid; gap: clamp(28px, 4vw, 48px); }
+.idlx-media-figure { margin: 0; }
+.idlx-media-figure img { width: 100%; height: auto; display: block; background: var(--idlx-paper); }
 .idlx-essay-progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; background: var(--idlx-ink); transform-origin: left; z-index: 300; }
 
 /* =============================================================================

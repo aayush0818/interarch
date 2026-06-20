@@ -46,6 +46,17 @@ import pidilite2 from "@/assets/pidilite-rd-taloja-2.jpg.asset.json";
 import pidilite3 from "@/assets/pidilite-rd-taloja-3.jpg.asset.json";
 import pidilite4 from "@/assets/pidilite-rd-taloja-4.jpg.asset.json";
 
+import mediaBeautifulHousesCover from "@/assets/media/media-50-beautiful-houses-cover.png.asset.json";
+import mediaBeautifulHouses2 from "@/assets/media/media-50-beautiful-houses-2.png.asset.json";
+import mediaBeautifulHouses3 from "@/assets/media/media-50-beautiful-houses-3.png.asset.json";
+import mediaBeautifulHouses4 from "@/assets/media/media-50-beautiful-houses-4.png.asset.json";
+import mediaBeautifulHouses5 from "@/assets/media/media-50-beautiful-houses-5.png.asset.json";
+import mediaBeautifulHouses6 from "@/assets/media/media-50-beautiful-houses-6.png.asset.json";
+import mediaLuxuryApartmentsCover from "@/assets/media/media-50-luxury-apartments-cover.png.asset.json";
+import mediaLuxuryApartments2 from "@/assets/media/media-50-luxury-apartments-2.png.asset.json";
+import mediaLuxuryApartments3 from "@/assets/media/media-50-luxury-apartments-3.png.asset.json";
+import mediaLuxuryApartments4 from "@/assets/media/media-50-luxury-apartments-4.png.asset.json";
+
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
 const studioHero = inst.aerial;
@@ -447,5 +458,41 @@ export const journalPosts = [
     date: "06.02.26",
     title: "Why we still sketch before we render",
     dek: "The hand drawing remains the way the studio thinks, edits and tests a building's first instinct.",
+  },
+];
+
+/* =================================================================
+   MEDIA RECOGNITION
+   ================================================================= */
+export const mediaRecognitionPosts = [
+  {
+    slug: "50-beautiful-houses-in-india",
+    category: "Publication",
+    date: "Vol. 01",
+    title: "50 Beautiful Houses in India",
+    dek: "Cover and published pages featuring Dipak Thaker’s work from the book, including the Beach House in Daman and supporting architectural spreads.",
+    coverImage: mediaBeautifulHousesCover.url,
+    galleryImages: [
+      mediaBeautifulHousesCover.url,
+      mediaBeautifulHouses2.url,
+      mediaBeautifulHouses3.url,
+      mediaBeautifulHouses4.url,
+      mediaBeautifulHouses5.url,
+      mediaBeautifulHouses6.url,
+    ],
+  },
+  {
+    slug: "50-luxury-apartments-in-india",
+    category: "Publication",
+    date: "Vol. 01",
+    title: "50 Luxury Apartments in India",
+    dek: "Cover and published pages from the magazine feature on an Interarch Mumbai apartment, with interior views and the planning layout included.",
+    coverImage: mediaLuxuryApartmentsCover.url,
+    galleryImages: [
+      mediaLuxuryApartmentsCover.url,
+      mediaLuxuryApartments2.url,
+      mediaLuxuryApartments3.url,
+      mediaLuxuryApartments4.url,
+    ],
   },
 ];
