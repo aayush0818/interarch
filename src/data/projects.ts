@@ -273,7 +273,7 @@ import sf8 from "@/assets/saffron-39.jpeg.asset.json";
 import sf9 from "@/assets/saffron-76.jpeg.asset.json";
 import sf10 from "@/assets/saffron-77.jpeg.asset.json";
 
-// Onyx & Ivory — A Marbled Maison (Residential Interior)
+// Onyx & Ivory — The walnut house (Residential Interior)
 import ox1 from "@/assets/onyx-008.jpeg.asset.json";
 import ox2 from "@/assets/onyx-021.jpeg.asset.json";
 import ox3 from "@/assets/onyx-012.jpeg.asset.json";
