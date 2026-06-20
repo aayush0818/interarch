@@ -7,9 +7,10 @@ const slugs = [
   "mvvpl-hilltop-hotel",
   "panorama-house",
   "quest-ajay-seth",
+  "house-of-layers",
 ];
 
-const spans: Array<"wide" | "tall"> = ["wide", "tall", "tall", "tall", "tall", "wide"];
+const spans: Array<"wide" | "tall"> = ["wide", "tall", "tall", "tall", "tall", "wide", "wide"];
 
 const picks = slugs
   .map((s, i) => {
