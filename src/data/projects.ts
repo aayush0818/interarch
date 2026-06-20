@@ -73,6 +73,10 @@ import dcp1 from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
 import dcp2 from "@/assets/d-cp-office-belapur-2.jpg.asset.json";
 import dcp3 from "@/assets/d-cp-office-belapur-3.jpg.asset.json";
 import dcp4 from "@/assets/d-cp-office-belapur-4.jpg.asset.json";
+import dcp5 from "@/assets/d-cp-office-belapur-5.jpg.asset.json";
+import dcp6 from "@/assets/d-cp-office-belapur-6.jpg.asset.json";
+import dcp7 from "@/assets/d-cp-office-belapur-7.jpg.asset.json";
+import dcp8 from "@/assets/d-cp-office-belapur-8.jpg.asset.json";
 
 // APJ Abdul Kalam Auditorium — Pune (Architecture · Institutional)
 import apj1 from "@/assets/apj-auditorium-1.jpg.asset.json";
@@ -404,6 +408,7 @@ import metroDel2 from "@/assets/metro-hospital-delhi-2.jpg.asset.json";
 import tataRallis1 from "@/assets/tata-rallis-bangalore-1.jpg.asset.json";
 import tataRallis2 from "@/assets/tata-rallis-bangalore-2.jpg.asset.json";
 import tataRallis3 from "@/assets/tata-rallis-bangalore-3.jpg.asset.json";
+import tataRallis4 from "@/assets/tata-rallis-bangalore-4.jpg.asset.json";
 
 // IIG Institute — Colaba (Architecture · Institutional)
 import iigColaba1 from "@/assets/iig-institute-colaba-1.jpg.asset.json";
@@ -491,7 +496,7 @@ const noirResidenceGallery = [
 ];
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url, mc11.url, mc12.url];
 const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.url, ma7.url, ma8.url, ma9.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, ma15.url];
-const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcp4.url];
+const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcp4.url, dcp5.url, dcp6.url, dcp7.url, dcp8.url];
 const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url, apj9.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
 const divyaEnclaveGallery = [de1.url, de2.url, de3.url, de4.url, de5.url, de6.url, de7.url, de8.url, de9.url, de10.url, de11.url, de12.url];
@@ -516,7 +521,7 @@ const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75
 const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url, cl2493.url];
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url, bharoso3.url, bharoso4.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
-const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url];
+const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url, tataRallis4.url];
 const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
@@ -640,6 +645,7 @@ export const projects: Project[] = [
     cover: dcp1.url,
     gallery: dcpOfficeBelapurGallery,
     description: "A modern civic landmark that reflects transparency, authority, and public service. The design combines operational efficiency with a strong architectural identity suited for a contemporary urban institution.",
+    imageFit: "contain",
   },
   {
     slug: "apj-abdul-kalam-auditorium-pune",
