@@ -68,6 +68,16 @@ import mediaSocietyInteriors20117 from "@/assets/media/media-society-interiors-2
 import mediaSocietyInteriors20118 from "@/assets/media/media-society-interiors-2011-8.png.asset.json";
 import mediaIndiasHot100Cover from "@/assets/media/media-indias-hot-100-cover.png.asset.json";
 import mediaIndiasHot1002 from "@/assets/media/media-indias-hot-100-2.png.asset.json";
+import mediaSocietyInteriors2001Cover from "@/assets/media/media-society-interiors-2001-cover.png.asset.json";
+import mediaSocietyInteriors20012 from "@/assets/media/media-society-interiors-2001-2.png.asset.json";
+import mediaSocietyInteriors20013 from "@/assets/media/media-society-interiors-2001-3.png.asset.json";
+import mediaSocietyInteriors20014 from "@/assets/media/media-society-interiors-2001-4.png.asset.json";
+import awardAdSpectrum2001 from "@/assets/awards/award-ad-spectrum-2001.jpg.asset.json";
+import awardArea2008 from "@/assets/awards/award-area-2008.jpg.asset.json";
+import awardArea2008Framed from "@/assets/awards/award-area-2008-framed.jpg.asset.json";
+import awardDrdo2009 from "@/assets/awards/award-drdo-silver-jubilee-2009.jpg.asset.json";
+import awardAica2010 from "@/assets/awards/award-aica-asia-fest-2010.jpg.asset.json";
+import awardRachana2015 from "@/assets/awards/award-rachana-sansad-2015.jpg.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
