@@ -24,15 +24,19 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 function ContactPage() {
   const [sent, setSent] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const SRC = "https://elfsightcdn.com/platform.js";
-    if (document.querySelector(`script[src="${SRC}"]`)) return;
-    const s = document.createElement("script");
-    s.src = SRC;
-    s.async = true;
-    document.body.appendChild(s);
+    if (!document.querySelector(`script[src="${SRC}"]`)) {
+      const s = document.createElement("script");
+      s.src = SRC;
+      s.async = true;
+      document.body.appendChild(s);
+    }
   }, []);
+
 
 
   return (
