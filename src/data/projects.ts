@@ -630,7 +630,7 @@ export const projects: Project[] = [
   },
   {
     slug: "d-cp-office-belapur",
-    name: "D CP Office - Belapur",
+    name: "\nCP Office - Belapur",
     sector: "Institutional",
     location: "Belapur",
     year: "",
