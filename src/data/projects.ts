@@ -310,6 +310,19 @@ import hoa9 from "@/assets/house-of-arches-61.jpeg.asset.json";
 import hoa10 from "@/assets/house-of-arches-66.jpeg.asset.json";
 const houseOfArchesGallery = [hoa1.url, hoa2.url, hoa3.url, hoa4.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url];
 
+// The Layer Residence — Residential Interior
+import lr1 from "@/assets/layer-residence-16-2.jpeg.asset.json";
+import lr2 from "@/assets/layer-residence-30.jpeg.asset.json";
+import lr3 from "@/assets/layer-residence-20.jpeg.asset.json";
+import lr4 from "@/assets/layer-residence-38.jpeg.asset.json";
+import lr5 from "@/assets/layer-residence-63.jpeg.asset.json";
+import lr6 from "@/assets/layer-residence-109.jpeg.asset.json";
+import lr7 from "@/assets/layer-residence-35.jpeg.asset.json";
+import lr8 from "@/assets/layer-residence-56-2.jpeg.asset.json";
+import lr9 from "@/assets/layer-residence-61-2.jpeg.asset.json";
+import lr10 from "@/assets/layer-residence-103.jpeg.asset.json";
+const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.url, lr7.url, lr8.url, lr9.url, lr10.url];
+
 // Blush & Bronze Residence — Residential Interior
 import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
 import bb2 from "@/assets/blush-bronze-residence-2.jpeg.asset.json";
@@ -1031,6 +1044,20 @@ export const projects: Project[] = [
     cover: hoa1.url,
     gallery: houseOfArchesGallery,
     description: "Soft curves, muted tones, and understated detailing define a home that feels calm, inviting, and timeless. The interiors embrace contemporary minimalism while introducing warmth through texture, natural materials, and gentle architectural gestures.",
+    imageFit: "contain",
+  },
+  {
+    slug: "the-layer-residence",
+    name: "The Layer Residence",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "",
+    category: "Interiors",
+    cover: lr1.url,
+    gallery: layerResidenceGallery,
+    description: "A residence shaped around warmth and daily life, where natural materials, rich textures and carefully framed spaces create an atmosphere of comfort and permanence. Contemporary detailing is balanced by a strong sense of home.",
     imageFit: "contain",
   },
   {
