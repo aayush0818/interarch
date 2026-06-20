@@ -63,6 +63,8 @@ import ma10 from "@/assets/meril-academy-vapi-10.jpg.asset.json";
 import ma11 from "@/assets/meril-academy-vapi-11.jpg.asset.json";
 import ma12 from "@/assets/meril-academy-vapi-12.jpg.asset.json";
 import ma13 from "@/assets/meril-academy-vapi-13.jpg.asset.json";
+import ma14 from "@/assets/meril-academy-vapi-14.jpg.asset.json";
+import ma15 from "@/assets/meril-academy-vapi-15.jpg.asset.json";
 
 // D CP Office — Belapur (Architecture · Institutional)
 import dcp1 from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
@@ -79,6 +81,7 @@ import apj5 from "@/assets/apj-auditorium-5.jpg.asset.json";
 import apj6 from "@/assets/apj-auditorium-6.jpg.asset.json";
 import apj7 from "@/assets/apj-auditorium-7.jpg.asset.json";
 import apj8 from "@/assets/apj-auditorium-8.jpg.asset.json";
+import apj9 from "@/assets/apj-auditorium-9.jpg.asset.json";
 
 // Meril Park 2 (Architecture · Industrial)
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
@@ -398,6 +401,7 @@ import tataRallis3 from "@/assets/tata-rallis-bangalore-3.jpg.asset.json";
 
 // IIG Institute — Colaba (Architecture · Institutional)
 import iigColaba1 from "@/assets/iig-institute-colaba-1.jpg.asset.json";
+import iigColaba2 from "@/assets/iig-institute-colaba-2.jpg.asset.json";
 
 // Gandhi Peace Centre — Pune (Architecture · Institutional)
 import gandhiPeace1 from "@/assets/gandhi-peace-centre-pune-1.jpeg.asset.json";
@@ -489,9 +493,9 @@ const noirResidenceGallery = [
   nr21.url,
 ];
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url];
-const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.url, ma7.url, ma8.url, ma9.url, ma10.url, ma11.url, ma12.url, ma13.url];
+const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.url, ma7.url, ma8.url, ma9.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, ma15.url];
 const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcp4.url];
-const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url];
+const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url, apj9.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
 const divyaEnclaveGallery = [de1.url, de2.url, de3.url, de4.url, de5.url, de6.url, de7.url, de8.url, de9.url, de10.url, de11.url];
 const adarshVidyaMandirGallery = [avm1.url, avm2.url];
@@ -516,7 +520,7 @@ const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.ur
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url, bharoso3.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
 const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url];
-const iigInstituteColabaGallery = [iigColaba1.url];
+const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
 const questAjaySethGallery = [quest67.url, quest77.url, quest72.url, quest65.url, quest94.url, quest97.url, quest99.url, quest47.url, quest45.url, quest57.url, quest96.url, quest51.url, quest50.url, quest18.url, quest42.url, quest38.url, quest82.url, quest23.url, quest83.url, quest80.url];
