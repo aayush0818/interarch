@@ -1247,7 +1247,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Architecture",
-    cover: mc3.url,
+    cover: mc9.url,
     gallery: merilGallery,
     description: "A wellness-focused clubhouse designed as a retreat within the workplace ecosystem. Through landscape integration, leisure amenities, and carefully crafted spaces, it promotes balance, relaxation, and community interaction.",
   },
