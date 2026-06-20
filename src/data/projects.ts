@@ -578,6 +578,14 @@ import lanternVilla13 from "@/assets/lantern-villa-13.jpg.asset.json";
 import lanternVilla14 from "@/assets/lantern-villa-14.jpg.asset.json";
 import lanternVilla15 from "@/assets/lantern-villa-15.jpg.asset.json";
 import lanternVilla16 from "@/assets/lantern-villa-16.jpg.asset.json";
+import lanternVilla17 from "@/assets/lantern-villa-17.jpg.asset.json";
+import lanternVilla18 from "@/assets/lantern-villa-18.jpg.asset.json";
+import lanternVilla19 from "@/assets/lantern-villa-19.jpg.asset.json";
+import lanternVilla20 from "@/assets/lantern-villa-20.jpg.asset.json";
+import lanternVilla21 from "@/assets/lantern-villa-21.jpg.asset.json";
+import lanternVilla22 from "@/assets/lantern-villa-22.jpg.asset.json";
+import lanternVilla23 from "@/assets/lantern-villa-23.jpg.asset.json";
+import lanternVilla24 from "@/assets/lantern-villa-24.jpg.asset.json";
 import porticoHouse1 from "@/assets/portico-house-1.jpg.asset.json";
 import porticoHouse2 from "@/assets/portico-house-2.jpg.asset.json";
 import porticoHouse3 from "@/assets/portico-house-3.jpg.asset.json";
@@ -1061,7 +1069,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2.url,
-    gallery: [lanternVilla1.url, lanternVilla2.url, lanternVilla3.url, lanternVilla4.url, lanternVilla5.url, lanternVilla6.url, lanternVilla7.url, lanternVilla8.url, lanternVilla9.url, lanternVilla10.url, lanternVilla11.url, lanternVilla12.url, lanternVilla13.url, lanternVilla14.url, lanternVilla15.url, lanternVilla16.url],
+    gallery: [lanternVilla1.url, lanternVilla2.url, lanternVilla3.url, lanternVilla4.url, lanternVilla5.url, lanternVilla6.url, lanternVilla7.url, lanternVilla8.url, lanternVilla9.url, lanternVilla10.url, lanternVilla11.url, lanternVilla12.url, lanternVilla13.url, lanternVilla14.url, lanternVilla15.url, lanternVilla16.url, lanternVilla17.url, lanternVilla18.url, lanternVilla19.url, lanternVilla20.url, lanternVilla21.url, lanternVilla22.url, lanternVilla23.url, lanternVilla24.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",
   },
   {
