@@ -59,8 +59,6 @@ import ma4 from "@/assets/meril-academy-vapi-4.jpg.asset.json";
 import ma5 from "@/assets/meril-academy-vapi-5.jpg.asset.json";
 import ma6 from "@/assets/meril-academy-vapi-6.jpg.asset.json";
 import ma7 from "@/assets/meril-academy-vapi-7.jpg.asset.json";
-import ma8 from "@/assets/meril-academy-vapi-8.jpg.asset.json";
-import ma9 from "@/assets/meril-academy-vapi-9.jpg.asset.json";
 import ma10 from "@/assets/meril-academy-vapi-10.jpg.asset.json";
 import ma11 from "@/assets/meril-academy-vapi-11.jpg.asset.json";
 import ma12 from "@/assets/meril-academy-vapi-12.jpg.asset.json";
@@ -486,7 +484,7 @@ const noirResidenceGallery = [
   nr21.url,
 ];
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url, mc11.url, mc12.url];
-const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.url, ma7.url, ma8.url, ma9.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, ma15.url];
+const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.url, ma7.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, ma15.url];
 const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcp4.url, dcp5.url, dcp6.url, dcp7.url, dcp8.url];
 const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url, apj9.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
@@ -620,7 +618,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: ma3.url,
+    cover: ma1.url,
     gallery: merilAcademyGallery,
     description: "A contemporary learning environment shaped by fluid architecture, openness, and connection. Designed to inspire growth and collaboration, the academy creates spaces that nurture education beyond the classroom.",
   },
@@ -747,7 +745,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Architecture",
-    cover: quest38n.url,
+    cover: quest67n.url,
     gallery: questAjaySethGallery,
     description: "Set within a natural landscape, the project combines timeless architectural character with modern functionality. Designed as a place for interaction, learning, and retreat, it offers a balanced and inspiring environment.",
   },
@@ -773,7 +771,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: mapleGate01.url,
+    cover: mapleSales02.url,
     gallery: [
       mapleGate01.url,
       mapleGate02New.url,
@@ -1245,7 +1243,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Architecture",
-    cover: mc9.url,
+    cover: mc1.url,
     gallery: merilGallery,
     description: "A wellness-focused clubhouse designed as a retreat within the workplace ecosystem. Through landscape integration, leisure amenities, and carefully crafted spaces, it promotes balance, relaxation, and community interaction.",
   },
@@ -1310,7 +1308,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: abcc10.url,
+    cover: abcc6.url,
     gallery: adityaBirlaCancerCenterGallery,
     description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
     facilities: [
