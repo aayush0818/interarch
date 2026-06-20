@@ -520,7 +520,7 @@ const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis
 const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
-const questAjaySethGallery = [quest67.url, quest77.url, quest72.url, quest65.url, quest94.url, quest97.url, quest99.url, quest47.url, quest45.url, quest57.url, quest96.url, quest51.url, quest50.url, quest18.url, quest42.url, quest38.url, quest82.url, quest23.url, quest83.url, quest80.url];
+const questAjaySethGallery = [quest38n.url, quest65n.url, quest23n.url, quest67n.url, quest2n.url, quest18n.url, quest82n.url, quest83n.url, quest91n.url, quest96n.url];
 
 // Maple Industrial Park — Vapi (Architecture · Industrial)
 import mapleGate01 from "@/assets/maple-main-gate-01.jpeg.asset.json";
