@@ -170,6 +170,7 @@ import er_n51 from "@/assets/energize-resort-nashik-extra-51.jpg.asset.json";
 import er_n60 from "@/assets/energize-resort-nashik-extra-60.jpg.asset.json";
 import er_n78 from "@/assets/energize-resort-nashik-extra-78.jpg.asset.json";
 import er_n81 from "@/assets/energize-resort-nashik-extra-81.jpg.asset.json";
+import er_n82 from "@/assets/energize-resort-nashik-extra-82.png.asset.json";
 import noirResidenceCoverUpload from "@/assets/noir-residence-cover-upload.png.asset.json";
 import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.json";
 import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
