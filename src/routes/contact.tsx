@@ -101,7 +101,30 @@ function ContactPage() {
               </motion.button>
             </motion.form>
           )}
+
+          <Reveal delay={0.3} className="idlx-ig-block">
+            <h3 className="idlx-ig-h">Instagram</h3>
+            <p className="idlx-ig-lead">
+              Follow our latest projects, publications, studio updates, and architectural insights.
+            </p>
+            <div className="idlx-ig-feed">
+              <div
+                className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
+                data-elfsight-app-lazy
+              />
+            </div>
+            <p className="idlx-ig-links">
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>
+                Instagram → @interarchdesignlabs
+              </a>
+              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>
+                LinkedIn → Interarch Design Lab
+              </a>
+            </p>
+          </Reveal>
         </div>
+
+
 
         <aside className="idlx-contact-info">
           <Reveal>
@@ -142,29 +165,6 @@ function ContactPage() {
             </div>
             <p style={{ marginTop: 10 }}>
               <a href={contactCopy.mapLink} target="_blank" rel="noreferrer" data-hover>Open in Google Maps →</a>
-            </p>
-          </Reveal>
-          <Reveal delay={0.3}>
-            <h3>Instagram</h3>
-            <p style={{ marginTop: 10 }}>
-              Follow our latest projects, publications, studio updates, and architectural insights.
-            </p>
-            <div
-              className="idlx-ig-feed"
-              style={{ marginTop: 18, minHeight: 320, border: "1px solid var(--stone)", padding: 8, background: "var(--bg)" }}
-            >
-              <div
-                className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
-                data-elfsight-app-lazy
-              />
-            </div>
-            <p style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 6 }}>
-              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>
-                Instagram → @interarchdesignlabs
-              </a>
-              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>
-                LinkedIn → Interarch Design Lab
-              </a>
             </p>
           </Reveal>
         </aside>
