@@ -213,6 +213,18 @@ body {
   -webkit-backdrop-filter: none;
 }
 
+/* Non-home routes: same transparent header, but dark ink so it's legible on cream pages */
+.idl-header.is-light-bg {
+  color: #2a2520;
+}
+.idl-header.is-light-bg .idl-logo-mark { filter: none; }
+.idl-header.is-light-bg.is-scrolled {
+  background: rgba(245, 243, 239, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom-color: rgba(42, 37, 32, 0.08);
+}
+
 .idl-logo {
   display: inline-flex;
   align-items: center;

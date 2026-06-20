@@ -110,8 +110,7 @@ export function Header() {
   };
 
   const active = useMemo(() => (activeIdx !== null ? NAV[activeIdx] : null), [activeIdx]);
-  const solid = !isHome || scrolled;
-  const headerClass = `idl-header${solid ? " is-scrolled" : ""}${open ? " is-menu" : ""}`;
+  const headerClass = `idl-header${scrolled ? " is-scrolled" : ""}${open ? " is-menu" : ""}${!isHome && !open ? " is-light-bg" : ""}`;
 
   return (
     <>
