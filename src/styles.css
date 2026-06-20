@@ -1135,21 +1135,53 @@ body {
   position: relative;
   z-index: 4;
   background: var(--bg);
-  padding: 48px clamp(40px, 6vw, 100px);
+  padding: 56px 0;
   border-top: 0.5px solid var(--stone);
   border-bottom: 0.5px solid var(--stone);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
-.clients-strip span {
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+.clients-marquee {
+  display: flex;
+  width: max-content;
+  gap: clamp(48px, 7vw, 96px);
+  animation: clients-scroll 48s linear infinite;
+  will-change: transform;
+}
+.clients-strip:hover .clients-marquee { animation-play-state: paused; }
+.clients-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: clamp(48px, 7vw, 96px);
+  padding-right: clamp(48px, 7vw, 96px);
+  flex-shrink: 0;
+}
+.clients-marquee span {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(20px, 1.9vw, 28px);
+  letter-spacing: 0.02em;
   color: var(--muted);
+  white-space: nowrap;
+  opacity: 0.78;
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+.clients-marquee span:hover { opacity: 1; color: var(--fg); }
+.clients-marquee span + span::before {
+  content: "·";
+  display: inline-block;
+  margin-right: clamp(48px, 7vw, 96px);
+  color: var(--stone);
+  opacity: 0.7;
+}
+@keyframes clients-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .clients-marquee { animation: none; }
 }
 
 /* ============================================================
