@@ -2816,7 +2816,8 @@ a:hover .img-reveal-wrap .img-parallax {
 .idlx-contact-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* PROJECT PAGE — uncropped image fit (per-project opt-in) */
-.idlx-fit-contain .idl-mono-fig { background: var(--stone, #f5f3ef); }
-.idlx-fit-contain .idl-mono-fig img { object-fit: contain !important; height: auto !important; width: 100% !important; aspect-ratio: auto !important; }
-.idlx-fit-contain .idl-mono-fig--full { aspect-ratio: auto !important; }
-.idlx-fit-contain .idl-mono-pair .idl-mono-fig { aspect-ratio: auto !important; }
+.idlx-fit-contain .idlx-mono-fig { background: transparent; }
+.idlx-fit-contain .idlx-mono-fig img { object-fit: cover; width: 100%; height: 100%; display: block; }
+.idlx-fit-contain .idlx-mono-fig--full { width: 100%; }
+.idlx-fit-contain .idlx-mono-pair .idlx-mono-fig { aspect-ratio: auto !important; }
+.idlx-fit-contain .idlx-mono-pair img { aspect-ratio: 3/4; object-fit: cover; }
