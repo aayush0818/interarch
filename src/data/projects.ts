@@ -419,26 +419,17 @@ import viaVapi3 from "@/assets/via-auditorium-vapi-3.jpg.asset.json";
 import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 
 // Quest (Ajay Seth) — Institutional (Architecture)
-import quest97 from "@/assets/quest-clubhouse-97.jpg.asset.json";
-import quest99 from "@/assets/quest-clubhouse-99.jpg.asset.json";
-import quest96 from "@/assets/quest-clubhouse-96.jpg.asset.json";
-import quest94 from "@/assets/quest-clubhouse-94.jpg.asset.json";
-import quest67 from "@/assets/quest-clubhouse-67.jpg.asset.json";
-import quest77 from "@/assets/quest-clubhouse-77.jpg.asset.json";
-import quest72 from "@/assets/quest-clubhouse-72.jpg.asset.json";
-import quest65 from "@/assets/quest-clubhouse-65.jpg.asset.json";
-import quest47 from "@/assets/quest-clubhouse-47.jpg.asset.json";
-import quest45 from "@/assets/quest-clubhouse-45.jpg.asset.json";
-import quest57 from "@/assets/quest-clubhouse-57.jpg.asset.json";
-import quest51 from "@/assets/quest-clubhouse-51.jpg.asset.json";
-import quest50 from "@/assets/quest-clubhouse-50.jpg.asset.json";
-import quest18 from "@/assets/quest-clubhouse-18.jpg.asset.json";
-import quest42 from "@/assets/quest-clubhouse-42.jpg.asset.json";
-import quest38 from "@/assets/quest-clubhouse-38.jpg.asset.json";
-import quest82 from "@/assets/quest-clubhouse-82.jpg.asset.json";
-import quest23 from "@/assets/quest-clubhouse-23.jpg.asset.json";
-import quest83 from "@/assets/quest-clubhouse-83.jpg.asset.json";
-import quest80 from "@/assets/quest-clubhouse-80.jpg.asset.json";
+import quest38n from "@/assets/quest-clubhouse-38-2.jpg.asset.json";
+import quest65n from "@/assets/quest-clubhouse-65-2.jpg.asset.json";
+import quest23n from "@/assets/quest-clubhouse-23-2.jpg.asset.json";
+import quest67n from "@/assets/quest-clubhouse-67-2.jpg.asset.json";
+import quest2n from "@/assets/quest-clubhouse-2.jpg.asset.json";
+import quest18n from "@/assets/quest-clubhouse-18-2.jpg.asset.json";
+import quest82n from "@/assets/quest-clubhouse-82-2.jpg.asset.json";
+import quest83n from "@/assets/quest-clubhouse-83-2.jpg.asset.json";
+import quest91n from "@/assets/quest-clubhouse-91.jpg.asset.json";
+import quest96n from "@/assets/quest-clubhouse-96-2.jpg.asset.json";
+
 
 // Laxmi Kunj — Architecture · Residential
 import laxmiKunj1 from "@/assets/laxmi-kunj-1.jpg.asset.json";
