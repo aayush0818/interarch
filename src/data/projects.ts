@@ -1297,7 +1297,7 @@ export const projects: Project[] = [
   {
     slug: "aditya-birla-cancer-center",
     name: "Aditya Birla Cancer Center",
-    sector: "Institutional",
+    sector: "Commercial",
     location: "",
     year: "",
     area: "",
