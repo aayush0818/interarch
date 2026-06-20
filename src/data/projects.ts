@@ -135,9 +135,6 @@ import de5 from "@/assets/divya-enclave-5.jpeg.asset.json";
 import de6 from "@/assets/divya-enclave-6.jpeg.asset.json";
 import de7 from "@/assets/divya-enclave-7.jpeg.asset.json";
 import de8 from "@/assets/divya-enclave-8.jpeg.asset.json";
-import de9 from "@/assets/divya-enclave-9.jpeg.asset.json";
-import de10 from "@/assets/divya-enclave-10.jpeg.asset.json";
-import de11 from "@/assets/divya-enclave-11.png.asset.json";
 import de12 from "@/assets/divya-enclave-12.png.asset.json";
 
 // Adarsh Vidya Mandir — Rajasthan (Architecture · Hospitality)
@@ -159,7 +156,7 @@ import gcb10 from "@/assets/gold-cornet-boutique-7584.jpg.asset.json";
 
 import er_n2 from "@/assets/energize-resort-nashik-2.jpg.asset.json";
 import er_n3 from "@/assets/energize-resort-nashik-3.jpg.asset.json";
-import er_n4 from "@/assets/energize-resort-nashik-4.jpg.asset.json";
+
 import er_n5 from "@/assets/energize-resort-nashik-5.jpg.asset.json";
 import er_n6 from "@/assets/energize-resort-nashik-6.jpg.asset.json";
 import er_n7 from "@/assets/energize-resort-nashik-7.jpg.asset.json";
@@ -169,20 +166,14 @@ import er_n10 from "@/assets/energize-resort-nashik-10.jpg.asset.json";
 import er_n13 from "@/assets/energize-resort-nashik-extra-13.jpg.asset.json";
 import er_n18 from "@/assets/energize-resort-nashik-extra-18.jpg.asset.json";
 import er_n5b from "@/assets/energize-resort-nashik-extra-5.jpg.asset.json";
-import er_n21 from "@/assets/energize-resort-nashik-extra-21.jpg.asset.json";
 import er_n22 from "@/assets/energize-resort-nashik-extra-22.jpg.asset.json";
 import er_n23 from "@/assets/energize-resort-nashik-extra-23.jpg.asset.json";
 import er_n26 from "@/assets/energize-resort-nashik-extra-26.jpg.asset.json";
-import er_n29 from "@/assets/energize-resort-nashik-extra-29.jpg.asset.json";
-import er_n34 from "@/assets/energize-resort-nashik-extra-34.jpg.asset.json";
 import er_n35 from "@/assets/energize-resort-nashik-extra-35.jpg.asset.json";
-import er_n45 from "@/assets/energize-resort-nashik-extra-45.jpg.asset.json";
-import er_n48 from "@/assets/energize-resort-nashik-extra-48.jpg.asset.json";
 import er_n49 from "@/assets/energize-resort-nashik-extra-49.jpg.asset.json";
 import er_n51 from "@/assets/energize-resort-nashik-extra-51.jpg.asset.json";
 import er_n60 from "@/assets/energize-resort-nashik-extra-60.jpg.asset.json";
 import er_n78 from "@/assets/energize-resort-nashik-extra-78.jpg.asset.json";
-import er_n81 from "@/assets/energize-resort-nashik-extra-81.jpg.asset.json";
 import er_n82 from "@/assets/energize-resort-nashik-extra-82.png.asset.json";
 import er_n83 from "@/assets/energize-resort-nashik-extra-83.png.asset.json";
 import noirResidenceCoverUpload from "@/assets/noir-residence-cover-upload.png.asset.json";
@@ -499,9 +490,9 @@ const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.ur
 const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcp4.url, dcp5.url, dcp6.url, dcp7.url, dcp8.url];
 const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url, apj9.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
-const divyaEnclaveGallery = [de1.url, de2.url, de3.url, de4.url, de5.url, de6.url, de7.url, de8.url, de9.url, de10.url, de11.url, de12.url];
+const divyaEnclaveGallery = [de12.url, de1.url, de2.url, de3.url, de4.url, de5.url, de6.url, de7.url, de8.url];
 const adarshVidyaMandirGallery = [avm1.url, avm2.url];
-const energizeResortNashikGallery = [er_n2.url, er_n3.url, er_n4.url, er_n5.url, er_n6.url, er_n7.url, er_n8.url, er_n9.url, er_n10.url, er_n13.url, er_n18.url, er_n5b.url, er_n21.url, er_n22.url, er_n23.url, er_n26.url, er_n29.url, er_n34.url, er_n35.url, er_n45.url, er_n48.url, er_n49.url, er_n51.url, er_n60.url, er_n78.url, er_n81.url, er_n82.url, er_n83.url];
+const energizeResortNashikGallery = [er_n2.url, er_n3.url, er_n5.url, er_n6.url, er_n7.url, er_n8.url, er_n9.url, er_n10.url, er_n13.url, er_n18.url, er_n5b.url, er_n22.url, er_n23.url, er_n26.url, er_n35.url, er_n49.url, er_n51.url, er_n60.url, er_n78.url, er_n82.url, er_n83.url];
 const goldCornetBoutiqueGallery = [gcb1.url, gcb2.url, gcb3.url, gcb4.url, gcb5.url, gcb6.url, gcb7.url, gcb8.url, gcb9.url, gcb10.url];
 const adityaBirlaAsthavinayakGallery = [abAstha1.url, abAstha2.url, abAstha3.url, abAstha4.url, abAstha5.url];
 const adityaBirlaCancerCenterGallery = [abcc1.url, abcc2.url, abcc3.url, abcc4.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url, abcc10.url, abcc11.url, abcc12.url];
@@ -690,7 +681,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Architecture",
-    cover: de3.url,
+    cover: de12.url,
     gallery: divyaEnclaveGallery,
     description: "A community-centric clubhouse that brings leisure, wellness, and social interaction together. Designed as an extension of everyday living, it offers spaces that encourage gathering and recreation.",
   },
