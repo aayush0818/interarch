@@ -1168,6 +1168,17 @@ body {
   transition: opacity 0.4s ease, color 0.4s ease;
 }
 .clients-marquee span:hover { opacity: 1; color: var(--fg); }
+.clients-marquee img {
+  height: clamp(40px, 4.6vw, 64px);
+  width: auto;
+  max-width: clamp(140px, 16vw, 220px);
+  object-fit: contain;
+  opacity: 0.82;
+  transition: opacity 0.4s ease, filter 0.4s ease;
+  display: block;
+}
+.clients-marquee img:hover { opacity: 1; }
+
 @keyframes clients-scroll {
   from { transform: translate3d(0, 0, 0); }
   to   { transform: translate3d(-50%, 0, 0); }
