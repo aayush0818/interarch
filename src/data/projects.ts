@@ -102,6 +102,10 @@ import pidilite5 from "@/assets/pidilite-rd-taloja-5.jpg.asset.json";
 import mvvplHotel1 from "@/assets/mvvpl-hotel-1.jpeg.asset.json";
 import mvvplHotel2 from "@/assets/mvvpl-hotel-2.jpeg.asset.json";
 import mvvplHotel3 from "@/assets/mvvpl-hotel-3.jpeg.asset.json";
+import mvvplHotel4 from "@/assets/mvvpl-hotel-4.png.asset.json";
+import mvvplHotel5 from "@/assets/mvvpl-hotel-5.png.asset.json";
+import mvvplHotel6 from "@/assets/mvvpl-hotel-6.png.asset.json";
+import mvvplHotel7 from "@/assets/mvvpl-hotel-7.png.asset.json";
 
 // MVVPL Clubhouse (Architecture · Hospitality)
 import mvvplClub1 from "@/assets/mvvpl-clubhouse-1.jpg.asset.json";
