@@ -401,6 +401,7 @@ import tataRallis3 from "@/assets/tata-rallis-bangalore-3.jpg.asset.json";
 
 // IIG Institute — Colaba (Architecture · Institutional)
 import iigColaba1 from "@/assets/iig-institute-colaba-1.jpg.asset.json";
+import iigColaba2 from "@/assets/iig-institute-colaba-2.jpg.asset.json";
 
 // Gandhi Peace Centre — Pune (Architecture · Institutional)
 import gandhiPeace1 from "@/assets/gandhi-peace-centre-pune-1.jpeg.asset.json";
