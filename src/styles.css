@@ -336,13 +336,16 @@ body {
   .idl-header.is-scrolled .idl-logo-mark { height: 64px; }
 }
 
-/* Responsive: mobile — hide centre nav, keep logo + (scrolled only) menu + search */
+/* Responsive: mobile — hide centre nav, ALWAYS show menu trigger */
 @media (max-width: 768px) {
   .idl-header { height: 80px; padding: 0 20px; grid-template-columns: 1fr auto; gap: 16px; }
   .idl-header.is-scrolled { height: 66px; }
   .idl-logo-mark { height: 72px; max-width: 200px; }
   .idl-header.is-scrolled .idl-logo-mark { height: 56px; }
   .idl-topnav { display: none; }
+  .idl-menu-btn { opacity: 1 !important; pointer-events: auto !important; visibility: visible !important; }
+  /* Ensure hamburger lines are visible over the hero image */
+  .idl-header:not(.is-scrolled):not(.is-menu):not(.is-light-bg) .idl-menu-btn-icon span { background: #fff; }
 }
 
 .idl-mega-nav-caret {
