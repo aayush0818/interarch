@@ -129,7 +129,7 @@ function ProjectPage() {
                   blocks.push(
                     <ClipReveal key={key++}>
                       <div className="idlx-mono-fig idlx-mono-fig--inset">
-                        <img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" style={{ aspectRatio: "16/10", objectFit: "cover" }} />
+                        <img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" />
                       </div>
                     </ClipReveal>
                   );
