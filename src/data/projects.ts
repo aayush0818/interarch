@@ -1007,7 +1007,7 @@ export const projects: Project[] = [
   },
   {
     slug: "emerald-reverie-classical-penthouse",
-    name: "A Classical Penthouse",
+    name: "House of symmetry",
     sector: "Residential",
     location: "",
     year: "",
@@ -1020,7 +1020,7 @@ export const projects: Project[] = [
   },
   {
     slug: "blush-and-bronze-residence",
-    name: "Amber Residence",
+    name: "East wing house",
     sector: "Residential",
     location: "",
     year: "",
@@ -1033,7 +1033,7 @@ export const projects: Project[] = [
   },
   {
     slug: "cloudline-penthouse-residence",
-    name: "Aerie Penthouse",
+    name: "The lightwell residence",
     sector: "Residential",
     location: "",
     year: "",
@@ -1046,7 +1046,7 @@ export const projects: Project[] = [
   },
   {
     slug: "sage-whisper-residence",
-    name: "Verdant Residence",
+    name: "The house of stone",
     sector: "Residential",
     location: "",
     year: "",
@@ -1059,7 +1059,7 @@ export const projects: Project[] = [
   },
   {
     slug: "onyx-and-ivory-marbled-maison",
-    name: "Marbled Maison",
+    name: "The walnut house",
     sector: "Residential",
     location: "",
     year: "",
@@ -1072,7 +1072,7 @@ export const projects: Project[] = [
   },
   {
     slug: "saffron-and-stone-skyline-residence",
-    name: "Horizon Residence",
+    name: "Monochrome luxe",
     sector: "Residential",
     location: "",
     year: "",
@@ -1085,7 +1085,7 @@ export const projects: Project[] = [
   },
   {
     slug: "serene-heights",
-    name: "Serene Heights",
+    name: "The crafted home",
     sector: "Residential",
     location: "",
     year: "",
