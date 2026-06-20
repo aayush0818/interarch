@@ -575,6 +575,7 @@ export type Project = {
   cover: string;
   gallery: string[];
   facilities?: Facility[];
+  imageFit?: "cover" | "contain";
 };
 
 
