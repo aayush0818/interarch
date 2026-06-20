@@ -251,7 +251,7 @@ import jcb5 from "@/assets/biguine-9-2.jpg.asset.json";
 import jcb6 from "@/assets/biguine-5-4.jpg.asset.json";
 import jcb7 from "@/assets/biguine-2-3.jpg.asset.json";
 
-// Serene Heights — Residential Interior
+// The crafted home — Residential Interior
 import sh1 from "@/assets/serene-pab3226-hdr.jpg.asset.json";
 import sh2 from "@/assets/serene-pab2833-hdr.jpg.asset.json";
 import sh3 from "@/assets/serene-pab3145-hdr.jpg.asset.json";
