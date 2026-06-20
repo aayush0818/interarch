@@ -311,17 +311,20 @@ import hoa10 from "@/assets/house-of-arches-66.jpeg.asset.json";
 const houseOfArchesGallery = [hoa1.url, hoa2.url, hoa3.url, hoa4.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url];
 
 // The Layer Residence — Residential Interior
-import lr1 from "@/assets/layer-residence-16-2.jpeg.asset.json";
-import lr2 from "@/assets/layer-residence-30.jpeg.asset.json";
-import lr3 from "@/assets/layer-residence-20.jpeg.asset.json";
-import lr4 from "@/assets/layer-residence-38.jpeg.asset.json";
-import lr5 from "@/assets/layer-residence-63.jpeg.asset.json";
-import lr6 from "@/assets/layer-residence-109.jpeg.asset.json";
-import lr7 from "@/assets/layer-residence-35.jpeg.asset.json";
-import lr8 from "@/assets/layer-residence-56-2.jpeg.asset.json";
-import lr9 from "@/assets/layer-residence-61-2.jpeg.asset.json";
-import lr10 from "@/assets/layer-residence-103.jpeg.asset.json";
-const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.url, lr7.url, lr8.url, lr9.url, lr10.url];
+import lr1 from "@/assets/layer-res-78.jpeg.asset.json";
+import lr2 from "@/assets/layer-res-91-2.jpeg.asset.json";
+import lr3 from "@/assets/layer-res-13-2.jpeg.asset.json";
+import lr4 from "@/assets/layer-res-19.jpeg.asset.json";
+import lr5 from "@/assets/layer-res-24-2.jpeg.asset.json";
+import lr6 from "@/assets/layer-res-8.jpeg.asset.json";
+import lr7 from "@/assets/layer-res-12-2.jpeg.asset.json";
+const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.url, lr7.url];
+
+// The House of Stone — Residential Interior
+import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
+import hos2 from "@/assets/house-of-stone-093.jpg.asset.json";
+import hos3 from "@/assets/house-of-stone-082.jpg.asset.json";
+const houseOfStoneGallery = [hos1.url, hos2.url, hos3.url];
 
 // Blush & Bronze Residence — Residential Interior
 import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
@@ -1108,9 +1111,10 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: sw3.url,
-    gallery: sageWhisperResidenceGallery,
-    description: "A soft, airy home with sage cabinetry, pale stone, delicate detailing and a quiet pastel mood.",
+    cover: hos1.url,
+    gallery: houseOfStoneGallery,
+    description: "Designed as a contemporary family home with a strong sense of individuality, the residence combines dramatic natural stone, warm metallic accents, and tailored architectural detailing. The result is a collection of spaces that feel sophisticated, immersive, and timeless in character.",
+    imageFit: "contain",
   },
   {
     slug: "onyx-and-ivory-marbled-maison",
