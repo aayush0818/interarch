@@ -2956,3 +2956,149 @@ a:hover .img-reveal-wrap .img-parallax {
   .idlx-contact-head { font-size: clamp(30px, 10vw, 40px) !important; }
   .idlx-ig-block .idlx-ig-feed { min-height: 420px; }
 }
+
+/* ============================================================
+   GLOBAL PERFORMANCE OVERRIDES + MOBILE PASS
+   ============================================================ */
+
+/* Heavy sections off-screen: let the browser skip them */
+.sketch-philosophy-outer,
+.hover-nav-section,
+.recognition-section,
+.works-section,
+.vx-section,
+.clients-strip {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+}
+
+/* Drop cursor-none on touch — saves layout/paint work */
+@media (pointer: coarse), (hover: none) {
+  body, .idl-cursor { cursor: auto !important; }
+  *, *::before, *::after { cursor: auto !important; }
+  .idl-cursor { display: none !important; }
+}
+
+/* Reduced motion: cancel hero ken-burns */
+@media (prefers-reduced-motion: reduce) {
+  .idl-hero img { animation: none !important; transform: none !important; }
+  .clients-marquee { animation: none !important; }
+}
+
+/* ---------- Mobile static philosophy section ---------- */
+.sketch-philosophy-mobile {
+  position: relative;
+  z-index: 2;
+  background: var(--bg);
+  padding: clamp(64px, 14vw, 110px) clamp(20px, 6vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 5vw, 32px);
+}
+.sketch-mobile-eyebrow {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.sketch-mobile-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(22px, 6.4vw, 32px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  margin: 0;
+  text-wrap: balance;
+}
+.sketch-mobile-rule {
+  width: 48px;
+  height: 1px;
+  background: var(--accent);
+}
+.sketch-mobile-image {
+  margin-top: 4px;
+  overflow: hidden;
+}
+.sketch-mobile-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+/* ---------- Hide desktop scroll-driven philosophy on phones ---------- */
+@media (max-width: 768px) {
+  .sketch-philosophy-outer { display: none; }
+
+  /* Hero — tighter side gutters, no scroll widget overlap */
+  .idl-hero-brand { left: 20px; bottom: 22px; font-size: 9px; }
+  .idl-hero-headline { left: 20px; right: 20px; bottom: 116px; font-size: clamp(22px, 7vw, 34px); }
+  .idl-hero-sub { left: 20px; bottom: 92px; font-size: 10px; }
+  .idl-hero-scroll { right: 20px; bottom: 22px; font-size: 9px; }
+
+  /* Verticals: cleaner stack, smaller frame */
+  .vx-section { padding: clamp(64px, 14vw, 96px) clamp(20px, 5vw, 28px); }
+  .vx-grid { gap: 32px; }
+  .vx-media-frame { max-width: 100%; max-height: 50vh; aspect-ratio: 4 / 5; }
+  .vx-row-btn { padding: 18px 0; grid-template-columns: 28px 1fr; column-gap: 14px; }
+  .vx-row-name { font-size: clamp(18px, 5vw, 22px); }
+  .vx-row-tag { font-size: 12px; }
+  .vx-disc-tab { font-size: clamp(20px, 5.6vw, 26px); }
+
+  /* Featured works */
+  .works-section { padding: clamp(48px, 12vw, 80px) 0; }
+  .works-header { padding: 0 20px; flex-direction: column; align-items: flex-start; gap: 14px; }
+  .works-grid { grid-template-columns: 1fr !important; gap: 14px; padding: 0 20px; }
+  .works-card--wide, .works-card--tall { aspect-ratio: 4 / 5; }
+  .works-card-label { left: 18px; right: 18px; bottom: 14px; font-size: 9px; }
+
+  /* Clients marquee */
+  .clients-strip { padding: 36px 0; }
+  .clients-marquee img { height: clamp(28px, 8vw, 40px); max-width: clamp(110px, 32vw, 160px); }
+  .clients-marquee-track { gap: clamp(48px, 12vw, 80px); padding-right: clamp(48px, 12vw, 80px); }
+
+  /* Recognition */
+  .recognition-section { padding: clamp(64px, 14vw, 96px) 20px; }
+  .recognition-grid { grid-template-columns: 1fr; gap: 28px; }
+  .recognition-title { font-size: clamp(28px, 8vw, 40px); }
+  .recognition-cards { grid-template-columns: 1fr; gap: 28px; }
+
+  /* Hover image nav — touch devices don't hover. Make it a tap list. */
+  .hover-nav-section { height: auto; min-height: auto; padding: clamp(64px, 14vw, 96px) 20px; }
+  .hover-nav-content { position: static; transform: none; display: flex; flex-direction: column; gap: 6px; }
+  .hn-img { display: none; }
+  .hn-link { font-size: clamp(28px, 8vw, 38px); color: rgba(245,237,224,0.92); }
+  .hn-label { margin-bottom: 20px; }
+
+  /* Footer */
+  .idl-footer { padding: clamp(48px, 12vw, 80px) 20px 32px; }
+  .idl-footer-top { flex-direction: column; gap: 20px; }
+  .idl-footer-grid { grid-template-columns: 1fr !important; gap: 28px; }
+
+  /* Awards / media shelf — clamp side paddings */
+  .idlx-page, .idlx-media-page { padding-left: 20px; padding-right: 20px; }
+  .idlx-media-shelf { gap: 36px; }
+
+  /* Lightbox controls: thumb-sized */
+  .idlx-lightbox-close,
+  .idlx-lightbox-nav { min-width: 48px; min-height: 48px; font-size: 22px; }
+
+  /* Project monograph */
+  .idl-mono-gallery { padding: 0 16px clamp(48px, 10vh, 80px); gap: 14px; }
+  .idl-mono-material { padding: clamp(40px, 10vw, 80px) 16px clamp(48px, 10vw, 80px); gap: 14px; }
+  .idl-mono-intro { padding: clamp(80px, 14vh, 120px) 20px; }
+}
+
+/* Extra small screens — kill any residual horizontal padding */
+@media (max-width: 380px) {
+  .vx-section, .recognition-section, .hover-nav-section,
+  .sketch-philosophy-mobile { padding-left: 16px; padding-right: 16px; }
+  .works-grid, .works-header { padding-left: 16px; padding-right: 16px; }
+  .idl-footer { padding-left: 16px; padding-right: 16px; }
+}
+
+/* Guard: no horizontal scroll anywhere */
+html, body { overflow-x: hidden; }
