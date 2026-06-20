@@ -46,6 +46,8 @@ import mc5 from "@/assets/meril-5.jpg.asset.json";
 import mc6 from "@/assets/meril-6.jpg.asset.json";
 import mc7 from "@/assets/meril-7.jpg.asset.json";
 import mc8 from "@/assets/meril-8.jpg.asset.json";
+import mc9 from "@/assets/meril-9.jpg.asset.json";
+import mc10 from "@/assets/meril-10.jpg.asset.json";
 
 // Meril Academy — Vapi (Architecture · Institutional)
 import ma1 from "@/assets/meril-academy-vapi-1.jpg.asset.json";
