@@ -78,6 +78,7 @@ import awardArea2008Framed from "@/assets/awards/award-area-2008-framed.jpg.asse
 import awardDrdo2009 from "@/assets/awards/award-drdo-silver-jubilee-2009.jpg.asset.json";
 import awardAica2010 from "@/assets/awards/award-aica-asia-fest-2010.jpg.asset.json";
 import awardRachana2015 from "@/assets/awards/award-rachana-sansad-2015.jpg.asset.json";
+import awardGrohe from "@/assets/awards/award-grohe-bath-design.jpg.asset.json";
 
 const { institutional: inst, residential: res, commercial: com, team } = realImages;
 
@@ -168,7 +169,7 @@ export const recognitionList = [
   { year: "2010", award: "Chief Minister's Recognition – Babasaheb Ambedkar Bhavan", note: "Recognition for Public Impact — acknowledging architectural contributions towards projects of cultural and civic significance in Maharashtra." },
   { year: "2014–15", award: "AICA — Artists in Concrete Awards, Asia Fest", note: "The panel of judges recommended a Commendation Award in the Architecture category for DID Consultants, Architects & Engineers — for the Educational Bio Medical Academy project, endorsed by an international jury.", image: awardAica2010.url },
   { year: "2015", award: "Rachana Sansad's Academy of Architecture — Diamond Jubilee Felicitation", note: "Rachana Sansad's Academy of Architecture felicitated Ar. Dipak Thaker as an esteemed alumnus during their Diamond Jubilee Celebration, recognising his significant contribution to the profession of architecture.", image: awardRachana2015.url },
-  { year: "—", award: "Grohe Bath & Design Awards", note: "Excellence in Design Innovation — recognising outstanding design thinking, detailing, and execution across contemporary architectural and interior projects." },
+  { year: "2015", award: "Grohe Bath & Design Awards", note: "Excellence in Design Innovation — recognising outstanding design thinking, detailing, and execution across contemporary architectural and interior projects.", image: awardGrohe.url },
 ];
 
 export const cultureBlocks = [
