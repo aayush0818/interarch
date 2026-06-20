@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Header } from "@/components/home/Header";
@@ -7,7 +7,6 @@ import { CustomCursor } from "@/components/home/CustomCursor";
 import { MaskText } from "@/components/motion/MaskText";
 import { Reveal } from "@/components/motion/Reveal";
 import { contactCopy } from "@/data/siteContent";
-import { realImages } from "@/data/realImages";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -25,6 +24,20 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 function ContactPage() {
   const [sent, setSent] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const SRC = "https://elfsightcdn.com/platform.js";
+    if (!document.querySelector(`script[src="${SRC}"]`)) {
+      const s = document.createElement("script");
+      s.src = SRC;
+      s.async = true;
+      document.body.appendChild(s);
+    }
+  }, []);
+
+
 
   return (
     <>
@@ -92,7 +105,32 @@ function ContactPage() {
               </motion.button>
             </motion.form>
           )}
+
+          <Reveal delay={0.3} className="idlx-ig-block">
+            <h3 className="idlx-ig-h">Instagram</h3>
+            <p className="idlx-ig-lead">
+              Follow our latest projects, publications, studio updates, and architectural insights.
+            </p>
+            <div className="idlx-ig-feed" suppressHydrationWarning>
+              {mounted ? (
+                <div
+                  className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
+                  data-elfsight-app-lazy
+                />
+              ) : null}
+            </div>
+            <p className="idlx-ig-links">
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>
+                Instagram → @interarchdesignlabs
+              </a>
+              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>
+                LinkedIn → Interarch Design Lab
+              </a>
+            </p>
+          </Reveal>
         </div>
+
+
 
         <aside className="idlx-contact-info">
           <Reveal>
@@ -133,29 +171,6 @@ function ContactPage() {
             </div>
             <p style={{ marginTop: 10 }}>
               <a href={contactCopy.mapLink} target="_blank" rel="noreferrer" data-hover>Open in Google Maps →</a>
-            </p>
-          </Reveal>
-          <Reveal delay={0.3}>
-            <h3>Instagram</h3>
-            <p style={{ marginTop: 10 }}>
-              Follow our latest projects, publications, studio updates, and architectural insights.
-            </p>
-            <div
-              className="idlx-ig-feed"
-              style={{ marginTop: 18, minHeight: 320, border: "1px solid var(--stone)", padding: 8, background: "var(--bg)" }}
-            >
-              <div
-                className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
-                data-elfsight-app-lazy
-              />
-            </div>
-            <p style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 6 }}>
-              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>
-                Instagram → @interarchdesignlabs
-              </a>
-              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>
-                LinkedIn → Interarch Design Lab
-              </a>
             </p>
           </Reveal>
         </aside>
