@@ -2961,16 +2961,8 @@ a:hover .img-reveal-wrap .img-parallax {
    GLOBAL PERFORMANCE OVERRIDES + MOBILE PASS
    ============================================================ */
 
-/* Heavy sections off-screen: let the browser skip them */
-.sketch-philosophy-outer,
-.hover-nav-section,
-.recognition-section,
-.works-section,
-.vx-section,
-.clients-strip {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 800px;
-}
+/* (Removed broad content-visibility: caused estimated heights to inflate
+   page size on mobile. Browser scroll perf stays fine with the JS opts.) */
 
 /* Drop cursor-none on touch — saves layout/paint work */
 @media (pointer: coarse), (hover: none) {
