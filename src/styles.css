@@ -2485,24 +2485,25 @@ a:hover .img-reveal-wrap .img-parallax {
 }
 .idlx-slide-stage {
   position: relative;
-  background: var(--stone, #e0d5c8);
+  background: transparent;
   border: none;
-  padding: clamp(20px, 3vw, 44px);
-  aspect-ratio: 4/3;
+  padding: 0;
+  aspect-ratio: auto;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: none;
-  overflow: hidden;
+  overflow: visible;
 }
 .idlx-slide-stage img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: min(78vh, 1100px);
   width: auto;
   height: auto;
   object-fit: contain;
   display: block;
-  box-shadow: 0 18px 50px -22px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 50px -22px rgba(0, 0, 0, 0.22);
 }
 .idlx-slide-zoom-hint {
   position: absolute;
@@ -2575,8 +2576,8 @@ a:hover .img-reveal-wrap .img-parallax {
   flex: 0 0 96px;
   height: 120px;
   border: 1px solid transparent;
-  background: var(--stone, #e0d5c8);
-  padding: 6px;
+  background: transparent;
+  padding: 0;
   cursor: none;
   opacity: 0.55;
   transition: opacity var(--t-hover), border-color var(--t-hover);
@@ -2588,7 +2589,7 @@ a:hover .img-reveal-wrap .img-parallax {
 @media (max-width: 720px) {
   .idlx-slideshow { grid-template-columns: 1fr; }
   .idlx-slide-nav { display: none; }
-  .idlx-slide-stage { aspect-ratio: 3/4; padding: 16px; }
+  .idlx-slide-stage { padding: 0; }
   .idlx-slide-thumb { flex: 0 0 72px; height: 92px; }
 }
 
