@@ -325,6 +325,19 @@ import lr6 from "@/assets/layer-res-8.jpeg.asset.json";
 import lr7 from "@/assets/layer-res-12-2.jpeg.asset.json";
 const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.url, lr7.url];
 
+// House of Layers — Residential Architecture
+import hol1 from "@/assets/house-of-layers-122-2.jpeg.asset.json";
+import hol2 from "@/assets/house-of-layers-48.jpeg.asset.json";
+import hol3 from "@/assets/house-of-layers-51-2.jpeg.asset.json";
+import hol4 from "@/assets/house-of-layers-86.jpeg.asset.json";
+import hol5 from "@/assets/house-of-layers-62.jpeg.asset.json";
+import hol6 from "@/assets/house-of-layers-17.jpeg.asset.json";
+import hol7 from "@/assets/house-of-layers-68.jpeg.asset.json";
+import hol8 from "@/assets/house-of-layers-39-2.jpeg.asset.json";
+import hol9 from "@/assets/house-of-layers-94.jpeg.asset.json";
+import hol10 from "@/assets/house-of-layers-106.jpeg.asset.json";
+const houseOfLayersGallery = [hol1.url, hol2.url, hol3.url, hol4.url, hol5.url, hol6.url, hol7.url, hol8.url, hol9.url, hol10.url];
+
 // The House of Stone — Residential Interior
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
 import hos2 from "@/assets/house-of-stone-093.jpg.asset.json";
