@@ -59,8 +59,6 @@ import ma4 from "@/assets/meril-academy-vapi-4.jpg.asset.json";
 import ma5 from "@/assets/meril-academy-vapi-5.jpg.asset.json";
 import ma6 from "@/assets/meril-academy-vapi-6.jpg.asset.json";
 import ma7 from "@/assets/meril-academy-vapi-7.jpg.asset.json";
-import ma8 from "@/assets/meril-academy-vapi-8.jpg.asset.json";
-import ma9 from "@/assets/meril-academy-vapi-9.jpg.asset.json";
 import ma10 from "@/assets/meril-academy-vapi-10.jpg.asset.json";
 import ma11 from "@/assets/meril-academy-vapi-11.jpg.asset.json";
 import ma12 from "@/assets/meril-academy-vapi-12.jpg.asset.json";
