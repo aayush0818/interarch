@@ -1,12 +1,12 @@
 import { projects } from "@/data/projects";
 
 const slugs = [
-  "noir-residence",
-  "gold-cornet-boutique",
-  "emerald-reverie-classical-penthouse",
-  "energize-resort-nashik",
-  "saffron-and-stone-skyline-residence",
-  "pidilite-rd-centre-taloja",
+  "lantern-villa",
+  "meril-park-1",
+  "monster",
+  "mvvpl-hilltop-hotel",
+  "panorama-house",
+  "quest-ajay-seth",
 ];
 
 const spans: Array<"wide" | "tall"> = ["wide", "tall", "tall", "tall", "tall", "wide"];
