@@ -25,10 +25,12 @@ export const Route = createFileRoute("/project/$slug")({
 
 function ProjectPage() {
   const { slug } = Route.useParams();
-  const index = Math.max(0, projects.findIndex((p) => p.slug === slug));
-  const project = projects[index] ?? projects[0];
-  const prev = projects[(index - 1 + projects.length) % projects.length];
-  const next = projects[(index + 1) % projects.length];
+  const current = projects.find((p) => p.slug === slug) ?? projects[0];
+  const siblings = projects.filter((p) => p.category === current.category);
+  const idx = Math.max(0, siblings.findIndex((p) => p.slug === current.slug));
+  const project = current;
+  const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
+  const next = siblings[(idx + 1) % siblings.length];
   const gallery = project.gallery.length ? project.gallery : [project.cover];
   const at = (i: number) => gallery[i % gallery.length];
 
