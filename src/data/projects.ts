@@ -304,7 +304,7 @@ import er6 from "@/assets/emerald-104.jpeg.asset.json";
 import er7 from "@/assets/emerald-109.jpeg.asset.json";
 import er8 from "@/assets/emerald-125.jpeg.asset.json";
 import er9 from "@/assets/emerald-008-2.jpeg.asset.json";
-import er10 from "@/assets/emerald-013.jpeg.asset.json";
+
 
 // House of Arches — Residential Interior
 import hoa1 from "@/assets/house-of-arches-107.jpeg.asset.json";
@@ -369,7 +369,7 @@ import swe13 from "@/assets/sage-whisper-residence-extra-13.jpeg.asset.json";
 import swe91 from "@/assets/sage-whisper-residence-extra-91.jpeg.asset.json";
 
 // Cloudline Penthouse Residence — Residential Interior
-import cl2493 from "@/assets/cloudline-PAB2493-HDR.jpg.asset.json";
+
 import cl2316 from "@/assets/cloudline-PAB2316-HDR.jpg.asset.json";
 import cl2454 from "@/assets/cloudline-PAB2454-HDR.jpg.asset.json";
 import cl2478 from "@/assets/cloudline-PAB2478-HDR.jpg.asset.json";
@@ -504,10 +504,10 @@ const biguineGallery = [jcb1.url, jcb2.url, jcb3.url, jcb4.url, jcb5.url, jcb6.u
 const sereneHeightsGallery = [sh1.url, sh2.url, sh3.url, sh4.url, sh5.url, sh6.url, sh7.url, sh8.url];
 const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url, sf9.url, sf10.url];
 const onyxIvoryGallery = [ox1.url, ox2.url, ox3.url, ox4.url, ox5.url, ox6.url, ox7.url, ox8.url, ox9.url, ox10.url];
-const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url, er10.url];
+const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url];
 const blushBronzeResidenceGallery = [bb3.url, bb1.url, bb2.url, bb4.url, bb5.url, bb6.url, bb7.url];
 const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url];
-const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url, cl2493.url];
+const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url];
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url, bharoso3.url, bharoso4.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
 const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url, tataRallis4.url];
@@ -1125,7 +1125,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: hos1.url,
+    cover: hos6.url,
     gallery: houseOfStoneGallery,
     description: "Designed as a contemporary family home with a strong sense of individuality, the residence combines dramatic natural stone, warm metallic accents, and tailored architectural detailing. The result is a collection of spaces that feel sophisticated, immersive, and timeless in character.",
     imageFit: "contain",
@@ -1139,7 +1139,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: ox2.url,
+    cover: ox10.url,
     gallery: onyxIvoryGallery,
     description: "",
   },
@@ -1152,7 +1152,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: skylineResidenceCoverUpload.url,
+    cover: sf1.url,
     gallery: saffronStoneGallery,
     description: "",
   },
@@ -1165,7 +1165,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Interiors",
-    cover: sh2.url,
+    cover: sh1.url,
     gallery: sereneHeightsGallery,
     description: "",
   },
