@@ -336,7 +336,17 @@ import hol7 from "@/assets/house-of-layers-68.jpeg.asset.json";
 import hol8 from "@/assets/house-of-layers-39-2.jpeg.asset.json";
 import hol9 from "@/assets/house-of-layers-94.jpeg.asset.json";
 import hol10 from "@/assets/house-of-layers-106.jpeg.asset.json";
-const houseOfLayersGallery = [hol1.url, hol2.url, hol3.url, hol4.url, hol5.url, hol6.url, hol7.url, hol8.url, hol9.url, hol10.url];
+import hol11 from "@/assets/house-of-layers-39-3.jpeg.asset.json";
+import hol12 from "@/assets/house-of-layers-94-2.jpeg.asset.json";
+import hol13 from "@/assets/house-of-layers-48-2.jpeg.asset.json";
+import hol14 from "@/assets/house-of-layers-122-3.jpeg.asset.json";
+import hol15 from "@/assets/house-of-layers-51-3.jpeg.asset.json";
+import hol16 from "@/assets/house-of-layers-68-2.jpeg.asset.json";
+import hol17 from "@/assets/house-of-layers-86-2.jpeg.asset.json";
+import hol18 from "@/assets/house-of-layers-17-2.jpeg.asset.json";
+import hol19 from "@/assets/house-of-layers-62-2.jpeg.asset.json";
+import hol20 from "@/assets/house-of-layers-106-2.jpeg.asset.json";
+const houseOfLayersGallery = [hol1.url, hol2.url, hol3.url, hol4.url, hol5.url, hol6.url, hol7.url, hol8.url, hol9.url, hol10.url, hol11.url, hol12.url, hol13.url, hol14.url, hol15.url, hol16.url, hol17.url, hol18.url, hol19.url, hol20.url];
 
 // The House of Stone — Residential Interior
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
