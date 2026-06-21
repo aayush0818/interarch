@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import { useIsMobile } from "@/hooks/use-mobile";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
 import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
 import archResidential from "@/assets/verticals/arch-residential.jpg";
@@ -86,9 +85,11 @@ const groups: Group[] = [
 const FADE = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
 
 export function Verticals() {
-  const isMobile = useIsMobile();
   const [groupIdx, setGroupIdx] = useState(0);
   const [active, setActive] = useState(0);
+  // On touch devices, track which row the user has explicitly tapped.
+  // First tap reveals (mouseenter from touch emulation pre-activates), second tap navigates.
+  const [tapped, setTapped] = useState<number | null>(null);
   const group = groups[groupIdx];
   const items = group.items;
   const idx = Math.min(active, items.length - 1);
@@ -132,9 +133,15 @@ export function Verticals() {
                     onMouseEnter={() => setActive(i)}
                     onFocus={() => setActive(i)}
                     onClick={(e) => {
-                      if (isMobile && !isActive) {
+                      const isTouch =
+                        typeof window !== "undefined" &&
+                        (window.matchMedia?.("(hover: none), (max-width: 768px)").matches ?? false);
+                      if (isTouch && tapped !== i) {
+                        // First tap on this row: reveal only.
                         e.preventDefault();
+                        e.stopPropagation();
                         setActive(i);
+                        setTapped(i);
                       }
                     }}
                   >
