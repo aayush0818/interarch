@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 import logo from "@/assets/idl-logo.png";
 import { realImages } from "@/data/realImages";
 
