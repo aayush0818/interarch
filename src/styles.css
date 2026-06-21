@@ -3099,7 +3099,108 @@ a:hover .img-reveal-wrap .img-parallax {
   .idl-footer { padding-left: 16px; padding-right: 16px; }
 }
 
+/* =========================================================
+   MOBILE REFINEMENT — PHASE 1
+   Foundations: mega-menu visuals, universal hero system,
+   diptych stacking, hover→tap surfaces.
+   Desktop CSS above is untouched.
+   ========================================================= */
+@media (max-width: 768px) {
+  /* ---- Mega-menu: full-screen accordion with inline visuals ---- */
+  .idl-mega { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .idl-mega-right { padding: 96px 22px 40px; min-height: 100dvh; }
+  .idl-mega-eyebrow--right { margin-bottom: 22px; }
+  .idl-mega-nav-row { padding: 4px 0; }
+  .idl-mega-nav-link { padding: 18px 0 14px; gap: 14px; }
+  .idl-mega-nav-index { font-size: 10px; opacity: 0.55; }
+  .idl-mega-nav-label { font-size: clamp(26px, 7.5vw, 36px); line-height: 1.05; }
+  .idl-mega-nav-caret {
+    width: 36px; height: 36px; display: grid; place-items: center;
+    font-size: 22px; font-weight: 300; opacity: 0.7;
+  }
+  /* Inline visual panel that appears under active accordion row on mobile */
+  .idl-mega-inline {
+    overflow: hidden;
+    padding: 4px 0 24px;
+  }
+  .idl-mega-inline-image {
+    width: 70vw; max-width: 320px; aspect-ratio: 4 / 5;
+    overflow: hidden; background: rgba(245,238,227,0.04);
+    margin-bottom: 18px;
+  }
+  .idl-mega-inline-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .idl-mega-inline-blurb {
+    font-family: var(--serif); font-weight: 300; font-style: italic;
+    font-size: 16px; line-height: 1.5; opacity: 0.82;
+    max-width: 38ch; margin: 0 0 8px;
+  }
+  .idl-mega-sub { padding-left: 28px; margin-top: 4px; }
+  .idl-mega-sub-link { padding: 12px 0; font-size: 15px; letter-spacing: 0.22em; }
+  .idl-mega-foot { margin-top: 40px; padding-top: 24px; }
+
+  /* ---- Universal mobile hero rhythm ---- */
+  :root { --m-hero-pad-top: 100px; --m-hero-pad-x: 22px; --m-hero-gap: 14px; }
+
+  .idlx-page { padding-top: var(--m-hero-pad-top); }
+  .idlx-page > header,
+  .idlx-media-head { padding: 0 0 36px; max-width: none; }
+  .idlx-media-head { margin-bottom: 44px; }
+  .idlx-eyebrow { font-size: 10px; letter-spacing: 0.24em; }
+  .idlx-h2 { font-size: clamp(28px, 8.5vw, 40px) !important; line-height: 1.06; letter-spacing: -0.01em; }
+  .idlx-media-title { font-size: clamp(30px, 9.5vw, 44px); line-height: 1.04; letter-spacing: -0.01em; }
+  .idlx-media-lede,
+  .idlx-lead { font-size: 16px; line-height: 1.55; max-width: none; }
+  .idlx-manifesto { gap: 18px; }
+  .idlx-section { padding: clamp(56px, 12vw, 88px) 0; }
+
+  /* ---- Projects diptych: clean vertical stack with hairline ---- */
+  .idlx-diptych { gap: 0; }
+  .idlx-diptych-half + .idlx-diptych-half { border-top: 1px solid rgba(245,238,227,0.12); }
+  .idlx-diptych-half { height: 62svh; }
+  .idlx-diptych-label { left: 20px; right: 20px; bottom: 20px; }
+  .idlx-diptych:hover .idlx-diptych-half { opacity: 1; }
+
+  /* ---- Project monograph hero & gallery rhythm ---- */
+  .idl-mono-intro { padding: 96px 22px 56px; text-align: left; }
+  .idl-mono-intro p { font-size: 20px; line-height: 1.45; }
+  .idl-mono-gallery { gap: 18px; padding: 0 18px 64px; }
+  .idl-mono-fig--full { aspect-ratio: 4 / 5; }
+  /* Mobile: pairs collapse to stacked singles by default, opt-in via .idl-mono-pair--keep */
+  .idl-mono-pair:not(.idl-mono-pair--keep) { grid-template-columns: 1fr; gap: 18px; }
+  .idl-mono-pair:not(.idl-mono-pair--keep) .idl-mono-fig { aspect-ratio: 4 / 5; }
+  .idl-mono-portrait { width: 100%; aspect-ratio: 3 / 4; }
+  .idl-mono-material { grid-template-columns: 1fr; gap: 18px; padding: 56px 18px 72px; }
+
+  /* ---- Featured works: always-show label on touch ---- */
+  .works-card-label { opacity: 1 !important; transform: none !important; }
+
+  /* ---- Verticals: tap-to-reveal active state polish ---- */
+  .vx-row-btn { -webkit-tap-highlight-color: transparent; }
+  .vx-row.is-active .vx-row-name { color: var(--fg); }
+
+  /* ---- Contact: stack info above form ---- */
+  .idlx-contact-info { position: static; padding: 0 0 28px; }
+
+  /* ---- Pager: tighter ---- */
+  .idlx-pager { grid-template-columns: 1fr; gap: 0; }
+  .idlx-pager a { padding: 22px 0; }
+  .idlx-pager a:first-child { border-right: 0; border-bottom: 1px solid var(--idlx-line); }
+  .idlx-pager a:last-child { text-align: left; align-items: flex-start; }
+  .idlx-pager strong { font-size: 24px; }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Guard: no horizontal scroll anywhere. MUST use `clip` not `hidden` —
    `hidden` on html/body breaks position:sticky descendants (philosophy section). */
 html, body { overflow-x: clip; }
+
 

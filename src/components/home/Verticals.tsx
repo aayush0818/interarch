@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
+import { useIsMobile } from "@/hooks/use-mobile";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
 import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
 import archResidential from "@/assets/verticals/arch-residential.jpg";
@@ -85,6 +86,7 @@ const groups: Group[] = [
 const FADE = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
 
 export function Verticals() {
+  const isMobile = useIsMobile();
   const [groupIdx, setGroupIdx] = useState(0);
   const [active, setActive] = useState(0);
   const group = groups[groupIdx];
@@ -129,6 +131,12 @@ export function Verticals() {
                     data-hover
                     onMouseEnter={() => setActive(i)}
                     onFocus={() => setActive(i)}
+                    onClick={(e) => {
+                      if (isMobile && !isActive) {
+                        e.preventDefault();
+                        setActive(i);
+                      }
+                    }}
                   >
                     <span className="vx-row-num">{String(i + 1).padStart(2, "0")}</span>
                     <span className="vx-row-body">
