@@ -3199,8 +3199,93 @@ a:hover .img-reveal-wrap .img-parallax {
   }
 }
 
+/* =========================================================
+   MOBILE REFINEMENT — PHASE 2
+   Project monograph gallery rhythm + internal page reorder.
+   Desktop CSS untouched.
+   ========================================================= */
+@media (max-width: 768px) {
+  /* ---- Project monograph: editorial single-column rhythm ---- */
+  .idlx-page .idlx-mono-meta { grid-template-columns: 1fr 1fr; gap: 18px 22px; padding: 36px 22px; }
+  .idlx-page .idlx-mono-meta strong { font-size: 17px; }
+  .idlx-page .idlx-mono-essay { padding: 0 22px clamp(48px, 10vw, 72px); }
+  .idlx-page .idlx-mono-essay p { font-size: 19px; line-height: 1.5; }
+
+  .idlx-mono-photo { gap: 18px; padding-bottom: clamp(64px, 12vw, 96px); }
+  .idlx-mono-fig { aspect-ratio: 4 / 5; }
+  .idlx-mono-fig img { width: 100%; height: 100%; object-fit: cover; }
+  .idlx-mono-fig--full { aspect-ratio: 4 / 5; }
+  /* Default: pairs collapse to single. Opt-in to a true 2-up via .idlx-mono-pair--keep */
+  .idlx-mono-pair { gap: 18px; padding: 0 18px; }
+  .idlx-mono-pair:not(.idlx-mono-pair--keep) .idlx-mono-fig { aspect-ratio: 4 / 5; }
+  .idlx-mono-pair--keep { grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 18px; }
+  .idlx-mono-pair--keep .idlx-mono-fig { aspect-ratio: 3 / 4; }
+  .idlx-mono-fig--inset { padding: 0 18px; aspect-ratio: 4 / 5; }
+  .idlx-mono-cap { padding: 0 18px; font-size: 10px; }
+
+  /* Facility blocks: tighter rhythm, uniform aspect */
+  .idlx-facility { gap: 22px; }
+  .idlx-facility-head { padding: 0 22px; gap: 10px; }
+  .idlx-facility-index { font-size: 10px; }
+  .idlx-facility-name { font-size: clamp(24px, 7vw, 32px); }
+  .idlx-facility-desc { font-size: 16px; line-height: 1.55; }
+  .idlx-facility-media { gap: 14px; padding: 0 18px; }
+  .idlx-facility-media .idlx-mono-fig,
+  .idlx-facility-media .idlx-mono-fig--full { aspect-ratio: 4 / 5; padding: 0; }
+
+  /* ---- Contact: reorder info ABOVE form on mobile ---- */
+  .idlx-page.idlx-contact { display: flex; flex-direction: column; padding: 100px 22px 0; gap: 0; }
+  .idlx-page.idlx-contact > .idlx-contact-form { order: 2; }
+  .idlx-page.idlx-contact > .idlx-contact-info { order: 1; position: static; padding: 0 0 36px; display: flex; flex-direction: column; gap: 28px; }
+  .idlx-contact-info h3 { font-size: 10px; }
+  .idlx-contact-info p, .idlx-contact-info strong { font-size: 17px; }
+  .idlx-contact-head { font-size: clamp(32px, 9.5vw, 44px) !important; line-height: 1.05; }
+  .idlx-contact-sub { font-size: 15px; }
+  .idlx-cform { gap: 26px; max-width: none; margin-top: 12px; }
+  .idlx-field input, .idlx-field textarea { font-size: 16px; } /* prevent iOS zoom */
+  .idlx-submit { font-size: 13px; padding-top: 18px; }
+  .idlx-ig-block { margin-top: 48px; }
+  .idlx-ig-block .idlx-ig-h { font-size: 22px; }
+
+  /* ---- Directors: full-width portrait + bio expandable feel ---- */
+  .idlx-section > div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  .idlx-portrait { gap: 14px; }
+  .idlx-portrait-img { aspect-ratio: 4 / 5; }
+  .idlx-portrait-name { font-size: 22px; }
+  .idlx-portrait-role { font-size: 10px; }
+  .idlx-portrait-bio { font-size: 14px; line-height: 1.6; max-width: none; }
+  .idlx-team-grid { gap: 44px; }
+
+  /* ---- Legacy / About / Studio: stack splits, tighter rhythm ---- */
+  .idlx-split { grid-template-columns: 1fr !important; }
+  .idlx-split-img { min-height: 0; aspect-ratio: 4 / 5; }
+  .idlx-split-body { padding: 36px 22px; }
+  .idlx-mvv { gap: 28px; }
+  .idlx-mvv-block { padding-top: 18px; gap: 12px; }
+  .idlx-values .idlx-value-row { padding: 18px 0; gap: 14px; }
+  .idlx-value-title { font-size: 18px; }
+  .idlx-value-body { font-size: 15px; line-height: 1.55; }
+  .idlx-archive-rail { gap: 10px; }
+  .idlx-archive-rail a, .idlx-archive-rail button { font-size: 11px; }
+  .idlx-bullets li { padding: 16px 0; font-size: 15px; line-height: 1.5; }
+  .idlx-cta { padding: 56px 22px; text-align: left; }
+  .idlx-cta-link { font-size: 17px; }
+
+  /* Journal/News card rhythm */
+  .idlx-jrn-feature { gap: 28px; }
+  .idlx-jrn-feature-img { aspect-ratio: 4 / 5; }
+  .idlx-jrn-feature-title { font-size: clamp(26px, 7.5vw, 36px); }
+  .idlx-jrn-feature-dek { font-size: 15px; }
+  .idlx-jrn-grid { gap: 36px; }
+  .idlx-jrn-card-img { aspect-ratio: 4 / 5; }
+}
+
 /* Guard: no horizontal scroll anywhere. MUST use `clip` not `hidden` —
    `hidden` on html/body breaks position:sticky descendants (philosophy section). */
 html, body { overflow-x: clip; }
+
 
 
