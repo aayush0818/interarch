@@ -1,35 +1,31 @@
 import { useEffect, useRef } from "react";
-import heroImg from "@/assets/verticals/arch-residential.jpg";
+import heroVideo from "@/assets/idl-hero-video.mp4.asset.json";
 
 export function Hero() {
-  const imgRef = useRef<HTMLImageElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    const el = imgRef.current;
+    const el = videoRef.current;
     if (!el) return;
-    const onEnd = () => {
-      el.style.willChange = "auto";
-    };
-    el.addEventListener("animationend", onEnd, { once: true });
-    // Safety: drop after 13s even if animationend doesn't fire (mobile reduced-motion)
-    const t = window.setTimeout(onEnd, 13000);
-    return () => {
-      el.removeEventListener("animationend", onEnd);
-      window.clearTimeout(t);
-    };
+    // Ensure video starts playing even if autoplay is blocked
+    const playPromise = el.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {});
+    }
   }, []);
 
   return (
     <section className="idl-hero" aria-label="Interarch Design Labs">
-      <img
-        ref={imgRef}
-        src={heroImg}
-        alt="Interarch Design Labs residential project aerial view"
+      <video
+        ref={videoRef}
+        src={heroVideo.url}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
         width={1800}
         height={1200}
-        loading="eager"
-        fetchPriority="high"
-        decoding="async"
       />
       <div className="idl-hero-vignette" />
       <div className="idl-hero-brand">

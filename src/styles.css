@@ -78,11 +78,14 @@ body {
   z-index: 1;
   overflow: hidden;
 }
-.idl-hero img {
+.idl-hero img,
+.idl-hero video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+.idl-hero img {
   animation: kenburns 12s ease-out forwards;
 }
 @keyframes kenburns {
