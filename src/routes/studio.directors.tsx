@@ -9,7 +9,7 @@ import directorsAsset from "@/assets/idl/DSC00260.jpg.asset.json";
 const teamHero = heroAsset.url;
 
 
-export const Route = createFileRoute("/studio/team")({
+export const Route = createFileRoute("/studio/directors")({
   head: () => ({
     meta: [
       { title: "Our Directors — Studio · Interarch Design Labs" },

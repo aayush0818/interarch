@@ -16,8 +16,8 @@ import { Route as MediaRecognitionRouteImport } from './routes/media-recognition
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AwardsRouteImport } from './routes/awards'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as StudioTeamRouteImport } from './routes/studio.team'
 import { Route as StudioHistoryRouteImport } from './routes/studio.history'
+import { Route as StudioDirectorsRouteImport } from './routes/studio.directors'
 import { Route as StudioAboutRouteImport } from './routes/studio.about'
 import { Route as ProjectsCategoryRouteImport } from './routes/projects.$category'
 import { Route as ProjectSlugRouteImport } from './routes/project.$slug'
@@ -62,14 +62,14 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StudioTeamRoute = StudioTeamRouteImport.update({
-  id: '/team',
-  path: '/team',
-  getParentRoute: () => StudioRoute,
-} as any)
 const StudioHistoryRoute = StudioHistoryRouteImport.update({
   id: '/history',
   path: '/history',
+  getParentRoute: () => StudioRoute,
+} as any)
+const StudioDirectorsRoute = StudioDirectorsRouteImport.update({
+  id: '/directors',
+  path: '/directors',
   getParentRoute: () => StudioRoute,
 } as any)
 const StudioAboutRoute = StudioAboutRouteImport.update({
@@ -128,8 +128,8 @@ export interface FileRoutesByFullPath {
   '/project/$slug': typeof ProjectSlugRoute
   '/projects/$category': typeof ProjectsCategoryRoute
   '/studio/about': typeof StudioAboutRoute
+  '/studio/directors': typeof StudioDirectorsRoute
   '/studio/history': typeof StudioHistoryRoute
-  '/studio/team': typeof StudioTeamRoute
   '/practice/journal/$slug': typeof PracticeJournalSlugRoute
 }
 export interface FileRoutesByTo {
@@ -147,8 +147,8 @@ export interface FileRoutesByTo {
   '/project/$slug': typeof ProjectSlugRoute
   '/projects/$category': typeof ProjectsCategoryRoute
   '/studio/about': typeof StudioAboutRoute
+  '/studio/directors': typeof StudioDirectorsRoute
   '/studio/history': typeof StudioHistoryRoute
-  '/studio/team': typeof StudioTeamRoute
   '/practice/journal/$slug': typeof PracticeJournalSlugRoute
 }
 export interface FileRoutesById {
@@ -167,8 +167,8 @@ export interface FileRoutesById {
   '/project/$slug': typeof ProjectSlugRoute
   '/projects/$category': typeof ProjectsCategoryRoute
   '/studio/about': typeof StudioAboutRoute
+  '/studio/directors': typeof StudioDirectorsRoute
   '/studio/history': typeof StudioHistoryRoute
-  '/studio/team': typeof StudioTeamRoute
   '/practice/journal/$slug': typeof PracticeJournalSlugRoute
 }
 export interface FileRouteTypes {
@@ -188,8 +188,8 @@ export interface FileRouteTypes {
     | '/project/$slug'
     | '/projects/$category'
     | '/studio/about'
+    | '/studio/directors'
     | '/studio/history'
-    | '/studio/team'
     | '/practice/journal/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -207,8 +207,8 @@ export interface FileRouteTypes {
     | '/project/$slug'
     | '/projects/$category'
     | '/studio/about'
+    | '/studio/directors'
     | '/studio/history'
-    | '/studio/team'
     | '/practice/journal/$slug'
   id:
     | '__root__'
@@ -226,8 +226,8 @@ export interface FileRouteTypes {
     | '/project/$slug'
     | '/projects/$category'
     | '/studio/about'
+    | '/studio/directors'
     | '/studio/history'
-    | '/studio/team'
     | '/practice/journal/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -293,18 +293,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/studio/team': {
-      id: '/studio/team'
-      path: '/team'
-      fullPath: '/studio/team'
-      preLoaderRoute: typeof StudioTeamRouteImport
-      parentRoute: typeof StudioRoute
-    }
     '/studio/history': {
       id: '/studio/history'
       path: '/history'
       fullPath: '/studio/history'
       preLoaderRoute: typeof StudioHistoryRouteImport
+      parentRoute: typeof StudioRoute
+    }
+    '/studio/directors': {
+      id: '/studio/directors'
+      path: '/directors'
+      fullPath: '/studio/directors'
+      preLoaderRoute: typeof StudioDirectorsRouteImport
       parentRoute: typeof StudioRoute
     }
     '/studio/about': {
@@ -419,14 +419,14 @@ const ProjectsRouteWithChildren = ProjectsRoute._addFileChildren(
 
 interface StudioRouteChildren {
   StudioAboutRoute: typeof StudioAboutRoute
+  StudioDirectorsRoute: typeof StudioDirectorsRoute
   StudioHistoryRoute: typeof StudioHistoryRoute
-  StudioTeamRoute: typeof StudioTeamRoute
 }
 
 const StudioRouteChildren: StudioRouteChildren = {
   StudioAboutRoute: StudioAboutRoute,
+  StudioDirectorsRoute: StudioDirectorsRoute,
   StudioHistoryRoute: StudioHistoryRoute,
-  StudioTeamRoute: StudioTeamRoute,
 }
 
 const StudioRouteWithChildren =

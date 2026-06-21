@@ -37,7 +37,7 @@ const NAV: NavItem[] = [
     blurb: "The people, philosophy, and process behind over three decades of design.",
     children: [
       { label: "Studio", to: "/studio/about" },
-      { label: "Directors", to: "/studio/team" },
+      { label: "Directors", to: "/studio/directors" },
       { label: "Legacy", to: "/studio/history" },
     ],
   },

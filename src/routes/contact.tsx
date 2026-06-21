@@ -71,7 +71,7 @@ function ContactPage() {
               variants={{ show: { transition: { staggerChildren: 0.08, delayChildren: 0.4 } } }}
             >
               {[
-                { label: "Your name", name: "name", type: "text", ph: "Anya Rangwala" },
+                { label: "Your name", name: "name", type: "text", ph: "Full name" },
                 { label: "Email", name: "email", type: "email", ph: "you@studio.com" },
                 { label: "Project type", name: "type", type: "text", ph: "Residence, workplace, hospitality…" },
                 { label: "Location", name: "loc", type: "text", ph: "City, country" },
