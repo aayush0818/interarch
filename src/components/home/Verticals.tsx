@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
+import { useIsMobile } from "@/hooks/use-mobile";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
 import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
 import archResidential from "@/assets/verticals/arch-residential.jpg";
