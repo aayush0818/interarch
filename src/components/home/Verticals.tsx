@@ -132,11 +132,10 @@ export function Verticals() {
                     onMouseEnter={() => setActive(i)}
                     onFocus={() => setActive(i)}
                     onClick={(e) => {
-                      // Mobile/touch tap-to-reveal: first tap activates, second navigates.
+                      // Read touch capability live to avoid stale-closure / SSR-hydration mismatch.
                       const isTouch =
-                        isMobile ||
-                        (typeof window !== "undefined" &&
-                          window.matchMedia?.("(hover: none)").matches);
+                        typeof window !== "undefined" &&
+                        (window.matchMedia?.("(hover: none), (max-width: 768px)").matches ?? false);
                       if (isTouch && !isActive) {
                         e.preventDefault();
                         e.stopPropagation();
