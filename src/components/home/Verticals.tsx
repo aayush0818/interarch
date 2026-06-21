@@ -89,6 +89,9 @@ export function Verticals() {
   const isMobile = useIsMobile();
   const [groupIdx, setGroupIdx] = useState(0);
   const [active, setActive] = useState(0);
+  // On touch devices, track which row the user has explicitly tapped.
+  // First tap reveals (mouseenter from touch emulation pre-activates), second tap navigates.
+  const [tapped, setTapped] = useState<number | null>(null);
   const group = groups[groupIdx];
   const items = group.items;
   const idx = Math.min(active, items.length - 1);
