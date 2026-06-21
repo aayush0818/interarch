@@ -101,7 +101,7 @@ function StudioHistoryPage() {
           <p className="idlx-lead" style={{ maxWidth: 640 }}>The story continues with the people behind every project.</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <Link to="/studio/team" className="idlx-cta-link" data-hover>Meet the team →</Link>
+          <Link to="/studio/directors" className="idlx-cta-link" data-hover>Meet the directors →</Link>
         </Reveal>
       </section>
     </>
