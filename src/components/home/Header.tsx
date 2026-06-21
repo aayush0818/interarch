@@ -79,6 +79,7 @@ export function Header() {
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHome = pathname === "/";
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const onScroll = () => {
