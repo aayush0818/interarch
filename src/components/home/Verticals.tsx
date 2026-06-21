@@ -132,8 +132,14 @@ export function Verticals() {
                     onMouseEnter={() => setActive(i)}
                     onFocus={() => setActive(i)}
                     onClick={(e) => {
-                      if (isMobile && !isActive) {
+                      // Mobile/touch tap-to-reveal: first tap activates, second navigates.
+                      const isTouch =
+                        isMobile ||
+                        (typeof window !== "undefined" &&
+                          window.matchMedia?.("(hover: none)").matches);
+                      if (isTouch && !isActive) {
                         e.preventDefault();
+                        e.stopPropagation();
                         setActive(i);
                       }
                     }}
