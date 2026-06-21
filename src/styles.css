@@ -36,8 +36,11 @@ html, body {
   font-family: var(--sans);
   /* `overflow-x: clip` (not hidden) — `hidden` on html/body breaks
      `position: sticky` for descendants. clip suppresses the same overflow
-     without killing the containing-block ancestor chain. */
-  overflow-x: clip;
+     without killing the containing-block ancestor chain.
+     !important is required because Lenis sets overflow:hidden on html/body
+     at runtime, which would otherwise break our sticky philosophy section. */
+  overflow-x: clip !important;
+  overflow-y: visible !important;
 }
 
 
@@ -2908,8 +2911,9 @@ a:hover .img-reveal-wrap .img-parallax {
 /* MOBILE OPTIMIZATION PASS                                   */
 /* ========================================================== */
 @media (max-width: 760px) {
-  /* Global safety: never let any descendant punch out horizontally */
-  html, body { overflow-x: hidden; }
+  /* Global safety: never let any descendant punch out horizontally.
+     Use `clip` not `hidden` — `hidden` breaks position:sticky. */
+  html, body { overflow-x: clip; }
   img, video, iframe { max-width: 100%; height: auto; }
 
   /* Form inputs: 16px font prevents iOS zoom on focus */
@@ -3095,5 +3099,7 @@ a:hover .img-reveal-wrap .img-parallax {
   .idl-footer { padding-left: 16px; padding-right: 16px; }
 }
 
-/* Guard: no horizontal scroll anywhere */
-html, body { overflow-x: hidden; }
+/* Guard: no horizontal scroll anywhere. MUST use `clip` not `hidden` —
+   `hidden` on html/body breaks position:sticky descendants (philosophy section). */
+html, body { overflow-x: clip; }
+
