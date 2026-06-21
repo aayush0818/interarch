@@ -132,10 +132,10 @@ export function Verticals() {
                     onMouseEnter={() => setActive(i)}
                     onFocus={() => setActive(i)}
                     onClick={(e) => {
-                      // Read touch capability live to avoid stale-closure / SSR-hydration mismatch.
                       const isTouch =
                         typeof window !== "undefined" &&
                         (window.matchMedia?.("(hover: none), (max-width: 768px)").matches ?? false);
+                      console.log("[vx] click", { i, isActive, isTouch });
                       if (isTouch && !isActive) {
                         e.preventDefault();
                         e.stopPropagation();
