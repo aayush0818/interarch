@@ -131,6 +131,12 @@ export function Verticals() {
                     data-hover
                     onMouseEnter={() => setActive(i)}
                     onFocus={() => setActive(i)}
+                    onClick={(e) => {
+                      if (isMobile && !isActive) {
+                        e.preventDefault();
+                        setActive(i);
+                      }
+                    }}
                   >
                     <span className="vx-row-num">{String(i + 1).padStart(2, "0")}</span>
                     <span className="vx-row-body">
