@@ -23,7 +23,6 @@ import {
   mission,
   vision,
   values,
-  rangeOfExperience,
   recognitionList,
   cultureBlocks,
 } from "@/data/siteContent";
