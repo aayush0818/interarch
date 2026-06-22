@@ -193,12 +193,13 @@ export function Verticals() {
               <motion.img
                 key={`${group.key}-${current.name}-img`}
                 src={current.img}
-                alt={`${group.label} — ${current.name}`}
+                alt={`${group.label} - ${current.name}`}
                 initial={{ opacity: 0, scale: 1.04 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 loading="lazy"
+                style={{ objectPosition: current.focal ?? "center center" }}
               />
             </AnimatePresence>
           </div>
