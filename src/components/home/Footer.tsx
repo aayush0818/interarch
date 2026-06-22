@@ -20,7 +20,7 @@ export function Footer() {
 
       <div className="idl-footer-grid">
         <div className="idl-footer-col">
-          <span className="idl-footer-label">Studio</span>
+          <span className="idl-footer-label">Office</span>
           <p>Interarch Design Lab</p>
           <p>Unit No 205, Peninsula Centre,</p>
           <p>Co-Op Premises Society Ltd,</p>
