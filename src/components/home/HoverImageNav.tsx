@@ -2,9 +2,9 @@ import { useState } from "react";
 import { realImages } from "@/data/realImages";
 
 const links = [
-  { label: "Studio", href: "/studio/about", img: realImages.institutional.aerial },
+  { label: "About IDL", href: "/studio/about", img: realImages.institutional.aerial },
   { label: "Projects", href: "/projects", img: realImages.residential.gallery },
-  { label: "Awards", href: "/awards", img: realImages.commercial.lounge },
+  { label: "Awards & Recognition", href: "/awards", img: realImages.commercial.lounge },
   { label: "Contact", href: "/contact", img: realImages.brand.hospitalityPoolsideResort },
 ];
 
