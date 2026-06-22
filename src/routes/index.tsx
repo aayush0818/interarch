@@ -14,13 +14,13 @@ import { useReveal } from "@/components/home/useReveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Interarch Design Labs — Architecture & Interiors" },
+      { title: "Interarch Design Labs - Architecture & Interiors" },
       {
         name: "description",
         content:
           "Interarch Design Labs designs homes, workplaces, hospitality and institutional buildings with daylight, proportion and material intelligence.",
       },
-      { property: "og:title", content: "Interarch Design Labs — Architecture & Interiors" },
+      { property: "og:title", content: "Interarch Design Labs - Architecture & Interiors" },
       {
         property: "og:description",
         content: "Not just spaces. Stories, shaped with care, clarity, and the way you live.",

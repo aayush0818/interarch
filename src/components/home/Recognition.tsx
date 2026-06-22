@@ -14,7 +14,7 @@ const items = [
     img: awardAica2010.url,
     category: "AICA Asia Fest",
     date: "2014–15",
-    headline: "Commendation Award — Educational Bio Medical Academy",
+    headline: "Commendation Award - Educational Bio Medical Academy",
     href: "/awards",
   },
   {

@@ -50,7 +50,7 @@ export function useReveal() {
     }
 
     // On touch / reduced motion: fall back to a cheap one-shot fade-in for
-    // .img-parallax — no RAF, no scroll listener.
+    // .img-parallax - no RAF, no scroll listener.
     if (touch || reduceMotion) {
       const imgIo = new IntersectionObserver(
         (entries) => {

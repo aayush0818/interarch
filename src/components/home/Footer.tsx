@@ -3,9 +3,8 @@ import logo from "@/assets/idl-logo.png";
 
 const navLinks = [
   { label: "Projects", to: "/projects" as const },
-  { label: "Studio", to: "/studio/about" as const },
-  { label: "Awards", to: "/awards" as const },
-  { label: "Media Recognition", to: "/media-recognition" as const },
+  { label: "About IDL", to: "/studio/about" as const },
+  { label: "Awards & Recognition", to: "/awards" as const },
   { label: "Contact", to: "/contact" as const },
 ];
 
@@ -21,7 +20,7 @@ export function Footer() {
 
       <div className="idl-footer-grid">
         <div className="idl-footer-col">
-          <span className="idl-footer-label">Studio</span>
+          <span className="idl-footer-label">Office</span>
           <p>Interarch Design Lab</p>
           <p>Unit No 205, Peninsula Centre,</p>
           <p>Co-Op Premises Society Ltd,</p>

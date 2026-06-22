@@ -89,7 +89,7 @@ const studioCulture = res.stair;
 
 // File names of portraits don't match the actual face in each file.
 // Map each director name to the file that actually contains their photo.
-const partner1 = team.dipak;     // Dipak — correct
+const partner1 = team.dipak;     // Dipak - correct
 const partner2 = team.hussain;   // Murtaza's face lives in the "hussain" file
 const partner3 = team.rohit;     // Hussain's face lives in the "rohit" file
 const partner4 = team.murtaza;   // Rohit's face lives in the "murtaza" file
@@ -106,7 +106,7 @@ export const pageImages = {
    ABOUT / STUDIO
    ================================================================= */
 export const aboutCopy = {
-  eyebrow: "— About",
+  eyebrow: "About",
   headline: "A multidisciplinary practice, shaped by four decades of intent.",
   intro:
     "Shaped by over four decades of experience in the built environment. Formed through the coming together of Interarch and Kala Design Studio, the practice brings together decades of experience across architecture, interiors, planning, and design strategy.",
@@ -119,13 +119,13 @@ export const aboutCopy = {
 };
 
 export const mission = {
-  eyebrow: "— Mission",
+  eyebrow: "Mission",
   text:
     "To deliver architecture and interior design solutions that balance creativity, functionality, technical excellence, and long-term value. We work closely with clients, consultants, and stakeholders to transform ideas into spaces that are thoughtfully designed, efficiently executed, and built to perform beyond expectations.",
 };
 
 export const vision = {
-  eyebrow: "— Vision",
+  eyebrow: "Vision",
   text:
     "To be a practice that shapes the built environment through design that remains relevant, responsible, and valuable for generations. We envision a future where architecture and interiors are judged not only by how they look, but by how effectively they serve people, communities, businesses, and the changing needs of society.",
 };
@@ -137,7 +137,7 @@ export const values = [
 ];
 
 export const idlStudioNarrative = {
-  eyebrow: "— Life at IDL",
+  eyebrow: "Life at IDL",
   headline: "A studio defined by the people who create it.",
   body: [
     "At IDL, we have built a culture that values curiosity, collaboration, and continuous learning. Our studio brings together architects, interior designers, thinkers, makers, and problem-solvers who share a common passion for creating meaningful design.",
@@ -145,58 +145,41 @@ export const idlStudioNarrative = {
   ],
 };
 
-export const rangeOfExperience = {
-  eyebrow: "— Range of Experience",
-  intro:
-    "IDL's portfolio spans large-scale developments to boutique interiors — unified by cultural sensitivity, material intelligence, and responsible design.",
-  partners: [
-    { y: "40+", note: "years of architectural experience — Ar. Dipak Thaker" },
-    { y: "30+", note: "years of interior expertise — Ar. Murtuza Rangwala" },
-    { y: "—", note: "Contemporary, detail-led design sensibilities — Ar. Rohit Gojia & Ar. Hussain Rangwala" },
-  ],
-  fields: [
-    "Residential villas, retreats, and apartments",
-    "Hospitality and leisure environments",
-    "Corporate workplaces and retail",
-    "Institutional and public spaces",
-    "Master planning and integrated developments",
-  ],
-};
 
 export const recognitionList = [
-  { year: "2001", award: "A+D & Spectrum Paints Architecture Awards", note: "Architecture + Design (A+D), The National Journal of Architecture, and Spectrum Paints appreciated the participation of Ar. Dipak P. Thakar — the jury's response to the creative involvement was very positive.", image: awardAdSpectrum2001.url },
-  { year: "2008", award: "AREA — Memento of Appreciation", note: "The Association of Real Estate Agents acknowledged Ar. Dipak Thaker's support, commitment, and contribution to the success of the 3rd AREA Real Estate Conference held on 27th November 2008.", image: awardArea2008.url },
-  { year: "2009", award: "25 Years Silver Jubilee — DRDO, Ministry of Defence", note: "Presented by the Chief Construction Engineer (R&D) South, Secunderabad, on 26th November 2009, in recognition of a long-standing association of over twenty-five years with the Defence R&D Organisation, Ministry of Defence.", image: awardDrdo2009.url },
-  { year: "2010", award: "Chief Minister's Recognition – Babasaheb Ambedkar Bhavan", note: "Recognition for Public Impact — acknowledging architectural contributions towards projects of cultural and civic significance in Maharashtra.", image: awardCmRecognition2010.url },
-  { year: "2014–15", award: "AICA — Artists in Concrete Awards, Asia Fest", note: "The panel of judges recommended a Commendation Award in the Architecture category for DID Consultants, Architects & Engineers — for the Educational Bio Medical Academy project, endorsed by an international jury.", image: awardAica2010.url },
-  { year: "2015", award: "Rachana Sansad's Academy of Architecture — Diamond Jubilee Felicitation", note: "Rachana Sansad's Academy of Architecture felicitated Ar. Dipak Thaker as an esteemed alumnus during their Diamond Jubilee Celebration, recognising his significant contribution to the profession of architecture.", image: awardRachana2015.url },
-  { year: "2015", award: "Grohe Bath & Design Awards", note: "Excellence in Design Innovation — recognising outstanding design thinking, detailing, and execution across contemporary architectural and interior projects.", image: awardGrohe.url },
+  { year: "2001", award: "A+D & Spectrum Paints Architecture Awards", note: "Architecture + Design (A+D), The National Journal of Architecture, and Spectrum Paints appreciated the participation of Ar. Dipak P. Thakar - the jury's response to the creative involvement was very positive.", image: awardAdSpectrum2001.url },
+  { year: "2008", award: "AREA - Memento of Appreciation", note: "The Association of Real Estate Agents acknowledged Ar. Dipak Thaker's support, commitment, and contribution to the success of the 3rd AREA Real Estate Conference held on 27th November 2008.", image: awardArea2008.url },
+  { year: "2009", award: "25 Years Silver Jubilee - DRDO, Ministry of Defence", note: "Presented by the Chief Construction Engineer (R&D) South, Secunderabad, on 26th November 2009, in recognition of a long-standing association of over twenty-five years with the Defence R&D Organisation, Ministry of Defence.", image: awardDrdo2009.url },
+  { year: "2010", award: "Chief Minister's Recognition – Babasaheb Ambedkar Bhavan", note: "Recognition for Public Impact - acknowledging architectural contributions towards projects of cultural and civic significance in Maharashtra.", image: awardCmRecognition2010.url },
+  { year: "2014–15", award: "AICA - Artists in Concrete Awards, Asia Fest", note: "The panel of judges recommended a Commendation Award in the Architecture category for DID Consultants, Architects & Engineers - for the Educational Bio Medical Academy project, endorsed by an international jury.", image: awardAica2010.url },
+  { year: "2015", award: "Rachana Sansad's Academy of Architecture - Diamond Jubilee Felicitation", note: "Rachana Sansad's Academy of Architecture felicitated Ar. Dipak Thaker as an esteemed alumnus during their Diamond Jubilee Celebration, recognising his significant contribution to the profession of architecture.", image: awardRachana2015.url },
+  { year: "2015", award: "Grohe Bath & Design Awards", note: "Excellence in Design Innovation - recognising outstanding design thinking, detailing, and execution across contemporary architectural and interior projects.", image: awardGrohe.url },
 ];
 
 export const cultureBlocks = [
   {
-    eyebrow: "— Design Process",
+    eyebrow: "Design Process",
     title: "Collaborative, transparent, detail-driven.",
     body:
       "From research and concept development to execution and delivery, every stage is approached with equal attention and rigor. We believe thoughtful outcomes are achieved through careful listening, strategic thinking, and disciplined execution.",
   },
   {
-    eyebrow: "— Design Mentorship",
+    eyebrow: "Design Mentorship",
     title: "Knowledge is our most valuable resource.",
     body:
       "Through active mentorship and hands-on learning, young designers work alongside experienced professionals, gaining exposure to real projects, real challenges, and meaningful opportunities for growth.",
   },
   {
-    eyebrow: "— Internships",
+    eyebrow: "Internships",
     title: "More than a learning experience.",
     body:
       "Internships at IDL are an opportunity to become part of a design culture that values curiosity, initiative, and experimentation. Interns are encouraged to contribute, ask questions, and participate in the creative process from day one.",
   },
   {
-    eyebrow: "— Careers at IDL",
+    eyebrow: "Careers at IDL",
     title: "A team that believes in collective growth.",
     body:
-      "Working at IDL means being part of a team where ideas are welcomed, contributions are valued, and learning never stops. We celebrate creativity, encourage ownership, and strive to create an environment where talented individuals can do their best work — because great spaces are created by great teams.",
+      "Working at IDL means being part of a team where ideas are welcomed, contributions are valued, and learning never stops. We celebrate creativity, encourage ownership, and strive to create an environment where talented individuals can do their best work - because great spaces are created by great teams.",
   },
 ];
 
@@ -204,7 +187,7 @@ export const cultureBlocks = [
    TEAM
    ================================================================= */
 export const teamCopy = {
-  eyebrow: "— Our Team",
+  eyebrow: "Our Team",
   headline: "Four ways of Thinking. Four ways of seeing. One mark that holds us all.",
   intro:
     "Interarch Design Labs is led by four partners whose combined experience spans decades of work across architecture, interiors, and the built environment. Their individual expertise and perspectives form the foundation of the practice, bringing depth of knowledge, creative insight, and strategic thinking to every project. Bound by a shared design philosophy and commitment to excellence, they continue to shape a practice that values context, purpose, and lasting impact above all else.",
@@ -215,7 +198,7 @@ export const teamCopy = {
 export const partners = [
   {
     name: "Dipak Thaker",
-    role: "Director — IDL",
+    role: "Director - IDL",
     image: partner1,
     years: "40+ years",
     line: "Structure, process, and buildability held together with long-view precision.",
@@ -224,7 +207,7 @@ export const partners = [
   },
   {
     name: "Murtuza Rangwala",
-    role: "Director — IDL",
+    role: "Director - IDL",
     image: partner2,
     years: "30+ years",
     line: "Calm leadership, operational rigour, and dependable delivery across every stage.",
@@ -233,7 +216,7 @@ export const partners = [
   },
   {
     name: "Rohit Gojia",
-    role: "Director — IDL",
+    role: "Director - IDL",
     image: partner4,
     years: "Contemporary practice",
     line: "Modern living translated into clear, material-led interior narratives.",
@@ -242,7 +225,7 @@ export const partners = [
   },
   {
     name: "Hussain Rangwala",
-    role: "Director — IDL",
+    role: "Director - IDL",
     image: partner3,
     years: "Contemporary practice",
     line: "A contemporary design perspective grounded in strong architectural thinking.",
@@ -260,15 +243,15 @@ export const sectors = [
     name: "Residential",
     image: emerald1.url,
     gallery: [emerald1.url, onyx1.url, saffron1.url, serene1.url, noir1.url, emerald2.url, onyx2.url],
-    short: "Apartments, bungalows and villas — composed around light, view, and movement.",
+    short: "Apartments, bungalows and villas - composed around light, view, and movement.",
     statement:
-      "Homes that prioritise daylight, proportion and an intuitive flow. Every decision — from plan to finish — supports daily life with calm precision.",
+      "Homes that prioritise daylight, proportion and an intuitive flow. Every decision - from plan to finish - supports daily life with calm precision.",
     sub: [
       {
         title: "Apartments",
         image: saffron2.url,
         body:
-          "Homes that prioritise daylight, proportion and an intuitive flow. Every decision — from plan to finish — supports daily life with calm precision.",
+          "Homes that prioritise daylight, proportion and an intuitive flow. Every decision - from plan to finish - supports daily life with calm precision.",
       },
       {
         title: "Bungalows & Villas",
@@ -285,7 +268,7 @@ export const sectors = [
     gallery: [solitaa1.url, gcb1.url, biguine1.url, jadepink1.url, monster1.url, palak1.url, ratanshi1.url, solitaa2.url, gcb2.url],
     short: "Workplaces and retail that translate brand identity into spatial performance.",
     statement:
-      "Workplaces and retail environments that translate brand identity into spatial performance. Our interiors support productivity, culture and adaptability — designed for now and future growth.",
+      "Workplaces and retail environments that translate brand identity into spatial performance. Our interiors support productivity, culture and adaptability - designed for now and future growth.",
   },
   {
     slug: "hospitality",
@@ -294,7 +277,7 @@ export const sectors = [
     gallery: [energize1.url, energize2.url, energize3.url, divya1.url, divya2.url, avm1.url, meril1.url, meril2.url],
     short: "Hotels and retreats choreographed through warmth, sequence and view.",
     statement:
-      "Bespoke hospitality interiors that elevate lifestyle — choreographed through warmth, sequence, tactility and view. Arrival, pause and aftertaste, shaped as a single architectural experience.",
+      "Bespoke hospitality interiors that elevate lifestyle - choreographed through warmth, sequence, tactility and view. Arrival, pause and aftertaste, shaped as a single architectural experience.",
   },
   {
     slug: "industrial",
@@ -303,7 +286,7 @@ export const sectors = [
     gallery: [pidilite1.url, pidilite2.url, pidilite3.url, pidilite4.url, mb56_1.url, mb56_2.url],
     short: "Factories and R&D campuses shaped with rigour, light and material intelligence.",
     statement:
-      "Industrial buildings — R&D centres, factories and process-led campuses — designed with the same discipline and material care as our finest interiors. Performance and presence, unified.",
+      "Industrial buildings - R&D centres, factories and process-led campuses - designed with the same discipline and material care as our finest interiors. Performance and presence, unified.",
   },
   {
     slug: "institutional",
@@ -321,7 +304,7 @@ export const sectors = [
     gallery: [dcp1.url, dcp2.url, monster1.url, palak1.url, solitaa1.url, gcb1.url],
     short: "Offices and workspaces where culture, focus and collaboration are made spatial.",
     statement:
-      "Workplaces that balance the needs of individuals and teams — culture made visible through architecture, light and material. Considered, calm interiors that scale with how a company actually works.",
+      "Workplaces that balance the needs of individuals and teams - culture made visible through architecture, light and material. Considered, calm interiors that scale with how a company actually works.",
   },
 ];
 
@@ -369,7 +352,7 @@ export const milestones = [
     title: "AICA Asia Fest Commendation",
     image: res.warm,
     text:
-      "At the Artists in Concrete Awards (AICA), Asia Fest, IDL's work on large-scale institutional projects — including the Educational Big and Medical Academy — received a Commendation Award, endorsed by an international panel of architects and designers.",
+      "At the Artists in Concrete Awards (AICA), Asia Fest, IDL's work on large-scale institutional projects - including the Educational Big and Medical Academy - received a Commendation Award, endorsed by an international panel of architects and designers.",
   },
   {
     year: "2015",
@@ -395,7 +378,7 @@ export const processPhases = [
     n: "01",
     title: "Listening First",
     body:
-      "Every project begins with listening — to people, to context, to the story the site already carries. We work to understand aspirations, constraints and the quiet habits drawings often miss.",
+      "Every project begins with listening - to people, to context, to the story the site already carries. We work to understand aspirations, constraints and the quiet habits drawings often miss.",
   },
   {
     n: "02",
@@ -438,7 +421,7 @@ export const designApproach = [
    CONTACT
    ================================================================= */
 export const contactCopy = {
-  eyebrow: "— Contact",
+  eyebrow: "Contact",
   headline: "Wherever you are, we design for you.",
   subline:
     "We'd love to shape your next space with care, clarity, and intent.",
@@ -467,13 +450,13 @@ export const journalPosts = [
     category: "Essay",
     date: "12.04.26",
     title: "Design with depth, spaces with purpose",
-    dek: "Why every IDL project begins with meaning before form — and how that discipline shapes a building.",
+    dek: "Why every IDL project begins with meaning before form - and how that discipline shapes a building.",
   },
   {
     slug: "clarity-is-not-minimalism",
     category: "Notes",
     date: "28.03.26",
-    title: "Clarity is not minimalism — it is intention",
+    title: "Clarity is not minimalism - it is intention",
     dek: "Removing what doesn't matter so the essential can define the space.",
   },
   {
@@ -556,7 +539,7 @@ export const mediaRecognitionPosts = [
     category: "Society Interiors",
     date: "May–June 2001",
     title: "Society Interiors 2001",
-    dek: "‘Flying Colours’ — the May–June 2001 issue features Hindustan Inks and Resins Limited's corporate complex at Vapi, designed by Ar. Dipak Thaker.",
+    dek: "‘Flying Colours’ - the May–June 2001 issue features Hindustan Inks and Resins Limited's corporate complex at Vapi, designed by Ar. Dipak Thaker.",
     coverImage: mediaSocietyInteriors2001Cover.url,
     galleryImages: [
       mediaSocietyInteriors2001Cover.url,

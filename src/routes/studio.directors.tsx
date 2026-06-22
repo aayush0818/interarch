@@ -12,9 +12,9 @@ const teamHero = heroAsset.url;
 export const Route = createFileRoute("/studio/directors")({
   head: () => ({
     meta: [
-      { title: "Our Directors — Studio · Interarch Design Labs" },
+      { title: "Our Directors - Studio · Interarch Design Labs" },
       { name: "description", content: teamCopy.intro.slice(0, 160) },
-      { property: "og:title", content: "Our Directors — Studio · IDL" },
+      { property: "og:title", content: "Our Directors - Studio · IDL" },
       { property: "og:description", content: teamCopy.intro.slice(0, 160) },
       { property: "og:image", content: teamHero },
     ],
@@ -85,12 +85,12 @@ function TeamPage() {
       </section>
 
       <Marquee speed={45}>
-        <span>— Architects</span>
-        <span>— Interior Designers</span>
-        <span>— Visualisers</span>
-        <span>— Project Managers</span>
-        <span>— Delivery Specialists</span>
-        <span>— Strategists</span>
+        <span>Architects</span>
+        <span>Interior Designers</span>
+        <span>Visualisers</span>
+        <span>Project Managers</span>
+        <span>Delivery Specialists</span>
+        <span>Strategists</span>
       </Marquee>
 
       <div className="idlx-split">

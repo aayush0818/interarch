@@ -5,7 +5,7 @@ const skyline = realImages.brand.manifestoSkyline;
 
 const W = 1200;
 const H = 220;
-const SEGMENTS = 18; // down from 49 — visually identical, much cheaper
+const SEGMENTS = 18; // down from 49 - visually identical, much cheaper
 
 function isTouchDevice() {
   if (typeof window === "undefined") return true;
@@ -170,7 +170,7 @@ export function SketchPhilosophy() {
   }, [isMobile]);
 
   if (isMobile === null) {
-    // SSR / first paint placeholder — keep DOM stable
+    // SSR / first paint placeholder - keep DOM stable
     return <div className="sketch-philosophy-outer" ref={outerRef} aria-hidden />;
   }
   if (isMobile) return <MobilePhilosophy />;

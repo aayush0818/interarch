@@ -1,4 +1,4 @@
-// Body Goals Gym — Commercial Interior
+// Body Goals Gym - Commercial Interior
 import bg1 from "@/assets/bodygoals-1.jpg.asset.json";
 import bg2 from "@/assets/bodygoals-2.jpg.asset.json";
 import bg3 from "@/assets/bodygoals-3.jpg.asset.json";
@@ -10,7 +10,7 @@ import bg10 from "@/assets/bodygoals-10.jpg.asset.json";
 import bg11 from "@/assets/bodygoals-11.jpg.asset.json";
 import bg12 from "@/assets/bodygoals-12.jpg.asset.json";
 
-// Noir Residence — Residential Interior
+// Noir Residence - Residential Interior
 import nr2 from "@/assets/noir-residence-2.jpeg.asset.json";
 import nr9 from "@/assets/noir-residence-9.jpeg.asset.json";
 import nr10 from "@/assets/noir-residence-10.jpeg.asset.json";
@@ -33,7 +33,7 @@ import nr64 from "@/assets/noir-residence-64.jpeg.asset.json";
 import nr65 from "@/assets/noir-residence-65.jpeg.asset.json";
 
 
-// Meril Club House — Vapi (Architecture · Hospitality)
+// Meril Club House - Vapi (Architecture · Hospitality)
 import mc1 from "@/assets/meril-1.jpg.asset.json";
 import mc2 from "@/assets/meril-2.jpg.asset.json";
 import mc3 from "@/assets/meril-3.jpg.asset.json";
@@ -47,7 +47,7 @@ import mc10 from "@/assets/meril-10.jpg.asset.json";
 import mc11 from "@/assets/meril-11.png.asset.json";
 import mc12 from "@/assets/meril-12.png.asset.json";
 
-// Meril Academy — Vapi (Architecture · Institutional)
+// Meril Academy - Vapi (Architecture · Institutional)
 import ma1 from "@/assets/meril-academy-vapi-1.jpg.asset.json";
 import ma2 from "@/assets/meril-academy-vapi-2.jpg.asset.json";
 import ma3 from "@/assets/meril-academy-vapi-3.jpg.asset.json";
@@ -62,7 +62,7 @@ import ma13 from "@/assets/meril-academy-vapi-13.jpg.asset.json";
 import ma14 from "@/assets/meril-academy-vapi-14.jpg.asset.json";
 import ma15 from "@/assets/meril-academy-vapi-15.jpg.asset.json";
 
-// D CP Office — Belapur (Architecture · Institutional)
+// D CP Office - Belapur (Architecture · Institutional)
 import dcp1 from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
 import dcp2 from "@/assets/d-cp-office-belapur-2.jpg.asset.json";
 import dcp3 from "@/assets/d-cp-office-belapur-3.jpg.asset.json";
@@ -72,7 +72,7 @@ import dcp6 from "@/assets/d-cp-office-belapur-6.jpg.asset.json";
 import dcp7 from "@/assets/d-cp-office-belapur-7.jpg.asset.json";
 import dcp8 from "@/assets/d-cp-office-belapur-8.jpg.asset.json";
 
-// APJ Abdul Kalam Auditorium — Pune (Architecture · Institutional)
+// APJ Abdul Kalam Auditorium - Pune (Architecture · Institutional)
 import apj1 from "@/assets/apj-auditorium-1.jpg.asset.json";
 import apj2 from "@/assets/apj-auditorium-2.jpg.asset.json";
 import apj3 from "@/assets/apj-auditorium-3.jpg.asset.json";
@@ -96,7 +96,7 @@ import mp1_5 from "@/assets/meril-park-1-5.jpg.asset.json";
 import mp1_6 from "@/assets/meril-park-1-6.jpg.asset.json";
 import mp1_reception from "@/assets/meril-park-1-reception-4.jpg.asset.json";
 
-// Pidilite R&D Centre — Taloja (Architecture · Industrial)
+// Pidilite R&D Centre - Taloja (Architecture · Industrial)
 import pidilite1 from "@/assets/pidilite-rd-taloja-1.jpg.asset.json";
 import pidilite2 from "@/assets/pidilite-rd-taloja-2.jpg.asset.json";
 import pidilite3 from "@/assets/pidilite-rd-taloja-3.jpg.asset.json";
@@ -120,7 +120,7 @@ import mvvplClub3 from "@/assets/mvvpl-clubhouse-3.jpg.asset.json";
 import mvvplClub4 from "@/assets/mvvpl-clubhouse-4.jpg.asset.json";
 import mvvplClub5 from "@/assets/mvvpl-clubhouse-5.jpg.asset.json";
 
-// Divya Enclave — Hospitality Architecture
+// Divya Enclave - Hospitality Architecture
 import de1 from "@/assets/divya-enclave-1.jpg.asset.json";
 import de2 from "@/assets/divya-enclave-2.jpg.asset.json";
 import de3 from "@/assets/divya-enclave-3.jpeg.asset.json";
@@ -131,11 +131,11 @@ import de7 from "@/assets/divya-enclave-7.jpeg.asset.json";
 import de8 from "@/assets/divya-enclave-8.jpeg.asset.json";
 import de12 from "@/assets/divya-enclave-12.png.asset.json";
 
-// Adarsh Vidya Mandir — Rajasthan (Architecture · Hospitality)
+// Adarsh Vidya Mandir - Rajasthan (Architecture · Hospitality)
 import avm1 from "@/assets/adarsh-vidya-mandir-rajasthan-1.jpg.asset.json";
 import avm2 from "@/assets/adarsh-vidya-mandir-rajasthan-2.jpg.asset.json";
 
-// Energize Resort — Nashik (Architecture · Hospitality)
+// Energize Resort - Nashik (Architecture · Hospitality)
 // Gold Cornet Boutique (Commercial Interior)
 import gcb1 from "@/assets/gold-cornet-boutique-7957.jpg.asset.json";
 import gcb2 from "@/assets/gold-cornet-boutique-7959.jpg.asset.json";
@@ -175,14 +175,14 @@ import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.j
 import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
 import skylineResidenceCoverUpload from "@/assets/skyline-residence-cover-upload.png.asset.json";
 
-// Aditya Birla Asthavinayak — Institutional Architecture
+// Aditya Birla Asthavinayak - Institutional Architecture
 import abAstha1 from "@/assets/uploads/aditya-birla-asthavinayak-1.png.asset.json";
 import abAstha2 from "@/assets/uploads/aditya-birla-asthavinayak-2.png.asset.json";
 import abAstha3 from "@/assets/uploads/aditya-birla-asthavinayak-3.png.asset.json";
 import abAstha4 from "@/assets/uploads/aditya-birla-asthavinayak-4.png.asset.json";
 import abAstha5 from "@/assets/uploads/aditya-birla-asthavinayak-5.png.asset.json";
 
-// Aditya Birla Cancer Center — Commercial Architecture
+// Aditya Birla Cancer Center - Commercial Architecture
 import abcc1 from "@/assets/abcc-1-4.jpg.asset.json";
 import abcc2 from "@/assets/abcc-2-5.jpg.asset.json";
 import abcc3 from "@/assets/abcc-3-4.jpg.asset.json";
@@ -197,7 +197,7 @@ import abcc11 from "@/assets/uploads/aditya-birla-cancer-centre-11.jpeg.asset.js
 import abcc12 from "@/assets/uploads/aditya-birla-cancer-centre-12.jpeg.asset.json";
 
 
-// Monster — Commercial Interior
+// Monster - Commercial Interior
 import mo1 from "@/assets/monster-001.jpg.asset.json";
 import mo2 from "@/assets/monster-002.jpg.asset.json";
 import mo3 from "@/assets/monster-003.jpg.asset.json";
@@ -209,7 +209,7 @@ import mo11 from "@/assets/monster-011.jpg.asset.json";
 import mo14 from "@/assets/monster-014.jpg.asset.json";
 import mo15 from "@/assets/monster-015.jpg.asset.json";
 
-// Jade Pink — Ahmedabad (Commercial Interior)
+// Jade Pink - Ahmedabad (Commercial Interior)
 import jp1 from "@/assets/jadepink-3386.jpg.asset.json";
 import jp2 from "@/assets/jadepink-3412.jpg.asset.json";
 import jp3 from "@/assets/jadepink-3489.jpg.asset.json";
@@ -220,7 +220,7 @@ import jp7 from "@/assets/jadepink-3464.jpg.asset.json";
 import jp8 from "@/assets/jadepink-3465.jpg.asset.json";
 import jp9 from "@/assets/jadepink-3484.jpg.asset.json";
 
-// Palak Jewellers — Commercial Interior
+// Palak Jewellers - Commercial Interior
 import pj1 from "@/assets/palak-jewellers-1.jpg.asset.json";
 import pj2 from "@/assets/palak-jewellers-2.jpg.asset.json";
 import pj3 from "@/assets/palak-jewellers-3.jpg.asset.json";
@@ -228,7 +228,7 @@ import pj4 from "@/assets/palak-jewellers-4.jpg.asset.json";
 import pj5 from "@/assets/palak-jewellers-5.jpg.asset.json";
 import pj6 from "@/assets/palak-jewellers-6.jpg.asset.json";
 
-// Ratanshi Kheraj Sarees — Thane (Commercial Interior)
+// Ratanshi Kheraj Sarees - Thane (Commercial Interior)
 import rk1 from "@/assets/ratanshi-2-2.jpg.asset.json";
 import rk2 from "@/assets/ratanshi-3-2.jpg.asset.json";
 import rk3 from "@/assets/ratanshi-8-3.jpg.asset.json";
@@ -237,7 +237,7 @@ import rk5 from "@/assets/ratanshi-5-3.jpg.asset.json";
 import rk6 from "@/assets/ratanshi-6-3.jpg.asset.json";
 import rk7 from "@/assets/ratanshi-27.jpg.asset.json";
 
-// Solitaa Diamond Showroom — Commercial Interior
+// Solitaa Diamond Showroom - Commercial Interior
 import sl1 from "@/assets/solitaa-8818.jpg.asset.json";
 import sl2 from "@/assets/solitaa-8828.jpg.asset.json";
 import sl3 from "@/assets/solitaa-8873.jpg.asset.json";
@@ -247,7 +247,7 @@ import sl6 from "@/assets/solitaa-8753.jpg.asset.json";
 import sl7 from "@/assets/solitaa-8923.jpg.asset.json";
 import sl8 from "@/assets/solitaa-8953.jpg.asset.json";
 
-// Jean-Claude Biguine Salon & Spa — Commercial Interior
+// Jean-Claude Biguine Salon & Spa - Commercial Interior
 import jcb1 from "@/assets/biguine-3-3.jpg.asset.json";
 import jcb2 from "@/assets/biguine-14.jpg.asset.json";
 import jcb3 from "@/assets/biguine-18-2.jpg.asset.json";
@@ -256,7 +256,7 @@ import jcb5 from "@/assets/biguine-9-2.jpg.asset.json";
 import jcb6 from "@/assets/biguine-5-4.jpg.asset.json";
 import jcb7 from "@/assets/biguine-2-3.jpg.asset.json";
 
-// The crafted home — Residential Interior
+// The crafted home - Residential Interior
 import sh1 from "@/assets/serene-pab3226-hdr.jpg.asset.json";
 import sh2 from "@/assets/serene-pab2833-hdr.jpg.asset.json";
 import sh3 from "@/assets/serene-pab3145-hdr.jpg.asset.json";
@@ -266,7 +266,7 @@ import sh6 from "@/assets/serene-pab3275-hdr.jpg.asset.json";
 import sh7 from "@/assets/serene-pab3037-hdr.jpg.asset.json";
 import sh8 from "@/assets/serene-pab3326-hdr.jpg.asset.json";
 
-// Saffron & Stone — A Skyline Residence (Residential Interior)
+// Saffron & Stone - A Skyline Residence (Residential Interior)
 import sf1 from "@/assets/saffron-84.jpeg.asset.json";
 import sf2 from "@/assets/saffron-59.jpeg.asset.json";
 import sf3 from "@/assets/saffron-99.jpeg.asset.json";
@@ -278,7 +278,7 @@ import sf8 from "@/assets/saffron-39.jpeg.asset.json";
 import sf9 from "@/assets/saffron-76.jpeg.asset.json";
 import sf10 from "@/assets/saffron-77.jpeg.asset.json";
 
-// Onyx & Ivory — The walnut house (Residential Interior)
+// Onyx & Ivory - The walnut house (Residential Interior)
 import ox1 from "@/assets/onyx-008.jpeg.asset.json";
 import ox2 from "@/assets/onyx-021.jpeg.asset.json";
 import ox3 from "@/assets/onyx-012.jpeg.asset.json";
@@ -290,7 +290,7 @@ import ox8 from "@/assets/onyx-049.jpeg.asset.json";
 import ox9 from "@/assets/onyx-028.jpeg.asset.json";
 import ox10 from "@/assets/onyx-026.jpeg.asset.json";
 
-// Emerald Reverie — House of symmetry (Residential Interior)
+// Emerald Reverie - House of symmetry (Residential Interior)
 import er1 from "@/assets/emerald-024-2.jpeg.asset.json";
 import er2 from "@/assets/emerald-014.jpeg.asset.json";
 import er3 from "@/assets/emerald-029.jpeg.asset.json";
@@ -302,7 +302,7 @@ import er8 from "@/assets/emerald-125.jpeg.asset.json";
 import er9 from "@/assets/emerald-008-2.jpeg.asset.json";
 
 
-// House of Arches — Residential Interior
+// House of Arches - Residential Interior
 import hoa1 from "@/assets/house-of-arches-107.jpeg.asset.json";
 import hoa2 from "@/assets/house-of-arches-90-2.jpeg.asset.json";
 import hoa3 from "@/assets/house-of-arches-96.jpeg.asset.json";
@@ -315,7 +315,7 @@ import hoa9 from "@/assets/house-of-arches-61.jpeg.asset.json";
 import hoa10 from "@/assets/house-of-arches-66.jpeg.asset.json";
 const houseOfArchesGallery = [hoa1.url, hoa2.url, hoa3.url, hoa4.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url];
 
-// The Layer Residence — Residential Interior
+// The Layer Residence - Residential Interior
 import lr1 from "@/assets/layer-res-78.jpeg.asset.json";
 import lr2 from "@/assets/layer-res-91-2.jpeg.asset.json";
 import lr3 from "@/assets/layer-res-13-2.jpeg.asset.json";
@@ -325,7 +325,7 @@ import lr6 from "@/assets/layer-res-8.jpeg.asset.json";
 import lr7 from "@/assets/layer-res-12-2.jpeg.asset.json";
 const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.url, lr7.url];
 
-// House of Layers — Residential Architecture
+// House of Layers - Residential Architecture
 import hol1 from "@/assets/house-of-layers-122-2.jpeg.asset.json";
 import hol2 from "@/assets/house-of-layers-48.jpeg.asset.json";
 import hol3 from "@/assets/house-of-layers-51-2.jpeg.asset.json";
@@ -348,7 +348,7 @@ import hol19 from "@/assets/house-of-layers-62-2.jpeg.asset.json";
 import hol20 from "@/assets/house-of-layers-106-2.jpeg.asset.json";
 const houseOfLayersGallery = [hol1.url, hol2.url, hol3.url, hol4.url, hol5.url, hol6.url, hol7.url, hol8.url, hol9.url, hol10.url, hol11.url, hol12.url, hol13.url, hol14.url, hol15.url, hol16.url, hol17.url, hol18.url, hol19.url, hol20.url];
 
-// The House of Stone — Residential Interior
+// The House of Stone - Residential Interior
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
 import hos2 from "@/assets/house-of-stone-093.jpg.asset.json";
 import hos3 from "@/assets/house-of-stone-082.jpg.asset.json";
@@ -363,7 +363,7 @@ import hos11 from "@/assets/house-of-stone-130-2.jpeg.asset.json";
 import hos12 from "@/assets/house-of-stone-067.jpeg.asset.json";
 const houseOfStoneGallery = [hos1.url, hos4.url, hos5.url, hos6.url, hos7.url, hos2.url, hos3.url, hos8.url, hos9.url, hos10.url, hos11.url, hos12.url];
 
-// Blush & Bronze Residence — Residential Interior
+// Blush & Bronze Residence - Residential Interior
 import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
 import bb2 from "@/assets/blush-bronze-residence-2.jpeg.asset.json";
 import bb3 from "@/assets/blush-bronze-residence-3.jpeg.asset.json";
@@ -372,7 +372,7 @@ import bb5 from "@/assets/blush-bronze-residence-5.jpeg.asset.json";
 import bb6 from "@/assets/blush-bronze-residence-6.jpeg.asset.json";
 import bb7 from "@/assets/blush-bronze-residence-7.jpeg.asset.json";
 
-// Sage Whisper Residence — Residential Interior
+// Sage Whisper Residence - Residential Interior
 import sw1 from "@/assets/sage-whisper-residence-1.jpeg.asset.json";
 import sw2 from "@/assets/sage-whisper-residence-2.jpeg.asset.json";
 import sw3 from "@/assets/sage-whisper-residence-3.jpeg.asset.json";
@@ -387,7 +387,7 @@ import swe130 from "@/assets/sage-whisper-residence-extra-130.jpeg.asset.json";
 import swe13 from "@/assets/sage-whisper-residence-extra-13.jpeg.asset.json";
 import swe91 from "@/assets/sage-whisper-residence-extra-91.jpeg.asset.json";
 
-// Cloudline Penthouse Residence — Residential Interior
+// Cloudline Penthouse Residence - Residential Interior
 
 import cl2316 from "@/assets/cloudline-PAB2316-HDR.jpg.asset.json";
 import cl2454 from "@/assets/cloudline-PAB2454-HDR.jpg.asset.json";
@@ -402,36 +402,36 @@ import cl2028 from "@/assets/cloudline-PAB2028-HDR.jpg.asset.json";
 import cl2460 from "@/assets/cloudline-PAB2460-HDR.jpg.asset.json";
 import cl2295 from "@/assets/cloudline-PAB2295-HDR.jpg.asset.json";
 
-// Bharoso — Shree Lallubhai Seth Arogya Mandir, Savarkundla (Architecture / Commercial)
+// Bharoso - Shree Lallubhai Seth Arogya Mandir, Savarkundla (Architecture / Commercial)
 import bharoso1 from "@/assets/bharoso-savarkundla-1.jpg.asset.json";
 import bharoso2 from "@/assets/bharoso-savarkundla-2.jpg.asset.json";
 import bharoso3 from "@/assets/shree-lallubhai-seth-arogya-mandir-3.jpg.asset.json";
 import bharoso4 from "@/assets/shree-lallubhai-seth-arogya-mandir-4.png.asset.json";
 
-// Metro Hospital — Delhi (Architecture / Commercial)
+// Metro Hospital - Delhi (Architecture / Commercial)
 import metroDel1 from "@/assets/metro-hospital-delhi-1.jpg.asset.json";
 import metroDel2 from "@/assets/metro-hospital-delhi-2.jpg.asset.json";
 
-// Tata Rallis — Bangalore (Architecture / Institutional)
+// Tata Rallis - Bangalore (Architecture / Institutional)
 import tataRallis1 from "@/assets/tata-rallis-bangalore-1.jpg.asset.json";
 import tataRallis2 from "@/assets/tata-rallis-bangalore-2.jpg.asset.json";
 import tataRallis3 from "@/assets/tata-rallis-bangalore-3.jpg.asset.json";
 import tataRallis4 from "@/assets/tata-rallis-bangalore-4.jpg.asset.json";
 
-// IIG Institute — Colaba (Architecture · Institutional)
+// IIG Institute - Colaba (Architecture · Institutional)
 import iigColaba1 from "@/assets/iig-institute-colaba-1.jpg.asset.json";
 import iigColaba2 from "@/assets/iig-institute-colaba-2.jpg.asset.json";
 
-// Gandhi Peace Centre — Pune (Architecture · Institutional)
+// Gandhi Peace Centre - Pune (Architecture · Institutional)
 import gandhiPeace1 from "@/assets/gandhi-peace-centre-pune-1.jpeg.asset.json";
 
-// VIA Auditorium — Vapi (Architecture · Institutional)
+// VIA Auditorium - Vapi (Architecture · Institutional)
 import viaVapi1 from "@/assets/via-auditorium-vapi-1.jpg.asset.json";
 import viaVapi2 from "@/assets/via-auditorium-vapi-2.jpg.asset.json";
 import viaVapi3 from "@/assets/via-auditorium-vapi-3.jpg.asset.json";
 import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 
-// Quest (Ajay Seth) — Institutional (Architecture)
+// Quest (Ajay Seth) - Institutional (Architecture)
 import quest38n from "@/assets/quest-clubhouse-38-2.jpg.asset.json";
 import quest65n from "@/assets/quest-clubhouse-65-2.jpg.asset.json";
 import quest23n from "@/assets/quest-clubhouse-23-2.jpg.asset.json";
@@ -444,16 +444,16 @@ import quest91n from "@/assets/quest-clubhouse-91.jpg.asset.json";
 import quest96n from "@/assets/quest-clubhouse-96-2.jpg.asset.json";
 
 
-// Laxmi Kunj — Architecture · Residential
+// Laxmi Kunj - Architecture · Residential
 import laxmiKunj1 from "@/assets/laxmi-kunj-1.jpg.asset.json";
-// Proximus — Architecture · Residential
+// Proximus - Architecture · Residential
 import proximus1 from "@/assets/proximus-1.jpg.asset.json";
 import proximus2 from "@/assets/proximus-2.jpg.asset.json";
-// Glasswood Retreat — Architecture · Residential
+// Glasswood Retreat - Architecture · Residential
 import glasswood1 from "@/assets/glasswood-1.jpg.asset.json";
 import glasswood2 from "@/assets/glasswood-2.jpg.asset.json";
 import glasswood3 from "@/assets/glasswood-3.jpg.asset.json";
-// The Atrium House — Architecture · Residential
+// The Atrium House - Architecture · Residential
 import atriumHouse1 from "@/assets/atrium-house-1.jpg.asset.json";
 import atriumHouse2 from "@/assets/atrium-house-2.jpg.asset.json";
 import atriumHouse3 from "@/assets/atrium-house-3.jpg.asset.json";
@@ -461,19 +461,19 @@ import atriumHouse4 from "@/assets/atrium-house-4.jpg.asset.json";
 import atriumHouse5 from "@/assets/atrium-house-5.jpg.asset.json";
 import atriumHouse6 from "@/assets/atrium-house-6.png.asset.json";
 import atriumHouse7 from "@/assets/atrium-house-7.jpg.asset.json";
-// The Ivory Estate — Architecture · Residential
+// The Ivory Estate - Architecture · Residential
 import ivoryEstate1 from "@/assets/ivory-estate-1.jpg.asset.json";
 import ivoryEstate2 from "@/assets/ivory-estate-2.jpg.asset.json";
-// Altura Residence — Architecture · Residential
+// Altura Residence - Architecture · Residential
 import alturaResidence1 from "@/assets/altura-residence-1.jpeg.asset.json";
 import alturaResidence2 from "@/assets/altura-residence-2.jpeg.asset.json";
 import alturaResidence3 from "@/assets/altura-residence-3.jpeg.asset.json";
-// Courtyard Twins — Architecture · Residential
+// Courtyard Twins - Architecture · Residential
 import courtyardTwins1 from "@/assets/courtyard-twins-1.jpeg.asset.json";
 import courtyardTwins2 from "@/assets/courtyard-twins-2.jpeg.asset.json";
 import courtyardTwins3 from "@/assets/courtyard-twins-3.jpeg.asset.json";
 import courtyardTwins4 from "@/assets/courtyard-twins-4.jpeg.asset.json";
-// The Ridge House — Architecture · Residential
+// The Ridge House - Architecture · Residential
 import ridgeHouse1 from "@/assets/ridge-house-1.jpg.asset.json";
 import ridgeHouse2 from "@/assets/ridge-house-2.jpg.asset.json";
 import ridgeHouse3 from "@/assets/ridge-house-3.jpg.asset.json";
@@ -534,7 +534,7 @@ const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
 const questAjaySethGallery = [quest38n.url, quest65n.url, quest23n.url, quest67n.url, quest2n.url, quest18n.url, quest82n.url, quest83n.url, quest91n.url, quest96n.url];
 
-// Maple Industrial Park — Vapi (Architecture · Industrial)
+// Maple Industrial Park - Vapi (Architecture · Industrial)
 import mapleGate01 from "@/assets/maple-main-gate-01.jpeg.asset.json";
 import mapleGate02New from "@/assets/maple-main-gate-02-new.jpeg.asset.json";
 import mapleGate03New from "@/assets/maple-main-gate-03-new.jpeg.asset.json";
@@ -551,7 +551,7 @@ import mapleSales05 from "@/assets/maple-sales-05.jpeg.asset.json";
 import mapleWarehouse01 from "@/assets/maple-warehouse-01.jpeg.asset.json";
 import mapleWarehouse02 from "@/assets/maple-warehouse-02.jpeg.asset.json";
 
-// Linear Estate — Architecture · Residential
+// Linear Estate - Architecture · Residential
 import linearEstate1 from "@/assets/linear-estate-1.jpg.asset.json";
 import linearEstate2 from "@/assets/linear-estate-2.jpg.asset.json";
 import linearEstate3 from "@/assets/linear-estate-3.jpg.asset.json";
@@ -561,7 +561,7 @@ import linearEstate6 from "@/assets/linear-estate-6.jpg.asset.json";
 import linearEstate7 from "@/assets/linear-estate-7.jpg.asset.json";
 import linearEstate8 from "@/assets/linear-estate-8.jpg.asset.json";
 
-// Lantern Villa — Architecture · Residential
+// Lantern Villa - Architecture · Residential
 import lanternVilla1 from "@/assets/lantern-villa-1.jpg.asset.json";
 import lanternVilla2 from "@/assets/lantern-villa-2.jpg.asset.json";
 import lanternVilla3 from "@/assets/lantern-villa-3.jpg.asset.json";
@@ -722,7 +722,7 @@ export const projects: Project[] = [
 
   {
     slug: "adarsh-vidya-mandir-rajasthan",
-    name: "Adarsh Vidya Mandir School — Rajasthan",
+    name: "Adarsh Vidya Mandir School - Rajasthan",
     sector: "Institutional",
     location: "Rajasthan",
     year: "",
@@ -735,7 +735,7 @@ export const projects: Project[] = [
   },
   {
     slug: "iig-institute-colaba",
-    name: "IIG Institute — Colaba",
+    name: "IIG Institute - Colaba",
     sector: "Institutional",
     location: "Colaba",
     year: "",
@@ -748,7 +748,7 @@ export const projects: Project[] = [
   },
   {
     slug: "gandhi-peace-centre-pune",
-    name: "Gandhi Peace Centre — Pune",
+    name: "Gandhi Peace Centre - Pune",
     sector: "Institutional",
     location: "Pune",
     year: "",
@@ -761,7 +761,7 @@ export const projects: Project[] = [
   },
   {
     slug: "via-auditorium-vapi",
-    name: "VIA Auditorium — Vapi",
+    name: "VIA Auditorium - Vapi",
     sector: "Institutional",
     location: "Vapi",
     year: "",
@@ -774,7 +774,7 @@ export const projects: Project[] = [
   },
   {
     slug: "quest-ajay-seth",
-    name: "Quest — Ajay Seth",
+    name: "Quest - Ajay Seth",
     sector: "Institutional",
     location: "",
     year: "",
@@ -879,7 +879,7 @@ export const projects: Project[] = [
   },
   {
     slug: "pidilite-rd-centre-taloja",
-    name: "Pidilite R&D Centre — Taloja",
+    name: "Pidilite R&D Centre - Taloja",
     sector: "Industrial",
     location: "Taloja",
     year: "",
@@ -892,7 +892,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mvvpl-hilltop-hotel",
-    name: "MVVPL — Hotel",
+    name: "MVVPL - Hotel",
     sector: "Hospitality",
     location: "",
     year: "",
@@ -905,7 +905,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mvvpl-clubhouse",
-    name: "MVVPL — Clubhouse",
+    name: "MVVPL - Clubhouse",
     sector: "Hospitality",
     location: "",
     year: "",
@@ -1163,7 +1163,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: cl2406.url,
     gallery: cloudlinePenthouseGallery,
-    description: "A duplex sky home composed in luminous white, soft greys and tan leather — sculptural ceilings, double-height volumes and panoramic skyline views shape a calm, cinematic everyday.",
+    description: "A duplex sky home composed in luminous white, soft greys and tan leather - sculptural ceilings, double-height volumes and panoramic skyline views shape a calm, cinematic everyday.",
   },
   {
     slug: "sage-whisper-residence",
@@ -1229,7 +1229,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: gcb1.url,
     gallery: goldCornetBoutiqueGallery,
-    description: "Layered with visual moments, the boutique unfolds like a curated collection — rich in character, immersive in atmosphere and distinctly memorable.",
+    description: "Layered with visual moments, the boutique unfolds like a curated collection - rich in character, immersive in atmosphere and distinctly memorable.",
   },
   {
     slug: "jean-claude-biguine-salon-spa",
@@ -1259,7 +1259,7 @@ export const projects: Project[] = [
   },
   {
     slug: "ratanshi-kheraj-sarees-thane",
-    name: "Ratanshi Kheraj Sarees — Thane",
+    name: "Ratanshi Kheraj Sarees - Thane",
     sector: "Commercial",
     location: "Thane",
     year: "",
@@ -1281,11 +1281,11 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: pj1.url,
     gallery: palakJewellersGallery,
-    description: "Designed around privacy and precision, the project combines hospitality with professionalism — creating a setting where trust and craftsmanship become part of the experience.",
+    description: "Designed around privacy and precision, the project combines hospitality with professionalism - creating a setting where trust and craftsmanship become part of the experience.",
   },
   {
     slug: "meril-club-house-vapi",
-    name: "Meril Club House — Vapi",
+    name: "Meril Club House - Vapi",
     sector: "Hospitality",
     location: "",
     year: "",
@@ -1298,7 +1298,7 @@ export const projects: Project[] = [
   },
   {
     slug: "jade-pink-ahmedabad",
-    name: "Jade Pink — Ahmedabad",
+    name: "Jade Pink - Ahmedabad",
     sector: "Commercial",
     location: "",
     year: "",
@@ -1346,7 +1346,7 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: bg9.url,
     gallery: bodyGoalsGallery,
-    description: "The project reimagines fitness through clarity and focus — balancing high-performance zones with a clean spatial rhythm that encourages movement without distraction.",
+    description: "The project reimagines fitness through clarity and focus - balancing high-performance zones with a clean spatial rhythm that encourages movement without distraction.",
   },
   {
     slug: "aditya-birla-cancer-center",
@@ -1384,7 +1384,7 @@ export const projects: Project[] = [
   },
   {
     slug: "metro-hospital-delhi",
-    name: "Metro Hospital — Delhi",
+    name: "Metro Hospital - Delhi",
     sector: "Commercial",
     location: "Delhi",
     year: "",
@@ -1397,7 +1397,7 @@ export const projects: Project[] = [
   },
   {
     slug: "tata-rallis-bangalore",
-    name: "Tata Rallis — Bangalore",
+    name: "Tata Rallis - Bangalore",
     sector: "Institutional",
     location: "Bangalore",
     year: "",

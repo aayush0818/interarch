@@ -14,10 +14,10 @@ const work1 = realImages.institutional.aerial;
 export const Route = createFileRoute("/practice/history")({
   head: () => ({
     meta: [
-      { title: "History — Practice · IDL" },
+      { title: "History - Practice · IDL" },
       { name: "description", content: "Two practices. One purpose. Three decades of Interarch and Kala Design, now Interarch Design Labs." },
-      { property: "og:title", content: "History — Practice · IDL" },
-      { property: "og:description", content: "1989 to today — a chronological reading of the practice." },
+      { property: "og:title", content: "History - Practice · IDL" },
+      { property: "og:description", content: "1989 to today - a chronological reading of the practice." },
     ],
   }),
   component: HistoryPage,
@@ -36,7 +36,7 @@ function HistoryPage() {
         <CinematicHero
           image={work1}
           alt="History of the practice"
-          eyebrow="— Practice · History"
+          eyebrow="Practice · History"
           title={"Two practices.\nOne purpose."}
           height="tall"
         />
@@ -48,7 +48,7 @@ function HistoryPage() {
             </Reveal>
             <Reveal delay={0.1} className="idlx-manifesto-body">
               <p className="idlx-lead">
-                Interarch Design Labs is a lineage of craft and thought. Interarch began as a practice dedicated to enduring architectural principles. Kala Design established itself through detail-driven interiors and contextual thinking. Over time, collaboration matured into a single, integrated studio — retaining the best of both legacies and orienting it toward new ambitions.
+                Interarch Design Labs is a lineage of craft and thought. Interarch began as a practice dedicated to enduring architectural principles. Kala Design established itself through detail-driven interiors and contextual thinking. Over time, collaboration matured into a single, integrated studio - retaining the best of both legacies and orienting it toward new ambitions.
               </p>
             </Reveal>
           </div>

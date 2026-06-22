@@ -10,9 +10,9 @@ import { realImages } from "@/data/realImages";
 export const Route = createFileRoute("/studio/history")({
   head: () => ({
     meta: [
-      { title: "History — Studio · Interarch Design Labs" },
-      { name: "description", content: "From 1989 to today — a year-by-year journey through three decades of Interarch Design Labs." },
-      { property: "og:title", content: "History — Studio · IDL" },
+      { title: "History - Studio · Interarch Design Labs" },
+      { name: "description", content: "From 1989 to today - a year-by-year journey through three decades of Interarch Design Labs." },
+      { property: "og:title", content: "History - Studio · IDL" },
       { property: "og:description", content: "A chronological reading of the practice, 1989 to today." },
       { property: "og:image", content: realImages.institutional.aerial },
     ],
@@ -32,9 +32,9 @@ function StudioHistoryPage() {
       <CinematicHero
         image={realImages.institutional.aerial}
         alt="A legacy in motion"
-        eyebrow="— Studio · History"
+        eyebrow="Studio · History"
         title={"A legacy,\nyear by year."}
-        meta="1989 — Today"
+        meta="1989 - Today"
         height="tall"
       />
 
@@ -45,7 +45,7 @@ function StudioHistoryPage() {
           </Reveal>
           <Reveal delay={0.12} className="idlx-manifesto-body">
             <p className="idlx-lead">
-              Three decades of practice, read as a sequence of moments — each year a stage in a single, continuous story of craft, recognition, and quiet growth.
+              Three decades of practice, read as a sequence of moments - each year a stage in a single, continuous story of craft, recognition, and quiet growth.
             </p>
           </Reveal>
         </div>

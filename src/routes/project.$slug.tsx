@@ -12,9 +12,9 @@ export const Route = createFileRoute("/project/$slug")({
     const p = projects.find((x) => x.slug === params.slug);
     return {
       meta: [
-        { title: `${p?.name ?? "Project"} — Interarch Design Labs` },
+        { title: `${p?.name ?? "Project"} - Interarch Design Labs` },
         { name: "description", content: p?.description ?? "Project case study by IDL." },
-        { property: "og:title", content: `${p?.name ?? "Project"} — IDL` },
+        { property: "og:title", content: `${p?.name ?? "Project"} - IDL` },
         { property: "og:description", content: p?.description ?? "" },
         ...(p?.cover ? [{ property: "og:image", content: p.cover }] : []),
       ],
@@ -42,7 +42,7 @@ function ProjectPage() {
         <CinematicHero
           image={project.cover}
           alt={project.name}
-          eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `— ${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
+          eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
           title={project.name}
           meta={[project.year, project.area].filter(Boolean).join(" · ")}
         />
@@ -67,14 +67,14 @@ function ProjectPage() {
           </section>
         )}
 
-        {/* Photo essay — facilities (when defined) or default gallery rhythm. */}
+        {/* Photo essay - facilities (when defined) or default gallery rhythm. */}
         {project.facilities && project.facilities.length > 0 ? (
           <section className="idlx-mono-photo idlx-facilities">
             {project.facilities.map((f, fi) => (
               <div key={f.name} className="idlx-facility">
                 <Reveal>
                   <header className="idlx-facility-head">
-                    <span className="idlx-facility-index">— Facility · {String(fi + 1).padStart(2, "0")}</span>
+                    <span className="idlx-facility-index">Facility · {String(fi + 1).padStart(2, "0")}</span>
                     <h2 className="idlx-facility-name">{f.name}</h2>
                     <p className="idlx-facility-desc">{f.description}</p>
                   </header>
@@ -86,7 +86,7 @@ function ProjectPage() {
                       return (
                         <ClipReveal key={ii} delay={(ii % 3) * 0.05}>
                           <div className={`idlx-mono-fig${isFull ? " idlx-mono-fig--full" : ""}`}>
-                            <img src={src} alt={`${f.name} — ${String(ii + 1).padStart(2, "0")}`} loading="lazy" decoding="async" />
+                            <img src={src} alt={`${f.name} - ${String(ii + 1).padStart(2, "0")}`} loading="lazy" decoding="async" />
                           </div>
                         </ClipReveal>
                       );
@@ -108,7 +108,7 @@ function ProjectPage() {
                   blocks.push(
                     <ClipReveal key={key++}>
                       <div className="idlx-mono-fig idlx-mono-fig--full">
-                        <img src={gallery[i]} alt={`${project.name} — ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+                        <img src={gallery[i]} alt={`${project.name} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
                       </div>
                     </ClipReveal>
                   );

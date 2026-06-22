@@ -15,7 +15,7 @@ export const Route = createFileRoute("/media-recognition/$slug")({
     const post = mediaRecognitionPosts.find((item) => item.slug === params.slug);
     return {
       meta: [
-        { title: `${post?.title ?? "Media Recognition"} — Interarch Design Labs` },
+        { title: `${post?.title ?? "Media Recognition"} - Interarch Design Labs` },
         { name: "description", content: post?.dek ?? "Published work and media recognition from the studio." },
       ],
     };
@@ -85,7 +85,7 @@ function ArticlePage() {
               <motion.img
                 key={images[index]}
                 src={images[index]}
-                alt={`${post.title} — page ${index + 1}`}
+                alt={`${post.title} - page ${index + 1}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -177,7 +177,7 @@ function ArticlePage() {
               <motion.img
                 key={images[index]}
                 src={images[index]}
-                alt={`${post.title} — page ${index + 1}`}
+                alt={`${post.title} - page ${index + 1}`}
                 className="idlx-lightbox-img"
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}

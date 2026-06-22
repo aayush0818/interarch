@@ -11,9 +11,9 @@ import { contactCopy } from "@/data/siteContent";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Interarch Design Labs" },
+      { title: "Contact - Interarch Design Labs" },
       { name: "description", content: contactCopy.subline },
-      { property: "og:title", content: "Contact — IDL" },
+      { property: "og:title", content: "Contact - IDL" },
       { property: "og:description", content: contactCopy.subline },
     ],
   }),
@@ -92,7 +92,7 @@ function ContactPage() {
                 transition={{ duration: 0.8, ease: EASE }}
               >
                 <label>Tell us about the project</label>
-                <textarea name="message" rows={4} placeholder="Site, scale, timeline — anything that helps us listen." required />
+                <textarea name="message" rows={4} placeholder="Site, scale, timeline - anything that helps us listen." required />
               </motion.label>
               <motion.button
                 type="submit"
@@ -159,7 +159,7 @@ function ContactPage() {
             <h3>Visit</h3>
             <div style={{ marginTop: 14, width: "100%", aspectRatio: "4 / 3", overflow: "hidden", border: "1px solid var(--stone)" }}>
               <iframe
-                title="Interarch Design Lab — Mumbai office location"
+                title="Interarch Design Lab - Mumbai office location"
                 src={contactCopy.mapEmbed}
                 width="100%"
                 height="100%"

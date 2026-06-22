@@ -11,7 +11,7 @@ import { recognitionList } from "@/data/siteContent";
 export const Route = createFileRoute("/awards")({
   head: () => ({
     meta: [
-      { title: "Awards — Interarch Design Labs" },
+      { title: "Awards - Interarch Design Labs" },
       { name: "description", content: "Awards and recognitions received by Interarch Design Labs." },
     ],
   }),

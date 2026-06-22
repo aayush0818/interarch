@@ -2,11 +2,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
-import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
 import archResidential from "@/assets/verticals/arch-residential.jpg";
-import hospitalityImg from "@/assets/verticals/arch-hospitality.jpg";
 import intResidential from "@/assets/verticals/int-residential.jpg";
 import intCommercial from "@/assets/verticals/int-commercial.jpg";
+import archHospitalityAsset from "@/assets/verticals/arch-hospitality-new.jpg.asset.json";
+import archInstitutionalAsset from "@/assets/verticals/arch-institutional-new.jpg.asset.json";
+
+const hospitalityImg = archHospitalityAsset.url;
+const archInstitutional = archInstitutionalAsset.url;
 
 type Vertical = {
   name: string;
@@ -14,6 +17,7 @@ type Vertical = {
   tagline: string;
   feature: { name: string; location: string };
   img: string;
+  focal?: string;
 };
 
 type Group = {
@@ -35,6 +39,7 @@ const groups: Group[] = [
         tagline: "Homes designed as enduring expressions of lifestyle, context and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
         img: archResidential,
+        focal: "center 40%",
       },
       {
         name: "Commercial",
@@ -42,6 +47,7 @@ const groups: Group[] = [
         tagline: "Workplaces and business environments designed to balance performance, presence, and experience.",
         feature: { name: "Meril Corporate HQ", location: "Vapi" },
         img: archCommercial,
+        focal: "center 35%",
       },
       {
         name: "Hospitality",
@@ -49,6 +55,7 @@ const groups: Group[] = [
         tagline: "Destinations crafted to elevate comfort, atmosphere, and memorable guest experiences",
         feature: { name: "Energize Resort", location: "Nashik" },
         img: hospitalityImg,
+        focal: "30% 45%",
       },
       {
         name: "Institutional",
@@ -56,6 +63,7 @@ const groups: Group[] = [
         tagline: "Spaces that serve communities through thoughtful planning, longevity, and purpose.",
         feature: { name: "Kanu Desai VIA Auditorium", location: "Vapi" },
         img: archInstitutional,
+        focal: "center 50%",
       },
     ],
   },
@@ -70,6 +78,7 @@ const groups: Group[] = [
         tagline: "Thoughtfully composed interiors that bring warmth, character, and everyday functionality together.",
         feature: { name: "Atelier Residence", location: "Mumbai" },
         img: intResidential,
+        focal: "center 45%",
       },
       {
         name: "Commercial",
@@ -77,6 +86,7 @@ const groups: Group[] = [
         tagline: "Interior environments designed to reflect brand identity while enhancing the way people work and interact.",
         feature: { name: "Monster Energy HQ", location: "Mumbai" },
         img: intCommercial,
+        focal: "center 45%",
       },
     ],
   },
@@ -98,9 +108,9 @@ export function Verticals() {
   return (
     <section className="vx-section">
       <div className="vx-grid">
-        {/* LEFT — discipline tabs + sector list */}
+        {/* LEFT - discipline tabs + sector list */}
         <div className="vx-list">
-          <span className="vx-eyebrow">( 02 ) — Disciplines</span>
+          <span className="vx-eyebrow">( 02 ) - Disciplines</span>
 
           <div className="vx-disc-row">
             {groups.map((g, i) => (
@@ -176,19 +186,20 @@ export function Verticals() {
           </Link>
         </div>
 
-        {/* RIGHT — contained image */}
+        {/* RIGHT - contained image */}
         <div className="vx-media">
           <div className="vx-media-frame">
             <AnimatePresence mode="wait">
               <motion.img
                 key={`${group.key}-${current.name}-img`}
                 src={current.img}
-                alt={`${group.label} — ${current.name}`}
+                alt={`${group.label} - ${current.name}`}
                 initial={{ opacity: 0, scale: 1.04 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 loading="lazy"
+                style={{ objectPosition: current.focal ?? "center center" }}
               />
             </AnimatePresence>
           </div>

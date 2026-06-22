@@ -16,9 +16,9 @@ const work3 = interiorSplitAsset.url;
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Interarch Design Labs" },
-      { name: "description", content: "An archive of architecture and interiors — split between two disciplines, one register." },
-      { property: "og:title", content: "Projects — Interarch Design Labs" },
+      { title: "Projects - Interarch Design Labs" },
+      { name: "description", content: "An archive of architecture and interiors - split between two disciplines, one register." },
+      { property: "og:title", content: "Projects - Interarch Design Labs" },
       { property: "og:description", content: "Architecture and interiors by Interarch Design Labs." },
       { property: "og:image", content: work1 },
     ],
@@ -49,7 +49,7 @@ function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.1, delay: 0.3, ease: EASE }}
             >
-              <span className="idlx-diptych-sub">— 01 / Architecture</span>
+              <span className="idlx-diptych-sub">01 / Architecture</span>
               <span>Architecture</span>
               <span className="idlx-diptych-sub" style={{ opacity: 0.6 }}>{arch} works</span>
             </motion.div>
@@ -62,7 +62,7 @@ function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.1, delay: 0.5, ease: EASE }}
             >
-              <span className="idlx-diptych-sub">— 02 / Interiors</span>
+              <span className="idlx-diptych-sub">02 / Interiors</span>
               <span>Interiors</span>
               <span className="idlx-diptych-sub" style={{ opacity: 0.6 }}>{intr} works</span>
             </motion.div>

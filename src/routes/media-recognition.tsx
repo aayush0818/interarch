@@ -9,7 +9,7 @@ import { mediaRecognitionPosts } from "@/data/siteContent";
 export const Route = createFileRoute("/media-recognition")({
   head: () => ({
     meta: [
-      { title: "Media Recognition — Interarch Design Labs" },
+      { title: "Media Recognition - Interarch Design Labs" },
       { name: "description", content: "Press features, published work and media recognition from the studio." },
     ],
   }),

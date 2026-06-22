@@ -117,7 +117,7 @@ export function Header() {
   return (
     <>
       <header className={headerClass}>
-        <Link to="/" className="idl-logo" aria-label="Interarch Design Labs — Home" onClick={closeAll}>
+        <Link to="/" className="idl-logo" aria-label="Interarch Design Labs - Home" onClick={closeAll}>
           <img src={logo} alt="Interarch Design Labs" className="idl-logo-mark" />
         </Link>
 
@@ -168,7 +168,7 @@ export function Header() {
               <AnimatePresence mode="wait">
                 {active ? (
                   <motion.div key={active.label} className="idl-mega-left-inner" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.5, ease: EASE }}>
-                    <div className="idl-mega-eyebrow">— {String((activeIdx ?? 0) + 1).padStart(2, "0")} / {String(NAV.length).padStart(2, "0")}</div>
+                    <div className="idl-mega-eyebrow">{String((activeIdx ?? 0) + 1).padStart(2, "0")} / {String(NAV.length).padStart(2, "0")}</div>
                     <h2 className="idl-mega-title">{active.label}</h2>
                     <p className="idl-mega-blurb">{active.blurb}</p>
                     <div className="idl-mega-image">
@@ -177,7 +177,7 @@ export function Header() {
                   </motion.div>
                 ) : (
                   <motion.div key="idle" className="idl-mega-left-inner" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4, ease: EASE }}>
-                    <div className="idl-mega-eyebrow">— Index</div>
+                    <div className="idl-mega-eyebrow">Index</div>
                     <h2 className="idl-mega-title">Interarch<br />Design Labs</h2>
                     <p className="idl-mega-blurb">Architecture, interiors and spatial strategy presented through image, calm pacing, and restraint.</p>
                   </motion.div>

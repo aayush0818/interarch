@@ -14,9 +14,9 @@ export const Route = createFileRoute("/practice/journal/$slug")({
     const p = journalPosts.find((x) => x.slug === params.slug);
     return {
       meta: [
-        { title: `${p?.title ?? "Essay"} — Journal · IDL` },
+        { title: `${p?.title ?? "Essay"} - Journal · IDL` },
         { name: "description", content: p?.dek ?? "" },
-        { property: "og:title", content: `${p?.title} — Journal · IDL` },
+        { property: "og:title", content: `${p?.title} - Journal · IDL` },
         { property: "og:description", content: p?.dek ?? "" },
       ],
     };
@@ -28,7 +28,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 const body = (slug: string) => [
   { kind: "p" as const, text: "Every building begins not with a line, but with a question. Why this room, why this window, why this view? The drawing only earns its weight once the answer is honest." },
-  { kind: "p" as const, text: "We talk to the people who will use the space long before the brief is fixed. Habits that drawings miss — the way light is preferred at breakfast, the door that everyone leaves open — these are the real plans." },
+  { kind: "p" as const, text: "We talk to the people who will use the space long before the brief is fixed. Habits that drawings miss - the way light is preferred at breakfast, the door that everyone leaves open - these are the real plans." },
   { kind: "quote" as const, text: "Clarity is not minimalism. It is the discipline of leaving in only what matters." },
   { kind: "p" as const, text: `In the case of "${slug.replace(/-/g, " ")}", that meant editing as much as designing. The plan grew quieter each week, until what remained felt inevitable.` },
   { kind: "p" as const, text: "A building done with care is patient. It accepts a new tenant, a wedding, a quiet rainy afternoon, with the same composure. That is the test." },

@@ -7,7 +7,7 @@ import { Marquee } from "@/components/motion/Marquee";
 
 import heroImg from "@/assets/idl/PAB9031-HDR.jpg.asset.json";
 import mvvImg from "@/assets/idl/PAB9056-HDR.jpg.asset.json";
-import rangeImg from "@/assets/idl/PAB9126-HDR.jpg.asset.json";
+
 import cultureLeftImg from "@/assets/idl/PAB9071-HDR.jpg.asset.json";
 import cultureRightImg from "@/assets/idl/PAB8838-HDR.jpg.asset.json";
 import bottomSplitOne from "@/assets/idl/PAB9081-HDR.jpg.asset.json";
@@ -23,7 +23,6 @@ import {
   mission,
   vision,
   values,
-  rangeOfExperience,
   recognitionList,
   cultureBlocks,
 } from "@/data/siteContent";
@@ -31,9 +30,9 @@ import {
 export const Route = createFileRoute("/studio/about")({
   head: () => ({
     meta: [
-      { title: "About — Studio · Interarch Design Labs" },
+      { title: "About - Studio · Interarch Design Labs" },
       { name: "description", content: aboutCopy.intro.slice(0, 160) },
-      { property: "og:title", content: "About — Studio · IDL" },
+      { property: "og:title", content: "About - Studio · IDL" },
       { property: "og:description", content: aboutCopy.intro.slice(0, 160) },
       { property: "og:image", content: studioHero },
     ],
@@ -49,7 +48,7 @@ function AboutPage() {
         alt="Interarch Design Labs studio"
         eyebrow={aboutCopy.eyebrow}
         title={aboutCopy.headline}
-        meta="Mumbai — Est. 1989"
+        meta="Mumbai - Est. 1989"
       />
 
       {/* Manifesto */}
@@ -136,35 +135,8 @@ function AboutPage() {
         </Reveal>
       </div>
 
-      {/* Range of experience */}
-      <section className="idlx-section idlx-section--bordered">
-        <div className="idlx-manifesto">
-          <Reveal>
-            <span className="idlx-eyebrow">{rangeOfExperience.eyebrow}</span>
-            <MaskText as="h2" className="idlx-h2" delay={0.1}>{`A studio with reach\nand a steady register.`}</MaskText>
-          </Reveal>
-          <Reveal delay={0.15} className="idlx-manifesto-body">
-            <p className="idlx-lead">{rangeOfExperience.intro}</p>
-            <div className="idlx-values" style={{ marginTop: 24 }}>
-              {rangeOfExperience.partners.map((p) => (
-                <div key={p.note} className="idlx-value-row">
-                  <span className="idlx-value-n">{p.y}</span>
-                  <span className="idlx-value-body" style={{ gridColumn: "2 / -1" }}>{p.note}</span>
-                </div>
-              ))}
-            </div>
-            <ul className="idlx-bullets" style={{ marginTop: 24 }}>
-              {rangeOfExperience.fields.map((f) => (
-                <li key={f}>{f}</li>
-              ))}
-            </ul>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Split image break */}
       <div className="idlx-split">
-        <div className="idlx-split-img"><img src={rangeImg.url} alt="Studio working environment" loading="lazy" /></div>
         <div className="idlx-split-img"><img src={cultureLeftImg.url} alt="Studio interior" loading="lazy" /></div>
       </div>
 
@@ -190,9 +162,9 @@ function AboutPage() {
 
       {/* Marquee */}
       <Marquee speed={50}>
-        <span>— Mumbai · India</span>
-        <span>— Architecture · Interiors · Planning · Engineering</span>
-        <span>— Residential · Commercial · Hospitality · Industrial · Institutional · Workplace</span>
+        <span>Mumbai · India</span>
+        <span>Architecture · Interiors · Planning · Engineering</span>
+        <span>Residential · Commercial · Hospitality · Industrial · Institutional · Workplace</span>
       </Marquee>
 
       {/* Culture */}

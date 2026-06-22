@@ -12,7 +12,7 @@ function isTouchDevice() {
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
-    // Skip Lenis entirely on touch / small screens — native scroll is faster
+    // Skip Lenis entirely on touch / small screens - native scroll is faster
     if (isTouchDevice()) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
