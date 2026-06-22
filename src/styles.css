@@ -848,13 +848,13 @@ body {
   .vx-grid { grid-template-columns: 1fr; gap: 48px; }
   .vx-list { position: static; }
   .vx-media { order: -1; min-height: auto; }
-  .vx-media-frame { max-width: 420px; max-height: 56vh; margin: 0 auto; }
+  .vx-media-frame { max-width: 520px; max-height: none; aspect-ratio: 4 / 5; margin: 0 auto; }
 }
 
 @media (max-width: 640px) {
   .vx-disc-row { gap: 24px; }
   .vx-disc-tab { font-size: 22px; }
-  .vx-media-frame { max-width: 100%; max-height: 56vh; }
+  .vx-media-frame { max-width: 100%; max-height: none; aspect-ratio: 4 / 5; }
 }
 
 
