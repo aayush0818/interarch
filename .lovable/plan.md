@@ -1,69 +1,86 @@
-## Mobile Refinement Plan
+## Scope
 
-All changes are **mobile-only** (`@media (max-width: 768px)` overrides in `src/styles.css` plus `useIsMobile()`-guarded JSX branches). Desktop CSS and desktop component trees stay untouched. Work ships in three phases — you review after each.
-
----
-
-### Phase 1 — Foundations (highest visual impact)
-
-**1.1 Mobile mega-menu — full-screen accordion with inline visuals**
-- Rework `Header.tsx` mobile branch only. Each top-level item is an accordion row showing label + index; tap expands inline to reveal the section's sketch, blurb, and children links.
-- Scrollable full-height sheet, generous vertical rhythm, sketches sized to ~70vw width, blurb in editorial body type.
-- Footer (studio name + year) pinned at the bottom of the scroll.
-- Personality preserved: same eyebrow, numbering, sketch assets, easing curves as desktop.
-
-**1.2 Universal mobile hero system**
-Single shared set of mobile hero rules applied across: Projects, Architecture/Interior categories, Awards, Media, Studio, Directors, Legacy, Contact, Individual Project pages.
-- Tighter top padding (clears header without dead space), title clamp scaled down (~`clamp(2.25rem, 9vw, 3.25rem)`), single-line eyebrow with dot, lede capped at ~60ch.
-- Hero imagery: full-bleed, fixed aspect (4:5 portrait for portrait pages, 3:2 for landscape), no parallax on mobile to stop layout jank.
-- Consistent vertical rhythm token (`--m-hero-gap`) so every page hero feels part of one family.
-- Projects diptych: stacks vertically with equal heights and a thin divider; labels reposition to bottom-left.
-
-**1.3 Hover → tap-to-reveal**
-- `Verticals.tsx`, `HoverImageNav.tsx`, `FeaturedWorks.tsx`, and the mega-menu image swap: on mobile, tap a row to swap the image + expand its copy; tap again or tap another row to switch. Active state persists (no hover dependency).
-- Always show at least the headline + thumbnail so nothing is hidden before interaction.
+Content, imagery, and label updates only. No layout redesign. Desktop visual identity preserved.
 
 ---
 
-### Phase 2 — Galleries + Internal pages
+### 1. Verticals imagery (homepage)
 
-**2.1 Project detail galleries — "mostly single + occasional pair"**
-- New mobile gallery system in `project.$slug.tsx`: default to single full-bleed images stacked with consistent gap (`--m-gallery-gap`).
-- Mark specific image groups in project data as `pair: true` to render as a 2-up row (related shots only). All others stack.
-- Uniform aspect handling: landscape images get 3:2, portrait get 4:5, panoramas stay native. Captions sit below with editorial spacing.
+`src/components/home/Verticals.tsx` + asset pipeline
 
-**2.2 Internal pages restructure (Studio, Directors, Legacy, About IDL, Contact)**
-- Reorder modules for mobile reading order (intro → image → body → secondary modules), not desktop column compression.
-- Directors: card grid → single column with portrait, name, role, then bio expandable.
-- Legacy timeline: horizontal scroll → vertical stepped list with year markers.
-- Contact: form fields full-width, info block above form (currently side-by-side compresses badly).
+- Upload the two attached images via `lovable-assets` to `src/assets/verticals/`:
+  - Image 1 (pool / pavilion) → `arch-hospitality-new.jpg`
+  - Image 2 (arched mansion) → `arch-institutional-new.jpg`
+- Swap the `hospitalityImg` and `archInstitutional` imports to the new assets.
+- Keep existing residential/commercial imagery untouched.
+
+### 2. Verticals responsive framing
+
+`src/styles.css` (`.vx-media-frame img` and related rules)
+
+- Audit current `object-fit` / `object-position` / aspect ratio at mobile, tablet, laptop, desktop.
+- Set a consistent aspect (e.g. `4/5` on mobile/tablet, `3/4` on laptop, current on desktop) so the same focal point survives.
+- Apply `object-position: center 35%` (or per-image override via a data attribute) so the architectural subject — pavilion / arched facade / building elevation — never gets cropped out at narrower widths.
+- Add per-vertical focal hints in `Verticals.tsx` (`focal: "center 30%"`) and consume in the `<motion.img>` `style` prop so each vertical can be tuned individually.
+
+### 3. Residential project gallery ordering
+
+`src/data/projects.ts`
+
+- For every project in `architecture / residential` and `interiors / residential`, reorder the `gallery` arrays to follow the two sequences in the brief.
+- Approach: keep filenames intact; only the array order changes. Where a slot has no image, skip and continue.
+- Architecture order: master plan → site plan → exterior → arrival → living → dining → kitchen → other interiors → feature areas → bedrooms → remaining.
+- Interiors order: living → main shared → dining → kitchen → feature → other interiors → bedrooms → remaining.
+- Classification will be inferred from filename keywords (`master`, `site`, `plan`, `ext`, `exterior`, `entry`, `arrival`, `living`, `dining`, `kitchen`, `bed`, `bath`, etc.) with a sensible fallback to current order for ambiguous frames.
+
+### 4. Philosophy skyline image
+
+- Upload third attached image (skyline line drawing) via `lovable-assets` → replace `src/assets/manifesto-skyline-drawing.png` pointer (delete old asset, write new pointer at same path) so `SketchPhilosophy.tsx` picks it up with zero code change.
+- Layout, lightbox link, and CSS untouched.
+
+### 5. Footer & pre-footer navigation labels
+
+Align both to the Header IA: Projects · About IDL · Awards & Recognition · Contact.
+
+- `src/components/home/Footer.tsx` — `navLinks` array: rename `Studio` → `About IDL`, merge `Awards` + `Media Recognition` into a single `Awards & Recognition` entry pointing to `/awards`. Keep Projects and Contact. Also rename the "Studio" column label (address block) to "Office" so it doesn't collide with the new "About IDL" nav entry.
+- `src/components/home/HoverImageNav.tsx` — rename `Studio` → `About IDL`, `Awards` → `Awards & Recognition`. Keep the four-tile layout and images.
+
+### 6. Em-dash cleanup
+
+Sweep visible copy in:
+
+- `src/data/siteContent.ts`
+- `src/data/projects.ts`
+- `src/components/home/*.tsx` and `src/routes/*.tsx` string literals
+
+Rules:
+- Replace ` — ` (spaced em-dash between clauses) with ` - ` (spaced hyphen).
+- Replace leading eyebrow markers like `"— Mission"` with `"Mission"` (drop the dash entirely, since the eyebrow style already provides separation).
+- Leave em-dashes inside SVG/code/identifiers untouched.
+- Preserve readability — where an em-dash acts as a colon, prefer `:` instead of a hyphen.
+
+### 7. Remove "Range of Experience" from About
+
+- `src/routes/studio.about.tsx` — delete the `rangeOfExperience` section block (around line 140-160) and the import.
+- `src/data/siteContent.ts` — remove the `rangeOfExperience` export.
+- Verify spacing of the section above (Mission/Vision) and below flows cleanly; no extra empty wrappers left behind.
+
+### 8. Subsection typography bump (About + Directors)
+
+`src/styles.css`
+
+- Locate the small heading style used for Conviction / Mission / Vision / similar subsection titles (likely `.idlx-section-title` or `.idlx-sub-title` inside the studio pages).
+- Increase `font-size` by ~1pt (≈ +1.5px) at desktop; scale proportionally at mobile via existing `clamp()`. Keep weight, tracking, and family identical.
+- No structural or component changes.
 
 ---
 
-### Phase 3 — Animations + Final QA
+## Out of scope
 
-**3.1 Mobile animation pass**
-- Audit `Reveal`, `MaskText`, `SketchPhilosophy`, `CinematicHero`, `SmoothScroll` for mobile parity.
-- Keep: text reveal, mask reveal, image fade-up, philosophy sketch build (already fixed).
-- Drop on mobile: custom cursor, heavy parallax, smooth-scroll lerp (use native scroll for performance).
-- Respect `prefers-reduced-motion`.
+- Desktop layout, animations, and visual identity stay exactly as they are.
+- No new routes, no new components, no data-model changes beyond array reordering and copy edits.
 
-**3.2 Full mobile QA sweep**
-Playwright walk at 390×844 across every route: hero, navigation, hover-replacements, galleries, animations, no clipped content, no horizontal scroll, no broken sticky.
+## Verification
 
----
-
-### Technical notes
-
-- All overrides land in `src/styles.css` under a single `/* === MOBILE REFINEMENT === */` block and in component files behind `const isMobile = useIsMobile()` branches — never touching desktop JSX paths.
-- No new dependencies expected.
-- `overflow-x: clip` rule (from last fix) stays; sticky sections remain functional.
-- New CSS tokens added: `--m-hero-gap`, `--m-gallery-gap`, `--m-section-pad`.
-
----
-
-### Deliverable order
-
-1. Phase 1 ships in one implementation turn → you review on device.
-2. Phase 2 ships next turn after your approval.
-3. Phase 3 ships last with the Playwright QA report.
+- Visual check `/`, `/studio/about`, `/studio/directors`, a residential architecture project, and a residential interior project at mobile + desktop widths via Playwright.
+- Grep confirms `Range of Experience` and stray ` — ` instances are gone from user-visible copy.
