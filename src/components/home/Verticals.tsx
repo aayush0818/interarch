@@ -39,6 +39,7 @@ const groups: Group[] = [
         tagline: "Homes designed as enduring expressions of lifestyle, context and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
         img: archResidential,
+        focal: "center 40%",
       },
       {
         name: "Commercial",
@@ -46,6 +47,7 @@ const groups: Group[] = [
         tagline: "Workplaces and business environments designed to balance performance, presence, and experience.",
         feature: { name: "Meril Corporate HQ", location: "Vapi" },
         img: archCommercial,
+        focal: "center 35%",
       },
       {
         name: "Hospitality",
@@ -53,6 +55,7 @@ const groups: Group[] = [
         tagline: "Destinations crafted to elevate comfort, atmosphere, and memorable guest experiences",
         feature: { name: "Energize Resort", location: "Nashik" },
         img: hospitalityImg,
+        focal: "30% 45%",
       },
       {
         name: "Institutional",
@@ -60,6 +63,7 @@ const groups: Group[] = [
         tagline: "Spaces that serve communities through thoughtful planning, longevity, and purpose.",
         feature: { name: "Kanu Desai VIA Auditorium", location: "Vapi" },
         img: archInstitutional,
+        focal: "center 50%",
       },
     ],
   },
