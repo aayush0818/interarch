@@ -145,23 +145,6 @@ export const idlStudioNarrative = {
   ],
 };
 
-export const rangeOfExperience = {
-  eyebrow: "Range of Experience",
-  intro:
-    "IDL's portfolio spans large-scale developments to boutique interiors - unified by cultural sensitivity, material intelligence, and responsible design.",
-  partners: [
-    { y: "40+", note: "years of architectural experience - Ar. Dipak Thaker" },
-    { y: "30+", note: "years of interior expertise - Ar. Murtuza Rangwala" },
-    { y: "—", note: "Contemporary, detail-led design sensibilities - Ar. Rohit Gojia & Ar. Hussain Rangwala" },
-  ],
-  fields: [
-    "Residential villas, retreats, and apartments",
-    "Hospitality and leisure environments",
-    "Corporate workplaces and retail",
-    "Institutional and public spaces",
-    "Master planning and integrated developments",
-  ],
-};
 
 export const recognitionList = [
   { year: "2001", award: "A+D & Spectrum Paints Architecture Awards", note: "Architecture + Design (A+D), The National Journal of Architecture, and Spectrum Paints appreciated the participation of Ar. Dipak P. Thakar - the jury's response to the creative involvement was very positive.", image: awardAdSpectrum2001.url },
