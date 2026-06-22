@@ -52,7 +52,7 @@ function ProcessPage() {
               <section key={p.n} className="idlx-phase" style={{ direction: reverse ? "rtl" : "ltr" }}>
                 <div className="idlx-phase-text" style={{ direction: "ltr" }}>
                   <Reveal>
-                    <span className="idlx-phase-num">— Phase {p.n}</span>
+                    <span className="idlx-phase-num">Phase {p.n}</span>
                   </Reveal>
                   <Reveal delay={0.08}>
                     <h2 className="idlx-phase-name">{p.title}</h2>

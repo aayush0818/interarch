@@ -162,9 +162,9 @@ function AboutPage() {
 
       {/* Marquee */}
       <Marquee speed={50}>
-        <span>— Mumbai · India</span>
-        <span>— Architecture · Interiors · Planning · Engineering</span>
-        <span>— Residential · Commercial · Hospitality · Industrial · Institutional · Workplace</span>
+        <span>Mumbai · India</span>
+        <span>Architecture · Interiors · Planning · Engineering</span>
+        <span>Residential · Commercial · Hospitality · Industrial · Institutional · Workplace</span>
       </Marquee>
 
       {/* Culture */}

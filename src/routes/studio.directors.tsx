@@ -85,12 +85,12 @@ function TeamPage() {
       </section>
 
       <Marquee speed={45}>
-        <span>— Architects</span>
-        <span>— Interior Designers</span>
-        <span>— Visualisers</span>
-        <span>— Project Managers</span>
-        <span>— Delivery Specialists</span>
-        <span>— Strategists</span>
+        <span>Architects</span>
+        <span>Interior Designers</span>
+        <span>Visualisers</span>
+        <span>Project Managers</span>
+        <span>Delivery Specialists</span>
+        <span>Strategists</span>
       </Marquee>
 
       <div className="idlx-split">

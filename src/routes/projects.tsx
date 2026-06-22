@@ -49,7 +49,7 @@ function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.1, delay: 0.3, ease: EASE }}
             >
-              <span className="idlx-diptych-sub">— 01 / Architecture</span>
+              <span className="idlx-diptych-sub">01 / Architecture</span>
               <span>Architecture</span>
               <span className="idlx-diptych-sub" style={{ opacity: 0.6 }}>{arch} works</span>
             </motion.div>
@@ -62,7 +62,7 @@ function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.1, delay: 0.5, ease: EASE }}
             >
-              <span className="idlx-diptych-sub">— 02 / Interiors</span>
+              <span className="idlx-diptych-sub">02 / Interiors</span>
               <span>Interiors</span>
               <span className="idlx-diptych-sub" style={{ opacity: 0.6 }}>{intr} works</span>
             </motion.div>

@@ -50,7 +50,7 @@ function PracticePage() {
               <Link to={d.to} className="idlx-door" data-hover style={{ display: "block", height: "100%" }}>
                 <img src={d.img} alt={d.name} />
                 <div className="idlx-door-cap">
-                  <span className="idlx-door-num">— {d.num} / Practice</span>
+                  <span className="idlx-door-num">{d.num} / Practice</span>
                   <span className="idlx-door-name">{d.name}</span>
                   <p className="idlx-door-body">{d.body}</p>
                 </div>

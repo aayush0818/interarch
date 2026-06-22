@@ -74,7 +74,7 @@ function ProjectPage() {
               <div key={f.name} className="idlx-facility">
                 <Reveal>
                   <header className="idlx-facility-head">
-                    <span className="idlx-facility-index">— Facility · {String(fi + 1).padStart(2, "0")}</span>
+                    <span className="idlx-facility-index">Facility · {String(fi + 1).padStart(2, "0")}</span>
                     <h2 className="idlx-facility-name">{f.name}</h2>
                     <p className="idlx-facility-desc">{f.description}</p>
                   </header>

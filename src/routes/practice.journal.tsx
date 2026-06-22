@@ -46,7 +46,7 @@ function JournalPage() {
             <Link to="/practice/journal/$slug" params={{ slug: feature.slug }} className="idlx-jrn-feature" data-hover>
               <div className="idlx-jrn-feature-img"><img src={pageImages.works[0]} alt={feature.title} /></div>
               <div className="idlx-jrn-feature-body">
-                <span className="idlx-jrn-meta">— Feature · {feature.category} · {feature.date}</span>
+                <span className="idlx-jrn-meta">Feature · {feature.category} · {feature.date}</span>
                 <h2 className="idlx-jrn-feature-title">{feature.title}</h2>
                 <p className="idlx-jrn-feature-dek">{feature.dek}</p>
                 <span className="idlx-cta-link" style={{ alignSelf: "start" }}>Read essay →</span>

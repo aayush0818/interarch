@@ -151,7 +151,7 @@ function CategoryPage() {
 
         <div className="idlx-archive">
           <aside className="idlx-archive-rail">
-            <span>— Category</span>
+            <span>Category</span>
             <Link to="/projects" data-hover>All projects</Link>
             <Link
               to="/projects/$category"
@@ -172,7 +172,7 @@ function CategoryPage() {
 
             {cat === "interiors" && (
               <>
-                <span className="idlx-archive-rail-gap">— Sector</span>
+                <span className="idlx-archive-rail-gap">Sector</span>
                 <button type="button" className={interiorFilter === "all" ? "is-on" : ""} onClick={() => setInteriorFilter("all")} data-hover>
                   All Interiors
                 </button>
@@ -187,7 +187,7 @@ function CategoryPage() {
 
             {cat === "architecture" && (
               <>
-                <span className="idlx-archive-rail-gap">— Sector</span>
+                <span className="idlx-archive-rail-gap">Sector</span>
                 <button type="button" className={architectureFilter === "all" ? "is-on" : ""} onClick={() => setArchitectureFilter("all")} data-hover>
                   All Architecture
                 </button>
@@ -209,7 +209,7 @@ function CategoryPage() {
               </>
             )}
 
-            <span className="idlx-archive-rail-gap">— Count</span>
+            <span className="idlx-archive-rail-gap">Count</span>
             <span style={{ fontFamily: "var(--serif)", fontSize: 30, color: "var(--idlx-ink)" }}>{String(filteredList.length).padStart(2, "0")}</span>
           </aside>
 
