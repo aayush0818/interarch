@@ -17,6 +17,7 @@ type Vertical = {
   tagline: string;
   feature: { name: string; location: string };
   img: string;
+  focal?: string;
 };
 
 type Group = {
