@@ -86,6 +86,7 @@ const groups: Group[] = [
         tagline: "Interior environments designed to reflect brand identity while enhancing the way people work and interact.",
         feature: { name: "Monster Energy HQ", location: "Mumbai" },
         img: intCommercial,
+        focal: "center 45%",
       },
     ],
   },
