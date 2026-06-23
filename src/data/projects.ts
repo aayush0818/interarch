@@ -313,7 +313,7 @@ import hoa7 from "@/assets/house-of-arches-21.jpeg.asset.json";
 import hoa8 from "@/assets/house-of-arches-24.jpeg.asset.json";
 import hoa9 from "@/assets/house-of-arches-61.jpeg.asset.json";
 import hoa10 from "@/assets/house-of-arches-66.jpeg.asset.json";
-const houseOfArchesGallery = [hoa1.url, hoa2.url, hoa3.url, hoa4.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url];
+const houseOfArchesGallery = [hoa1.url, hoa3.url, hoa4.url, hoa2.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url];
 
 // The Layer Residence - Residential Interior
 import lr1 from "@/assets/layer-res-78.jpeg.asset.json";
@@ -323,7 +323,7 @@ import lr4 from "@/assets/layer-res-19.jpeg.asset.json";
 import lr5 from "@/assets/layer-res-24-2.jpeg.asset.json";
 import lr6 from "@/assets/layer-res-8.jpeg.asset.json";
 import lr7 from "@/assets/layer-res-12-2.jpeg.asset.json";
-const layerResidenceGallery = [lr1.url, lr2.url, lr3.url, lr4.url, lr5.url, lr6.url, lr7.url];
+const layerResidenceGallery = [lr3.url, lr6.url, lr7.url, lr2.url, lr4.url, lr1.url, lr5.url];
 
 // House of Layers - Residential Architecture
 import hol1 from "@/assets/house-of-layers-122-2.jpeg.asset.json";
@@ -346,7 +346,7 @@ import hol17 from "@/assets/house-of-layers-86-2.jpeg.asset.json";
 import hol18 from "@/assets/house-of-layers-17-2.jpeg.asset.json";
 import hol19 from "@/assets/house-of-layers-62-2.jpeg.asset.json";
 import hol20 from "@/assets/house-of-layers-106-2.jpeg.asset.json";
-const houseOfLayersGallery = [hol1.url, hol2.url, hol3.url, hol4.url, hol5.url, hol6.url, hol7.url, hol8.url, hol9.url, hol10.url, hol11.url, hol12.url, hol13.url, hol14.url, hol15.url, hol16.url, hol17.url, hol18.url, hol19.url, hol20.url];
+const houseOfLayersGallery = [hol5.url, hol19.url, hol2.url, hol3.url, hol4.url, hol13.url, hol15.url, hol17.url, hol9.url, hol12.url, hol1.url, hol10.url, hol14.url, hol20.url, hol6.url, hol7.url, hol16.url, hol18.url, hol8.url, hol11.url];
 
 // The House of Stone - Residential Interior
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
@@ -361,7 +361,7 @@ import hos9 from "@/assets/house-of-stone-059.jpeg.asset.json";
 import hos10 from "@/assets/house-of-stone-122.jpeg.asset.json";
 import hos11 from "@/assets/house-of-stone-130-2.jpeg.asset.json";
 import hos12 from "@/assets/house-of-stone-067.jpeg.asset.json";
-const houseOfStoneGallery = [hos1.url, hos4.url, hos5.url, hos6.url, hos7.url, hos2.url, hos3.url, hos8.url, hos9.url, hos10.url, hos11.url, hos12.url];
+const houseOfStoneGallery = [hos4.url, hos5.url, hos6.url, hos7.url, hos2.url, hos8.url, hos1.url, hos3.url, hos9.url, hos10.url, hos11.url, hos12.url];
 
 // Blush & Bronze Residence - Residential Interior
 import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
@@ -519,13 +519,13 @@ const palakJewellersGallery = [pj1.url, pj2.url, pj3.url, pj4.url, pj5.url, pj6.
 const ratanshiKherajGallery = [rk1.url, rk2.url, rk3.url, rk4.url, rk5.url, rk6.url, rk7.url];
 const solitaaGallery = [sl1.url, sl2.url, sl3.url, sl4.url, sl5.url, sl6.url, sl7.url, sl8.url];
 const biguineGallery = [jcb1.url, jcb2.url, jcb3.url, jcb4.url, jcb5.url, jcb6.url, jcb7.url];
-const sereneHeightsGallery = [sh1.url, sh2.url, sh3.url, sh4.url, sh5.url, sh6.url, sh7.url, sh8.url];
-const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url, sf9.url, sf10.url];
-const onyxIvoryGallery = [ox1.url, ox2.url, ox3.url, ox4.url, ox5.url, ox6.url, ox7.url, ox8.url, ox9.url, ox10.url];
-const emeraldReverieGallery = [er1.url, er2.url, er3.url, er4.url, er5.url, er6.url, er7.url, er8.url, er9.url];
-const blushBronzeResidenceGallery = [bb3.url, bb1.url, bb2.url, bb4.url, bb5.url, bb6.url, bb7.url];
+const sereneHeightsGallery = [sh1.url, sh3.url, sh4.url, sh5.url, sh8.url, sh2.url, sh6.url, sh7.url];
+const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf9.url, sf10.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url];
+const onyxIvoryGallery = [ox1.url, ox7.url, ox3.url, ox8.url, ox2.url, ox10.url, ox4.url, ox5.url, ox6.url, ox9.url];
+const emeraldReverieGallery = [er1.url, er2.url, er3.url, er9.url, er4.url, er5.url, er6.url, er7.url, er8.url];
+const blushBronzeResidenceGallery = [bb3.url, bb7.url, bb1.url, bb4.url, bb5.url, bb6.url, bb2.url];
 const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url];
-const cloudlinePenthouseGallery = [cl2406.url, cl2028.url, cl2460.url, cl2295.url, cl2454.url, cl2472.url, cl2316.url, cl2298.url, cl2304.url, cl2166.url, cl2203.url, cl2478.url];
+const cloudlinePenthouseGallery = [cl2406.url, cl2454.url, cl2460.url, cl2472.url, cl2295.url, cl2478.url, cl2316.url, cl2298.url, cl2304.url, cl2203.url, cl2028.url, cl2166.url];
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url, bharoso3.url, bharoso4.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
 const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url, tataRallis4.url];
