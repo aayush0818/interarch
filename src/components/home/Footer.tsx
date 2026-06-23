@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
+import { Instagram, Linkedin, Link2 } from "lucide-react";
 import logo from "@/assets/idl-logo.png";
+import { contactCopy } from "@/data/siteContent";
 
 const navLinks = [
   { label: "Projects", to: "/projects" as const },
@@ -39,9 +41,19 @@ export function Footer() {
 
         <div className="idl-footer-col">
           <span className="idl-footer-label">Connect</span>
-          <a href="mailto:hello@interarchlabs.com" data-hover>hello@interarchlabs.com</a>
-          <a href="https://www.instagram.com/interarchdesignlabs" target="_blank" rel="noreferrer" data-hover>Instagram</a>
-          <a href="https://www.linkedin.com/company/interarch-design-lab/" target="_blank" rel="noreferrer" data-hover>LinkedIn</a>
+          <a href={`mailto:${contactCopy.email}`} data-hover>{contactCopy.email}</a>
+          <a href={contactCopy.phoneHref} data-hover>{contactCopy.phone}</a>
+          <div className="idl-footer-socials" aria-label="Social links">
+            <a href={contactCopy.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-hover>
+              <Instagram size={18} strokeWidth={1.5} />
+            </a>
+            <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" data-hover>
+              <Linkedin size={18} strokeWidth={1.5} />
+            </a>
+            <a href={contactCopy.linktree} target="_blank" rel="noreferrer" aria-label="Linktree" data-hover>
+              <Link2 size={18} strokeWidth={1.5} />
+            </a>
+          </div>
         </div>
       </div>
 
