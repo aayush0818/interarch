@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
+import { Instagram, Linkedin, Link2 } from "lucide-react";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
@@ -119,14 +120,17 @@ function ContactPage() {
                 />
               ) : null}
             </div>
-            <p className="idlx-ig-links">
-              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>
-                Instagram → @interarchdesignlabs
+            <div className="idlx-social-icons" aria-label="Social links">
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-hover>
+                <Instagram size={22} strokeWidth={1.5} />
               </a>
-              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>
-                LinkedIn → Interarch Design Lab
+              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" data-hover>
+                <Linkedin size={22} strokeWidth={1.5} />
               </a>
-            </p>
+              <a href={contactCopy.linktree} target="_blank" rel="noreferrer" aria-label="Linktree" data-hover>
+                <Link2 size={22} strokeWidth={1.5} />
+              </a>
+            </div>
           </Reveal>
         </div>
 
@@ -143,17 +147,27 @@ function ContactPage() {
             ))}
           </Reveal>
           <Reveal delay={0.12}>
-            <h3>Write</h3>
+            <h3>Write & Call</h3>
             <p style={{ marginTop: 10 }}>
               <a href={`mailto:${contactCopy.email}`} data-hover>{contactCopy.email}</a>
+            </p>
+            <p style={{ marginTop: 6 }}>
+              <a href={contactCopy.phoneHref} data-hover>{contactCopy.phone}</a>
             </p>
           </Reveal>
           <Reveal delay={0.18}>
             <h3>Follow</h3>
-            <p style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 6 }}>
-              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" data-hover>Instagram → @interarchdesignlabs</a>
-              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" data-hover>LinkedIn → Interarch Design Lab</a>
-            </p>
+            <div className="idlx-social-icons" style={{ marginTop: 12 }} aria-label="Social links">
+              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-hover>
+                <Instagram size={22} strokeWidth={1.5} />
+              </a>
+              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" data-hover>
+                <Linkedin size={22} strokeWidth={1.5} />
+              </a>
+              <a href={contactCopy.linktree} target="_blank" rel="noreferrer" aria-label="Linktree" data-hover>
+                <Link2 size={22} strokeWidth={1.5} />
+              </a>
+            </div>
           </Reveal>
           <Reveal delay={0.24}>
             <h3>Visit</h3>

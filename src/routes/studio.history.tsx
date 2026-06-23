@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { MaskText } from "@/components/motion/MaskText";
-import { milestones } from "@/data/siteContent";
+import { milestones, legacyImages } from "@/data/siteContent";
 import { realImages } from "@/data/realImages";
 
 export const Route = createFileRoute("/studio/history")({
@@ -30,7 +30,7 @@ function StudioHistoryPage() {
   return (
     <>
       <CinematicHero
-        image={realImages.institutional.aerial}
+        image={legacyImages.hero}
         alt="A legacy in motion"
         eyebrow="Studio · History"
         title={"A legacy,\nyear by year."}
