@@ -965,7 +965,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: atriumHouse1.url,
-    gallery: [atriumHouse1.url, atriumHouse2.url, atriumHouse3.url, atriumHouse4.url, atriumHouse5.url, atriumHouse6.url, atriumHouse7.url],
+    gallery: [atriumHouse1.url, atriumHouse7.url, atriumHouse4.url, atriumHouse3.url, atriumHouse2.url, atriumHouse5.url, atriumHouse6.url],
     description: "Organized around a dramatic central volume, the residence celebrates openness, symmetry, and grand-scale living.",
   },
   {
@@ -1017,7 +1017,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: linearEstate1.url,
-    gallery: [linearEstate1.url, linearEstate2.url, linearEstate3.url, linearEstate4.url, linearEstate5.url, linearEstate6.url, linearEstate7.url, linearEstate8.url],
+    gallery: [linearEstate3.url, linearEstate6.url, linearEstate1.url, linearEstate5.url, linearEstate4.url, linearEstate7.url, linearEstate8.url, linearEstate2.url],
     description: "A residential masterplan composed of contemporary villas, landscaped streets, and community spaces. Defined by clean geometry and generous open areas, the development balances privacy, connectivity, and everyday living within a cohesive architectural language.",
   },
   {
@@ -1030,7 +1030,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: pavilionEstate1.url,
-    gallery: [pavilionEstate1.url, pavilionEstate2.url, pavilionEstate3.url, pavilionEstate4.url, pavilionEstate5.url, pavilionEstate6.url, pavilionEstate7.url, pavilionEstate8.url, pavilionEstate9.url, pavilionEstate10.url],
+    gallery: [pavilionEstate5.url, pavilionEstate6.url, pavilionEstate1.url, pavilionEstate3.url, pavilionEstate7.url, pavilionEstate8.url, pavilionEstate4.url, pavilionEstate10.url, pavilionEstate9.url, pavilionEstate2.url],
     description: "Architecture and landscape are treated as one continuous experience, resulting in a home that feels expansive from every angle.",
   },
   {
@@ -1043,7 +1043,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: porticoHouse1.url,
-    gallery: [porticoHouse1.url, porticoHouse2.url, porticoHouse3.url, porticoHouse4.url, porticoHouse5.url, porticoHouse6.url, porticoHouse7.url, porticoHouse8.url, porticoHouse9.url, porticoHouse10.url, porticoHouse11.url, porticoHouse12.url],
+    gallery: [porticoHouse2.url, porticoHouse7.url, porticoHouse3.url, porticoHouse5.url, porticoHouse6.url, porticoHouse4.url, porticoHouse8.url, porticoHouse1.url, porticoHouse11.url, porticoHouse10.url, porticoHouse12.url, porticoHouse9.url],
     description: "Set within expansive greens, the architecture embraces outdoor living through deep verandas, framed views, and seamless transitions.",
   },
   {
@@ -1056,7 +1056,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: panoramaHouseHero.url,
-    gallery: [panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse2.url, panoramaHouse3.url, panoramaHouse4.url, panoramaHouse5.url, panoramaHouse6.url, panoramaHouse7.url, panoramaHouse8.url, panoramaHouse9.url],
+    gallery: [panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
   },
   {
@@ -1069,7 +1069,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2.url,
-    gallery: [lanternVilla1.url, lanternVilla2.url, lanternVilla3.url, lanternVilla4.url, lanternVilla5.url, lanternVilla6.url, lanternVilla7.url, lanternVilla8.url, lanternVilla9.url, lanternVilla10.url, lanternVilla11.url, lanternVilla12.url, lanternVilla13.url, lanternVilla14.url, lanternVilla15.url, lanternVilla16.url, lanternVilla17.url, lanternVilla18.url, lanternVilla19.url, lanternVilla20.url, lanternVilla21.url, lanternVilla22.url, lanternVilla23.url, lanternVilla24.url],
+    gallery: [lanternVilla1.url, lanternVilla12.url, lanternVilla17.url, lanternVilla9.url, lanternVilla14.url, lanternVilla24.url, lanternVilla6.url, lanternVilla22.url, lanternVilla13.url, lanternVilla3.url, lanternVilla5.url, lanternVilla10.url, lanternVilla11.url, lanternVilla16.url, lanternVilla8.url, lanternVilla18.url, lanternVilla20.url, lanternVilla21.url, lanternVilla15.url, lanternVilla23.url, lanternVilla2.url, lanternVilla4.url, lanternVilla7.url, lanternVilla19.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",
   },
   {
