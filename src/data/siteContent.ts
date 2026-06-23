@@ -351,14 +351,14 @@ export const milestones = [
   {
     year: "2009",
     title: "DRDO Silver Jubilee Honour",
-    image: legacy4.url,
+    image: legacy5.url,
     text:
       "Marking a strong institutional partnership, IDL was honoured by the Defence Research & Development Organisation (DRDO) during its Silver Jubilee celebrations, recognising the firm's role in supporting key projects.",
   },
   {
     year: "2010",
     title: "Civic Recognition",
-    image: legacy5.url,
+    image: legacy4.url,
     text:
       "A proud cultural and civic recognition was received for contributions to architecture and the built environment, felicitated by government and civic leaders for design impact.",
   },
@@ -379,7 +379,7 @@ export const milestones = [
   {
     year: "Today",
     title: "Interarch Design Labs",
-    image: legacy8.url,
+    image: legacy9.url,
     text:
       "With over three decades of practice, IDL has grown into a multidisciplinary studio delivering across architecture, interiors, engineering, and master planning. From bungalows and corporate campuses to large institutional projects, the firm continues to uphold its founding philosophy, innovative design rooted in tradition, delivered with sensitivity to clients and context.",
   },
