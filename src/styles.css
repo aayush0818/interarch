@@ -2010,6 +2010,36 @@ a:hover .img-reveal-wrap .img-parallax {
   text-transform: uppercase; opacity: 0.78;
 }
 
+/* Directors page: slightly tighter hero so each phrase fits on one line */
+.idlx-hero .idlx-hero-title:has(> .idlx-mask-line:nth-child(3)) {
+  font-size: clamp(30px, 5.4vw, 88px);
+}
+.idlx-hero .idlx-mask-line { white-space: nowrap; }
+
+/* Social icon row */
+.idlx-social-icons {
+  display: inline-flex; align-items: center; gap: 14px;
+}
+.idlx-social-icons a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border: 1px solid var(--stone, rgba(0,0,0,0.15));
+  border-radius: 999px; color: inherit; transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+.idlx-social-icons a:hover {
+  background: currentColor; color: var(--idlx-cream, #f5efe6);
+  border-color: currentColor;
+}
+.idl-footer-socials {
+  display: inline-flex; align-items: center; gap: 12px; margin-top: 8px;
+}
+.idl-footer-socials a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border: 1px solid currentColor; border-radius: 999px;
+  opacity: 0.85; transition: opacity 200ms ease, background 200ms ease;
+}
+.idl-footer-socials a:hover { opacity: 1; }
+
+
 /* =============================================================================
    SECTION RHYTHM
    ============================================================================= */
