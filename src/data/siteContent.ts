@@ -188,7 +188,7 @@ export const cultureBlocks = [
    ================================================================= */
 export const teamCopy = {
   eyebrow: "Our Team",
-  headline: "Four ways of Thinking. Four ways of seeing. One mark that holds us all.",
+  headline: "Four Ways of Thinking\nFour Ways of Seeing\nOne Mark",
   intro:
     "Interarch Design Labs is led by four partners whose combined experience spans decades of work across architecture, interiors, and the built environment. Their individual expertise and perspectives form the foundation of the practice, bringing depth of knowledge, creative insight, and strategic thinking to every project. Bound by a shared design philosophy and commitment to excellence, they continue to shape a practice that values context, purpose, and lasting impact above all else.",
   collective:
@@ -432,9 +432,12 @@ export const contactCopy = {
         "Interarch Design Lab\nUnit No 205, Peninsula Centre, Co-Op Premises Society Ltd,\nDr. S. S. Rao Marg, Parel East,\nMumbai, Maharashtra 400012",
     },
   ],
-  email: "hello@interarchlabs.com",
-  instagram: "https://www.instagram.com/interarchdesignlabs",
+  email: "info@interarchdesignlabs.com",
+  phone: "022 4088 5587",
+  phoneHref: "tel:+912240885587",
+  instagram: "https://www.instagram.com/interarchdesignlabs/",
   linkedin: "https://www.linkedin.com/company/interarch-design-lab/",
+  linktree: "https://linktr.ee/interarchdesignlab",
   mapEmbed:
     "https://www.google.com/maps?q=Peninsula+Centre,+Dr.+S.+S.+Rao+Marg,+Parel+East,+Mumbai,+Maharashtra+400012&output=embed",
   mapLink:
