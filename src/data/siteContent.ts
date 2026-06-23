@@ -311,60 +311,75 @@ export const sectors = [
 /* =================================================================
    HISTORY / TIMELINE
    ================================================================= */
+import legacy1 from "@/assets/idl/legacy/legacy-1.jpg.asset.json";
+import legacy2 from "@/assets/idl/legacy/legacy-2.jpg.asset.json";
+import legacy3 from "@/assets/idl/legacy/legacy-3.jpg.asset.json";
+import legacy4 from "@/assets/idl/legacy/legacy-4.jpg.asset.json";
+import legacy5 from "@/assets/idl/legacy/legacy-5.jpg.asset.json";
+import legacy6 from "@/assets/idl/legacy/legacy-6.jpg.asset.json";
+import legacy7 from "@/assets/idl/legacy/legacy-7.jpg.asset.json";
+import legacy8 from "@/assets/idl/legacy/legacy-8.jpg.asset.json";
+import legacy9 from "@/assets/idl/legacy/legacy-9.jpg.asset.json";
+
+export const legacyImages = {
+  hero: legacy9.url,
+  sequence: [legacy1.url, legacy2.url, legacy3.url, legacy4.url, legacy5.url, legacy6.url, legacy7.url, legacy8.url, legacy9.url],
+};
+
 export const milestones = [
   {
     year: "1989",
     title: "Interarch is founded",
-    image: inst.aerial,
+    image: legacy1.url,
     text:
       "Founded by architect Dipak Thaker, Interarch (with its twin firm DID Consultants) was established with the guiding principle of \"modern architecture drawn from traditional guidelines.\" The practice began with a vision to blend innovation, technology, and timeless design sensibilities.",
   },
   {
     year: "2001",
     title: "A+D Spectrum Architecture Awards",
-    image: res.gallery,
+    image: legacy2.url,
     text:
       "Recognition came early when IDL participated in the A+D & Spectrum Paints Architecture Awards, with the jury praising the firm's creative approach and contribution to contemporary design dialogue.",
   },
   {
     year: "2008",
     title: "AREA Acknowledgement",
-    image: com.lounge,
+    image: legacy3.url,
     text:
       "IDL's growing reputation extended beyond architecture to its collaborative work with the real estate sector. The Association of Real Estate Agents (AREA) acknowledged the firm's support and commitment during their 3rd Real Estate Conference.",
   },
   {
     year: "2009",
     title: "DRDO Silver Jubilee Honour",
-    image: inst.tower,
+    image: legacy4.url,
     text:
       "Marking a strong institutional partnership, IDL was honoured by the Defence Research & Development Organisation (DRDO) during its Silver Jubilee celebrations, recognising the firm's role in supporting key projects.",
   },
   {
     year: "2010",
     title: "Civic Recognition",
-    image: inst.pool,
+    image: legacy5.url,
     text:
       "A proud cultural and civic recognition was received for contributions to architecture and the built environment, felicitated by government and civic leaders for design impact.",
   },
   {
     year: "2014–15",
     title: "AICA Asia Fest Commendation",
-    image: res.warm,
+    image: legacy6.url,
     text:
       "At the Artists in Concrete Awards (AICA), Asia Fest, IDL's work on large-scale institutional projects - including the Educational Big and Medical Academy - received a Commendation Award, endorsed by an international panel of architects and designers.",
   },
   {
     year: "2015",
     title: "Rachana Sansad Diamond Jubilee",
-    image: com.reception,
+    image: legacy7.url,
     text:
       "The Academy of Architecture, Rachana Sansad (Mumbai), felicitated Ar. Dipak Thaker during their Diamond Jubilee celebrations, recognising his significant contributions to the profession and his role as an inspiring alumnus.",
   },
   {
     year: "Today",
     title: "Interarch Design Labs",
-    image: inst.palm,
+    image: legacy8.url,
     text:
       "With over three decades of practice, IDL has grown into a multidisciplinary studio delivering across architecture, interiors, engineering, and master planning. From bungalows and corporate campuses to large institutional projects, the firm continues to uphold its founding philosophy, innovative design rooted in tradition, delivered with sensitivity to clients and context.",
   },
