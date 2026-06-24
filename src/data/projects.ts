@@ -112,6 +112,11 @@ import mvvplHotel5 from "@/assets/mvvpl-hotel-5.png.asset.json";
 import mvvplHotel6 from "@/assets/mvvpl-hotel-6.png.asset.json";
 import mvvplHotel7 from "@/assets/mvvpl-hotel-7.png.asset.json";
 import mvvplHotel8 from "@/assets/mvvpl-hotel-8.png.asset.json";
+import mvvplHotelAerial from "@/assets/mvvpl-hotel-aerial.jpeg.asset.json";
+import mvvplHotelFront from "@/assets/mvvpl-hotel-front.jpeg.asset.json";
+import mvvplHotelCenter from "@/assets/mvvpl-hotel-center.jpeg.asset.json";
+import mvvplHotelPorteCochere from "@/assets/mvvpl-hotel-portecochere.jpeg.asset.json";
+import mvvplHotelThreeQuarter from "@/assets/mvvpl-hotel-threequarter.jpeg.asset.json";
 
 // MVVPL Clubhouse (Architecture · Hospitality)
 import mvvplClub1 from "@/assets/mvvpl-clubhouse-1.jpg.asset.json";
