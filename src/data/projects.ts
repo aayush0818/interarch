@@ -330,28 +330,18 @@ import lr6 from "@/assets/layer-res-8.jpeg.asset.json";
 import lr7 from "@/assets/layer-res-12-2.jpeg.asset.json";
 const layerResidenceGallery = [lr3.url, lr6.url, lr7.url, lr2.url, lr4.url, lr1.url, lr5.url];
 
-// House of Layers - Residential Architecture
-import hol1 from "@/assets/house-of-layers-122-2.jpeg.asset.json";
-import hol2 from "@/assets/house-of-layers-48.jpeg.asset.json";
-import hol3 from "@/assets/house-of-layers-51-2.jpeg.asset.json";
-import hol4 from "@/assets/house-of-layers-86.jpeg.asset.json";
-import hol5 from "@/assets/house-of-layers-62.jpeg.asset.json";
-import hol6 from "@/assets/house-of-layers-17.jpeg.asset.json";
-import hol7 from "@/assets/house-of-layers-68.jpeg.asset.json";
-import hol8 from "@/assets/house-of-layers-39-2.jpeg.asset.json";
-import hol9 from "@/assets/house-of-layers-94.jpeg.asset.json";
-import hol10 from "@/assets/house-of-layers-106.jpeg.asset.json";
-import hol11 from "@/assets/house-of-layers-39-3.jpeg.asset.json";
-import hol12 from "@/assets/house-of-layers-94-2.jpeg.asset.json";
-import hol13 from "@/assets/house-of-layers-48-2.jpeg.asset.json";
-import hol14 from "@/assets/house-of-layers-122-3.jpeg.asset.json";
-import hol15 from "@/assets/house-of-layers-51-3.jpeg.asset.json";
-import hol16 from "@/assets/house-of-layers-68-2.jpeg.asset.json";
-import hol17 from "@/assets/house-of-layers-86-2.jpeg.asset.json";
-import hol18 from "@/assets/house-of-layers-17-2.jpeg.asset.json";
-
-import hol20 from "@/assets/house-of-layers-106-2.jpeg.asset.json";
-const houseOfLayersGallery = [hol5.url, hol2.url, hol3.url, hol4.url, hol13.url, hol15.url, hol17.url, hol9.url, hol12.url, hol1.url, hol10.url, hol14.url, hol20.url, hol6.url, hol7.url, hol16.url, hol18.url, hol8.url, hol11.url];
+// House of Layers - Residential Interiors
+import hol122 from "@/assets/hol-new-122.jpeg.asset.json";
+import hol125 from "@/assets/hol-new-125.jpeg.asset.json";
+import hol43 from "@/assets/hol-new-43.jpeg.asset.json";
+import hol62 from "@/assets/hol-new-62.jpeg.asset.json";
+import hol48 from "@/assets/hol-new-48.jpeg.asset.json";
+import hol17new from "@/assets/hol-new-17.jpeg.asset.json";
+import hol68new from "@/assets/hol-new-68.jpeg.asset.json";
+import hol39new from "@/assets/hol-new-39.jpeg.asset.json";
+import hol94new from "@/assets/hol-new-94.jpeg.asset.json";
+import hol93 from "@/assets/hol-new-93.jpeg.asset.json";
+const houseOfLayersGallery = [hol122.url, hol125.url, hol43.url, hol62.url, hol48.url, hol17new.url, hol68new.url, hol39new.url, hol94new.url, hol93.url];
 
 // The House of Stone - Residential Interior
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
@@ -1090,7 +1080,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Interiors",
     category: "Interiors",
-    cover: hol1.url,
+    cover: hol62.url,
     gallery: houseOfLayersGallery,
     description: "A highly personalised residence where sculpted ceilings, expressive details and layered materials create a home rich in character. The interiors move between art, luxury and everyday living, resulting in spaces that feel curated rather than decorated.",
   },
