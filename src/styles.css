@@ -804,7 +804,6 @@ body {
   width: 100%;
   max-width: 460px;
   aspect-ratio: 4 / 5;
-  max-height: 64vh;
   overflow: hidden;
 }
 .vx-media-frame img {
