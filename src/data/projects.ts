@@ -658,6 +658,7 @@ export type Project = {
   gallery: string[];
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
+  showcase?: string;
 };
 
 
