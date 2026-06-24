@@ -349,9 +349,9 @@ import hol15 from "@/assets/house-of-layers-51-3.jpeg.asset.json";
 import hol16 from "@/assets/house-of-layers-68-2.jpeg.asset.json";
 import hol17 from "@/assets/house-of-layers-86-2.jpeg.asset.json";
 import hol18 from "@/assets/house-of-layers-17-2.jpeg.asset.json";
-import hol19 from "@/assets/house-of-layers-62-2.jpeg.asset.json";
+
 import hol20 from "@/assets/house-of-layers-106-2.jpeg.asset.json";
-const houseOfLayersGallery = [hol5.url, hol19.url, hol2.url, hol3.url, hol4.url, hol13.url, hol15.url, hol17.url, hol9.url, hol12.url, hol1.url, hol10.url, hol14.url, hol20.url, hol6.url, hol7.url, hol16.url, hol18.url, hol8.url, hol11.url];
+const houseOfLayersGallery = [hol5.url, hol2.url, hol3.url, hol4.url, hol13.url, hol15.url, hol17.url, hol9.url, hol12.url, hol1.url, hol10.url, hol14.url, hol20.url, hol6.url, hol7.url, hol16.url, hol18.url, hol8.url, hol11.url];
 
 // The House of Stone - Residential Interior
 import hos1 from "@/assets/house-of-stone-065.jpeg.asset.json";
