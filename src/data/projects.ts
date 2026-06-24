@@ -1080,7 +1080,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Interiors",
     category: "Interiors",
-    cover: hol1.url,
+    cover: hol62.url,
     gallery: houseOfLayersGallery,
     description: "A highly personalised residence where sculpted ceilings, expressive details and layered materials create a home rich in character. The interiors move between art, luxury and everyday living, resulting in spaces that feel curated rather than decorated.",
   },
