@@ -61,6 +61,8 @@ import ma12 from "@/assets/meril-academy-vapi-12.jpg.asset.json";
 import ma13 from "@/assets/meril-academy-vapi-13.jpg.asset.json";
 import ma14 from "@/assets/meril-academy-vapi-14.jpg.asset.json";
 import ma15 from "@/assets/meril-academy-vapi-15.jpg.asset.json";
+import maExt from "@/assets/meril-academy-vapi-ext.jpg.asset.json";
+import maLobby from "@/assets/meril-academy-vapi-lobby.jpg.asset.json";
 
 // D CP Office - Belapur (Architecture · Institutional)
 import dcp1 from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
