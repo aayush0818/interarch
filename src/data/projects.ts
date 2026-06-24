@@ -973,7 +973,8 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: glasswood1.url,
-    gallery: [glasswood1.url, glasswood2.url, glasswood3.url],
+    showcase: glasswood3.url,
+    gallery: [glasswood1.url, glasswood2.url],
     description: "A low-slung residence where glass, timber tones, and landscape merge into a single architectural experience. Designed as a collection of transparent living spaces, the home blurs the line between indoors and outdoors.",
   },
   {
