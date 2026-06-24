@@ -439,7 +439,7 @@ import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 // Quest (Ajay Seth) - Institutional (Architecture)
 import quest38n from "@/assets/quest-clubhouse-38-2.jpg.asset.json";
 import quest65n from "@/assets/quest-clubhouse-65-2.jpg.asset.json";
-import quest23n from "@/assets/quest-clubhouse-23-2.jpg.asset.json";
+
 import quest67n from "@/assets/quest-clubhouse-67-2.jpg.asset.json";
 import quest2n from "@/assets/quest-clubhouse-2.jpg.asset.json";
 import quest18n from "@/assets/quest-clubhouse-18-2.jpg.asset.json";
@@ -537,7 +537,7 @@ const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis
 const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
-const questAjaySethGallery = [quest38n.url, quest65n.url, quest23n.url, quest67n.url, quest2n.url, quest18n.url, quest82n.url, quest83n.url, quest91n.url, quest96n.url];
+const questAjaySethGallery = [quest38n.url, quest65n.url, quest67n.url, quest2n.url, quest18n.url, quest82n.url, quest83n.url, quest91n.url, quest96n.url];
 
 // Maple Industrial Park - Vapi (Architecture · Industrial)
 import mapleGate01 from "@/assets/maple-main-gate-01.jpeg.asset.json";
