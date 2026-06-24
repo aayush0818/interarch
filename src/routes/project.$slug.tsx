@@ -81,6 +81,22 @@ function ProjectPage() {
           </section>
         )}
 
+        {/* Featured showcase */}
+        {project.showcase && (
+          <section className="idlx-showcase">
+            <ClipReveal>
+              <div className="idlx-showcase-media">
+                <img
+                  src={project.showcase}
+                  alt={`${project.name} — featured showcase`}
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+            </ClipReveal>
+          </section>
+        )}
+
         {/* Photo essay - facilities (when defined) or default gallery rhythm. */}
         {project.facilities && project.facilities.length > 0 ? (
           <section className="idlx-mono-photo idlx-facilities">
