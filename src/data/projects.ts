@@ -573,6 +573,7 @@ import linearNewClub from "@/assets/linear-new-whatsapp-image-2018-07-21-at-11.0
 import linearNewPavilion from "@/assets/linear-new-whatsapp-image-2018-07-21-at-11.07.45-am.jpg.asset.json";
 import linearNewMeditation from "@/assets/linear-new-meditation-post.jpg.asset.json";
 import linearNewPlay from "@/assets/linear-new-childrensplayarea-post.jpg.asset.json";
+import linearEstateHero from "@/assets/linear-estate-hero.png.asset.json";
 
 // Lantern Villa - Architecture · Residential
 import lanternVilla1 from "@/assets/lantern-villa-1.jpg.asset.json";
@@ -1029,8 +1030,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: linearNewAerial.url,
-    gallery: [linearNewAerial.url, linearNewEntry.url, linearNewBungalow.url, linearNewTwin.url, linearNewClub.url, linearNewPavilion.url, linearNewMeditation.url, linearNewPlay.url],
+    cover: linearEstateHero.url,
+    gallery: [linearEstateHero.url, linearNewEntry.url, linearNewBungalow.url, linearNewTwin.url, linearNewClub.url, linearNewPavilion.url, linearNewMeditation.url, linearNewPlay.url],
     description: "A residential masterplan composed of contemporary villas, landscaped streets, and community spaces. Defined by clean geometry and generous open areas, the development balances privacy, connectivity, and everyday living within a cohesive architectural language.",
   },
   {
