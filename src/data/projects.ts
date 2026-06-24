@@ -112,6 +112,11 @@ import mvvplHotel5 from "@/assets/mvvpl-hotel-5.png.asset.json";
 import mvvplHotel6 from "@/assets/mvvpl-hotel-6.png.asset.json";
 import mvvplHotel7 from "@/assets/mvvpl-hotel-7.png.asset.json";
 import mvvplHotel8 from "@/assets/mvvpl-hotel-8.png.asset.json";
+import mvvplHotelAerial from "@/assets/mvvpl-hotel-aerial.jpeg.asset.json";
+import mvvplHotelFront from "@/assets/mvvpl-hotel-front.jpeg.asset.json";
+import mvvplHotelCenter from "@/assets/mvvpl-hotel-center.jpeg.asset.json";
+import mvvplHotelPorteCochere from "@/assets/mvvpl-hotel-portecochere.jpeg.asset.json";
+import mvvplHotelThreeQuarter from "@/assets/mvvpl-hotel-threequarter.jpeg.asset.json";
 
 // MVVPL Clubhouse (Architecture · Hospitality)
 import mvvplClub1 from "@/assets/mvvpl-clubhouse-1.jpg.asset.json";
@@ -560,6 +565,10 @@ import linearEstate5 from "@/assets/linear-estate-5.jpg.asset.json";
 import linearEstate6 from "@/assets/linear-estate-6.jpg.asset.json";
 import linearEstate7 from "@/assets/linear-estate-7.jpg.asset.json";
 import linearEstate8 from "@/assets/linear-estate-8.jpg.asset.json";
+import linearEstateContext from "@/assets/linear-estate-context.jpg.asset.json";
+import linearEstateAerialElev from "@/assets/linear-estate-aerial-elev.jpg.asset.json";
+import linearEstateAerialTop from "@/assets/linear-estate-aerial-top.jpg.asset.json";
+import linearEstateEntry from "@/assets/linear-estate-entry.jpg.asset.json";
 
 // Lantern Villa - Architecture · Residential
 import lanternVilla1 from "@/assets/lantern-villa-1.jpg.asset.json";
@@ -899,8 +908,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: mvvplHotel1.url,
-    gallery: [mvvplHotel1.url, mvvplHotel2.url, mvvplHotel3.url],
+    cover: mvvplHotelAerial.url,
+    gallery: [mvvplHotelAerial.url, mvvplHotelFront.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel2.url, mvvplHotel3.url],
     description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
   },
   {
@@ -1016,8 +1025,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: linearEstate1.url,
-    gallery: [linearEstate3.url, linearEstate6.url, linearEstate1.url, linearEstate5.url, linearEstate4.url, linearEstate7.url, linearEstate8.url, linearEstate2.url],
+    cover: linearEstateContext.url,
+    gallery: [linearEstateContext.url, linearEstateAerialTop.url, linearEstateAerialElev.url, linearEstateEntry.url, linearEstate3.url, linearEstate6.url, linearEstate1.url, linearEstate5.url, linearEstate4.url, linearEstate7.url, linearEstate8.url, linearEstate2.url],
     description: "A residential masterplan composed of contemporary villas, landscaped streets, and community spaces. Defined by clean geometry and generous open areas, the development balances privacy, connectivity, and everyday living within a cohesive architectural language.",
   },
   {
