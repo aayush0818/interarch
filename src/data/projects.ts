@@ -439,6 +439,7 @@ import viaOption01 from "@/assets/via-option-01.jpg.asset.json";
 import viaOption03 from "@/assets/via-option-03.jpg.asset.json";
 import viaOption04 from "@/assets/via-option-04.jpg.asset.json";
 import viaOption05 from "@/assets/via-option-05.jpg.asset.json";
+import viaAuditoriumHero from "@/assets/via-auditorium-hero.jpg.asset.json";
 
 // Quest (Ajay Seth) - Institutional (Architecture)
 import questNew50 from "@/assets/quest-new-50.jpg.asset.json";
