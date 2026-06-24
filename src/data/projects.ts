@@ -439,7 +439,7 @@ import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
 // Quest (Ajay Seth) - Institutional (Architecture)
 import quest38n from "@/assets/quest-clubhouse-38-2.jpg.asset.json";
 import quest65n from "@/assets/quest-clubhouse-65-2.jpg.asset.json";
-import quest23n from "@/assets/quest-clubhouse-23-2.jpg.asset.json";
+
 import quest67n from "@/assets/quest-clubhouse-67-2.jpg.asset.json";
 import quest2n from "@/assets/quest-clubhouse-2.jpg.asset.json";
 import quest18n from "@/assets/quest-clubhouse-18-2.jpg.asset.json";
