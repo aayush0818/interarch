@@ -877,8 +877,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: mp1_4.url,
-    gallery: [mp1_front.url, mp1_side.url, mp1_4.url, mp1_5.url, mp1_6.url, mp1_reception.url],
+    cover: mp1_side.url,
+    gallery: [mp1_front.url, mp1_4.url, mp1_5.url, mp1_6.url, mp1_reception.url],
     description: "Designed as a modern life sciences campus, the architecture combines monumentality with openness to create an environment of trust and progress.",
   },
   {
