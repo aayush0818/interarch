@@ -1108,7 +1108,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: ridgeHouse1.url,
-    gallery: [ridgeHouse1.url, ridgeHouse2.url, ridgeHouse3.url],
+    gallery: [ridgeHouse1.url, ridgeHouse2.url, ridgeHouse3.url, ridgeHouseDrone9.url],
     description: "Positioned within a lush natural setting, the residence is designed around openness, views, and outdoor living. Clean architectural forms sit comfortably within the landscape, creating a calm and understated retreat.",
   },
   {
