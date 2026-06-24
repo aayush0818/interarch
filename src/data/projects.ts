@@ -93,7 +93,7 @@ import mb56_2 from "@/assets/meril-bld-5-6-2.png.asset.json";
 // Meril Park 1 (Architecture · Industrial)
 import mp1_front from "@/assets/meril-park-1-main-building-front-view-new.jpg.asset.json";
 import mp1_side from "@/assets/meril-park-1-main-building-side-view.jpg.asset.json";
-import mp1_night from "@/assets/meril-park-1-night-view-main-bulding.jpg.asset.json";
+
 import mp1_4 from "@/assets/meril-park-1-4.jpg.asset.json";
 import mp1_5 from "@/assets/meril-park-1-5.jpg.asset.json";
 import mp1_6 from "@/assets/meril-park-1-6.jpg.asset.json";
@@ -878,7 +878,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: mp1_4.url,
-    gallery: [mp1_front.url, mp1_side.url, mp1_4.url, mp1_5.url, mp1_6.url, mp1_night.url, mp1_reception.url],
+    gallery: [mp1_front.url, mp1_side.url, mp1_4.url, mp1_5.url, mp1_6.url, mp1_reception.url],
     description: "Designed as a modern life sciences campus, the architecture combines monumentality with openness to create an environment of trust and progress.",
   },
   {
