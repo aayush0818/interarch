@@ -565,6 +565,10 @@ import linearEstate5 from "@/assets/linear-estate-5.jpg.asset.json";
 import linearEstate6 from "@/assets/linear-estate-6.jpg.asset.json";
 import linearEstate7 from "@/assets/linear-estate-7.jpg.asset.json";
 import linearEstate8 from "@/assets/linear-estate-8.jpg.asset.json";
+import linearEstateContext from "@/assets/linear-estate-context.jpg.asset.json";
+import linearEstateAerialElev from "@/assets/linear-estate-aerial-elev.jpg.asset.json";
+import linearEstateAerialTop from "@/assets/linear-estate-aerial-top.jpg.asset.json";
+import linearEstateEntry from "@/assets/linear-estate-entry.jpg.asset.json";
 
 // Lantern Villa - Architecture · Residential
 import lanternVilla1 from "@/assets/lantern-villa-1.jpg.asset.json";
