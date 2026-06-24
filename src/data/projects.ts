@@ -435,6 +435,10 @@ import viaVapi1 from "@/assets/via-auditorium-vapi-1.jpg.asset.json";
 import viaVapi2 from "@/assets/via-auditorium-vapi-2.jpg.asset.json";
 import viaVapi3 from "@/assets/via-auditorium-vapi-3.jpg.asset.json";
 import viaVapi4 from "@/assets/via-auditorium-vapi-4.jpg.asset.json";
+import viaOption01 from "@/assets/via-option-01.jpg.asset.json";
+import viaOption03 from "@/assets/via-option-03.jpg.asset.json";
+import viaOption04 from "@/assets/via-option-04.jpg.asset.json";
+import viaOption05 from "@/assets/via-option-05.jpg.asset.json";
 
 // Quest (Ajay Seth) - Institutional (Architecture)
 import questNew50 from "@/assets/quest-new-50.jpg.asset.json";
@@ -447,6 +451,8 @@ import questNew38 from "@/assets/quest-new-38.jpg.asset.json";
 import questNew2 from "@/assets/quest-new-2.jpg.asset.json";
 import questNew83 from "@/assets/quest-new-83.jpg.asset.json";
 import questNew91 from "@/assets/quest-new-91.jpg.asset.json";
+import questClubhouse96 from "@/assets/quest-clubhouse-96.jpg.asset.json";
+import questClubhouse23 from "@/assets/quest-clubhouse-23.jpg.asset.json";
 
 
 // Laxmi Kunj - Architecture · Residential
@@ -536,8 +542,8 @@ const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
 const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url, tataRallis4.url];
 const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
-const viaAuditoriumVapiGallery = [viaVapi1.url, viaVapi2.url, viaVapi3.url, viaVapi4.url];
-const questAjaySethGallery = [questNew50.url, questNew42.url, questNew65.url, questNew67.url, questNew82.url, questNew18.url, questNew38.url, questNew2.url, questNew83.url, questNew91.url];
+const viaAuditoriumVapiGallery = [viaOption01.url, viaOption03.url, viaOption04.url, viaOption05.url];
+const questAjaySethGallery = [questClubhouse96.url, questClubhouse23.url, questNew50.url, questNew42.url, questNew65.url, questNew67.url, questNew82.url, questNew18.url, questNew38.url, questNew2.url, questNew83.url, questNew91.url];
 
 // Maple Industrial Park - Vapi (Architecture · Industrial)
 import mapleGate01 from "@/assets/maple-main-gate-01.jpeg.asset.json";
