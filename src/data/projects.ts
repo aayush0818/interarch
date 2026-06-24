@@ -489,6 +489,7 @@ import courtyardTwins4 from "@/assets/courtyard-twins-4.jpeg.asset.json";
 import ridgeHouse1 from "@/assets/ridge-house-1.jpg.asset.json";
 import ridgeHouse2 from "@/assets/ridge-house-2.jpg.asset.json";
 import ridgeHouse3 from "@/assets/ridge-house-3.jpg.asset.json";
+import ridgeHouseDrone9 from "@/assets/ridge-house-drone-9.jpg.asset.json";
 
 const bodyGoalsGallery = [bg1.url, bg2.url, bg3.url, bg5.url, bg6.url, bg8.url, bg9.url, bg10.url, bg11.url, bg12.url];
 const noirResidenceGallery = [
@@ -1107,7 +1108,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: ridgeHouse1.url,
-    gallery: [ridgeHouse1.url, ridgeHouse2.url, ridgeHouse3.url],
+    gallery: [ridgeHouse1.url, ridgeHouse2.url, ridgeHouse3.url, ridgeHouseDrone9.url],
     description: "Positioned within a lush natural setting, the residence is designed around openness, views, and outdoor living. Clean architectural forms sit comfortably within the landscape, creating a calm and understated retreat.",
   },
   {
