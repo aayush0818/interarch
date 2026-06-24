@@ -3317,5 +3317,84 @@ a:hover .img-reveal-wrap .img-parallax {
    `hidden` on html/body breaks position:sticky descendants (philosophy section). */
 html, body { overflow-x: clip; }
 
+/* =========================================================
+   STUDIO CTA — paired cross-navigation links
+   ========================================================= */
+.idlx-cta-links {
+  display: inline-flex; flex-wrap: wrap; gap: clamp(20px, 4vw, 56px);
+  align-items: baseline;
+}
+
+/* =========================================================
+   MOBILE REFINEMENT — PHASE 3
+   1. Hero readability on small screens (About + all heroes).
+   2. Project galleries: preserve full architectural compositions
+      rather than cropping into rigid aspect-ratio containers.
+   Desktop CSS untouched.
+   ========================================================= */
+@media (max-width: 640px) {
+  /* ---- Hero: strengthen overlay, tighten title, prevent edge collisions ---- */
+  .idlx-hero-vignette {
+    background:
+      linear-gradient(180deg,
+        rgba(0,0,0,0.42) 0%,
+        rgba(0,0,0,0.10) 38%,
+        rgba(0,0,0,0.30) 70%,
+        rgba(0,0,0,0.72) 100%);
+  }
+  .idlx-hero-cap {
+    left: 20px; right: 20px;
+    bottom: clamp(40px, 7vh, 72px);
+    gap: 16px;
+  }
+  .idlx-hero-title {
+    font-size: clamp(30px, 9vw, 46px);
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    text-shadow: 0 1px 24px rgba(0,0,0,0.35);
+    text-wrap: balance;
+  }
+  .idlx-hero-meta { font-size: 10px; letter-spacing: 0.22em; opacity: 0.92; }
+  .idlx-hero--center .idlx-hero-cap { padding: 0 20px; }
+  /* Directors override stays proportional on phones */
+  .idlx-hero .idlx-hero-title:has(> .idlx-mask-line:nth-child(3)) {
+    font-size: clamp(26px, 8vw, 40px);
+  }
+  .idlx-hero .idlx-mask-line { white-space: normal; }
+
+  /* ---- Project galleries: preserve image integrity over rigid crops ---- */
+  /* Override the Phase-2 fixed 4/5 aspect-ratio so architectural images
+     render at their intrinsic proportions. Background acts as a calm matte. */
+  .idlx-page .idlx-mono-fig,
+  .idlx-page .idlx-mono-fig--full,
+  .idlx-page .idlx-mono-fig--inset,
+  .idlx-page .idlx-mono-pair:not(.idlx-mono-pair--keep) .idlx-mono-fig,
+  .idlx-page .idlx-facility-media .idlx-mono-fig,
+  .idlx-page .idlx-facility-media .idlx-mono-fig--full {
+    aspect-ratio: auto;
+    background: var(--idlx-cream, #f5efe6);
+  }
+  .idlx-page .idlx-mono-fig img,
+  .idlx-page .idlx-mono-fig--full img,
+  .idlx-page .idlx-mono-fig--inset img,
+  .idlx-page .idlx-mono-pair:not(.idlx-mono-pair--keep) .idlx-mono-fig img,
+  .idlx-page .idlx-facility-media .idlx-mono-fig img {
+    width: 100%; height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  /* Keep the .idlx-fit-contain pages consistent with the same rule */
+  .idlx-page.idlx-fit-contain .idlx-mono-fig,
+  .idlx-page.idlx-fit-contain .idlx-mono-pair .idlx-mono-fig {
+    aspect-ratio: auto !important;
+  }
+  .idlx-page.idlx-fit-contain .idlx-mono-fig img,
+  .idlx-page.idlx-fit-contain .idlx-mono-pair img {
+    aspect-ratio: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+
 
 

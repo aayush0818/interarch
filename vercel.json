@@ -11,7 +11,7 @@
   "rewrites": [
     {
       "source": "/__l5e/:path*",
-      "destination": "https://project--bcfe12c7-e729-43a1-9d45-bcd9b27b155b.lovable.app/__l5e/:path*"
+      "destination": "https://project--87fa88c7-6591-490d-b446-6e5bfd9b92da.lovable.app/__l5e/:path*"
     },
     { "source": "/(.*)", "destination": "/api/index" }
   ]

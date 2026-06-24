@@ -193,13 +193,16 @@ function AboutPage() {
         <div className="idlx-split-img"><img src={bottomSplitTwo.url} alt="Studio detail" loading="lazy" /></div>
       </div>
 
-      {/* CTA */}
+      {/* CTA — cross-navigate to the other studio chapters */}
       <section className="idlx-cta idlx-section--bordered">
         <Reveal>
-          <p className="idlx-lead" style={{ maxWidth: 720 }}>Let's create something that lasts.</p>
+          <p className="idlx-lead" style={{ maxWidth: 720 }}>Continue through the studio.</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <Link to="/contact" className="idlx-cta-link" data-hover>Contact the Studio →</Link>
+          <div className="idlx-cta-links">
+            <Link to="/studio/directors" className="idlx-cta-link" data-hover>Meet the Directors →</Link>
+            <Link to="/studio/history" className="idlx-cta-link" data-hover>Read our Legacy →</Link>
+          </div>
         </Reveal>
         <img src={cultureRightImg.url} alt="" loading="lazy" style={{ display: "none" }} />
       </section>

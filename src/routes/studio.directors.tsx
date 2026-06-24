@@ -100,10 +100,13 @@ function TeamPage() {
 
       <section className="idlx-cta idlx-section--bordered">
         <Reveal>
-          <p className="idlx-lead">Let's create something that lasts.</p>
+          <p className="idlx-lead">Continue through the studio.</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <Link to="/contact" className="idlx-cta-link" data-hover>Contact the Studio →</Link>
+          <div className="idlx-cta-links">
+            <Link to="/studio/about" className="idlx-cta-link" data-hover>About the Studio →</Link>
+            <Link to="/studio/history" className="idlx-cta-link" data-hover>Read our Legacy →</Link>
+          </div>
         </Reveal>
       </section>
     </>

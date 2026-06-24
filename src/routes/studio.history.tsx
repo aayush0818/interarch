@@ -98,10 +98,13 @@ function StudioHistoryPage() {
 
       <section className="idlx-cta idlx-section--bordered">
         <Reveal>
-          <p className="idlx-lead" style={{ maxWidth: 640 }}>The story continues with the people behind every project.</p>
+          <p className="idlx-lead" style={{ maxWidth: 640 }}>The story continues with the studio behind it.</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <Link to="/studio/directors" className="idlx-cta-link" data-hover>Meet the directors →</Link>
+          <div className="idlx-cta-links">
+            <Link to="/studio/about" className="idlx-cta-link" data-hover>About the Studio →</Link>
+            <Link to="/studio/directors" className="idlx-cta-link" data-hover>Meet the Directors →</Link>
+          </div>
         </Reveal>
       </section>
     </>

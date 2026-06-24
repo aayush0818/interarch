@@ -33,7 +33,7 @@ export function Recognition() {
         <div className="recognition-left">
           <h2 className="recognition-title">Awards</h2>
           <a className="idl-pill" href="/awards" data-hover>
-            View archive
+            View Awards
           </a>
         </div>
         <div className="recognition-cards">

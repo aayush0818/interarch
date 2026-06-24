@@ -31,7 +31,21 @@ function ProjectPage() {
   const project = current;
   const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
   const next = siblings[(idx + 1) % siblings.length];
-  const gallery = project.gallery.length ? project.gallery : [project.cover];
+  // Hero de-duplication:
+  // - Galleries > 5 images: hero is already shown above; remove every duplicate from the gallery.
+  // - Galleries <= 5 images: a repeat is acceptable, but never immediately after the hero —
+  //   move the duplicate to the end of the sequence.
+  const rawGallery = project.gallery.length ? project.gallery : [project.cover];
+  const heroUrl = project.cover;
+  const gallery = (() => {
+    if (rawGallery.length > 5) {
+      const filtered = rawGallery.filter((u) => u !== heroUrl);
+      return filtered.length ? filtered : rawGallery;
+    }
+    if (!rawGallery.includes(heroUrl)) return rawGallery;
+    const withoutHero = rawGallery.filter((u) => u !== heroUrl);
+    return [...withoutHero, heroUrl];
+  })();
   const at = (i: number) => gallery[i % gallery.length];
 
   return (
