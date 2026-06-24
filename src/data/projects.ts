@@ -920,7 +920,8 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: mvvplHotelAerial.url,
-    gallery: [mvvplHotelAerial.url, mvvplHotelFront.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel2.url, mvvplHotel3.url],
+    showcase: mvvplHotel2.url,
+    gallery: [mvvplHotelAerial.url, mvvplHotelFront.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel3.url],
     description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
   },
   {
