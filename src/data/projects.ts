@@ -515,7 +515,7 @@ const noirResidenceGallery = [
   nr21.url,
 ];
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url, mc11.url, mc12.url];
-const merilAcademyGallery = [ma1.url, ma2.url, ma3.url, ma4.url, ma5.url, ma6.url, ma7.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, ma15.url];
+const merilAcademyGallery = [ma1.url, ma2.url, ma5.url, ma4.url, ma3.url, ma6.url, ma7.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, ma15.url];
 const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcp4.url, dcp5.url, dcp6.url, dcp7.url, dcp8.url];
 const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url, apj9.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
