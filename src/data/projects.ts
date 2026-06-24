@@ -790,7 +790,7 @@ export const projects: Project[] = [
     area: "",
     scope: "",
     category: "Architecture",
-    cover: quest67n.url,
+    cover: questNew67.url,
     gallery: questAjaySethGallery,
     description: "Set within a natural landscape, the project combines timeless architectural character with modern functionality. Designed as a place for interaction, learning, and retreat, it offers a balanced and inspiring environment.",
   },
