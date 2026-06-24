@@ -564,18 +564,14 @@ import mapleWarehouse01 from "@/assets/maple-warehouse-01.jpeg.asset.json";
 import mapleWarehouse02 from "@/assets/maple-warehouse-02.jpeg.asset.json";
 
 // Linear Estate - Architecture · Residential
-import linearEstate1 from "@/assets/linear-estate-1.jpg.asset.json";
-import linearEstate2 from "@/assets/linear-estate-2.jpg.asset.json";
-import linearEstate3 from "@/assets/linear-estate-3.jpg.asset.json";
-import linearEstate4 from "@/assets/linear-estate-4.jpg.asset.json";
-import linearEstate5 from "@/assets/linear-estate-5.jpg.asset.json";
-import linearEstate6 from "@/assets/linear-estate-6.jpg.asset.json";
-import linearEstate7 from "@/assets/linear-estate-7.jpg.asset.json";
-import linearEstate8 from "@/assets/linear-estate-8.jpg.asset.json";
-import linearEstateContext from "@/assets/linear-estate-context.jpg.asset.json";
-import linearEstateAerialElev from "@/assets/linear-estate-aerial-elev.jpg.asset.json";
-import linearEstateAerialTop from "@/assets/linear-estate-aerial-top.jpg.asset.json";
-import linearEstateEntry from "@/assets/linear-estate-entry.jpg.asset.json";
+import linearNewAerial from "@/assets/linear-new-final-aerial-renders-post.jpg.asset.json";
+import linearNewEntry from "@/assets/linear-new-whatsapp-image-2018-07-21-at-11.07.44-am.jpg.asset.json";
+import linearNewBungalow from "@/assets/linear-new-bungalow-post.jpg.asset.json";
+import linearNewTwin from "@/assets/linear-new-twin-sharing-render-post.jpg.asset.json";
+import linearNewClub from "@/assets/linear-new-whatsapp-image-2018-07-21-at-11.07.46-am.jpg.asset.json";
+import linearNewPavilion from "@/assets/linear-new-whatsapp-image-2018-07-21-at-11.07.45-am.jpg.asset.json";
+import linearNewMeditation from "@/assets/linear-new-meditation-post.jpg.asset.json";
+import linearNewPlay from "@/assets/linear-new-childrensplayarea-post.jpg.asset.json";
 
 // Lantern Villa - Architecture · Residential
 import lanternVilla1 from "@/assets/lantern-villa-1.jpg.asset.json";
@@ -1032,8 +1028,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: linearEstateContext.url,
-    gallery: [linearEstateContext.url, linearEstateAerialTop.url, linearEstateAerialElev.url, linearEstateEntry.url, linearEstate3.url, linearEstate6.url, linearEstate1.url, linearEstate5.url, linearEstate4.url, linearEstate7.url, linearEstate8.url, linearEstate2.url],
+    cover: linearNewAerial.url,
+    gallery: [linearNewAerial.url, linearNewEntry.url, linearNewBungalow.url, linearNewTwin.url, linearNewClub.url, linearNewPavilion.url, linearNewMeditation.url, linearNewPlay.url],
     description: "A residential masterplan composed of contemporary villas, landscaped streets, and community spaces. Defined by clean geometry and generous open areas, the development balances privacy, connectivity, and everyday living within a cohesive architectural language.",
   },
   {
