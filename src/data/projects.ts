@@ -1054,6 +1054,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: pavilionEstate1.url,
     gallery: [pavilionEstate5.url, pavilionEstate6.url, pavilionEstate1.url, pavilionEstate3.url, pavilionEstate7.url, pavilionEstate8.url, pavilionEstate4.url, pavilionEstate10.url, pavilionEstate9.url, pavilionEstate2.url],
+    fullBleed: [pavilionEstate3.url, pavilionEstate4.url],
     description: "Architecture and landscape are treated as one continuous experience, resulting in a home that feels expansive from every angle.",
   },
   {
