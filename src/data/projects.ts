@@ -1068,6 +1068,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: porticoHouse1.url,
     gallery: [porticoHouse2.url, porticoHouse7.url, porticoHouse3.url, porticoHouse5.url, porticoHouse6.url, porticoHouse4.url, porticoHouse8.url, porticoHouse1.url, porticoHouse11.url, porticoHouse10.url, porticoHouse12.url, porticoHouse9.url],
+    fullBleed: [porticoHouse11.url],
     description: "Set within expansive greens, the architecture embraces outdoor living through deep verandas, framed views, and seamless transitions.",
   },
   {
