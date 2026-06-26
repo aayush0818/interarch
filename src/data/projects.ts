@@ -1091,7 +1091,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2.url,
-    gallery: [lanternVilla1.url, lanternVilla12.url, lanternVilla17.url, lanternVilla9.url, lanternVilla14.url, lanternVilla24.url, lanternVilla6.url, lanternVilla22.url, lanternVilla13.url, lanternVilla3.url, lanternVilla5.url, lanternVilla10.url, lanternVilla11.url, lanternVilla16.url, lanternVilla8.url, lanternVilla18.url, lanternVilla20.url, lanternVilla21.url, lanternVilla15.url, lanternVilla23.url, lanternVilla2.url, lanternVilla4.url, lanternVilla7.url, lanternVilla19.url],
+    gallery: [lanternVilla1.url, lanternVilla9.url, lanternVilla14.url, lanternVilla24.url, lanternVilla6.url, lanternVilla22.url, lanternVilla13.url, lanternVilla3.url, lanternVilla5.url, lanternVilla10.url, lanternVilla11.url, lanternVilla16.url, lanternVilla8.url, lanternVilla18.url, lanternVilla20.url, lanternVilla21.url, lanternVilla15.url, lanternVilla23.url, lanternVilla2.url, lanternVilla4.url, lanternVilla7.url, lanternVilla19.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",
   },
   {
