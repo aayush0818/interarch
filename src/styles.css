@@ -2013,7 +2013,7 @@ a:hover .img-reveal-wrap .img-parallax {
 .idlx-hero .idlx-hero-title:has(> .idlx-mask-line:nth-child(3)) {
   font-size: clamp(30px, 5.4vw, 88px);
 }
-.idlx-hero .idlx-mask-line { white-space: nowrap; }
+.idlx-hero .idlx-mask-line { white-space: normal; }
 
 /* Social icon row */
 .idlx-social-icons {
