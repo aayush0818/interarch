@@ -49,6 +49,7 @@ function AboutPage() {
         eyebrow={aboutCopy.eyebrow}
         title={aboutCopy.headline}
         meta="Mumbai - Est. 1989"
+        className="studio-about-hero"
       />
 
       {/* Manifesto */}

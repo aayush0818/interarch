@@ -12,9 +12,10 @@ type Props = {
   meta?: string;
   height?: "full" | "tall" | "mid";
   align?: "left" | "center" | "bottom";
+  className?: string;
 };
 
-export function CinematicHero({ image, alt, eyebrow, title, meta, height = "full", align = "bottom" }: Props) {
+export function CinematicHero({ image, alt, eyebrow, title, meta, height = "full", align = "bottom", className = "" }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
@@ -24,7 +25,7 @@ export function CinematicHero({ image, alt, eyebrow, title, meta, height = "full
     height === "full" ? "idlx-hero--full" : height === "tall" ? "idlx-hero--tall" : "idlx-hero--mid";
 
   return (
-    <section ref={ref} className={`idlx-hero ${heightClass} idlx-hero--${align}`}>
+    <section ref={ref} className={`idlx-hero ${heightClass} idlx-hero--${align} ${className}`.trim()}>
       <motion.div className="idlx-hero-imgwrap" style={{ y, scale }}>
         <motion.img
           src={image}

@@ -2015,6 +2015,23 @@ a:hover .img-reveal-wrap .img-parallax {
 }
 .idlx-hero .idlx-mask-line { white-space: normal; }
 
+@media (min-width: 641px) {
+  .studio-about-hero .idlx-hero-vignette {
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.36) 42%, rgba(0,0,0,0.08) 74%),
+      linear-gradient(180deg, rgba(0,0,0,0.24) 0%, transparent 30%, rgba(0,0,0,0.16) 58%, rgba(0,0,0,0.68) 100%);
+  }
+  .studio-about-hero .idlx-hero-cap {
+    max-width: 980px;
+  }
+  .studio-about-hero .idlx-hero-title {
+    font-size: clamp(42px, 5.2vw, 88px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    text-shadow: 0 2px 28px rgba(0,0,0,0.58);
+  }
+}
+
 /* Social icon row */
 .idlx-social-icons {
   display: inline-flex; align-items: center; gap: 14px;
