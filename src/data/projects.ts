@@ -656,6 +656,7 @@ export type Project = {
   description: string;
   cover: string;
   gallery: string[];
+  fullBleed?: string[];
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
   showcase?: string;
