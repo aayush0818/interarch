@@ -1,4 +1,5 @@
 import type React from "react";
+import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
@@ -128,50 +129,7 @@ function ProjectPage() {
           </section>
         ) : (
           <section className="idlx-mono-photo">
-            {(() => {
-              const blocks: React.ReactNode[] = [];
-              let i = 0;
-              let key = 0;
-              let useFull = true;
-              const fullBleedSet = new Set(project.fullBleed ?? []);
-              while (i < gallery.length) {
-                const forceFull = fullBleedSet.has(gallery[i]);
-                if (useFull || forceFull) {
-                  blocks.push(
-                    <ClipReveal key={key++}>
-                      <div className="idlx-mono-fig idlx-mono-fig--full">
-                        <img src={gallery[i]} alt={`${project.name} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
-                      </div>
-                    </ClipReveal>
-                  );
-                  i += 1;
-                  if (!useFull) continue;
-                } else if (i + 1 < gallery.length && !fullBleedSet.has(gallery[i + 1])) {
-                  blocks.push(
-                    <div className="idlx-mono-pair" key={key++}>
-                      <ClipReveal>
-                        <div className="idlx-mono-fig"><img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" /></div>
-                      </ClipReveal>
-                      <ClipReveal delay={0.1}>
-                        <div className="idlx-mono-fig"><img src={gallery[i + 1]} alt={`${project.name}`} loading="eager" decoding="async" /></div>
-                      </ClipReveal>
-                    </div>
-                  );
-                  i += 2;
-                } else {
-                  blocks.push(
-                    <ClipReveal key={key++}>
-                      <div className="idlx-mono-fig idlx-mono-fig--inset">
-                        <img src={gallery[i]} alt={`${project.name}`} loading="eager" decoding="async" />
-                      </div>
-                    </ClipReveal>
-                  );
-                  i += 1;
-                }
-                useFull = !useFull;
-              }
-              return blocks;
-            })()}
+            <SmartGallery gallery={gallery} fullBleed={project.fullBleed} projectName={project.name} />
           </section>
         )}
 
@@ -191,4 +149,102 @@ function ProjectPage() {
       <Footer />
     </>
   );
+}
+
+function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; fullBleed?: string[]; projectName: string }) {
+  const fullBleedSet = new Set(fullBleed ?? []);
+  const [ratios, setRatios] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    let cancelled = false;
+    const unique = Array.from(new Set(gallery));
+    unique.forEach((src) => {
+      const img = new Image();
+      img.onload = () => {
+        if (cancelled) return;
+        setRatios((prev) => (prev[src] ? prev : { ...prev, [src]: img.naturalWidth / img.naturalHeight }));
+      };
+      img.onerror = () => {
+        if (cancelled) return;
+        setRatios((prev) => (prev[src] ? prev : { ...prev, [src]: 1.5 }));
+      };
+      img.src = src;
+    });
+    return () => { cancelled = true; };
+  }, [gallery]);
+
+  // Orientation buckets: portrait (<0.92), landscape (>1.12), square otherwise.
+  const orient = (src: string): "p" | "l" | "s" | "u" => {
+    const r = ratios[src];
+    if (r === undefined) return "u";
+    if (r < 0.92) return "p";
+    if (r > 1.12) return "l";
+    return "s";
+  };
+
+  const blocks: React.ReactNode[] = [];
+  let i = 0;
+  let key = 0;
+  while (i < gallery.length) {
+    const src = gallery[i];
+    const forceFull = fullBleedSet.has(src);
+    const o = orient(src);
+
+    // Forced full bleed always wins.
+    if (forceFull) {
+      blocks.push(
+        <ClipReveal key={key++}>
+          <div className="idlx-mono-fig idlx-mono-fig--full">
+            <img src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+          </div>
+        </ClipReveal>
+      );
+      i += 1;
+      continue;
+    }
+
+    // Pair when current and next share the same orientation (portrait or landscape),
+    // and neither is forced full bleed. Squares are paired with squares too.
+    const next = gallery[i + 1];
+    const nextOk = next && !fullBleedSet.has(next);
+    const nextO = next ? orient(next) : "u";
+    const canPair = o !== "u" && nextOk && nextO === o;
+
+    if (canPair) {
+      blocks.push(
+        <div className={`idlx-mono-pair${o === "p" ? " idlx-mono-pair--keep" : ""}`} key={key++}>
+          <ClipReveal>
+            <div className="idlx-mono-fig"><img src={src} alt={`${projectName}`} loading="eager" decoding="async" /></div>
+          </ClipReveal>
+          <ClipReveal delay={0.1}>
+            <div className="idlx-mono-fig"><img src={next} alt={`${projectName}`} loading="eager" decoding="async" /></div>
+          </ClipReveal>
+        </div>
+      );
+      i += 2;
+      continue;
+    }
+
+    // Solo image: landscapes/squares go full bleed; portraits/unknown go inset to avoid huge crops.
+    if (o === "l" || o === "s") {
+      blocks.push(
+        <ClipReveal key={key++}>
+          <div className="idlx-mono-fig idlx-mono-fig--full">
+            <img src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+          </div>
+        </ClipReveal>
+      );
+    } else {
+      blocks.push(
+        <ClipReveal key={key++}>
+          <div className="idlx-mono-fig idlx-mono-fig--inset">
+            <img src={src} alt={`${projectName}`} loading="eager" decoding="async" />
+          </div>
+        </ClipReveal>
+      );
+    }
+    i += 1;
+  }
+
+  return <>{blocks}</>;
 }
