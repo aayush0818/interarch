@@ -384,6 +384,18 @@ body {
 .idl-icon-btn:hover { opacity: 1; }
 @media (max-width: 600px) { .idl-icon-btn { display: none; } }
 
+.idl-header-socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 600px) {
+  .idl-header-socials .idl-icon-btn { display: inline-flex; }
+  .idl-header-socials { gap: 10px; }
+}
+.idl-mega-foot-socials { gap: 18px; opacity: 0.7; }
+.idl-mega-foot { align-items: center; gap: 16px; flex-wrap: wrap; }
+
 .idl-menu-btn {
   background: none;
   border: none;
