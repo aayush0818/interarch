@@ -814,7 +814,7 @@ body {
 .vx-media-frame {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 520px;
   aspect-ratio: 4 / 5;
   overflow: hidden;
 }
