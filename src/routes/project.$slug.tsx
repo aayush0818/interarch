@@ -185,6 +185,8 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
   const blocks: React.ReactNode[] = [];
   let i = 0;
   let key = 0;
+  let soloCount = 0;
+  let pairCount = 0;
   while (i < gallery.length) {
     const src = gallery[i];
     const forceFull = fullBleedSet.has(src);
@@ -200,6 +202,7 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
         </ClipReveal>
       );
       i += 1;
+      soloCount += 1;
       continue;
     }
 
@@ -209,6 +212,30 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
     const nextOk = next && !fullBleedSet.has(next);
     const nextO = next ? orient(next) : "u";
     const canPair = o !== "u" && nextOk && nextO === o;
+
+    // Editorial rhythm: roughly every 2nd pair, promote the current image to a
+    // standalone full-bleed feature instead of pairing. Portraits stay paired
+    // (a solo portrait wastes space); only landscapes/squares get promoted.
+    // This yields ~30-40% standalone full-bleed images interleaved between pairs.
+    const shouldFeature =
+      canPair &&
+      o !== "p" &&
+      pairCount > 0 &&
+      pairCount % 2 === 0; // after every 2 pairs, break with a feature
+
+    if (shouldFeature) {
+      blocks.push(
+        <ClipReveal key={key++}>
+          <div className="idlx-mono-fig idlx-mono-fig--full">
+            <img src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+          </div>
+        </ClipReveal>
+      );
+      i += 1;
+      soloCount += 1;
+      pairCount = 0; // reset cadence after a feature break
+      continue;
+    }
 
     if (canPair) {
       blocks.push(
@@ -222,6 +249,7 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
         </div>
       );
       i += 2;
+      pairCount += 1;
       continue;
     }
 
@@ -234,6 +262,7 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
           </div>
         </ClipReveal>
       );
+      soloCount += 1;
     } else {
       blocks.push(
         <ClipReveal key={key++}>
@@ -242,9 +271,11 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
           </div>
         </ClipReveal>
       );
+      soloCount += 1;
     }
     i += 1;
   }
+  void soloCount;
 
   return <>{blocks}</>;
 }
