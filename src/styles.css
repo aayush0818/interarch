@@ -868,6 +868,12 @@ body {
   .vx-media-frame { max-width: 100%; max-height: none; aspect-ratio: 4 / 5; }
 }
 
+@media (min-width: 1025px) {
+  .vx-media-frame img {
+    object-fit: contain;
+  }
+}
+
 
 /* ============================================================
    FEATURED WORKS
