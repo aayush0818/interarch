@@ -185,8 +185,9 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
   const blocks: React.ReactNode[] = [];
   let i = 0;
   let key = 0;
-  let soloCount = 0;
-  let pairCount = 0;
+  let landscapeSoloStreak = 0;
+  let pairsSoFar = 0;
+  let solosSoFar = 0;
   while (i < gallery.length) {
     const src = gallery[i];
     const forceFull = fullBleedSet.has(src);
@@ -202,42 +203,28 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
         </ClipReveal>
       );
       i += 1;
-      soloCount += 1;
+      solosSoFar += 1;
+      landscapeSoloStreak += 1;
       continue;
     }
 
-    // Pair when current and next share the same orientation (portrait or landscape),
-    // and neither is forced full bleed. Squares are paired with squares too.
     const next = gallery[i + 1];
     const nextOk = next && !fullBleedSet.has(next);
     const nextO = next ? orient(next) : "u";
-    const canPair = o !== "u" && nextOk && nextO === o;
 
-    // Editorial rhythm: roughly every 2nd pair, promote the current image to a
-    // standalone full-bleed feature instead of pairing. Portraits stay paired
-    // (a solo portrait wastes space); only landscapes/squares get promoted.
-    // This yields ~30-40% standalone full-bleed images interleaved between pairs.
-    const shouldFeature =
-      canPair &&
-      o !== "p" &&
-      pairCount > 0 &&
-      pairCount % 2 === 0; // after every 2 pairs, break with a feature
+    // Editorial rhythm: favor standalone full-bleed for landscapes/squares
+    // (target ~50-60% standalone) and only group images when it clearly helps.
+    // Rules:
+    //   - Portraits always pair with portraits (a solo portrait wastes space).
+    //   - Landscapes/squares default to standalone full-bleed, with an
+    //     occasional paired grouping when 3+ landscape solos have appeared
+    //     in a row, to break up monotony.
+    const portraitPair = o === "p" && nextOk && nextO === "p";
+    const landscapeGrouping =
+      o !== "p" && o !== "u" && nextOk && nextO !== "p" && nextO !== "u" &&
+      landscapeSoloStreak >= 3;
 
-    if (shouldFeature) {
-      blocks.push(
-        <ClipReveal key={key++}>
-          <div className="idlx-mono-fig idlx-mono-fig--full">
-            <img src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
-          </div>
-        </ClipReveal>
-      );
-      i += 1;
-      soloCount += 1;
-      pairCount = 0; // reset cadence after a feature break
-      continue;
-    }
-
-    if (canPair) {
+    if (portraitPair || landscapeGrouping) {
       blocks.push(
         <div className={`idlx-mono-pair${o === "p" ? " idlx-mono-pair--keep" : ""}`} key={key++}>
           <ClipReveal>
@@ -249,11 +236,11 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
         </div>
       );
       i += 2;
-      pairCount += 1;
+      pairsSoFar += 1;
+      landscapeSoloStreak = 0;
       continue;
     }
 
-    // Solo image: landscapes/squares/unknown go full bleed; only portraits go inset to avoid huge crops.
     if (o !== "p") {
       blocks.push(
         <ClipReveal key={key++}>
@@ -262,7 +249,8 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
           </div>
         </ClipReveal>
       );
-      soloCount += 1;
+      solosSoFar += 1;
+      landscapeSoloStreak += 1;
     } else {
       blocks.push(
         <ClipReveal key={key++}>
@@ -271,11 +259,12 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
           </div>
         </ClipReveal>
       );
-      soloCount += 1;
+      solosSoFar += 1;
+      landscapeSoloStreak = 0;
     }
     i += 1;
   }
-  void soloCount;
+  void solosSoFar; void pairsSoFar;
 
   return <>{blocks}</>;
 }

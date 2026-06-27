@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
 import logo from "@/assets/idl-logo.png";
 import { realImages } from "@/data/realImages";
+import { Instagram, Linkedin, Link2 } from "lucide-react";
+import { contactCopy } from "@/data/siteContent";
 
 const navWork = realImages.sketches.projects;
 const navStory = realImages.sketches.studio;
@@ -63,12 +65,19 @@ const NAV: NavItem[] = [
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-function SearchIcon() {
+function HeaderSocials({ className = "" }: { className?: string }) {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden>
-      <circle cx="11" cy="11" r="7" />
-      <path d="m20 20-3.5-3.5" strokeLinecap="round" />
-    </svg>
+    <div className={`idl-header-socials${className ? " " + className : ""}`} aria-label="Social links">
+      <a href={contactCopy.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="idl-icon-btn" data-hover>
+        <Instagram size={18} strokeWidth={1.4} />
+      </a>
+      <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="idl-icon-btn" data-hover>
+        <Linkedin size={18} strokeWidth={1.4} />
+      </a>
+      <a href={contactCopy.linktree} target="_blank" rel="noreferrer" aria-label="Linktree" className="idl-icon-btn" data-hover>
+        <Link2 size={18} strokeWidth={1.4} />
+      </a>
+    </div>
   );
 }
 
@@ -155,9 +164,7 @@ export function Header() {
             </span>
           </button>
 
-          <button type="button" className="idl-icon-btn" aria-label="Search" data-hover>
-            <SearchIcon />
-          </button>
+          <HeaderSocials />
         </div>
       </header>
 
@@ -257,6 +264,7 @@ export function Header() {
 
               <div className="idl-mega-foot">
                 <span>Interarch Design Labs</span>
+                <HeaderSocials className="idl-mega-foot-socials" />
                 <span>© {new Date().getFullYear()}</span>
               </div>
             </div>
