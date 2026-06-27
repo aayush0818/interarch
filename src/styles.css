@@ -2135,7 +2135,10 @@ a:hover .img-reveal-wrap .img-parallax {
 }
 
 .idlx-split {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 70svh; align-items: stretch;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 2vw, 32px);
+  padding: 0 clamp(16px, 2vw, 32px);
+  min-height: 70svh; align-items: stretch;
 }
 .idlx-split--reverse { direction: rtl; }
 .idlx-split--reverse > * { direction: ltr; }
