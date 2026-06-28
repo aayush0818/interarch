@@ -333,6 +333,15 @@ body {
   visibility: visible;
 }
 
+/* Hide header social icons once compact/menu state is active */
+.idl-header.is-scrolled .idl-header-socials,
+.idl-header.is-menu .idl-header-socials {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 /* Responsive: tablet */
 @media (max-width: 1024px) {
   .idl-header { height: 90px; padding: 0 32px; }

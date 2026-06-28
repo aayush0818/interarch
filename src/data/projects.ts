@@ -659,6 +659,7 @@ export type Project = {
   fullBleed?: string[];
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
+  coverPosition?: string;
   showcase?: string;
 };
 

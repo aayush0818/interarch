@@ -15,9 +15,9 @@ const spans: Array<"wide" | "tall"> = ["wide", "tall", "tall", "tall", "tall", "
 const picks = slugs
   .map((s, i) => {
     const p = projects.find((x) => x.slug === s);
-    return p ? { img: p.cover, slug: p.slug, name: p.name, span: spans[i] } : null;
+    return p ? { img: p.cover, slug: p.slug, name: p.name, span: spans[i], pos: p.coverPosition ?? "50% 45%" } : null;
   })
-  .filter(Boolean) as Array<{ img: string; slug: string; name: string; span: "wide" | "tall" }>;
+  .filter(Boolean) as Array<{ img: string; slug: string; name: string; span: "wide" | "tall"; pos: string }>;
 
 export function FeaturedWorks() {
   return (
@@ -39,7 +39,7 @@ export function FeaturedWorks() {
           >
             <div className="img-reveal-wrap works-drop-wrap">
               <div className="img-parallax">
-                <img src={cell.img} alt={cell.name} className="object-fill" loading={i < 2 ? "eager" : "lazy"} decoding="async" />
+                <img src={cell.img} alt={cell.name} className="object-cover w-full h-full" style={{ objectPosition: cell.pos }} loading={i < 2 ? "eager" : "lazy"} decoding="async" />
               </div>
             </div>
             <span className="works-card-label">View Project →</span>
