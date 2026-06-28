@@ -1049,6 +1049,50 @@ body {
   z-index: 3;
 }
 .sketch-top-label.visible { opacity: 0.6; }
+.sketch-top-label--always {
+  opacity: 0.6;
+  transition: opacity 600ms ease;
+}
+.sketch-philosophy-stage:has(.philosophy-overlay.visible) .sketch-top-label--always {
+  opacity: 0;
+}
+
+.sketch-intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: opacity 600ms ease;
+}
+.sketch-intro-eyebrow {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.55;
+}
+.sketch-intro-line {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 28px);
+  color: var(--fg);
+  opacity: 0.45;
+  max-width: 520px;
+  margin: 0;
+  line-height: 1.3;
+}
+.sketch-philosophy-stage:has(.philosophy-overlay.visible) .sketch-intro {
+  opacity: 0;
+}
 
 .philosophy-overlay {
   position: absolute;

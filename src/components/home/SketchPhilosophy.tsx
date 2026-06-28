@@ -178,8 +178,19 @@ export function SketchPhilosophy() {
   return (
     <div className="sketch-philosophy-outer" ref={outerRef}>
       <div className="sketch-philosophy-stage">
-        <div className="sketch-top-label" ref={topLabelRef}>
+        <div className="sketch-top-label sketch-top-label--always">
           (Our Philosophy)
+        </div>
+        <div className="sketch-top-label sketch-top-label--scroll" ref={topLabelRef}>
+          (Our Philosophy)
+        </div>
+
+        {/* Soft section intro - visible before the sketch begins drawing */}
+        <div className="sketch-intro" aria-hidden>
+          <span className="sketch-intro-eyebrow">A way of working</span>
+          <p className="sketch-intro-line">
+            Drawn line by line, the way every project begins.
+          </p>
         </div>
 
         {/* Philosophy text overlay (upper-left) */}
@@ -225,6 +236,16 @@ export function SketchPhilosophy() {
                 <polygon ref={polyRef} points={`0,0 0,0 0,${H} 0,${H}`} />
               </clipPath>
             </defs>
+            {/* Faint baseline silhouette so the viewport is never blank */}
+            <image
+              href={skyline}
+              x="0"
+              y="0"
+              width={W}
+              height={H}
+              preserveAspectRatio="xMidYMid slice"
+              opacity="0.1"
+            />
             <image
               href={skyline}
               x="0"
