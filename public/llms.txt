@@ -1,0 +1,26 @@
+# Interarch Design Labs
+
+> A multidisciplinary architecture and interior design practice based in Mumbai, established in 1989. The studio designs homes, workplaces, hospitality, and institutional buildings with daylight, proportion, and material intelligence.
+
+## Pages
+
+- [/](/): The studio homepage — featured works, verticals, philosophy, clients, and recognition.
+- [/projects](/projects): Archive of architecture and interiors, split between two disciplines.
+- [/projects/architecture](/projects/architecture): Architecture project gallery.
+- [/projects/interiors](/projects/interiors): Interior design project gallery.
+- [/studio/about](/studio/about): About the studio — mission, vision, values, culture, and industry recognition.
+- [/studio/directors](/studio/directors): Meet the founding directors of the practice.
+- [/studio/history](/studio/history): The studio's legacy from Interarch (1989) to Interarch Design Labs.
+- [/practice](/practice): Practice overview — history, process, and journal.
+- [/practice/history](/practice/history): A chronological reading of the practice's evolution.
+- [/practice/process](/practice/process): Five phases of the design trajectory, from listening to evolution.
+- [/practice/journal](/practice/journal): Essays and notes on architecture, light, and material.
+- [/awards](/awards): Honors, commendations, and acknowledgements gathered across three decades.
+- [/media-recognition](/media-recognition): Press features, published work, and media recognition.
+- [/contact](/contact): Contact form, studio locations, and social links.
+
+## Optional
+
+- [/project/$slug](/project/$slug): Individual project case studies (dynamic routes for each architecture and interior project).
+- [/media-recognition/$slug](/media-recognition/$slug): Individual media feature articles (dynamic routes).
+- [/practice/journal/$slug](/practice/journal/$slug): Individual journal essays (dynamic routes).
