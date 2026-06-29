@@ -11,13 +11,33 @@ import { projects } from "@/data/projects";
 export const Route = createFileRoute("/project/$slug")({
   head: ({ params }) => {
     const p = projects.find((x) => x.slug === params.slug);
+    const project = p ?? projects[0];
     return {
       meta: [
-        { title: `${p?.name ?? "Project"} - Interarch Design Labs` },
-        { name: "description", content: p?.description ?? "Project case study by IDL." },
-        { property: "og:title", content: `${p?.name ?? "Project"} - IDL` },
-        { property: "og:description", content: p?.description ?? "" },
-        ...(p?.cover ? [{ property: "og:image", content: p.cover }] : []),
+        { title: `${project.name} - Interarch Design Labs` },
+        { name: "description", content: project.description },
+        { property: "og:title", content: `${project.name} - IDL` },
+        { property: "og:description", content: project.description },
+        ...(project.cover ? [{ property: "og:image", content: project.cover }] : []),
+      ],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: project.name,
+            description: project.description,
+            creator: {
+              "@type": "Organization",
+              name: "Interarch Design Labs",
+            },
+            locationCreated: project.location,
+            ...(project.year ? { dateCreated: project.year } : {}),
+            image: project.cover,
+            url: `/project/${project.slug}`,
+          }),
+        },
       ],
     };
   },

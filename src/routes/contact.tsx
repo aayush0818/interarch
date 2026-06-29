@@ -17,6 +17,33 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact - IDL" },
       { property: "og:description", content: contactCopy.subline },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Interarch Design Labs",
+          url: "/contact",
+          telephone: "+912240885587",
+          email: "info@interarchdesignlabs.com",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress:
+              "Unit No 205, Peninsula Centre, Co-Op Premises Society Ltd, Dr. S. S. Rao Marg, Parel East",
+            addressLocality: "Mumbai",
+            addressRegion: "Maharashtra",
+            postalCode: "400012",
+            addressCountry: "IN",
+          },
+          sameAs: [
+            "https://www.instagram.com/interarchdesignlabs/",
+            "https://www.linkedin.com/company/interarch-design-lab/",
+            "https://linktr.ee/interarchdesignlab",
+          ],
+        }),
+      },
+    ],
   }),
   component: ContactPage,
 });

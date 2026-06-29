@@ -95,6 +95,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@400;500&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              name: "Interarch Design Labs",
+              url: "/",
+              sameAs: [
+                "https://www.instagram.com/interarchdesignlabs/",
+                "https://www.linkedin.com/company/interarch-design-lab/",
+                "https://linktr.ee/interarchdesignlab",
+              ],
+            },
+            {
+              "@type": "WebSite",
+              name: "Interarch Design Labs",
+              url: "/",
+              description:
+                "A multidisciplinary architecture and interior design practice based in Mumbai, established in 1989.",
+            },
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
