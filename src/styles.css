@@ -690,15 +690,13 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(520px, 0.96fr);
   gap: clamp(48px, 6vw, 96px);
   align-items: start;
 }
 
 /* LEFT LIST */
 .vx-list {
-  position: sticky;
-  top: 14vh;
   display: flex;
   flex-direction: column;
   gap: clamp(32px, 3vw, 48px);
@@ -812,16 +810,19 @@ body {
 
 /* RIGHT MEDIA — contained, fully visible */
 .vx-media {
+  position: sticky;
+  top: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 72vh;
+  align-self: start;
 }
 .vx-media-frame {
   position: relative;
   width: 100%;
-  max-width: 520px;
-  aspect-ratio: 4 / 5;
+  max-width: 620px;
+  aspect-ratio: 10 / 12;
   overflow: hidden;
 }
 .vx-media-frame img {
@@ -864,7 +865,7 @@ body {
 @media (max-width: 1024px) {
   .vx-grid { grid-template-columns: 1fr; gap: 48px; }
   .vx-list { position: static; }
-  .vx-media { order: -1; min-height: auto; }
+  .vx-media { position: static; order: -1; min-height: auto; }
   .vx-media-frame { max-width: 520px; max-height: none; aspect-ratio: 4 / 5; margin: 0 auto; }
 }
 
@@ -2334,6 +2335,36 @@ a:hover .img-reveal-wrap .img-parallax {
 .idlx-pcard2-img--wide { aspect-ratio: 16/9; }
 .idlx-pcard2-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.4s var(--idlx-ease); }
 .idlx-pcard2:hover .idlx-pcard2-img img { transform: scale(1.04); }
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image > img,
+.project-image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-image-mask {
+  position: absolute;
+  left: var(--mask-x);
+  top: var(--mask-y);
+  width: var(--mask-w);
+  height: var(--mask-h);
+  overflow: hidden;
+  pointer-events: none;
+  filter: blur(var(--mask-feather));
+  opacity: 0.98;
+}
+
+.project-image-mask img {
+  transform: translate(var(--mask-shift-x), var(--mask-shift-y));
+}
 .idlx-pcard2-cap { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-top: 18px; }
 .idlx-pcard2-name { font-family: var(--serif); font-weight: 300; font-size: clamp(20px, 1.8vw, 26px); color: var(--idlx-ink); white-space: pre-line; }
 .idlx-pcard2-meta { font-family: var(--sans); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--idlx-mute); white-space: nowrap; }

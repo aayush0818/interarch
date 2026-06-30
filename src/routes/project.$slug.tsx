@@ -5,8 +5,9 @@ import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
 import { CinematicHero } from "@/components/motion/CinematicHero";
+import { ProjectImage } from "@/components/project/ProjectImage";
 import { Reveal, ClipReveal } from "@/components/motion/Reveal";
-import { projects } from "@/data/projects";
+import { projectImageMasks, projects } from "@/data/projects";
 
 export const Route = createFileRoute("/project/$slug")({
   head: ({ params }) => {
@@ -77,6 +78,7 @@ function ProjectPage() {
         <CinematicHero
           image={project.cover}
           alt={project.name}
+          mask={projectImageMasks[project.cover]}
           eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
           title={project.name}
           meta={[project.year, project.area].filter(Boolean).join(" · ")}
@@ -137,7 +139,7 @@ function ProjectPage() {
                       return (
                         <ClipReveal key={ii} delay={(ii % 3) * 0.05}>
                           <div className={`idlx-mono-fig${isFull ? " idlx-mono-fig--full" : ""}`}>
-                            <img src={src} alt={`${f.name} - ${String(ii + 1).padStart(2, "0")}`} loading="lazy" decoding="async" />
+                            <ProjectImage src={src} alt={`${f.name} - ${String(ii + 1).padStart(2, "0")}`} mask={projectImageMasks[src]} loading="lazy" decoding="async" />
                           </div>
                         </ClipReveal>
                       );
@@ -218,7 +220,7 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
       blocks.push(
         <ClipReveal key={key++}>
           <div className="idlx-mono-fig idlx-mono-fig--full">
-            <img src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+            <ProjectImage src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} mask={projectImageMasks[src]} loading="eager" decoding="async" />
           </div>
         </ClipReveal>
       );
@@ -248,10 +250,10 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
       blocks.push(
         <div className={`idlx-mono-pair${o === "p" ? " idlx-mono-pair--keep" : ""}`} key={key++}>
           <ClipReveal>
-            <div className="idlx-mono-fig"><img src={src} alt={`${projectName}`} loading="eager" decoding="async" /></div>
+            <div className="idlx-mono-fig"><ProjectImage src={src} alt={`${projectName}`} mask={projectImageMasks[src]} loading="eager" decoding="async" /></div>
           </ClipReveal>
           <ClipReveal delay={0.1}>
-            <div className="idlx-mono-fig"><img src={next} alt={`${projectName}`} loading="eager" decoding="async" /></div>
+            <div className="idlx-mono-fig"><ProjectImage src={next} alt={`${projectName}`} mask={projectImageMasks[next]} loading="eager" decoding="async" /></div>
           </ClipReveal>
         </div>
       );
@@ -265,7 +267,7 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
       blocks.push(
         <ClipReveal key={key++}>
           <div className="idlx-mono-fig idlx-mono-fig--full">
-            <img src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} loading="eager" decoding="async" />
+            <ProjectImage src={src} alt={`${projectName} - ${String(i + 1).padStart(2, "0")}`} mask={projectImageMasks[src]} loading="eager" decoding="async" />
           </div>
         </ClipReveal>
       );
@@ -275,7 +277,7 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
       blocks.push(
         <ClipReveal key={key++}>
           <div className="idlx-mono-fig idlx-mono-fig--inset">
-            <img src={src} alt={`${projectName}`} loading="eager" decoding="async" />
+            <ProjectImage src={src} alt={`${projectName}`} mask={projectImageMasks[src]} loading="eager" decoding="async" />
           </div>
         </ClipReveal>
       );

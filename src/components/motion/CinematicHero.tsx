@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { ProjectImage } from "@/components/project/ProjectImage";
 import { MaskText } from "./MaskText";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -7,6 +8,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 type Props = {
   image: string;
   alt: string;
+  mask?: { x: number; y: number; width: number; height: number; shiftX?: number; shiftY?: number; feather?: number };
   eyebrow?: string;
   title: string;
   meta?: string;
@@ -15,7 +17,7 @@ type Props = {
   className?: string;
 };
 
-export function CinematicHero({ image, alt, eyebrow, title, meta, height = "full", align = "bottom", className = "" }: Props) {
+export function CinematicHero({ image, alt, mask, eyebrow, title, meta, height = "full", align = "bottom", className = "" }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
@@ -27,13 +29,9 @@ export function CinematicHero({ image, alt, eyebrow, title, meta, height = "full
   return (
     <section ref={ref} className={`idlx-hero ${heightClass} idlx-hero--${align} ${className}`.trim()}>
       <motion.div className="idlx-hero-imgwrap" style={{ y, scale }}>
-        <motion.img
-          src={image}
-          alt={alt}
-          initial={{ scale: 1.15, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.8, ease: EASE }}
-        />
+        <motion.div initial={{ scale: 1.15, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1.8, ease: EASE }}>
+          <ProjectImage src={image} alt={alt} mask={mask} loading="eager" fetchPriority="high" />
+        </motion.div>
       </motion.div>
       <div className="idlx-hero-vignette" aria-hidden />
       <div className="idlx-hero-cap">

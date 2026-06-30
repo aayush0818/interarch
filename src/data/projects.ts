@@ -663,6 +663,15 @@ export type Project = {
   showcase?: string;
 };
 
+export const projectImageMasks: Record<string, { x: number; y: number; width: number; height: number; shiftX?: number; shiftY?: number; feather?: number }> = {
+  [linearEstateHero.url]: { x: 70, y: 87.2, width: 24, height: 9.5, shiftX: -22, feather: 22 },
+  [linearNewAerial.url]: { x: 70, y: 87.2, width: 24, height: 10.2, shiftX: -18, feather: 24 },
+  [linearNewBungalow.url]: { x: 70, y: 87.2, width: 24, height: 9.5, shiftX: -22, feather: 22 },
+  [linearNewTwin.url]: { x: 70, y: 87.2, width: 24, height: 10.2, shiftX: -22, feather: 22 },
+  [linearNewMeditation.url]: { x: 70, y: 87.2, width: 24, height: 10.2, shiftX: -22, feather: 22 },
+  [linearNewPlay.url]: { x: 70, y: 87.2, width: 24, height: 9.5, shiftY: -18, feather: 20 },
+};
+
 
 export const projects: Project[] = [
   {
@@ -802,6 +811,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: questNew67.url,
+    coverPosition: "50% 42%",
     gallery: questAjaySethGallery,
     description: "Set within a natural landscape, the project combines timeless architectural character with modern functionality. Designed as a place for interaction, learning, and retreat, it offers a balanced and inspiring environment.",
   },
@@ -882,6 +892,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: mp1_side.url,
+    coverPosition: "50% 46%",
     gallery: [mp1_front.url, mp1_5.url, mp1_6.url, mp1_reception.url],
     showcase: mp1_4.url,
     description: "Designed as a modern life sciences campus, the architecture combines monumentality with openness to create an environment of trust and progress.",
@@ -922,6 +933,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: mvvplHotelAerial.url,
+    coverPosition: "50% 38%",
     showcase: mvvplHotel2.url,
     gallery: [mvvplHotelAerial.url, mvvplHotelFront.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel3.url],
     description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
@@ -949,6 +961,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: laxmiKunj1.url,
+    coverPosition: "50% 22%",
     gallery: [laxmiKunj1.url],
     description: "A contemporary residential tower distinguished by its sculpted balconies and vertical articulation. Designed to maximise light, views, and urban living while maintaining a refined architectural identity.",
   },
@@ -1041,6 +1054,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: linearEstateHero.url,
+    coverPosition: "50% 42%",
     gallery: [linearEstateHero.url, linearNewEntry.url, linearNewBungalow.url, linearNewTwin.url, linearNewClub.url, linearNewPavilion.url, linearNewMeditation.url, linearNewPlay.url],
     description: "A residential masterplan composed of contemporary villas, landscaped streets, and community spaces. Defined by clean geometry and generous open areas, the development balances privacy, connectivity, and everyday living within a cohesive architectural language.",
   },
@@ -1082,6 +1096,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: panoramaHouseHero.url,
+    coverPosition: "50% 32%",
     gallery: [panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
   },
@@ -1095,6 +1110,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2.url,
+    coverPosition: "50% 42%",
     gallery: [lanternVilla1.url, lanternVilla9.url, lanternVilla14.url, lanternVilla24.url, lanternVilla6.url, lanternVilla22.url, lanternVilla13.url, lanternVilla3.url, lanternVilla5.url, lanternVilla10.url, lanternVilla11.url, lanternVilla16.url, lanternVilla8.url, lanternVilla18.url, lanternVilla20.url, lanternVilla21.url, lanternVilla15.url, lanternVilla23.url, lanternVilla2.url, lanternVilla4.url, lanternVilla19.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",
   },
@@ -1108,6 +1124,7 @@ export const projects: Project[] = [
     scope: "Interiors",
     category: "Interiors",
     cover: hol62.url,
+    coverPosition: "50% 34%",
     gallery: houseOfLayersGallery,
     description: "A highly personalised residence where sculpted ceilings, expressive details and layered materials create a home rich in character. The interiors move between art, luxury and everyday living, resulting in spaces that feel curated rather than decorated.",
   },
@@ -1345,6 +1362,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: mo3.url,
+    coverPosition: "50% 38%",
     gallery: monsterGallery,
     description: "Designed as an extension of the brand itself, the space blurs the line between workplace and experience. Bold graphics, layered lighting and collaborative zones create an environment that feels immersive and unmistakably distinct.",
   },

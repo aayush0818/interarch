@@ -1,4 +1,5 @@
-import { projects } from "@/data/projects";
+import { ProjectImage } from "@/components/project/ProjectImage";
+import { projectImageMasks, projects } from "@/data/projects";
 
 const slugs = [
   "lantern-villa",
@@ -39,7 +40,7 @@ export function FeaturedWorks() {
           >
             <div className="img-reveal-wrap works-drop-wrap">
               <div className="img-parallax">
-                <img src={cell.img} alt={cell.name} className="object-cover w-full h-full" style={{ objectPosition: cell.pos }} loading={i < 2 ? "eager" : "lazy"} decoding="async" />
+                <ProjectImage src={cell.img} alt={cell.name} mask={projectImageMasks[cell.img]} style={{ objectPosition: cell.pos }} loading={i < 2 ? "eager" : "lazy"} decoding="async" className="object-cover w-full h-full" />
               </div>
             </div>
             <span className="works-card-label">View Project →</span>

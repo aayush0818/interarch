@@ -3,11 +3,12 @@ import { createFileRoute, Link, redirect } from "@tanstack/react-router";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
 import { CustomCursor } from "@/components/home/CustomCursor";
+import { ProjectImage } from "@/components/project/ProjectImage";
 import { CinematicHero } from "@/components/motion/CinematicHero";
 import { Reveal } from "@/components/motion/Reveal";
 import { MaskText } from "@/components/motion/MaskText";
 
-import { projectsByCategory, type Project } from "@/data/projects";
+import { projectImageMasks, projectsByCategory, type Project } from "@/data/projects";
 import { realImages } from "@/data/realImages";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
 import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
@@ -240,7 +241,7 @@ function CategoryPage() {
                     <Reveal delay={(i % 3) * 0.05}>
                       <Link to="/project/$slug" params={{ slug: p.slug }} className="idlx-pcard2" data-hover>
                         <div className={imgCls}>
-                          <img src={p.cover} alt={p.name} loading="lazy" style={{ objectPosition: p.coverPosition ?? "50% 45%" }} />
+                          <ProjectImage src={p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 45%" }} />
                         </div>
                         <div className="idlx-pcard2-cap">
                           <span className="idlx-pcard2-name">{p.name}</span>

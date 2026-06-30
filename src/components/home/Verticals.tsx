@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
@@ -104,6 +104,15 @@ export function Verticals() {
   const items = group.items;
   const idx = Math.min(active, items.length - 1);
   const current = items[idx];
+  const preloadSources = useMemo(() => Array.from(new Set(groups.flatMap((group) => group.items.map((item) => item.img)))), []);
+
+  useEffect(() => {
+    preloadSources.forEach((src) => {
+      const img = new window.Image();
+      img.decoding = "async";
+      img.src = src;
+    });
+  }, [preloadSources]);
 
   return (
     <section className="vx-section">
@@ -198,7 +207,9 @@ export function Verticals() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                loading="lazy"
+                loading={groupIdx === 0 && idx === 0 ? "eager" : "lazy"}
+                decoding="async"
+                fetchPriority={groupIdx === 0 && idx === 0 ? "high" : "auto"}
                 style={{ objectPosition: current.focal ?? "center center" }}
               />
             </AnimatePresence>
