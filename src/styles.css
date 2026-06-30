@@ -690,8 +690,8 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(520px, 0.96fr);
-  gap: clamp(48px, 6vw, 96px);
+  grid-template-columns: minmax(0, 1fr) minmax(560px, 1.02fr);
+  gap: clamp(40px, 5vw, 80px);
   align-items: start;
 }
 
@@ -811,18 +811,18 @@ body {
 /* RIGHT MEDIA — contained, fully visible */
 .vx-media {
   position: sticky;
-  top: 12vh;
+  top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 72vh;
+  min-height: 76vh;
   align-self: start;
 }
 .vx-media-frame {
   position: relative;
   width: 100%;
-  max-width: 620px;
-  aspect-ratio: 10 / 12;
+  max-width: 700px;
+  aspect-ratio: 6 / 5;
   overflow: hidden;
 }
 .vx-media-frame img {
@@ -866,19 +866,13 @@ body {
   .vx-grid { grid-template-columns: 1fr; gap: 48px; }
   .vx-list { position: static; }
   .vx-media { position: static; order: -1; min-height: auto; }
-  .vx-media-frame { max-width: 520px; max-height: none; aspect-ratio: 4 / 5; margin: 0 auto; }
+  .vx-media-frame { max-width: 620px; max-height: none; aspect-ratio: 6 / 5; margin: 0 auto; }
 }
 
 @media (max-width: 640px) {
   .vx-disc-row { gap: 24px; }
   .vx-disc-tab { font-size: 22px; }
-  .vx-media-frame { max-width: 100%; max-height: none; aspect-ratio: 4 / 5; }
-}
-
-@media (min-width: 1025px) {
-  .vx-media-frame img {
-    object-fit: contain;
-  }
+  .vx-media-frame { max-width: 100%; max-height: none; aspect-ratio: 6 / 5; }
 }
 
 
