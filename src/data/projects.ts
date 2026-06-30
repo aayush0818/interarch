@@ -660,6 +660,7 @@ export type Project = {
   category: "Architecture" | "Interiors";
   description: string;
   cover: string;
+  cardCover?: string;
   gallery: string[];
   fullBleed?: string[];
   facilities?: Facility[];
