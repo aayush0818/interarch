@@ -9,6 +9,24 @@ import { ProjectImage } from "@/components/project/ProjectImage";
 import { Reveal, ClipReveal } from "@/components/motion/Reveal";
 import { projectImageMasks, projects } from "@/data/projects";
 
+const residentialProjectOrder = [
+  "glasswood-retreat",
+  "laxmi-kunj",
+  "proximus",
+  "panorama-house",
+  "portico-house",
+  "the-pavilion-estate",
+  "lantern-villa",
+  "the-ridge-house",
+  "the-atrium-house",
+  "linear-estate",
+  "the-ivory-estate",
+  "altura-residence",
+  "courtyard-twins",
+];
+
+const residentialProjectRank = new Map(residentialProjectOrder.map((slug, index) => [slug, index] as const));
+
 export const Route = createFileRoute("/project/$slug")({
   head: ({ params }) => {
     const p = projects.find((x) => x.slug === params.slug);
@@ -48,7 +66,11 @@ export const Route = createFileRoute("/project/$slug")({
 function ProjectPage() {
   const { slug } = Route.useParams();
   const current = projects.find((p) => p.slug === slug) ?? projects[0];
-  const siblings = projects.filter((p) => p.category === current.category);
+  const siblings = current.category === "Architecture" && current.sector === "Residential"
+    ? projects
+      .filter((p) => p.category === current.category && p.sector === current.sector)
+      .sort((a, b) => (residentialProjectRank.get(a.slug) ?? 999) - (residentialProjectRank.get(b.slug) ?? 999))
+    : projects.filter((p) => p.category === current.category);
   const idx = Math.max(0, siblings.findIndex((p) => p.slug === current.slug));
   const project = current;
   const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
@@ -82,6 +104,7 @@ function ProjectPage() {
           image={project.cover}
           alt={project.name}
           imagePosition={project.coverPosition}
+          imageFit={project.heroFit}
           mask={projectImageMasks[project.cover]}
           eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
           title={project.name}
@@ -155,7 +178,7 @@ function ProjectPage() {
           </section>
         ) : (
           <section className="idlx-mono-photo">
-            <SmartGallery gallery={gallery} fullBleed={project.fullBleed} projectName={project.name} />
+            <SmartGallery gallery={gallery} fullBleed={project.fullBleed} galleryPairs={project.galleryPairs} projectName={project.name} />
           </section>
         )}
 
@@ -177,8 +200,13 @@ function ProjectPage() {
   );
 }
 
-function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; fullBleed?: string[]; projectName: string }) {
+function SmartGallery({ gallery, fullBleed, galleryPairs, projectName }: { gallery: string[]; fullBleed?: string[]; galleryPairs?: Array<[string, string]>; projectName: string }) {
   const fullBleedSet = new Set(fullBleed ?? []);
+  const pairMap = new Map<string, string>();
+  (galleryPairs ?? []).forEach(([a, b]) => {
+    pairMap.set(a, b);
+    pairMap.set(b, a);
+  });
   const [ratios, setRatios] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -237,6 +265,24 @@ function SmartGallery({ gallery, fullBleed, projectName }: { gallery: string[]; 
     const next = gallery[i + 1];
     const nextOk = next && !fullBleedSet.has(next);
     const nextO = next ? orient(next) : "u";
+    const forcedPair = next && pairMap.get(src) === next;
+
+    if (forcedPair) {
+      blocks.push(
+        <div className="idlx-mono-pair idlx-mono-pair--keep idlx-mono-pair--equal" key={key++}>
+          <ClipReveal>
+            <div className="idlx-mono-fig"><ProjectImage src={src} alt={`${projectName}`} mask={projectImageMasks[src]} loading="eager" decoding="async" /></div>
+          </ClipReveal>
+          <ClipReveal delay={0.1}>
+            <div className="idlx-mono-fig"><ProjectImage src={next} alt={`${projectName}`} mask={projectImageMasks[next]} loading="eager" decoding="async" /></div>
+          </ClipReveal>
+        </div>
+      );
+      i += 2;
+      pairsSoFar += 1;
+      landscapeSoloStreak = 0;
+      continue;
+    }
 
     // Editorial rhythm: favor standalone full-bleed for landscapes/squares
     // (target ~50-60% standalone) and only group images when it clearly helps.
