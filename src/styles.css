@@ -3524,3 +3524,8 @@ html, body { overflow-x: clip; }
   content: ""; position: fixed; top: 0; left: 0; right: 0; height: 24px;
   z-index: -1; pointer-events: auto;
 }
+
+/* Awards page → Media CTA */
+.idlx-awards-cta { padding: clamp(64px, 10vw, 140px) 6vw; background: var(--bg); border-top: 1px solid rgba(0,0,0,0.06); }
+.idlx-awards-cta-inner { max-width: 920px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.idlx-awards-cta-title { font-family: var(--serif); font-weight: 300; font-size: clamp(28px, 4vw, 52px); line-height: 1.1; color: var(--fg); margin: 4px 0 8px; }
