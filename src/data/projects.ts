@@ -612,7 +612,7 @@ import porticoHouse2 from "@/assets/portico-house-2.jpg.asset.json";
 import porticoHouse3 from "@/assets/portico-house-3.jpg.asset.json";
 import porticoHouse4 from "@/assets/portico-house-4.jpg.asset.json";
 import porticoHouse5 from "@/assets/portico-house-5.jpg.asset.json";
-import porticoHouse6 from "@/assets/portico-house-6.png.asset.json";
+import porticoHouse6Clean from "@/assets/portico-house-6-clean-v2.png.asset.json";
 import porticoHouse7 from "@/assets/portico-house-7.jpg.asset.json";
 import porticoHouse8 from "@/assets/portico-house-8.jpg.asset.json";
 import porticoHouse9 from "@/assets/portico-house-9.jpg.asset.json";
@@ -664,8 +664,11 @@ export type Project = {
   cardOrientation?: "portrait" | "landscape";
   gallery: string[];
   fullBleed?: string[];
+  galleryPairs?: Array<[string, string]>;
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
+  heroFit?: "cover" | "contain";
+  heroZoom?: "default" | "reduced";
   coverPosition?: string;
   showcase?: string;
   keepHeroInGallery?: boolean;
@@ -1002,6 +1005,7 @@ export const projects: Project[] = [
     cover: glasswood1.url,
     showcase: glasswood3.url,
     imageFit: "contain",
+    heroZoom: "reduced",
     cardOrientation: "landscape",
     coverPosition: "50% 30%",
     gallery: [glasswood1.url, glasswood2.url],
@@ -1050,7 +1054,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: alturaResidence1.url,
     cardOrientation: "portrait",
-    coverPosition: "50% 30%",
+    coverPosition: "50% 8%",
     keepHeroInGallery: true,
     gallery: [alturaResidence1.url, alturaResidence2.url, alturaResidence3.url],
     description: "This residence is conceived as a contemporary retreat where architecture becomes a statement of structure and restraint. Defined by its dramatic angular profile and floor-to-ceiling transparency, the residence balances solid and void with remarkable precision. Every elevation is composed to frame light, landscape, and movement, resulting in a home that feels both monumental and effortlessly liveable.",
@@ -1065,7 +1069,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: courtyardTwins1.url,
-    coverPosition: "50% 20%",
+    coverPosition: "50% 12%",
     cardOrientation: "landscape",
     gallery: [courtyardTwins1.url, courtyardTwins2.url, courtyardTwins3.url, courtyardTwins4.url],
     description: "The Twin Frame bungalows transform the idea of paired living into a cohesive architectural statement. Framed by bold geometric forms and softened through natural materials and light, the design celebrates proportion, rhythm, and visual continuity. Generous terraces, open interiors, and shared landscape elements bring a resort-like quality to everyday living, creating homes that are both private and connected.",
@@ -1094,11 +1098,12 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: pavilionEstate1.url,
+    cover: pavilionEstate3.url,
+    cardCover: pavilionEstate1.url,
     cardOrientation: "portrait",
-    coverPosition: "50% 30%",
-    gallery: [pavilionEstate5.url, pavilionEstate6.url, pavilionEstate1.url, pavilionEstate3.url, pavilionEstate7.url, pavilionEstate8.url, pavilionEstate4.url, pavilionEstate10.url, pavilionEstate9.url, pavilionEstate2.url],
-    fullBleed: [pavilionEstate3.url, pavilionEstate4.url],
+    coverPosition: "50% 22%",
+    gallery: [pavilionEstate5.url, pavilionEstate6.url, pavilionEstate7.url, pavilionEstate4.url, pavilionEstate10.url, pavilionEstate1.url, pavilionEstate9.url, pavilionEstate2.url],
+    fullBleed: [pavilionEstate4.url],
     description: "Architecture and landscape are treated as one continuous experience, resulting in a home that feels expansive from every angle.",
   },
   {
@@ -1110,11 +1115,13 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: porticoHouse1.url,
+    cover: porticoHouse2.url,
+    cardCover: porticoHouse1.url,
     cardOrientation: "portrait",
-    coverPosition: "50% 30%",
-    gallery: [porticoHouse2.url, porticoHouse7.url, porticoHouse3.url, porticoHouse5.url, porticoHouse6.url, porticoHouse4.url, porticoHouse8.url, porticoHouse1.url, porticoHouse11.url, porticoHouse10.url, porticoHouse12.url, porticoHouse9.url],
-    fullBleed: [porticoHouse11.url],
+    coverPosition: "50% 24%",
+    gallery: [porticoHouse7.url, porticoHouse3.url, porticoHouse5.url, porticoHouse6Clean.url, porticoHouse4.url, porticoHouse8.url, porticoHouse11.url, porticoHouse10.url, porticoHouse1.url, porticoHouse12.url, porticoHouse9.url],
+    fullBleed: [porticoHouse5.url, porticoHouse11.url],
+    galleryPairs: [[porticoHouse6Clean.url, porticoHouse4.url]],
     description: "Set within expansive greens, the architecture embraces outdoor living through deep verandas, framed views, and seamless transitions.",
   },
   {
@@ -1128,7 +1135,8 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: panoramaHouseAerial2026.url,
     cardCover: panoramaHouseHero.url,
-    coverPosition: "50% 50%",
+    coverPosition: "50% 12%",
+    heroZoom: "reduced",
     cardOrientation: "landscape",
     gallery: [panoramaHouseAerial2026.url, panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
@@ -1143,7 +1151,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2026.url,
-    coverPosition: "50% 15%",
+    coverPosition: "50% 8%",
     cardOrientation: "landscape",
     gallery: [lanternVilla1.url, lanternVilla9.url, lanternVilla14.url, lanternVilla24.url, lanternVilla6.url, lanternVilla22.url, lanternVilla13.url, lanternVilla5.url, lanternVilla10.url, lanternVilla11.url, lanternVilla16.url, lanternVilla8.url, lanternVilla18.url, lanternVilla20.url, lanternVilla21.url, lanternVilla15.url, lanternVilla23.url, lanternVilla2.url, lanternVilla4.url, lanternVilla19.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",

@@ -2043,6 +2043,8 @@ a:hover .img-reveal-wrap .img-parallax {
 .idlx-hero--tall { height: 86svh; min-height: 560px; }
 .idlx-hero--mid  { height: 64svh; min-height: 460px; }
 .idlx-hero-imgwrap { position: absolute; inset: -2% -2%; width: 104%; height: 104%; }
+.idlx-hero--contain .idlx-hero-imgwrap { inset: 0; width: 100%; height: 100%; }
+.idlx-hero--reduced .idlx-hero-imgwrap { inset: 0; width: 100%; height: 100%; }
 .idlx-hero-imgwrap > div { width: 100%; height: 100%; }
 .idlx-hero-imgwrap .project-image { position: absolute; inset: 0; width: 100%; height: 100%; }
 .idlx-hero-imgwrap img {
@@ -2400,6 +2402,9 @@ a:hover .img-reveal-wrap .img-parallax {
 .idlx-mono-pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 3vw, 40px); padding: 0 clamp(28px, 6vw, 100px); align-items: start; }
 .idlx-mono-pair .idlx-mono-fig { align-self: start; }
 .idlx-mono-pair img { width: 100%; height: auto; display: block; }
+.idlx-mono-pair--equal { align-items: stretch; }
+.idlx-mono-pair--equal .idlx-mono-fig { aspect-ratio: 3 / 2; height: auto; }
+.idlx-mono-pair--equal img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 800px) { .idlx-mono-pair { grid-template-columns: 1fr; } }
 .idlx-mono-cap { font-family: var(--sans); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--idlx-mute); margin-top: 12px; padding: 0 clamp(28px, 6vw, 100px); }
 

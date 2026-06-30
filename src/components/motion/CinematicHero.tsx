@@ -9,6 +9,8 @@ type Props = {
   image: string;
   alt: string;
   imagePosition?: string;
+  imageFit?: "cover" | "contain";
+  imageZoom?: "default" | "reduced";
   mask?: { x: number; y: number; width: number; height: number; shiftX?: number; shiftY?: number; feather?: number };
   eyebrow?: string;
   title: string;
@@ -18,20 +20,21 @@ type Props = {
   className?: string;
 };
 
- export function CinematicHero({ image, alt, imagePosition, mask, eyebrow, title, meta, height = "full", align = "bottom", className = "" }: Props) {
+ export function CinematicHero({ image, alt, imagePosition, imageFit = "cover", imageZoom = "default", mask, eyebrow, title, meta, height = "full", align = "bottom", className = "" }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
+  const isReduced = imageZoom === "reduced";
+  const scale = useTransform(scrollYProgress, [0, 1], imageFit === "contain" || isReduced ? [1, 1.02] : [1, 1.08]);
 
   const heightClass =
     height === "full" ? "idlx-hero--full" : height === "tall" ? "idlx-hero--tall" : "idlx-hero--mid";
 
   return (
-    <section ref={ref} className={`idlx-hero ${heightClass} idlx-hero--${align} ${className}`.trim()}>
+    <section ref={ref} className={`idlx-hero ${heightClass} idlx-hero--${align}${imageFit === "contain" ? " idlx-hero--contain" : ""}${isReduced ? " idlx-hero--reduced" : ""} ${className}`.trim()}>
       <motion.div className="idlx-hero-imgwrap" style={{ y, scale }}>
-        <motion.div initial={{ scale: 1.15, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1.8, ease: EASE }}>
-          <ProjectImage src={image} alt={alt} mask={mask} loading="eager" fetchPriority="high" style={{ objectPosition: imagePosition ?? "center center" }} />
+        <motion.div initial={{ scale: imageFit === "contain" || isReduced ? 1.03 : 1.15, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1.8, ease: EASE }}>
+          <ProjectImage src={image} alt={alt} mask={mask} loading="eager" fetchPriority="high" style={{ objectPosition: imagePosition ?? "center center", objectFit: imageFit }} />
         </motion.div>
       </motion.div>
       <div className="idlx-hero-vignette" aria-hidden />
