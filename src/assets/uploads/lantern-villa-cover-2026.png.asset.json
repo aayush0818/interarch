@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "9a784d4b-9c25-4850-b5fc-c4718c89292e",
-  "project_id": "87fa88c7-6591-490d-b446-6e5bfd9b92da",
-  "url": "/__l5e/assets-v1/9a784d4b-9c25-4850-b5fc-c4718c89292e/lantern-villa-cover-2026.png",
-  "r2_key": "a/v1/87fa88c7-6591-490d-b446-6e5bfd9b92da/9a784d4b-9c25-4850-b5fc-c4718c89292e/lantern-villa-cover-2026.png",
-  "original_filename": "lantern-villa-cover-2026.png",
-  "size": 2591075,
   "content_type": "image/png",
-  "created_at": "2026-06-30T12:24:40Z"
+  "created_at": "2026-06-30T12:24:40Z",
+  "original_filename": "lantern-villa-cover-2026.png",
+  "project_id": "ff3400f9-db17-4013-9fc3-9fd1fbdd52f5",
+  "r2_key": "a/v1/ff3400f9-db17-4013-9fc3-9fd1fbdd52f5/9a784d4b-9c25-4850-b5fc-c4718c89292e/lantern-villa-cover-2026.png",
+  "size": 2591075,
+  "url": "/__l5e/assets-v1/9a784d4b-9c25-4850-b5fc-c4718c89292e/lantern-villa-cover-2026.png",
+  "version": 1
 }

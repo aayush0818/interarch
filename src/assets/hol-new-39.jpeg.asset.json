@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "74b719c2-2de4-4d21-ba0e-6da051e8f714",
-  "project_id": "87fa88c7-6591-490d-b446-6e5bfd9b92da",
-  "url": "/__l5e/assets-v1/74b719c2-2de4-4d21-ba0e-6da051e8f714/hol-new-39.jpeg",
-  "r2_key": "a/v1/87fa88c7-6591-490d-b446-6e5bfd9b92da/74b719c2-2de4-4d21-ba0e-6da051e8f714/hol-new-39.jpeg",
-  "original_filename": "hol-new-39.jpeg",
-  "size": 628288,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-24T10:30:48Z"
+  "created_at": "2026-06-24T10:30:48Z",
+  "original_filename": "hol-new-39.jpeg",
+  "project_id": "ff3400f9-db17-4013-9fc3-9fd1fbdd52f5",
+  "r2_key": "a/v1/ff3400f9-db17-4013-9fc3-9fd1fbdd52f5/74b719c2-2de4-4d21-ba0e-6da051e8f714/hol-new-39.jpeg",
+  "size": 628288,
+  "url": "/__l5e/assets-v1/74b719c2-2de4-4d21-ba0e-6da051e8f714/hol-new-39.jpeg",
+  "version": 1
 }

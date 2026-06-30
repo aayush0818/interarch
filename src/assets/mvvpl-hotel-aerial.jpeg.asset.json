@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "65e3872e-f48e-49b6-89d2-c5bafd591db4",
-  "project_id": "87fa88c7-6591-490d-b446-6e5bfd9b92da",
-  "url": "/__l5e/assets-v1/65e3872e-f48e-49b6-89d2-c5bafd591db4/mvvpl-hotel-aerial.jpeg",
-  "r2_key": "a/v1/87fa88c7-6591-490d-b446-6e5bfd9b92da/65e3872e-f48e-49b6-89d2-c5bafd591db4/mvvpl-hotel-aerial.jpeg",
-  "original_filename": "mvvpl-hotel-aerial.jpeg",
-  "size": 3067032,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-24T09:54:50Z"
+  "created_at": "2026-06-24T09:54:50Z",
+  "original_filename": "mvvpl-hotel-aerial.jpeg",
+  "project_id": "ff3400f9-db17-4013-9fc3-9fd1fbdd52f5",
+  "r2_key": "a/v1/ff3400f9-db17-4013-9fc3-9fd1fbdd52f5/65e3872e-f48e-49b6-89d2-c5bafd591db4/mvvpl-hotel-aerial.jpeg",
+  "size": 3067032,
+  "url": "/__l5e/assets-v1/65e3872e-f48e-49b6-89d2-c5bafd591db4/mvvpl-hotel-aerial.jpeg",
+  "version": 1
 }

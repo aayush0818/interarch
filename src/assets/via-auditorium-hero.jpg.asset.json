@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "cedffed0-8cf2-40fb-b55e-f4c2137c7f86",
-  "project_id": "87fa88c7-6591-490d-b446-6e5bfd9b92da",
-  "url": "/__l5e/assets-v1/cedffed0-8cf2-40fb-b55e-f4c2137c7f86/via-auditorium-hero.jpg",
-  "r2_key": "a/v1/87fa88c7-6591-490d-b446-6e5bfd9b92da/cedffed0-8cf2-40fb-b55e-f4c2137c7f86/via-auditorium-hero.jpg",
-  "original_filename": "via-auditorium-hero.jpg",
-  "size": 770379,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-24T10:53:31Z"
+  "created_at": "2026-06-24T10:53:31Z",
+  "original_filename": "via-auditorium-hero.jpg",
+  "project_id": "ff3400f9-db17-4013-9fc3-9fd1fbdd52f5",
+  "r2_key": "a/v1/ff3400f9-db17-4013-9fc3-9fd1fbdd52f5/cedffed0-8cf2-40fb-b55e-f4c2137c7f86/via-auditorium-hero.jpg",
+  "size": 770379,
+  "url": "/__l5e/assets-v1/cedffed0-8cf2-40fb-b55e-f4c2137c7f86/via-auditorium-hero.jpg",
+  "version": 1
 }

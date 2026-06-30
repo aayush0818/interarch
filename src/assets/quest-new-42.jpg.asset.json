@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "34bfad8e-d497-42b6-a941-f34c11eb8d03",
-  "project_id": "87fa88c7-6591-490d-b446-6e5bfd9b92da",
-  "url": "/__l5e/assets-v1/34bfad8e-d497-42b6-a941-f34c11eb8d03/quest-new-42.jpg",
-  "r2_key": "a/v1/87fa88c7-6591-490d-b446-6e5bfd9b92da/34bfad8e-d497-42b6-a941-f34c11eb8d03/quest-new-42.jpg",
-  "original_filename": "quest-new-42.jpg",
-  "size": 965780,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-24T10:40:43Z"
+  "created_at": "2026-06-24T10:40:43Z",
+  "original_filename": "quest-new-42.jpg",
+  "project_id": "ff3400f9-db17-4013-9fc3-9fd1fbdd52f5",
+  "r2_key": "a/v1/ff3400f9-db17-4013-9fc3-9fd1fbdd52f5/34bfad8e-d497-42b6-a941-f34c11eb8d03/quest-new-42.jpg",
+  "size": 965780,
+  "url": "/__l5e/assets-v1/34bfad8e-d497-42b6-a941-f34c11eb8d03/quest-new-42.jpg",
+  "version": 1
 }
