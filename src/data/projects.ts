@@ -668,6 +668,7 @@ export type Project = {
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
   heroFit?: "cover" | "contain";
+  heroZoom?: "default" | "reduced";
   coverPosition?: string;
   showcase?: string;
   keepHeroInGallery?: boolean;
@@ -1004,7 +1005,7 @@ export const projects: Project[] = [
     cover: glasswood1.url,
     showcase: glasswood3.url,
     imageFit: "contain",
-    heroFit: "contain",
+    heroZoom: "reduced",
     cardOrientation: "landscape",
     coverPosition: "50% 30%",
     gallery: [glasswood1.url, glasswood2.url],
@@ -1134,8 +1135,8 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: panoramaHouseAerial2026.url,
     cardCover: panoramaHouseHero.url,
-    coverPosition: "50% 18%",
-    heroFit: "contain",
+    coverPosition: "50% 12%",
+    heroZoom: "reduced",
     cardOrientation: "landscape",
     gallery: [panoramaHouseAerial2026.url, panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
