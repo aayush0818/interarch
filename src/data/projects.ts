@@ -326,6 +326,9 @@ import er6 from "@/assets/emerald-104.jpeg.asset.json";
 import er7 from "@/assets/emerald-109.jpeg.asset.json";
 import er8 from "@/assets/emerald-125.jpeg.asset.json";
 import er9 from "@/assets/emerald-008-2.jpeg.asset.json";
+import houseOfSymmetryAdd1 from "@/assets/house-of-symmetry-add-1.jpeg.asset.json";
+import houseOfSymmetryAdd2 from "@/assets/house-of-symmetry-add-2.jpeg.asset.json";
+import houseOfSymmetryAdd3 from "@/assets/house-of-symmetry-add-3.jpeg.asset.json";
 
 
 // House of Arches - Residential Interior
@@ -387,7 +390,9 @@ import hos9 from "@/assets/house-of-stone-059.jpeg.asset.json";
 import hos10 from "@/assets/house-of-stone-122.jpeg.asset.json";
 import hos11 from "@/assets/house-of-stone-130-2.jpeg.asset.json";
 import hos12 from "@/assets/house-of-stone-067.jpeg.asset.json";
-const houseOfStoneGallery = [hos4.url, hos5.url, hos6.url, hos7.url, hos2.url, hos8.url, hos1.url, hos3.url, hos9.url, hos10.url, hos11.url, hos12.url];
+import houseOfStoneAdd1 from "@/assets/house-of-stone-add-1.jpeg.asset.json";
+import houseOfStoneAdd2 from "@/assets/house-of-stone-add-2.jpeg.asset.json";
+const houseOfStoneGallery = [hos4.url, hos5.url, hos6.url, hos7.url, hos2.url, hos8.url, hos1.url, hos3.url, hos9.url, hos10.url, hos11.url, hos12.url, houseOfStoneAdd1.url, houseOfStoneAdd2.url];
 
 // Blush & Bronze Residence - Residential Interior
 import bb1 from "@/assets/blush-bronze-residence-1.jpeg.asset.json";
@@ -397,6 +402,10 @@ import bb4 from "@/assets/blush-bronze-residence-4.jpeg.asset.json";
 import bb5 from "@/assets/blush-bronze-residence-5.jpeg.asset.json";
 import bb6 from "@/assets/blush-bronze-residence-6.jpeg.asset.json";
 import bb7 from "@/assets/blush-bronze-residence-7.jpeg.asset.json";
+import eastWingHouseAdd1 from "@/assets/east-wing-house-add-1.jpeg.asset.json";
+import eastWingHouseAdd2 from "@/assets/east-wing-house-add-2.jpeg.asset.json";
+import eastWingHouseAdd3 from "@/assets/east-wing-house-add-3.jpeg.asset.json";
+import eastWingHouseAdd4 from "@/assets/east-wing-house-add-4.jpeg.asset.json";
 
 // Sage Whisper Residence - Residential Interior
 import sw1 from "@/assets/sage-whisper-residence-1.jpeg.asset.json";
@@ -558,9 +567,9 @@ const biguineGallery = [jcb1.url, jcb2.url, jcb3.url, jcb4.url, jcb5.url, jcb6.u
 const sereneHeightsGallery = [sh1.url, sh3.url, sh4.url, sh5.url, sh8.url, sh2.url, sh6.url, sh7.url];
 const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf9.url, sf10.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url];
 const onyxIvoryGallery = [ox1.url, ox7.url, ox3.url, ox8.url, ox2.url, ox10.url, ox4.url, ox5.url, ox6.url, ox9.url];
-const emeraldReverieGallery = [er1.url, er2.url, er3.url, er9.url, er4.url, er5.url, er6.url, er7.url, er8.url];
-const blushBronzeResidenceGallery = [bb3.url, bb7.url, bb1.url, bb4.url, bb5.url, bb6.url, bb2.url];
-const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url];
+const emeraldReverieGallery = [er1.url, er2.url, er3.url, er9.url, er4.url, er5.url, er6.url, er7.url, er8.url, houseOfSymmetryAdd1.url, houseOfSymmetryAdd2.url, houseOfSymmetryAdd3.url];
+const blushBronzeResidenceGallery = [bb3.url, bb7.url, bb1.url, bb4.url, bb5.url, bb6.url, bb2.url, eastWingHouseAdd1.url, eastWingHouseAdd2.url, eastWingHouseAdd3.url, eastWingHouseAdd4.url];
+const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url, houseOfStoneAdd1.url, houseOfStoneAdd2.url];
 const cloudlinePenthouseGallery = [cl2406.url, cl2454.url, cl2460.url, cl2472.url, cl2295.url, cl2478.url, cl2316.url, cl2298.url, cl2304.url, cl2203.url, cl2028.url, cl2166.url];
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url, bharoso4.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
