@@ -632,6 +632,7 @@ import pavilionEstate9 from "@/assets/pavilion-estate-9.jpg.asset.json";
 import pavilionEstate10 from "@/assets/pavilion-estate-10.jpg.asset.json";
 
 import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
+import panoramaHouseAerial2026 from "@/assets/uploads/panorama-house-aerial-2026.png.asset.json";
 import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
 import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
 import panoramaHouse3 from "@/assets/panorama-house-3.jpg.asset.json";
@@ -830,6 +831,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: energizeResort2026.url,
     coverPosition: "50% 50%",
+    imageFit: "contain",
     gallery: energizeResortNashikGallery,
     description: "A hospitality destination designed around relaxation, recreation, and connection with nature. The project creates immersive experiences through thoughtful planning, landscape integration, and inviting communal spaces.",
   },
@@ -1098,9 +1100,9 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: panoramaHouseHero.url,
-    coverPosition: "50% 32%",
-    gallery: [panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
+    cover: panoramaHouseAerial2026.url,
+    coverPosition: "50% 50%",
+    gallery: [panoramaHouseAerial2026.url, panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
   },
   {
@@ -1113,7 +1115,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: lanternVilla2026.url,
-    coverPosition: "50% 50%",
+    coverPosition: "50% 15%",
     gallery: [lanternVilla1.url, lanternVilla9.url, lanternVilla14.url, lanternVilla24.url, lanternVilla6.url, lanternVilla22.url, lanternVilla13.url, lanternVilla5.url, lanternVilla10.url, lanternVilla11.url, lanternVilla16.url, lanternVilla8.url, lanternVilla18.url, lanternVilla20.url, lanternVilla21.url, lanternVilla15.url, lanternVilla23.url, lanternVilla2.url, lanternVilla4.url, lanternVilla19.url],
     description: "Defined by vertical timber elements and symmetrical massing, the residence combines warmth and precision. The interplay of light, materiality, and proportion creates a home that feels both contemporary and timeless.",
   },
