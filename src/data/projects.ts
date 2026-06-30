@@ -64,6 +64,13 @@ import ma14 from "@/assets/meril-academy-vapi-14.jpg.asset.json";
 
 import maLobby from "@/assets/meril-academy-vapi-lobby.jpg.asset.json";
 
+// Meril Campus (Architecture · Institutional)
+import merilCampus1 from "@/assets/meril-campus-1.png.asset.json";
+import merilCampus2 from "@/assets/meril-campus-2.png.asset.json";
+import merilCampus3 from "@/assets/meril-campus-3.png.asset.json";
+import merilCampus4 from "@/assets/meril-campus-4.png.asset.json";
+import merilCampus5 from "@/assets/meril-campus-5.png.asset.json";
+
 // D CP Office - Belapur (Architecture · Institutional)
 import dcp1 from "@/assets/d-cp-office-belapur-1.jpg.asset.json";
 import dcp2 from "@/assets/d-cp-office-belapur-2.jpg.asset.json";
@@ -85,6 +92,12 @@ import apj6 from "@/assets/apj-auditorium-6.jpg.asset.json";
 import apj7 from "@/assets/apj-auditorium-7.jpg.asset.json";
 import apj8 from "@/assets/apj-auditorium-8.jpg.asset.json";
 import apj9 from "@/assets/apj-auditorium-9.jpg.asset.json";
+
+// HEMRL Auditorium (Architecture · Institutional)
+import hemrlAuditorium1 from "@/assets/hemrl-auditorium-1.png.asset.json";
+import hemrlAuditorium2 from "@/assets/hemrl-auditorium-2.png.asset.json";
+import hemrlAuditorium3 from "@/assets/hemrl-auditorium-3.png.asset.json";
+import hemrlAuditorium4 from "@/assets/hemrl-auditorium-4.png.asset.json";
 
 // Meril Park 2 (Architecture · Industrial)
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
@@ -524,8 +537,10 @@ const noirResidenceGallery = [
 ];
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url, mc11.url, mc12.url];
 const merilAcademyGallery = [ma1.url, ma2.url, ma5.url, ma4.url, ma7.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, maLobby.url];
+const merilCampusGallery = [merilCampus1.url, merilCampus2.url, merilCampus3.url, merilCampus4.url, merilCampus5.url];
 const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp5.url, dcp6.url, dcp8.url];
 const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj7.url, apj8.url];
+const hemrlAuditoriumGallery = [hemrlAuditorium1.url, hemrlAuditorium2.url, hemrlAuditorium3.url, hemrlAuditorium4.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
 const divyaEnclaveGallery = [de12.url, de1.url, de2.url, de3.url, de4.url, de5.url, de6.url, de7.url, de8.url];
 const adarshVidyaMandirGallery = [avm1.url, avm2.url];
@@ -703,6 +718,19 @@ export const projects: Project[] = [
     description: "A contemporary learning environment shaped by fluid architecture, openness, and connection. Designed to inspire growth and collaboration, the academy creates spaces that nurture education beyond the classroom.",
   },
   {
+    slug: "meril-campus",
+    name: "Meril Campus",
+    sector: "Institutional",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: merilCampus2.url,
+    gallery: merilCampusGallery,
+    description: "A large-scale institutional campus conceived as an integrated environment for learning, gathering, and movement. The project balances architecture, landscape, and public circulation to create a cohesive and future-facing institutional setting.",
+  },
+  {
     slug: "d-cp-office-belapur",
     name: "\nCP Office - Belapur",
     sector: "Institutional",
@@ -730,6 +758,19 @@ export const projects: Project[] = [
     gallery: apjAuditoriumGallery,
     fullBleed: [apj5.url],
     description: "A purpose-built venue designed to enhance learning, dialogue, and large-scale gatherings. Its thoughtful planning ensures comfort, visibility, and a seamless audience experience.",
+  },
+  {
+    slug: "hemrl-auditorium",
+    name: "HEMRL Auditorium",
+    sector: "Institutional",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: hemrlAuditorium1.url,
+    gallery: hemrlAuditoriumGallery,
+    description: "An institutional auditorium designed for formal events, presentations, and community gatherings. Its sequence of entry, interior volume, and assembly space prioritises clarity, functionality, and a dignified civic presence.",
   },
   {
     slug: "aditya-birla-asthavinayak",
