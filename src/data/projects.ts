@@ -652,7 +652,7 @@ export type Facility = {
 export type Project = {
   slug: string;
   name: string;
-  sector: "Residential" | "Commercial" | "Institutional" | "Hospitality" | "Industrial" | "Workplace";
+  sector: "Residential" | "Commercial" | "Institutional" | "Hospitality" | "Workplace";
   location: string;
   year: string;
   area: string;
@@ -661,12 +661,14 @@ export type Project = {
   description: string;
   cover: string;
   cardCover?: string;
+  cardOrientation?: "portrait" | "landscape";
   gallery: string[];
   fullBleed?: string[];
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
   coverPosition?: string;
   showcase?: string;
+  keepHeroInGallery?: boolean;
 };
 
 export const projectImageMasks: Record<string, { x: number; y: number; width: number; height: number; shiftX?: number; shiftY?: number; feather?: number }> = {
