@@ -632,6 +632,7 @@ import pavilionEstate9 from "@/assets/pavilion-estate-9.jpg.asset.json";
 import pavilionEstate10 from "@/assets/pavilion-estate-10.jpg.asset.json";
 
 import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
+import panoramaHouseAerial2026 from "@/assets/uploads/panorama-house-aerial-2026.png.asset.json";
 import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
 import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
 import panoramaHouse3 from "@/assets/panorama-house-3.jpg.asset.json";
