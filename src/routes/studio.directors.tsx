@@ -66,7 +66,7 @@ function TeamPage() {
                   <img src={p.image} alt={p.name} loading="lazy" />
                 </div>
                 <div className="idlx-portrait-cap">
-                  <span className="idlx-portrait-role">{p.role} · {p.years}</span>
+                  <span className="idlx-portrait-role">{p.role}{p.years ? ` · ${p.years}` : ""}</span>
                   <span className="idlx-portrait-name">{p.name}</span>
                   <span className="idlx-body" style={{ fontStyle: "italic", color: "var(--idlx-mute)", marginTop: 4 }}>{p.line}</span>
                   <p className="idlx-portrait-bio">{p.bio}</p>
