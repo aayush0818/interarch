@@ -842,7 +842,7 @@ export const projects: Project[] = [
   {
     slug: "maple",
     name: "Maple",
-    sector: "Industrial",
+    sector: "Commercial",
     location: "",
     year: "",
     area: "",
@@ -894,7 +894,7 @@ export const projects: Project[] = [
   {
     slug: "meril-park-1",
     name: "Meril Park 1",
-    sector: "Industrial",
+    sector: "Commercial",
     location: "",
     year: "",
     area: "",
@@ -909,7 +909,7 @@ export const projects: Project[] = [
   {
     slug: "meril-bld-5-and-6",
     name: "Meril Park 2\n",
-    sector: "Industrial",
+    sector: "Commercial",
     location: "",
     year: "",
     area: "",
@@ -922,7 +922,7 @@ export const projects: Project[] = [
   {
     slug: "pidilite-rd-centre-taloja",
     name: "Pidilite R&D Centre - Taloja",
-    sector: "Industrial",
+    sector: "Commercial",
     location: "Taloja",
     year: "",
     area: "",
