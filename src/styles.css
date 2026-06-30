@@ -3529,3 +3529,8 @@ html, body { overflow-x: clip; }
 .idlx-awards-cta { padding: clamp(64px, 10vw, 140px) 6vw; background: var(--bg); border-top: 1px solid rgba(0,0,0,0.06); }
 .idlx-awards-cta-inner { max-width: 920px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; }
 .idlx-awards-cta-title { font-family: var(--serif); font-weight: 300; font-size: clamp(28px, 4vw, 52px); line-height: 1.1; color: var(--fg); margin: 4px 0 8px; }
+
+.idl-btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border: 1px solid var(--fg); color: var(--fg); font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; transition: background 220ms ease, color 220ms ease; }
+.idl-btn:hover { background: var(--fg); color: var(--bg); }
+.idl-btn--dark { background: var(--fg); color: var(--bg); }
+.idl-btn--dark:hover { background: transparent; color: var(--fg); }
