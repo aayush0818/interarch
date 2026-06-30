@@ -664,6 +664,7 @@ export type Project = {
   fullBleed?: string[];
   facilities?: Facility[];
   imageFit?: "cover" | "contain";
+  heroHeight?: "full" | "tall" | "mid";
   coverPosition?: string;
   showcase?: string;
 };
@@ -832,6 +833,7 @@ export const projects: Project[] = [
     cover: energizeResort2026.url,
     coverPosition: "50% 50%",
     imageFit: "contain",
+    heroHeight: "mid",
     gallery: energizeResortNashikGallery,
     description: "A hospitality destination designed around relaxation, recreation, and connection with nature. The project creates immersive experiences through thoughtful planning, landscape integration, and inviting communal spaces.",
   },
@@ -1102,6 +1104,8 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: panoramaHouseAerial2026.url,
     coverPosition: "50% 50%",
+    imageFit: "contain",
+    heroHeight: "mid",
     gallery: [panoramaHouseAerial2026.url, panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",
   },
