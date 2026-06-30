@@ -90,6 +90,9 @@ import apj9 from "@/assets/apj-auditorium-9.jpg.asset.json";
 import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
 import mb56_2 from "@/assets/meril-bld-5-6-2.png.asset.json";
 
+// Meril Beat Office (Architecture · Commercial)
+import merilBeat1 from "@/assets/meril-beat-office-1.jpg.asset.json";
+
 // Meril Park 1 (Architecture · Industrial)
 import mp1_front from "@/assets/meril-park-1-main-building-front-view-new.jpg.asset.json";
 import merilPark1Cover2026 from "@/assets/uploads/meril-park-1-cover-2026.png.asset.json";
@@ -930,6 +933,21 @@ export const projects: Project[] = [
     cardOrientation: "portrait",
     gallery: merilBld56Gallery,
     description: "The architecture reflects a forward-looking corporate culture, combining openness, functionality, and a strong visual presence.",
+  },
+  {
+    slug: "meril-beat-office",
+    name: "Meril Beat Office",
+    sector: "Commercial",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: merilBeat1.url,
+    cardOrientation: "landscape",
+    coverPosition: "50% 40%",
+    gallery: [merilBeat1.url],
+    description: "A contemporary corporate workspace expressing Meril's progressive identity through clean architectural lines and a confident street presence.",
   },
   {
     slug: "pidilite-rd-centre-taloja",

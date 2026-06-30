@@ -133,6 +133,7 @@ function CategoryPage() {
         "pidilite-rd-centre-taloja",
         "meril-bld-5-and-6",
         "meril-park-1",
+        "meril-beat-office",
         "metro-hospital-delhi",
         "shree-lallubhai-seth-arogya-mandir-savarkundla",
         "aditya-birla-cancer-center",
