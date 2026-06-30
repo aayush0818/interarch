@@ -342,7 +342,9 @@ import hoa7 from "@/assets/house-of-arches-21.jpeg.asset.json";
 import hoa8 from "@/assets/house-of-arches-24.jpeg.asset.json";
 import hoa9 from "@/assets/house-of-arches-61.jpeg.asset.json";
 import hoa10 from "@/assets/house-of-arches-66.jpeg.asset.json";
-const houseOfArchesGallery = [hoa1.url, hoa3.url, hoa4.url, hoa2.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url];
+import hoaAdd1 from "@/assets/house-of-arches-add-1.jpeg.asset.json";
+import hoaAdd2 from "@/assets/house-of-arches-add-2.jpeg.asset.json";
+const houseOfArchesGallery = [hoa1.url, hoa3.url, hoa4.url, hoa2.url, hoa5.url, hoa6.url, hoa7.url, hoa8.url, hoa9.url, hoa10.url, hoaAdd1.url, hoaAdd2.url];
 
 // The Layer Residence - Residential Interior
 import lr1 from "@/assets/layer-res-78.jpeg.asset.json";
