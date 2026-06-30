@@ -315,6 +315,10 @@ import ox7 from "@/assets/onyx-024.jpeg.asset.json";
 import ox8 from "@/assets/onyx-049.jpeg.asset.json";
 import ox9 from "@/assets/onyx-028.jpeg.asset.json";
 import ox10 from "@/assets/onyx-026.jpeg.asset.json";
+import whAdd1 from "@/assets/walnut-house-add-1.jpeg.asset.json";
+import whAdd2 from "@/assets/walnut-house-add-2.jpeg.asset.json";
+import whAdd3 from "@/assets/walnut-house-add-3.jpeg.asset.json";
+import whAdd4 from "@/assets/walnut-house-add-4.jpeg.asset.json";
 
 // Emerald Reverie - House of symmetry (Residential Interior)
 import er1 from "@/assets/emerald-024-2.jpeg.asset.json";
