@@ -81,11 +81,12 @@ function HeaderSocials({ className = "" }: { className?: string }) {
   );
 }
 
-export function Header() {
+export function Header({ mode }: { mode?: "default" | "immersive" } = {}) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
+  const [edgeHover, setEdgeHover] = useState(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHome = pathname === "/";
   const isMobile = useIsMobile();
@@ -99,6 +100,13 @@ export function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    if (mode !== "immersive") return;
+    const onMove = (e: MouseEvent) => setEdgeHover(e.clientY <= 110);
+    window.addEventListener("mousemove", onMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMove);
+  }, [mode]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -121,7 +129,9 @@ export function Header() {
   };
 
   const active = useMemo(() => (activeIdx !== null ? NAV[activeIdx] : null), [activeIdx]);
-  const headerClass = `idl-header${scrolled ? " is-scrolled" : ""}${open ? " is-menu" : ""}${!isHome && !open ? " is-light-bg" : ""}`;
+  const isImmersive = mode === "immersive";
+  const immersiveVisible = !isImmersive || scrolled || edgeHover || open;
+  const headerClass = `idl-header${scrolled ? " is-scrolled" : ""}${open ? " is-menu" : ""}${!isHome && !open ? " is-light-bg" : ""}${isImmersive ? " is-immersive" : ""}${isImmersive && !immersiveVisible ? " is-hidden" : ""}`;
 
   return (
     <>
