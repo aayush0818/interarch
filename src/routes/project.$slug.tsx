@@ -53,20 +53,17 @@ function ProjectPage() {
   const project = current;
   const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
   const next = siblings[(idx + 1) % siblings.length];
-  // Hero de-duplication:
-  // - Galleries > 5 images: hero is already shown above; remove every duplicate from the gallery.
-  // - Galleries <= 5 images: a repeat is acceptable, but never immediately after the hero —
-  //   move the duplicate to the end of the sequence.
+  // De-duplication: every image appears at most once on the page.
+  // - Drop the hero from the gallery (it is already shown at the top).
+  // - Collapse any repeats inside the gallery itself.
+  // - If removing the hero would empty the gallery, keep one copy at the end.
   const rawGallery = project.gallery.length ? project.gallery : [project.cover];
   const heroUrl = project.cover;
   const gallery = (() => {
-    if (rawGallery.length > 5) {
-      const filtered = rawGallery.filter((u) => u !== heroUrl);
-      return filtered.length ? filtered : rawGallery;
-    }
-    if (!rawGallery.includes(heroUrl)) return rawGallery;
-    const withoutHero = rawGallery.filter((u) => u !== heroUrl);
-    return [...withoutHero, heroUrl];
+    const seen = new Set<string>();
+    const unique = rawGallery.filter((u) => (seen.has(u) ? false : (seen.add(u), true)));
+    const withoutHero = unique.filter((u) => u !== heroUrl);
+    return withoutHero.length ? withoutHero : unique;
   })();
   const at = (i: number) => gallery[i % gallery.length];
 
