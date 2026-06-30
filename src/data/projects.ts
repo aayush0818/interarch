@@ -521,15 +521,15 @@ const noirResidenceGallery = [
 ];
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url, mc11.url, mc12.url];
 const merilAcademyGallery = [ma1.url, ma2.url, ma5.url, ma4.url, ma7.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, maLobby.url];
-const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp3.url, dcpReplace.url, dcp5.url, dcp6.url, dcp7.url, dcp8.url];
-const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj6.url, apj7.url, apj8.url, apj9.url];
+const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp5.url, dcp6.url, dcp8.url];
+const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj7.url, apj8.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
 const divyaEnclaveGallery = [de12.url, de1.url, de2.url, de3.url, de4.url, de5.url, de6.url, de7.url, de8.url];
 const adarshVidyaMandirGallery = [avm1.url, avm2.url];
-const energizeResortNashikGallery = [er_n2.url, er_n3.url, er_n5.url, er_n6.url, er_n7.url, er_n8.url, er_n9.url, er_n10.url, er_n13.url, er_n18.url, er_n5b.url, er_n22.url, er_n23.url, er_n26.url, er_n35.url, er_n49.url, er_n51.url, er_n60.url, er_n78.url, er_n82.url];
+const energizeResortNashikGallery = [er_n2.url, er_n3.url, er_n5.url, er_n6.url, er_n7.url, er_n8.url, er_n9.url, er_n10.url, er_n13.url, er_n18.url, er_n5b.url, er_n22.url, er_n23.url, er_n26.url, er_n35.url, er_n49.url, er_n51.url, er_n60.url, er_n78.url];
 const goldCornetBoutiqueGallery = [gcb1.url, gcb2.url, gcb3.url, gcb4.url, gcb5.url, gcb6.url, gcb7.url, gcb8.url, gcb9.url, gcb10.url];
 const adityaBirlaAsthavinayakGallery = [abAstha1.url, abAstha2.url, abAstha3.url, abAstha4.url, abAstha5.url];
-const adityaBirlaCancerCenterGallery = [abcc1.url, abcc2.url, abcc3.url, abcc4.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url, abcc10.url, abcc11.url, abcc12.url];
+const adityaBirlaCancerCenterGallery = [abcc1.url, abcc3.url, abcc5.url, abcc6.url, abcc7.url, abcc8.url, abcc9.url, abcc11.url, abcc12.url];
 const monsterGallery = [mo1.url, mo2.url, mo3.url, mo4.url, mo5.url, mo7.url, mo9.url, mo11.url, mo14.url, mo15.url];
 
 const jadePinkGallery = [jp1.url, jp2.url, jp3.url, jp4.url, jp5.url, jp6.url, jp7.url, jp8.url, jp9.url];
@@ -707,7 +707,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: dcp1.url,
+    cover: dcp7.url,
+    cardCover: dcp7.url,
     gallery: dcpOfficeBelapurGallery,
     description: "A modern civic landmark that reflects transparency, authority, and public service. The design combines operational efficiency with a strong architectural identity suited for a contemporary urban institution.",
     imageFit: "contain",
@@ -723,6 +724,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: apj1.url,
     gallery: apjAuditoriumGallery,
+    fullBleed: [apj5.url],
     description: "A purpose-built venue designed to enhance learning, dialogue, and large-scale gatherings. Its thoughtful planning ensures comfort, visibility, and a seamless audience experience.",
   },
   {
@@ -734,7 +736,7 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: abAstha1.url,
+    cover: abAstha3.url,
     gallery: adityaBirlaAsthavinayakGallery,
     description: "A spiritual destination designed to celebrate faith, culture, and collective experience. Through carefully planned landscapes, gathering spaces, and traditional architectural elements, the project creates a serene and immersive environment.",
     facilities: [
@@ -756,9 +758,11 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: de12.url,
+    cardOrientation: "landscape",
     gallery: divyaEnclaveGallery,
     description: "A community-centric clubhouse that brings leisure, wellness, and social interaction together. Designed as an extension of everyday living, it offers spaces that encourage gathering and recreation.",
   },
+
 
   {
     slug: "adarsh-vidya-mandir-rajasthan",
@@ -837,9 +841,11 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: energizeResort2026.url,
     cardCover: energizeResortCoverUpload.url,
+    cardOrientation: "portrait",
     coverPosition: "50% 50%",
     imageFit: "contain",
     gallery: energizeResortNashikGallery,
+    fullBleed: [er_n78.url],
     description: "A hospitality destination designed around relaxation, recreation, and connection with nature. The project creates immersive experiences through thoughtful planning, landscape integration, and inviting communal spaces.",
   },
   {
@@ -852,12 +858,16 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: mapleSales02.url,
+    cardOrientation: "landscape",
     gallery: [
-      mapleGate01.url,
-      mapleGate02New.url,
-      mapleSales01.url,
+      mapleGate03New.url,
+      mapleGate04New.url,
+      mapleGate05New.url,
       mapleNeedle2A.url,
-      mapleWarehouse01.url,
+      mapleNeedle3A.url,
+      mapleNeedlePlant.url,
+      mapleSales05.url,
+      mapleWarehouse02.url,
     ],
     description: "",
     facilities: [
@@ -865,8 +875,6 @@ export const projects: Project[] = [
         name: "Maple Main Gate",
         description: "More than an entry point, the gateway serves as a landmark arrival experience that reflects the ambition and identity of the development.",
         images: [
-          mapleGate01.url,
-          mapleGate02New.url,
           mapleGate03New.url,
           mapleGate04New.url,
           mapleGate05New.url,
@@ -876,9 +884,7 @@ export const projects: Project[] = [
         name: "Maple Sales Office",
         description: "With its dramatic cantilevers and seamless glass envelope, the project transforms the sales journey into an immersive spatial experience.",
         images: [
-          mapleSales01.url,
           mapleSales02.url,
-          mapleSales04.url,
           mapleSales05.url,
         ],
       },
@@ -890,7 +896,7 @@ export const projects: Project[] = [
       {
         name: "Maple Warehouse",
         description: "Expressive vertical elements and clean structural lines transform a functional facility into a distinguished industrial landmark.",
-        images: [mapleWarehouse01.url, mapleWarehouse02.url],
+        images: [mapleWarehouse02.url],
       },
     ],
   },
@@ -904,8 +910,9 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: merilPark1New2026.url,
+    cardOrientation: "landscape",
     coverPosition: "50% 50%",
-    gallery: [mp1_front.url, mp1_5.url, mp1_6.url, mp1_reception.url],
+    gallery: [mp1_5.url, mp1_6.url, mp1_reception.url],
     showcase: mp1_4.url,
     description: "Designed as a modern life sciences campus, the architecture combines monumentality with openness to create an environment of trust and progress.",
   },
@@ -919,6 +926,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: mb56_1.url,
+    cardOrientation: "portrait",
     gallery: merilBld56Gallery,
     description: "The architecture reflects a forward-looking corporate culture, combining openness, functionality, and a strong visual presence.",
   },
@@ -932,6 +940,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: pidilite3.url,
+    cardOrientation: "portrait",
     gallery: [pidilite1.url, pidilite2.url, pidilite3.url, pidilite4.url, pidilite5.url],
     description: "Dynamic volumes, elevated forms, and layered façades create a workplace that reflects experimentation, creativity, and technological advancement.",
   },
@@ -944,10 +953,13 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: mvvplHotelAerial.url,
-    coverPosition: "50% 38%",
+    cover: mvvplHotelFront.url,
+    cardCover: mvvplHotelFront.url,
+    cardOrientation: "landscape",
+    coverPosition: "50% 50%",
     showcase: mvvplHotel2.url,
-    gallery: [mvvplHotelAerial.url, mvvplHotelFront.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel3.url],
+    gallery: [mvvplHotelAerial.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel3.url],
+    galleryPairs: [[mvvplHotelThreeQuarter.url, mvvplHotelPorteCochere.url]],
     description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
   },
   {
@@ -960,7 +972,8 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: mvvplClub1.url,
-    gallery: [mvvplClub1.url, mvvplClub2.url, mvvplClub3.url, mvvplClub4.url, mvvplClub5.url],
+    cardOrientation: "landscape",
+    gallery: [mvvplClub1.url, mvvplClub2.url, mvvplClub3.url, mvvplClub4.url],
     description: "A vibrant social destination designed to foster community and shared experiences. The architecture blends recreation, wellness, and gathering spaces into a cohesive lifestyle environment.",
   },
   {
@@ -1381,6 +1394,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: mc1.url,
+    cardOrientation: "portrait",
     gallery: merilGallery,
     description: "A wellness-focused clubhouse designed as a retreat within the workplace ecosystem. Through landscape integration, leisure amenities, and carefully crafted spaces, it promotes balance, relaxation, and community interaction.",
   },
@@ -1446,7 +1460,8 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: abcc6.url,
+    cover: abcc2.url,
+    cardOrientation: "landscape",
     gallery: adityaBirlaCancerCenterGallery,
     description: "Through thoughtful planning and human-focused interiors, the centre delivers a balanced environment tailored to both patients and caregivers.",
     facilities: [
@@ -1468,6 +1483,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: bharoso1.url,
+    cardOrientation: "portrait",
     gallery: bharosoSavarkundlaGallery,
     description: "The architecture balances operational efficiency with a reassuring visual identity, creating an environment built around care and trust.",
   },
@@ -1481,6 +1497,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: metroDel1.url,
+    cardOrientation: "portrait",
     gallery: metroHospitalDelhiGallery,
     description: "A contemporary healthcare facility designed to combine medical efficiency with a welcoming and human-centred environment.",
   },

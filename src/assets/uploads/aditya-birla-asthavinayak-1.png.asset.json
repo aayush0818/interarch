@@ -1,11 +1,11 @@
 {
-  "asset_id": "8bc7c7f2-e54a-4553-8d05-ef5969ed70be",
-  "content_type": "image/png",
-  "created_at": "2026-06-19T18:02:23Z",
-  "original_filename": "aditya-birla-asthavinayak-1.png",
+  "version": 1,
+  "asset_id": "f7a56486-d2e3-4be6-9a26-eb1f220ed9b8",
   "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/8bc7c7f2-e54a-4553-8d05-ef5969ed70be/aditya-birla-asthavinayak-1.png",
-  "size": 2588726,
-  "url": "/__l5e/assets-v1/8bc7c7f2-e54a-4553-8d05-ef5969ed70be/aditya-birla-asthavinayak-1.png",
-  "version": 1
+  "url": "/__l5e/assets-v1/f7a56486-d2e3-4be6-9a26-eb1f220ed9b8/aditya-birla-asthavinayak-1.png",
+  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/f7a56486-d2e3-4be6-9a26-eb1f220ed9b8/aditya-birla-asthavinayak-1.png",
+  "original_filename": "aditya-birla-asthavinayak-1.png",
+  "size": 2953347,
+  "content_type": "image/png",
+  "created_at": "2026-06-30T16:07:57Z"
 }
