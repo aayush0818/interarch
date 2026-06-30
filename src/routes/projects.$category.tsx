@@ -103,12 +103,41 @@ function CategoryPage() {
 
   const filteredList = useMemo(() => {
     const bySector = (items: Project[], s: string) => items.filter((project) => project.sector.toLowerCase() === s);
-    if (cat === "interiors") return interiorFilter === "all" ? list : bySector(list, interiorFilter);
-    return architectureFilter === "all" ? list : bySector(list, architectureFilter);
+    const raw = cat === "interiors"
+      ? (interiorFilter === "all" ? list : bySector(list, interiorFilter))
+      : (architectureFilter === "all" ? list : bySector(list, architectureFilter));
+    // Explicit ordering for Architecture · Residential.
+    if (cat === "architecture") {
+      const residentialOrder = [
+        "glasswood-retreat",
+        "laxmi-kunj",
+        "proximus",
+        "panorama-house",
+        "portico-house",
+        "the-pavilion-estate",
+        "lantern-villa",
+        "the-ridge-house",
+        "the-atrium-house",
+        "linear-estate",
+        "the-ivory-estate",
+        "altura-residence",
+        "courtyard-twins",
+      ];
+      const order = new Map(residentialOrder.map((s, i) => [s, i] as const));
+      return [...raw].sort((a, b) => {
+        const ar = a.sector === "Residential";
+        const br = b.sector === "Residential";
+        if (ar && br) return (order.get(a.slug) ?? 999) - (order.get(b.slug) ?? 999);
+        return 0;
+      });
+    }
+    return raw;
   }, [architectureFilter, cat, interiorFilter, list]);
 
 
-  const layout = (i: number): "wide" | "narrow" | "tall" => {
+  const layout = (i: number, p?: Project): "wide" | "narrow" | "tall" => {
+    if (p?.cardOrientation === "landscape") return "wide";
+    if (p?.cardOrientation === "portrait") return "tall";
     const m = i % 5;
     if (m === 0) return "wide";
     if (m === 3) return "tall";
@@ -222,7 +251,7 @@ function CategoryPage() {
               </Reveal>
             ) : (
               filteredList.map((p, i) => {
-                const kind = layout(i);
+                const kind = layout(i, p);
                 const cls = kind === "wide" ? "idlx-archive-cell idlx-archive-cell--wide" : "idlx-archive-cell";
                 const imgCls =
                   kind === "wide"
@@ -237,7 +266,7 @@ function CategoryPage() {
                     <Reveal delay={(i % 3) * 0.05}>
                       <Link to="/project/$slug" params={{ slug: p.slug }} className="idlx-pcard2" data-hover>
                         <div className={imgCls}>
-                          <ProjectImage src={p.cardCover ?? p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.cardCover ?? p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 45%" }} />
+                          <ProjectImage src={p.cardCover ?? p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.cardCover ?? p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 30%" }} />
                         </div>
                         <div className="idlx-pcard2-cap">
                           <span className="idlx-pcard2-name">{p.name}</span>
