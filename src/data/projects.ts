@@ -612,7 +612,6 @@ import porticoHouse2 from "@/assets/portico-house-2.jpg.asset.json";
 import porticoHouse3 from "@/assets/portico-house-3.jpg.asset.json";
 import porticoHouse4 from "@/assets/portico-house-4.jpg.asset.json";
 import porticoHouse5 from "@/assets/portico-house-5.jpg.asset.json";
-import porticoHouse6 from "@/assets/portico-house-6.png.asset.json";
 import porticoHouse6Clean from "@/assets/portico-house-6-clean-v2.png.asset.json";
 import porticoHouse7 from "@/assets/portico-house-7.jpg.asset.json";
 import porticoHouse8 from "@/assets/portico-house-8.jpg.asset.json";
