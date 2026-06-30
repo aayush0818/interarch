@@ -1,11 +1,11 @@
 {
-  "asset_id": "7e09e383-4c1c-4a86-a899-5322579c6e92",
-  "content_type": "image/jpeg",
-  "created_at": "2026-06-20T10:46:54Z",
-  "original_filename": "meril-academy-vapi-14.jpg",
+  "version": 1,
+  "asset_id": "e4f84466-8f44-40cd-81fa-1412d2e2c11e",
   "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/7e09e383-4c1c-4a86-a899-5322579c6e92/meril-academy-vapi-14.jpg",
-  "size": 1168143,
-  "url": "/__l5e/assets-v1/7e09e383-4c1c-4a86-a899-5322579c6e92/meril-academy-vapi-14.jpg",
-  "version": 1
+  "url": "/__l5e/assets-v1/e4f84466-8f44-40cd-81fa-1412d2e2c11e/meril-academy-vapi-14.jpg",
+  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/e4f84466-8f44-40cd-81fa-1412d2e2c11e/meril-academy-vapi-14.jpg",
+  "original_filename": "meril-academy-vapi-14.jpg",
+  "size": 299868,
+  "content_type": "image/jpeg",
+  "created_at": "2026-06-30T16:07:52Z"
 }

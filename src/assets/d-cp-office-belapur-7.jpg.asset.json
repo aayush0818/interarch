@@ -1,11 +1,11 @@
 {
-  "asset_id": "3b1b6751-2e98-46a0-89c2-8d1833ddc7f5",
-  "content_type": "image/jpeg",
-  "created_at": "2026-06-20T11:16:13Z",
-  "original_filename": "d-cp-office-belapur-7.jpg",
+  "version": 1,
+  "asset_id": "c408b7c0-34be-4999-944f-fbc28fb9e7e2",
   "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/3b1b6751-2e98-46a0-89c2-8d1833ddc7f5/d-cp-office-belapur-7.jpg",
-  "size": 1082266,
-  "url": "/__l5e/assets-v1/3b1b6751-2e98-46a0-89c2-8d1833ddc7f5/d-cp-office-belapur-7.jpg",
-  "version": 1
+  "url": "/__l5e/assets-v1/c408b7c0-34be-4999-944f-fbc28fb9e7e2/d-cp-office-belapur-7.jpg",
+  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/c408b7c0-34be-4999-944f-fbc28fb9e7e2/d-cp-office-belapur-7.jpg",
+  "original_filename": "d-cp-office-belapur-7.jpg",
+  "size": 310806,
+  "content_type": "image/jpeg",
+  "created_at": "2026-06-30T16:07:55Z"
 }

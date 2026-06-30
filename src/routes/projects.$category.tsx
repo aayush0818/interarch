@@ -122,11 +122,29 @@ function CategoryPage() {
         "altura-residence",
         "courtyard-twins",
       ];
+      const hospitalityOrder = [
+        "divya-enclave",
+        "energize-resort-nashik",
+        "meril-club-house-vapi",
+        "mvvpl-hilltop-hotel",
+        "mvvpl-clubhouse",
+      ];
+      const commercialOrder = [
+        "pidilite-rd-centre-taloja",
+        "meril-bld-5-and-6",
+        "meril-park-1",
+        "metro-hospital-delhi",
+        "shree-lallubhai-seth-arogya-mandir-savarkundla",
+        "aditya-birla-cancer-center",
+        "maple",
+      ];
       const order = new Map(residentialOrder.map((s, i) => [s, i] as const));
+      const hospOrder = new Map(hospitalityOrder.map((s, i) => [s, i] as const));
+      const commOrder = new Map(commercialOrder.map((s, i) => [s, i] as const));
       return [...raw].sort((a, b) => {
-        const ar = a.sector === "Residential";
-        const br = b.sector === "Residential";
-        if (ar && br) return (order.get(a.slug) ?? 999) - (order.get(b.slug) ?? 999);
+        if (a.sector === "Residential" && b.sector === "Residential") return (order.get(a.slug) ?? 999) - (order.get(b.slug) ?? 999);
+        if (a.sector === "Hospitality" && b.sector === "Hospitality") return (hospOrder.get(a.slug) ?? 999) - (hospOrder.get(b.slug) ?? 999);
+        if (a.sector === "Commercial" && b.sector === "Commercial") return (commOrder.get(a.slug) ?? 999) - (commOrder.get(b.slug) ?? 999);
         return 0;
       });
     }
