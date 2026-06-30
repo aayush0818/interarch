@@ -9,7 +9,6 @@ import { Reveal } from "@/components/motion/Reveal";
 import { MaskText } from "@/components/motion/MaskText";
 
 import { projectImageMasks, projectsByCategory, type Project } from "@/data/projects";
-import { realImages } from "@/data/realImages";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
 import archInstitutional from "@/assets/verticals/arch-institutional.jpg";
 import archResidential from "@/assets/verticals/arch-residential.jpg";
