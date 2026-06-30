@@ -64,7 +64,7 @@ const groups: Group[] = [
         tagline: "Spaces that serve communities through thoughtful planning, longevity, and purpose.",
         feature: { name: "Kanu Desai VIA Auditorium", location: "Vapi" },
         img: archInstitutional,
-        focal: "center 64%",
+        focal: "center center",
       },
     ],
   },
