@@ -866,8 +866,6 @@ export const projects: Project[] = [
           mapleSales02.url,
           mapleSales04.url,
           mapleSales05.url,
-          mapleSales04.url,
-          mapleSales05.url,
         ],
       },
       {
