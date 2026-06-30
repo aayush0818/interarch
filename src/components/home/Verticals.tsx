@@ -2,14 +2,15 @@ import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import archCommercial from "@/assets/verticals/arch-commercial-new.png";
-import archResidential from "@/assets/verticals/arch-residential.jpg";
 import intResidential from "@/assets/verticals/int-residential.jpg";
 import intCommercial from "@/assets/verticals/int-commercial.jpg";
-import archHospitalityAsset from "@/assets/verticals/arch-hospitality-new.jpg.asset.json";
-import archInstitutionalAsset from "@/assets/verticals/arch-institutional-new.jpg.asset.json";
+import verticalResidentialAsset from "@/assets/uploads/vertical-residential-2026.png.asset.json";
+import verticalHospitalityAsset from "@/assets/uploads/vertical-hospitality-2026.png.asset.json";
+import verticalInstitutionalAsset from "@/assets/uploads/vertical-institutional-2026.png.asset.json";
 
-const hospitalityImg = archHospitalityAsset.url;
-const archInstitutional = archInstitutionalAsset.url;
+const archResidential = verticalResidentialAsset.url;
+const hospitalityImg = verticalHospitalityAsset.url;
+const archInstitutional = verticalInstitutionalAsset.url;
 
 type Vertical = {
   name: string;
@@ -39,7 +40,7 @@ const groups: Group[] = [
         tagline: "Homes designed as enduring expressions of lifestyle, context and place.",
         feature: { name: "The Horizon House", location: "Lonavala" },
         img: archResidential,
-        focal: "center 40%",
+        focal: "center 60%",
       },
       {
         name: "Commercial",
@@ -55,7 +56,7 @@ const groups: Group[] = [
         tagline: "Destinations crafted to elevate comfort, atmosphere, and memorable guest experiences",
         feature: { name: "Energize Resort", location: "Nashik" },
         img: hospitalityImg,
-        focal: "30% 45%",
+        focal: "center 52%",
       },
       {
         name: "Institutional",
@@ -63,7 +64,7 @@ const groups: Group[] = [
         tagline: "Spaces that serve communities through thoughtful planning, longevity, and purpose.",
         feature: { name: "Kanu Desai VIA Auditorium", location: "Vapi" },
         img: archInstitutional,
-        focal: "center 50%",
+        focal: "center 64%",
       },
     ],
   },

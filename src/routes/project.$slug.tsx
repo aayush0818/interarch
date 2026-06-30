@@ -75,6 +75,7 @@ function ProjectPage() {
         <CinematicHero
           image={project.cover}
           alt={project.name}
+          imagePosition={project.coverPosition}
           mask={projectImageMasks[project.cover]}
           eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
           title={project.name}
