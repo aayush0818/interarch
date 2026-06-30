@@ -23,7 +23,6 @@ const archHeroes: Record<string, string> = {
   institutional: archInstitutional,
   residential: archResidential,
   hospitality: hospitalityImg,
-  industrial: realImages.institutional.aerial,
   workplace: archCommercial,
 };
 const interiorHeroes: Record<string, string> = {
@@ -65,7 +64,7 @@ const sectorContent: Record<"architecture" | "interiors", Record<string, { title
 
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
-const architectureSectors = ["all", "hospitality", "commercial", "institutional", "industrial", "workplace", "residential"] as const;
+const architectureSectors = ["all", "hospitality", "commercial", "institutional", "workplace", "residential"] as const;
 const interiorSectors = ["all", "residential", "commercial"] as const;
 
 type ArchitectureFilter = (typeof architectureSectors)[number];
@@ -203,9 +202,6 @@ function CategoryPage() {
                 </button>
                 <button type="button" className={architectureFilter === "institutional" ? "is-on" : ""} onClick={() => setArchitectureFilter("institutional")} data-hover>
                   Institutional
-                </button>
-                <button type="button" className={architectureFilter === "industrial" ? "is-on" : ""} onClick={() => setArchitectureFilter("industrial")} data-hover>
-                  Industrial
                 </button>
               </>
             )}
