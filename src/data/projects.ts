@@ -303,6 +303,10 @@ import sf7 from "@/assets/saffron-47.jpeg.asset.json";
 import sf8 from "@/assets/saffron-39.jpeg.asset.json";
 import sf9 from "@/assets/saffron-76.jpeg.asset.json";
 import sf10 from "@/assets/saffron-77.jpeg.asset.json";
+import mlAdd1 from "@/assets/monochrome-luxe-add-1.jpeg.asset.json";
+import mlAdd2 from "@/assets/monochrome-luxe-add-2.jpeg.asset.json";
+import mlAdd3 from "@/assets/monochrome-luxe-add-3.jpeg.asset.json";
+import mlAdd4 from "@/assets/monochrome-luxe-add-4.jpeg.asset.json";
 
 // Onyx & Ivory - The walnut house (Residential Interior)
 import ox1 from "@/assets/onyx-008.jpeg.asset.json";
