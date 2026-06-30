@@ -660,6 +660,7 @@ export type Project = {
   category: "Architecture" | "Interiors";
   description: string;
   cover: string;
+  cardCover?: string;
   gallery: string[];
   fullBleed?: string[];
   facilities?: Facility[];
@@ -830,6 +831,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: energizeResort2026.url,
+    cardCover: energizeResortCoverUpload.url,
     coverPosition: "50% 50%",
     imageFit: "contain",
     gallery: energizeResortNashikGallery,
@@ -1101,6 +1103,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: panoramaHouseAerial2026.url,
+    cardCover: panoramaHouseHero.url,
     coverPosition: "50% 50%",
     gallery: [panoramaHouseAerial2026.url, panoramaHouse9.url, panoramaHouseHero.url, panoramaHouse1.url, panoramaHouse8.url, panoramaHouse5.url, panoramaHouse3.url, panoramaHouse6.url, panoramaHouse2.url, panoramaHouse7.url, panoramaHouse4.url],
     description: "Designed around open views and generous proportions, the residence unfolds through layered terraces, double-height volumes, and landscaped courts.",

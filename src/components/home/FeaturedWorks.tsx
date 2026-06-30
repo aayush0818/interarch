@@ -16,7 +16,7 @@ const spans: Array<"wide" | "tall"> = ["wide", "tall", "tall", "tall", "tall", "
 const picks = slugs
   .map((s, i) => {
     const p = projects.find((x) => x.slug === s);
-    return p ? { img: p.cover, slug: p.slug, name: p.name, span: spans[i], pos: p.coverPosition ?? "50% 45%" } : null;
+    return p ? { img: p.cardCover ?? p.cover, slug: p.slug, name: p.name, span: spans[i], pos: p.coverPosition ?? "50% 45%" } : null;
   })
   .filter(Boolean) as Array<{ img: string; slug: string; name: string; span: "wide" | "tall"; pos: string }>;
 

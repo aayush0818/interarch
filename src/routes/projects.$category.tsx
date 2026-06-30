@@ -241,7 +241,7 @@ function CategoryPage() {
                     <Reveal delay={(i % 3) * 0.05}>
                       <Link to="/project/$slug" params={{ slug: p.slug }} className="idlx-pcard2" data-hover>
                         <div className={imgCls}>
-                          <ProjectImage src={p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 45%" }} />
+                          <ProjectImage src={p.cardCover ?? p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.cardCover ?? p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 45%" }} />
                         </div>
                         <div className="idlx-pcard2-cap">
                           <span className="idlx-pcard2-name">{p.name}</span>
