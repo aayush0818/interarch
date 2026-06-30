@@ -57,16 +57,11 @@ function AboutPage() {
         <div className="idlx-manifesto">
           <div>
             <Reveal>
-            <MaskText as="h2" className="idlx-h2" style={{ fontSize: "clamp(34px, 5vw, 78px)" }}>
-              {`Interarch Design Labs is a multidisciplinary architecture and interior design practice.\n`}
-            </MaskText>
-            </Reveal>
-            <Reveal delay={0.1}>
               <img
-                src={manifestoImg.url}
-                alt="Interarch Design Labs studio interior"
+                src={boardroomImg.url}
+                alt="Interarch Design Labs studio"
                 loading="lazy"
-                style={{ marginTop: "clamp(24px, 3vw, 48px)", width: "100%", maxWidth: "540px", display: "block" }}
+                style={{ width: "100%", height: "auto", display: "block" }}
               />
             </Reveal>
           </div>
@@ -77,20 +72,6 @@ function AboutPage() {
           </Reveal>
         </div>
       </section>
-
-      {/* Full bleed image */}
-      <div className="idlx-split">
-        <div className="idlx-split-img">
-          <Reveal>
-            <img src={boardroomImg.url} alt="IDL studio boardroom" loading="lazy" />
-          </Reveal>
-        </div>
-        <div className="idlx-split-img">
-          <Reveal>
-            <img src={splitTwoImg.url} alt="IDL studio interior detail" loading="lazy" />
-          </Reveal>
-        </div>
-      </div>
 
       {/* Mission / Vision */}
       <section className="idlx-section idlx-section--bordered">
@@ -133,6 +114,13 @@ function AboutPage() {
       <div style={{ width: "100%", aspectRatio: "21 / 9", overflow: "hidden" }}>
         <Reveal>
           <img src={mvvImg.url} alt="IDL studio detail" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+        </Reveal>
+      </div>
+
+      {/* Full-width manifesto image */}
+      <div style={{ width: "100%", overflow: "hidden", marginTop: "clamp(40px, 6vw, 96px)" }}>
+        <Reveal>
+          <img src={manifestoImg.url} alt="Interarch Design Labs studio interior" loading="lazy" style={{ width: "100%", height: "auto", display: "block" }} />
         </Reveal>
       </div>
 
