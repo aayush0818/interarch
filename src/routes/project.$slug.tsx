@@ -76,6 +76,8 @@ function ProjectPage() {
           image={project.cover}
           alt={project.name}
           imagePosition={project.coverPosition}
+          imageFit={project.imageFit}
+          height={project.heroHeight}
           mask={projectImageMasks[project.cover]}
           eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
           title={project.name}
