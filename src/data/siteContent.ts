@@ -198,36 +198,36 @@ export const teamCopy = {
 export const partners = [
   {
     name: "Dipak Thaker",
-    role: "Director - IDL",
+    role: "DIRECTOR - IDL\u00a0",
     image: partner1,
-    years: "40+ years",
+    years: "",
     line: "Structure, process, and buildability held together with long-view precision.",
     bio:
       "Dipak Thaker brings over three decades of experience across residential, commercial, institutional, and industrial projects. Known for his technical expertise and strategic approach, he has led numerous developments from concept to completion. At IDL, he provides the depth of knowledge and practical insight that ensures design excellence is matched by execution excellence.",
   },
   {
     name: "Murtuza Rangwala",
-    role: "Director - IDL",
+    role: "DIRECTOR - IDL",
     image: partner2,
-    years: "30+ years",
+    years: "",
     line: "Calm leadership, operational rigour, and dependable delivery across every stage.",
     bio:
       "Murtuza Rangwala has built his career on consistency, trust, and a deep commitment to quality. With extensive experience across architecture and interiors, he is known for his meticulous approach to project delivery and client relationships. At IDL, he brings operational clarity, dependable leadership, and a strong focus on achieving successful project outcomes.",
   },
   {
     name: "Rohit Gojia",
-    role: "Director - IDL",
+    role: "DIRECTOR - IDL\u00a0",
     image: partner4,
-    years: "Contemporary practice",
+    years: "",
     line: "Modern living translated into clear, material-led interior narratives.",
     bio:
       "Rohit Gojia brings a modern understanding of interiors, materials, and user experience. His approach combines creativity with practicality, translating ideas into spaces that are thoughtful, refined, and highly liveable. At IDL, he strengthens the practice through a fresh perspective on contemporary design and spatial experiences.",
   },
   {
     name: "Hussain Rangwala",
-    role: "Director - IDL",
+    role: "DIRECTOR - IDL\u00a0",
     image: partner3,
-    years: "Contemporary practice",
+    years: "",
     line: "A contemporary design perspective grounded in strong architectural thinking.",
     bio:
       "Hussain Rangwala represents a contemporary design perspective grounded in strong architectural thinking. His work focuses on creating spaces that balance functionality, context, and experience. At IDL, he contributes a forward-looking approach that bridges established expertise with evolving design sensibilities.",
