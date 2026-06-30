@@ -307,6 +307,16 @@ import mlAdd1 from "@/assets/monochrome-luxe-add-1.jpeg.asset.json";
 import mlAdd2 from "@/assets/monochrome-luxe-add-2.jpeg.asset.json";
 import mlAdd3 from "@/assets/monochrome-luxe-add-3.jpeg.asset.json";
 import mlAdd4 from "@/assets/monochrome-luxe-add-4.jpeg.asset.json";
+import mlAdd5 from "@/assets/monochrome-luxe-add-5.jpeg.asset.json";
+import mlAdd6 from "@/assets/monochrome-luxe-add-6.jpeg.asset.json";
+import mlAdd7 from "@/assets/monochrome-luxe-add-7.jpeg.asset.json";
+import mlAdd8 from "@/assets/monochrome-luxe-add-8.jpeg.asset.json";
+import craftedHomeAdd1 from "@/assets/crafted-home-add-1.jpg.asset.json";
+import craftedHomeAdd2 from "@/assets/crafted-home-add-2.jpg.asset.json";
+import lightwellAdd1 from "@/assets/lightwell-add-1.jpg.asset.json";
+import lightwellAdd2 from "@/assets/lightwell-add-2.jpg.asset.json";
+import lightwellAdd3 from "@/assets/lightwell-add-3.jpg.asset.json";
+import lightwellAdd4 from "@/assets/lightwell-add-4.jpg.asset.json";
 
 // Onyx & Ivory - The walnut house (Residential Interior)
 import ox1 from "@/assets/onyx-008.jpeg.asset.json";
@@ -574,13 +584,13 @@ const palakJewellersGallery = [pj1.url, pj2.url, pj3.url, pj4.url, pj5.url, pj6.
 const ratanshiKherajGallery = [rk1.url, rk2.url, rk3.url, rk4.url, rk5.url, rk6.url, rk7.url];
 const solitaaGallery = [sl1.url, sl2.url, sl3.url, sl4.url, sl5.url, sl6.url, sl7.url, sl8.url];
 const biguineGallery = [jcb1.url, jcb2.url, jcb3.url, jcb4.url, jcb5.url, jcb6.url, jcb7.url];
-const sereneHeightsGallery = [sh1.url, sh3.url, sh4.url, sh5.url, sh8.url, sh2.url, sh6.url, sh7.url];
-const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf9.url, sf10.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url, mlAdd1.url, mlAdd2.url, mlAdd3.url, mlAdd4.url];
+const sereneHeightsGallery = [sh1.url, sh3.url, sh4.url, sh5.url, sh8.url, sh2.url, sh6.url, sh7.url, craftedHomeAdd1.url, craftedHomeAdd2.url];
+const saffronStoneGallery = [sf1.url, sf2.url, sf3.url, sf9.url, sf10.url, sf4.url, sf5.url, sf6.url, sf7.url, sf8.url, mlAdd1.url, mlAdd2.url, mlAdd3.url, mlAdd4.url, mlAdd5.url, mlAdd6.url, mlAdd7.url, mlAdd8.url];
 const onyxIvoryGallery = [ox1.url, ox7.url, ox3.url, ox8.url, ox2.url, ox10.url, ox4.url, ox5.url, ox6.url, ox9.url, whAdd1.url, whAdd2.url, whAdd3.url, whAdd4.url];
 const emeraldReverieGallery = [er1.url, er2.url, er3.url, er9.url, er4.url, er5.url, er6.url, er7.url, er8.url, houseOfSymmetryAdd1.url, houseOfSymmetryAdd2.url, houseOfSymmetryAdd3.url];
 const blushBronzeResidenceGallery = [bb3.url, bb7.url, bb1.url, bb4.url, bb5.url, bb6.url, bb2.url, eastWingHouseAdd1.url, eastWingHouseAdd2.url, eastWingHouseAdd3.url, eastWingHouseAdd4.url];
 const sageWhisperResidenceGallery = [sw3.url, sw1.url, sw2.url, swe91.url, swe75.url, swe56.url, swe27.url, swe13.url, swe90.url, swe124.url, swe45.url, swe2.url, swe130.url, houseOfStoneAdd1.url, houseOfStoneAdd2.url];
-const cloudlinePenthouseGallery = [cl2406.url, cl2454.url, cl2460.url, cl2472.url, cl2295.url, cl2478.url, cl2316.url, cl2298.url, cl2304.url, cl2203.url, cl2028.url, cl2166.url];
+const cloudlinePenthouseGallery = [cl2406.url, cl2454.url, cl2460.url, cl2472.url, cl2295.url, cl2478.url, cl2316.url, cl2298.url, cl2304.url, cl2203.url, cl2028.url, cl2166.url, lightwellAdd1.url, lightwellAdd2.url, lightwellAdd3.url, lightwellAdd4.url];
 const bharosoSavarkundlaGallery = [bharoso1.url, bharoso2.url, bharoso4.url];
 const metroHospitalDelhiGallery = [metroDel1.url, metroDel2.url];
 const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis1.url, tataRallis4.url];
