@@ -213,7 +213,7 @@ function SmartGallery({ gallery: rawGallery, fullBleed, galleryPairs, projectNam
   };
 
   // Optionally reorder so orphan portraits pair with the next portrait in the list.
-  const gallery = React.useMemo(() => {
+  const gallery = useMemo(() => {
     if (!pairOrphanPortraits) return rawGallery;
     const arr = [...rawGallery];
     const fbSet = new Set(fullBleed ?? []);
