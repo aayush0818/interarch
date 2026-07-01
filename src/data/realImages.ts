@@ -25,14 +25,12 @@ import homepageHeroResidentialEstate from "@/assets/home-hero-residential-estate
 import hospitalityPoolsideResort from "@/assets/hospitality-poolside-resort.png";
 
 // Architectural sketches (menu hover art)
-import sketchProjectsAsset from "@/assets/sketch-projects.png.asset.json";
-import sketchExpertiseAsset from "@/assets/sketch-expertise.png.asset.json";
-import sketchStudioAsset from "@/assets/sketch-studio.png.asset.json";
-import sketchNewsAsset from "@/assets/sketch-news.png.asset.json";
-import sketchContactAsset from "@/assets/sketch-contact.png.asset.json";
+import sketchProjectsAsset from "@/assets/menu-sketches/menu-sketch-1.png.asset.json";
+import sketchStudioAsset from "@/assets/menu-sketches/menu-sketch-2.png.asset.json";
+import sketchNewsAsset from "@/assets/menu-sketches/menu-sketch-3.png.asset.json";
+import sketchContactAsset from "@/assets/menu-sketches/menu-sketch-4.png.asset.json";
 
 const sketchProjects = sketchProjectsAsset.url;
-const sketchExpertise = sketchExpertiseAsset.url;
 const sketchStudio = sketchStudioAsset.url;
 const sketchNews = sketchNewsAsset.url;
 const sketchContact = sketchContactAsset.url;
@@ -64,7 +62,7 @@ export const realImages = {
   },
   sketches: {
     projects: sketchProjects,
-    expertise: sketchExpertise,
+    expertise: sketchContact,
     studio: sketchStudio,
     news: sketchNews,
     contact: sketchContact,
@@ -132,4 +130,3 @@ export const realPool = [
   residential.noir,
   commercial.salon,
 ];
-

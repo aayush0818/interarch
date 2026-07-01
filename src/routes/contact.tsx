@@ -49,9 +49,23 @@ export const Route = createFileRoute("/contact")({
 });
 
 const EASE = [0.22, 1, 0.36, 1] as const;
+const careerRoles = [
+  "Sr. Architect",
+  "Architect",
+  "Interior Designer",
+  "Draftsman",
+  "3D Visualizer",
+  "Site Supervisor",
+  "Project Manager",
+  "Marketing",
+  "Social Media",
+  "Administration",
+  "Other",
+] as const;
 
 function ContactPage() {
   const [sent, setSent] = useState(false);
+  const [careerSent, setCareerSent] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -64,8 +78,6 @@ function ContactPage() {
       document.body.appendChild(s);
     }
   }, []);
-
-
 
   return (
     <>
@@ -134,6 +146,121 @@ function ContactPage() {
             </motion.form>
           )}
 
+          <section className="idlx-careers-block">
+            <Reveal>
+              <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> Work With Us</span>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <h2 className="idlx-careers-head">Work With Us</h2>
+            </Reveal>
+            <Reveal delay={0.14}>
+              <p className="idlx-careers-sub">
+                We're always looking for passionate & creative thinkers who care about thoughtful design and attention to detail.
+              </p>
+              <p className="idlx-careers-sub">
+                If you believe great spaces are built through curiosity, collaboration, and craftsmanship, we'd love to hear from you.
+              </p>
+            </Reveal>
+
+            {careerSent ? (
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, ease: EASE }}
+                style={{ marginTop: 32 }}
+              >
+                <p className="idlx-lead">Thank you. We’ll review your profile and get in touch if there’s a fit.</p>
+              </motion.div>
+            ) : (
+              <motion.form
+                className="idlx-cform idlx-cform--career"
+                onSubmit={(e) => { e.preventDefault(); setCareerSent(true); }}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: "-10%" }}
+                variants={{ show: { transition: { staggerChildren: 0.06, delayChildren: 0.12 } } }}
+              >
+                <motion.div className="idlx-form-section" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <h3>Personal Details</h3>
+                </motion.div>
+                {[
+                  { label: "Full Name*", name: "fullName", type: "text", ph: "Full name", required: true },
+                  { label: "Email Address*", name: "emailAddress", type: "email", ph: "you@example.com", required: true },
+                  { label: "Mobile Number*", name: "mobile", type: "tel", ph: "+91", required: true },
+                  { label: "Current City*", name: "city", type: "text", ph: "City", required: true },
+                ].map((f) => (
+                  <motion.label key={f.name} className="idlx-field" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                    <label>{f.label}</label>
+                    <input type={f.type} name={f.name} placeholder={f.ph} required={f.required} />
+                  </motion.label>
+                ))}
+
+                <motion.div className="idlx-form-section" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <h3>Professional Details</h3>
+                </motion.div>
+                <motion.label className="idlx-field" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <label>Position Applying For*</label>
+                  <select name="position" defaultValue="" required>
+                    <option value="" disabled>Select a role</option>
+                    {careerRoles.map((role) => <option key={role} value={role}>{role}</option>)}
+                  </select>
+                </motion.label>
+                {[
+                  { label: "Total Years of Experience*", name: "experience", type: "text", ph: "0–10+", required: true },
+                  { label: "Current Company", name: "company", type: "text", ph: "Current company" },
+                  { label: "Current CTC", name: "currentCtc", type: "text", ph: "Current CTC" },
+                  { label: "Expected CTC", name: "expectedCtc", type: "text", ph: "Expected CTC" },
+                  { label: "Notice Period", name: "noticePeriod", type: "text", ph: "Immediate / 30 days / etc." },
+                ].map((f) => (
+                  <motion.label key={f.name} className="idlx-field" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                    <label>{f.label}</label>
+                    <input type={f.type} name={f.name} placeholder={f.ph} required={f.required} />
+                  </motion.label>
+                ))}
+                <motion.label className="idlx-field" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <label>Are you willing to work from our Parel office?</label>
+                  <select name="parelOffice" defaultValue="Yes">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </motion.label>
+
+                <motion.div className="idlx-form-section" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <h3>Portfolio & Resume</h3>
+                </motion.div>
+                <motion.label className="idlx-field idlx-field--file" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <label>Upload Resume (PDF/DOC)*</label>
+                  <input type="file" name="resume" accept=".pdf,.doc,.docx" required />
+                </motion.label>
+                <motion.label className="idlx-field idlx-field--file" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <label>Upload Portfolio (PDF)</label>
+                  <input type="file" name="portfolioFile" accept=".pdf" />
+                </motion.label>
+                <motion.label className="idlx-field" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <label>Portfolio / Behance / Website Link</label>
+                  <input type="url" name="portfolioLink" placeholder="https://" />
+                </motion.label>
+
+                <motion.div className="idlx-form-section" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <h3>About You</h3>
+                </motion.div>
+                <motion.label className="idlx-field" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.8, ease: EASE }}>
+                  <label>Tell us a little about yourself.</label>
+                  <textarea name="aboutYou" rows={5} placeholder="A few lines about your background, interests, and approach to design." />
+                </motion.label>
+                <motion.button
+                  type="submit"
+                  className="idlx-submit"
+                  data-hover
+                  variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
+                  transition={{ duration: 0.8, ease: EASE }}
+                >
+                  Submit application →
+                </motion.button>
+              </motion.form>
+            )}
+          </section>
+
           <Reveal delay={0.3} className="idlx-ig-block">
             <h3 className="idlx-ig-h">Instagram</h3>
             <p className="idlx-ig-lead">
@@ -160,8 +287,6 @@ function ContactPage() {
             </div>
           </Reveal>
         </div>
-
-
 
         <aside className="idlx-contact-info">
           <Reveal>
