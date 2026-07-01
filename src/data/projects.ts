@@ -199,6 +199,7 @@ import noirResidenceCoverUpload from "@/assets/noir-residence-cover-upload.png.a
 import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.json";
 import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
 import energizeResort2026 from "@/assets/uploads/energize-resort-2026.webp.asset.json";
+import energizeResortCard2026 from "@/assets/uploads/energize-resort-card-2026.png.asset.json";
 import skylineResidenceCoverUpload from "@/assets/skyline-residence-cover-upload.png.asset.json";
 
 // Aditya Birla Asthavinayak - Institutional Architecture
