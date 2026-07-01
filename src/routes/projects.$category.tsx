@@ -61,7 +61,6 @@ const sectorContent: Record<"architecture" | "interiors", Record<string, { title
   },
 };
 
-
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 const architectureSectors = ["all", "hospitality", "commercial", "institutional", "workplace", "residential"] as const;
 const interiorSectors = ["all", "residential", "commercial"] as const;
@@ -105,7 +104,6 @@ function CategoryPage() {
     const raw = cat === "interiors"
       ? (interiorFilter === "all" ? list : bySector(list, interiorFilter))
       : (architectureFilter === "all" ? list : bySector(list, architectureFilter));
-    // Explicit ordering for Architecture · Residential.
     if (cat === "architecture") {
       const residentialOrder = [
         "glasswood-retreat",
@@ -139,19 +137,34 @@ function CategoryPage() {
         "aditya-birla-cancer-center",
         "maple",
       ];
+      const institutionalOrder = [
+        "meril-academy-vapi",
+        "adarsh-vidya-mandir-rajasthan",
+        "apj-abdul-kalam-auditorium-pune",
+        "quest-ajay-seth",
+        "d-cp-office-belapur",
+        "gandhi-peace-centre-pune",
+        "via-auditorium-vapi",
+        "iig-institute-colaba",
+        "tata-rallis-bangalore",
+        "meril-campus",
+        "aditya-birla-asthavinayak",
+        "hemrl-auditorium",
+      ];
       const order = new Map(residentialOrder.map((s, i) => [s, i] as const));
       const hospOrder = new Map(hospitalityOrder.map((s, i) => [s, i] as const));
       const commOrder = new Map(commercialOrder.map((s, i) => [s, i] as const));
+      const instOrder = new Map(institutionalOrder.map((s, i) => [s, i] as const));
       return [...raw].sort((a, b) => {
         if (a.sector === "Residential" && b.sector === "Residential") return (order.get(a.slug) ?? 999) - (order.get(b.slug) ?? 999);
         if (a.sector === "Hospitality" && b.sector === "Hospitality") return (hospOrder.get(a.slug) ?? 999) - (hospOrder.get(b.slug) ?? 999);
         if (a.sector === "Commercial" && b.sector === "Commercial") return (commOrder.get(a.slug) ?? 999) - (commOrder.get(b.slug) ?? 999);
+        if (a.sector === "Institutional" && b.sector === "Institutional") return (instOrder.get(a.slug) ?? 999) - (instOrder.get(b.slug) ?? 999);
         return 0;
       });
     }
     return raw;
   }, [architectureFilter, cat, interiorFilter, list]);
-
 
   const layout = (i: number, p?: Project): "wide" | "narrow" | "tall" => {
     if (p?.cardOrientation === "landscape") return "wide";
@@ -193,8 +206,6 @@ function CategoryPage() {
             </section>
           );
         })()}
-
-
 
         <div className="idlx-archive">
           <aside className="idlx-archive-rail">

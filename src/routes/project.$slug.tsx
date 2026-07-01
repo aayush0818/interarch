@@ -75,25 +75,25 @@ function ProjectPage() {
   const project = current;
   const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
   const next = siblings[(idx + 1) % siblings.length];
-  // De-duplication: every image appears at most once on the page.
-  // - Drop the hero from the gallery (it is already shown at the top).
-  // - Collapse any repeats inside the gallery itself.
-  // - If removing the hero would empty the gallery, keep one copy at the end.
   const rawGallery = project.gallery.length ? project.gallery : [project.cover];
   const heroUrl = project.cover;
   const gallery = (() => {
     const seen = new Set<string>();
     const unique = rawGallery.filter((u) => (seen.has(u) ? false : (seen.add(u), true)));
     if (project.keepHeroInGallery) {
-      // Append hero at the end if not already present so it appears exactly once,
-      // at the bottom of the gallery (as a deliberate repeat of the cover).
       const withHero = unique.includes(heroUrl) ? unique : [...unique, heroUrl];
       return withHero;
     }
     const withoutHero = unique.filter((u) => u !== heroUrl);
     return withoutHero.length ? withoutHero : unique;
   })();
-  const at = (i: number) => gallery[i % gallery.length];
+
+  const detailMeta = [
+    project.sector ? `Sector - ${project.sector}` : null,
+    project.scope ? `Scope - ${project.scope}` : null,
+    project.area ? `Area - ${project.area}` : null,
+    project.year ? `Year - ${project.year}` : null,
+  ].filter(Boolean) as string[];
 
   return (
     <>
@@ -107,23 +107,21 @@ function ProjectPage() {
           imageFit={project.heroFit}
           imageZoom={project.heroZoom}
           mask={projectImageMasks[project.cover]}
-          eyebrow={[project.sector, project.location].filter(Boolean).join(" · ") ? `${[project.sector, project.location].filter(Boolean).join(" · ")}` : ""}
+          eyebrow={project.sector || ""}
           title={project.name}
           meta={[project.year, project.area].filter(Boolean).join(" · ")}
         />
 
-        {/* Meta row */}
-        {(project.location || project.sector || project.scope || project.area || project.year) && (
+        {detailMeta.length > 0 && (
           <section className="idlx-mono-meta">
-            {project.location && <Reveal><div><span>Location</span><strong>{project.location}</strong></div></Reveal>}
-            {project.sector && <Reveal delay={0.05}><div><span>Sector</span><strong>{project.sector}</strong></div></Reveal>}
-            {project.scope && <Reveal delay={0.1}><div><span>Scope</span><strong>{project.scope}</strong></div></Reveal>}
-            {project.area && <Reveal delay={0.15}><div><span>Area</span><strong>{project.area}</strong></div></Reveal>}
-            {project.year && <Reveal delay={0.2}><div><span>Year</span><strong>{project.year}</strong></div></Reveal>}
+            {detailMeta.map((item, index) => (
+              <Reveal key={item} delay={index * 0.05}>
+                <div><strong>{item}</strong></div>
+              </Reveal>
+            ))}
           </section>
         )}
 
-        {/* Essay */}
         {project.description && (
           <section className="idlx-mono-essay">
             <Reveal>
@@ -132,7 +130,6 @@ function ProjectPage() {
           </section>
         )}
 
-        {/* Featured showcase */}
         {project.showcase && (
           <section className="idlx-showcase">
             <ClipReveal>
@@ -148,7 +145,6 @@ function ProjectPage() {
           </section>
         )}
 
-        {/* Photo essay - facilities (when defined) or default gallery rhythm. */}
         {project.facilities && project.facilities.length > 0 ? (
           <section className="idlx-mono-photo idlx-facilities">
             {project.facilities.map((f, fi) => (
@@ -183,8 +179,6 @@ function ProjectPage() {
           </section>
         )}
 
-
-        {/* Pager */}
         <nav className="idlx-pager">
           <Link to="/project/$slug" params={{ slug: prev.slug }} data-hover>
             <span>← Previous</span>
@@ -228,7 +222,6 @@ function SmartGallery({ gallery, fullBleed, galleryPairs, projectName }: { galle
     return () => { cancelled = true; };
   }, [gallery]);
 
-  // Orientation buckets: portrait (<0.92), landscape (>1.12), square otherwise.
   const orient = (src: string): "p" | "l" | "s" | "u" => {
     const r = ratios[src];
     if (r === undefined) return "u";
@@ -248,7 +241,6 @@ function SmartGallery({ gallery, fullBleed, galleryPairs, projectName }: { galle
     const forceFull = fullBleedSet.has(src);
     const o = orient(src);
 
-    // Forced full bleed always wins.
     if (forceFull) {
       blocks.push(
         <ClipReveal key={key++}>
@@ -285,13 +277,6 @@ function SmartGallery({ gallery, fullBleed, galleryPairs, projectName }: { galle
       continue;
     }
 
-    // Editorial rhythm: favor standalone full-bleed for landscapes/squares
-    // (target ~50-60% standalone) and only group images when it clearly helps.
-    // Rules:
-    //   - Portraits always pair with portraits (a solo portrait wastes space).
-    //   - Landscapes/squares default to standalone full-bleed, with an
-    //     occasional paired grouping when 3+ landscape solos have appeared
-    //     in a row, to break up monotony.
     const portraitPair = o === "p" && nextOk && nextO === "p";
     const landscapeGrouping =
       o !== "p" && o !== "u" && nextOk && nextO !== "p" && nextO !== "u" &&

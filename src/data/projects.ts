@@ -199,6 +199,7 @@ import noirResidenceCoverUpload from "@/assets/noir-residence-cover-upload.png.a
 import goldCornetCoverUpload from "@/assets/gold-cornet-cover-upload.png.asset.json";
 import energizeResortCoverUpload from "@/assets/energize-resort-cover-upload.png.asset.json";
 import energizeResort2026 from "@/assets/uploads/energize-resort-2026.webp.asset.json";
+import energizeResortCard2026 from "@/assets/uploads/energize-resort-card-2026.png.asset.json";
 import skylineResidenceCoverUpload from "@/assets/skyline-residence-cover-upload.png.asset.json";
 
 // Aditya Birla Asthavinayak - Institutional Architecture
@@ -567,7 +568,7 @@ const noirResidenceGallery = [
 const merilGallery = [mc1.url, mc2.url, mc3.url, mc4.url, mc5.url, mc6.url, mc7.url, mc8.url, mc9.url, mc10.url, mc11.url, mc12.url];
 const merilAcademyGallery = [ma1.url, ma2.url, ma5.url, ma4.url, ma7.url, ma10.url, ma11.url, ma12.url, ma13.url, ma14.url, maLobby.url];
 const merilCampusGallery = [merilCampus1.url, merilCampus2.url, merilCampus3.url, merilCampus4.url, merilCampus5.url];
-const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcp5.url, dcp6.url, dcp8.url];
+const dcpOfficeBelapurGallery = [dcp1.url, dcp2.url, dcpReplace.url];
 const apjAuditoriumGallery = [apj1.url, apj2.url, apj3.url, apj4.url, apj5.url, apj7.url, apj8.url];
 const hemrlAuditoriumGallery = [hemrlAuditorium1.url, hemrlAuditorium2.url, hemrlAuditorium3.url, hemrlAuditorium4.url];
 const merilBld56Gallery = [mb56_1.url, mb56_2.url];
@@ -597,7 +598,7 @@ const tataRallisBangaloreGallery = [tataRallis2.url, tataRallis3.url, tataRallis
 const iigInstituteColabaGallery = [iigColaba1.url, iigColaba2.url];
 const gandhiPeaceCentrePuneGallery = [gandhiPeace1.url];
 const viaAuditoriumVapiGallery = [viaOption01.url, viaOption03.url, viaOption04.url, viaOption05.url];
-const questAjaySethGallery = [questClubhouse96.url, questClubhouse23.url, questNew50.url, questNew42.url, questNew65.url, questNew67.url, questNew82.url, questNew18.url, questNew38.url, questNew2.url, questNew83.url, questNew91.url];
+const questAjaySethGallery = [questClubhouse96.url, questClubhouse23.url, questNew50.url, questNew65.url, questNew67.url, questNew82.url, questNew18.url, questNew42.url, questNew38.url, questNew2.url, questNew83.url, questNew91.url];
 
 // Maple Industrial Park - Vapi (Architecture · Industrial)
 import mapleGate01 from "@/assets/maple-main-gate-01.jpeg.asset.json";
@@ -680,6 +681,7 @@ import pavilionEstate10 from "@/assets/pavilion-estate-10.jpg.asset.json";
 
 import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
 import panoramaHouseAerial2026 from "@/assets/uploads/panorama-house-aerial-2026.png.asset.json";
+import panoramaHouseCard2026 from "@/assets/uploads/panorama-house-card-2026.png.asset.json";
 import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
 import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
 import panoramaHouse3 from "@/assets/panorama-house-3.jpg.asset.json";
@@ -689,6 +691,7 @@ import panoramaHouse6 from "@/assets/panorama-house-6.jpg.asset.json";
 import panoramaHouse7 from "@/assets/panorama-house-7.jpg.asset.json";
 import panoramaHouse8 from "@/assets/panorama-house-8.jpg.asset.json";
 import panoramaHouse9 from "@/assets/panorama-house-9.jpg.asset.json";
+
 
 export type Facility = {
   name: string;
@@ -734,14 +737,15 @@ export const projectImageMasks: Record<string, { x: number; y: number; width: nu
 export const projects: Project[] = [
   {
     slug: "meril-academy-vapi",
-    name: "Meril Academy - Vapi",
+    name: "Meril Academy",
     sector: "Institutional",
-    location: "Vapi",
+    location: "",
     year: "",
     area: "",
     scope: "Architecture",
     category: "Architecture",
     cover: ma1.url,
+    cardOrientation: "landscape",
     gallery: merilAcademyGallery,
     galleryPairs: [[ma14.url, maLobby.url]],
     description: "A contemporary learning environment shaped by fluid architecture, openness, and connection. Designed to inspire growth and collaboration, the academy creates spaces that nurture education beyond the classroom.",
@@ -756,21 +760,24 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: merilCampus2.url,
+    cardOrientation: "landscape",
     gallery: merilCampusGallery,
     description: "A large-scale institutional campus conceived as an integrated environment for learning, gathering, and movement. The project balances architecture, landscape, and public circulation to create a cohesive and future-facing institutional setting.",
   },
   {
     slug: "d-cp-office-belapur",
-    name: "\nCP Office - Belapur",
+    name: "CP Office",
     sector: "Institutional",
-    location: "Belapur",
+    location: "",
     year: "",
     area: "",
     scope: "Architecture",
     category: "Architecture",
     cover: dcp7.url,
     cardCover: dcp7.url,
+    cardOrientation: "portrait",
     gallery: dcpOfficeBelapurGallery,
+    fullBleed: [dcpReplace.url],
     description: "A modern civic landmark that reflects transparency, authority, and public service. The design combines operational efficiency with a strong architectural identity suited for a contemporary urban institution.",
     imageFit: "contain",
   },
@@ -778,14 +785,16 @@ export const projects: Project[] = [
     slug: "apj-abdul-kalam-auditorium-pune",
     name: "APJ Abdul Kalam Auditorium",
     sector: "Institutional",
-    location: "Pune",
+    location: "",
     year: "",
     area: "",
     scope: "",
     category: "Architecture",
     cover: apj1.url,
+    cardOrientation: "portrait",
     gallery: apjAuditoriumGallery,
     fullBleed: [apj5.url],
+    galleryPairs: [[apj7.url, apj8.url]],
     description: "A purpose-built venue designed to enhance learning, dialogue, and large-scale gatherings. Its thoughtful planning ensures comfort, visibility, and a seamless audience experience.",
   },
   {
@@ -798,6 +807,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: hemrlAuditorium1.url,
+    cardOrientation: "portrait",
     gallery: hemrlAuditoriumGallery,
     description: "An institutional auditorium designed for formal events, presentations, and community gatherings. Its sequence of entry, interior volume, and assembly space prioritises clarity, functionality, and a dignified civic presence.",
   },
@@ -811,6 +821,8 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: abAstha3.url,
+    coverPosition: "50% 12%",
+    cardOrientation: "portrait",
     gallery: adityaBirlaAsthavinayakGallery,
     description: "A spiritual destination designed to celebrate faith, culture, and collective experience. Through carefully planned landscapes, gathering spaces, and traditional architectural elements, the project creates a serene and immersive environment.",
     facilities: [
@@ -840,59 +852,63 @@ export const projects: Project[] = [
 
   {
     slug: "adarsh-vidya-mandir-rajasthan",
-    name: "Adarsh Vidya Mandir School - Rajasthan",
+    name: "Adarsh Vidya Mandir School",
     sector: "Institutional",
-    location: "Rajasthan",
+    location: "",
     year: "",
     area: "",
     scope: "Architecture",
     category: "Architecture",
     cover: avm1.url,
+    cardOrientation: "portrait",
     gallery: adarshVidyaMandirGallery,
     description: "Designed around accessibility, comfort, and learning, the school creates a nurturing educational environment where architecture supports curiosity, growth, and future aspirations.",
   },
   {
     slug: "iig-institute-colaba",
-    name: "IIG Institute - Colaba",
+    name: "IIG Institute",
     sector: "Institutional",
-    location: "Colaba",
+    location: "",
     year: "",
     area: "",
     scope: "",
     category: "Architecture",
     cover: iigColaba1.url,
+    cardOrientation: "portrait",
     gallery: iigInstituteColabaGallery,
     description: "A contemporary academic institution designed to support innovation, research, and professional development. The architecture fosters collaboration while establishing a strong educational presence within the urban context.",
   },
   {
     slug: "gandhi-peace-centre-pune",
-    name: "Gandhi Peace Centre - Pune",
+    name: "Gandhi Peace Centre",
     sector: "Institutional",
-    location: "Pune",
+    location: "",
     year: "",
     area: "",
     scope: "",
     category: "Architecture",
     cover: gandhiPeace1.url,
+    cardOrientation: "portrait",
     gallery: gandhiPeaceCentrePuneGallery,
     description: "An institution dedicated to reflection, dialogue, and cultural preservation. The architecture expresses openness and harmony while creating meaningful spaces for learning, exhibitions, and community engagement.",
   },
   {
     slug: "via-auditorium-vapi",
-    name: "VIA Auditorium - Vapi",
+    name: "VIA Auditorium",
     sector: "Institutional",
-    location: "Vapi",
+    location: "",
     year: "",
     area: "",
     scope: "",
     category: "Architecture",
     cover: viaAuditoriumHero.url,
+    cardOrientation: "landscape",
     gallery: viaAuditoriumVapiGallery,
     description: "A cultural destination designed to bring communities together through shared experiences. The architecture balances functionality, acoustics, and presence to create a memorable venue for performance and engagement.",
   },
   {
     slug: "quest-ajay-seth",
-    name: "Quest - Ajay Seth",
+    name: "Quest",
     sector: "Institutional",
     location: "",
     year: "",
@@ -900,21 +916,23 @@ export const projects: Project[] = [
     scope: "",
     category: "Architecture",
     cover: questNew67.url,
+    cardOrientation: "landscape",
     coverPosition: "50% 42%",
     gallery: questAjaySethGallery,
+    galleryPairs: [[questNew18.url, questNew42.url]],
     description: "Set within a natural landscape, the project combines timeless architectural character with modern functionality. Designed as a place for interaction, learning, and retreat, it offers a balanced and inspiring environment.",
   },
   {
     slug: "energize-resort-nashik",
-    name: "Energize Resort - Nashik",
+    name: "Energize Resort",
     sector: "Hospitality",
-    location: "Nashik",
+    location: "",
     year: "",
     area: "",
     scope: "Architecture",
     category: "Architecture",
     cover: energizeResort2026.url,
-    cardCover: energizeResortCoverUpload.url,
+    cardCover: energizeResortCard2026.url,
     cardOrientation: "portrait",
     coverPosition: "50% 50%",
     imageFit: "contain",
@@ -1021,9 +1039,9 @@ export const projects: Project[] = [
   },
   {
     slug: "pidilite-rd-centre-taloja",
-    name: "Pidilite R&D Centre - Taloja",
+    name: "Pidilite R&D Centre",
     sector: "Commercial",
-    location: "Taloja",
+    location: "",
     year: "",
     area: "",
     scope: "Architecture",
@@ -1035,7 +1053,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mvvpl-hilltop-hotel",
-    name: "MVVPL - Hotel",
+    name: "MVVPL Hotel",
     sector: "Hospitality",
     location: "",
     year: "",
@@ -1052,68 +1070,6 @@ export const projects: Project[] = [
     description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
   },
   {
-    slug: "mvvpl-clubhouse",
-    name: "MVVPL - Clubhouse",
-    sector: "Hospitality",
-    location: "",
-    year: "",
-    area: "",
-    scope: "Architecture",
-    category: "Architecture",
-    cover: mvvplClub1.url,
-    cardOrientation: "landscape",
-    gallery: [mvvplClub1.url, mvvplClub2.url, mvvplClub3.url, mvvplClub4.url],
-    description: "A vibrant social destination designed to foster community and shared experiences. The architecture blends recreation, wellness, and gathering spaces into a cohesive lifestyle environment.",
-  },
-  {
-    slug: "laxmi-kunj",
-    name: "Laxmi Kunj",
-    sector: "Residential",
-    location: "",
-    year: "",
-    area: "",
-    scope: "Architecture",
-    category: "Architecture",
-    cover: laxmiKunj1.url,
-    coverPosition: "50% 10%",
-    cardOrientation: "portrait",
-    gallery: [laxmiKunj1.url],
-    description: "A contemporary residential tower distinguished by its sculpted balconies and vertical articulation. Designed to maximise light, views, and urban living while maintaining a refined architectural identity.",
-  },
-  {
-    slug: "proximus",
-    name: "Proximus",
-    sector: "Residential",
-    location: "",
-    year: "",
-    area: "",
-    scope: "Architecture",
-    category: "Architecture",
-    cover: proximus1.url,
-    cardOrientation: "portrait",
-    coverPosition: "50% 30%",
-    gallery: [proximus1.url, proximus2.url],
-    description: "A high-rise residential development designed around efficiency, clarity, and long-term liveability. Clean proportions, generous openings, and a restrained material palette define its contemporary urban character.",
-  },
-  {
-    slug: "glasswood-retreat",
-    name: "Glasswood Retreat",
-    sector: "Residential",
-    location: "",
-    year: "",
-    area: "",
-    scope: "Architecture",
-    category: "Architecture",
-    cover: glasswood1.url,
-    showcase: glasswood3.url,
-    imageFit: "contain",
-    heroZoom: "reduced",
-    cardOrientation: "landscape",
-    coverPosition: "50% 30%",
-    gallery: [glasswood1.url, glasswood2.url],
-    description: "A low-slung residence where glass, timber tones, and landscape merge into a single architectural experience. Designed as a collection of transparent living spaces, the home blurs the line between indoors and outdoors.",
-  },
-  {
     slug: "the-atrium-house",
     name: "The Atrium House",
     sector: "Residential",
@@ -1125,7 +1081,7 @@ export const projects: Project[] = [
     cover: atriumHouse1.url,
     cardOrientation: "portrait",
     coverPosition: "50% 30%",
-    gallery: [atriumHouse1.url, atriumHouse7.url, atriumHouse4.url, atriumHouse3.url, atriumHouse2.url, atriumHouse5.url, atriumHouse6.url],
+    gallery: [atriumHouse1.url, atriumHouse7.url, atriumHouse4.url, atriumHouse3.url, atriumHouse2.url, atriumHouse5.url],
     description: "Organized around a dramatic central volume, the residence celebrates openness, symmetry, and grand-scale living.",
   },
   {
@@ -1236,7 +1192,7 @@ export const projects: Project[] = [
     scope: "Architecture",
     category: "Architecture",
     cover: panoramaHouseAerial2026.url,
-    cardCover: panoramaHouseHero.url,
+    cardCover: panoramaHouseCard2026.url,
     coverPosition: "50% 12%",
     heroZoom: "reduced",
     cardOrientation: "landscape",
@@ -1475,7 +1431,7 @@ export const projects: Project[] = [
   },
   {
     slug: "meril-club-house-vapi",
-    name: "Meril Club House - Vapi",
+    name: "Meril Club House",
     sector: "Hospitality",
     location: "",
     year: "",
@@ -1489,7 +1445,7 @@ export const projects: Project[] = [
   },
   {
     slug: "jade-pink-ahmedabad",
-    name: "Jade Pink - Ahmedabad",
+    name: "Jade Pink",
     sector: "Commercial",
     location: "",
     year: "",
@@ -1578,9 +1534,9 @@ export const projects: Project[] = [
   },
   {
     slug: "metro-hospital-delhi",
-    name: "Metro Hospital - Delhi",
+    name: "Metro Hospital",
     sector: "Commercial",
-    location: "Delhi",
+    location: "",
     year: "",
     area: "",
     scope: "",
@@ -1592,14 +1548,15 @@ export const projects: Project[] = [
   },
   {
     slug: "tata-rallis-bangalore",
-    name: "Tata Rallis - Bangalore",
+    name: "Tata Rallis",
     sector: "Institutional",
-    location: "Bangalore",
+    location: "",
     year: "",
     area: "",
     scope: "",
     category: "Architecture",
     cover: tataRallis2.url,
+    cardOrientation: "portrait",
     gallery: tataRallisBangaloreGallery,
     description: "A research-driven campus designed to encourage innovation, collaboration, and scientific advancement. The architecture brings together efficiency, flexibility, and contemporary design to support future-focused work environments.",
   },
