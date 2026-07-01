@@ -681,10 +681,10 @@ import pavilionEstate10 from "@/assets/pavilion-estate-10.jpg.asset.json";
 
 import panoramaHouseHero from "@/assets/panorama-house-hero.jpg.asset.json";
 import panoramaHouseAerial2026 from "@/assets/uploads/panorama-house-aerial-2026.png.asset.json";
+import panoramaHouseCard2026 from "@/assets/uploads/panorama-house-card-2026.png.asset.json";
 import panoramaHouse1 from "@/assets/panorama-house-1.jpg.asset.json";
 import panoramaHouse2 from "@/assets/panorama-house-2.jpg.asset.json";
 import panoramaHouse3 from "@/assets/panorama-house-3.jpg.asset.json";
-import panoramaHouse4 from "@/assets/panorama-house-4.jpg.asset.json";
 import panoramaHouse5 from "@/assets/panorama-house-5.jpg.asset.json";
 import panoramaHouse6 from "@/assets/panorama-house-6.jpg.asset.json";
 import panoramaHouse7 from "@/assets/panorama-house-7.jpg.asset.json";
