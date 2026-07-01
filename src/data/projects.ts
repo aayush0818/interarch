@@ -1068,7 +1068,8 @@ export const projects: Project[] = [
     gallery: [mvvplHotelAerial.url, mvvplHotelCenter.url, mvvplHotelPorteCochere.url, mvvplHotelThreeQuarter.url, mvvplHotel1.url, mvvplHotel3.url],
     galleryPairs: [[mvvplHotelThreeQuarter.url, mvvplHotelPorteCochere.url]],
     description: "A contemporary hospitality experience designed to balance comfort, elegance, and functionality. Every space is crafted to create a welcoming atmosphere while supporting modern guest expectations.",
-    ...
+  },
+  {
     slug: "the-atrium-house",
     name: "The Atrium House",
     sector: "Residential",
