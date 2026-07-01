@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "bd97e4d2-2042-4195-97cd-f35c5176cd43",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/bd97e4d2-2042-4195-97cd-f35c5176cd43/metro-hospital-delhi-1.jpg",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/bd97e4d2-2042-4195-97cd-f35c5176cd43/metro-hospital-delhi-1.jpg",
-  "original_filename": "metro-hospital-delhi-1.jpg",
-  "size": 118889,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-30T16:07:46Z"
+  "created_at": "2026-06-30T16:07:46Z",
+  "original_filename": "metro-hospital-delhi-1.jpg",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/bd97e4d2-2042-4195-97cd-f35c5176cd43/metro-hospital-delhi-1.jpg",
+  "size": 118889,
+  "url": "/__l5e/assets-v1/bd97e4d2-2042-4195-97cd-f35c5176cd43/metro-hospital-delhi-1.jpg",
+  "version": 1
 }

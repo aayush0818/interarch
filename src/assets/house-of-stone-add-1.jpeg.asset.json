@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "eb7c748b-d334-41ee-a40c-fcfbd281f90a",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/eb7c748b-d334-41ee-a40c-fcfbd281f90a/house-of-stone-add-1.jpeg",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/eb7c748b-d334-41ee-a40c-fcfbd281f90a/house-of-stone-add-1.jpeg",
-  "original_filename": "house-of-stone-add-1.jpeg",
-  "size": 2548965,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-30T19:53:39Z"
+  "created_at": "2026-06-30T19:53:39Z",
+  "original_filename": "house-of-stone-add-1.jpeg",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/eb7c748b-d334-41ee-a40c-fcfbd281f90a/house-of-stone-add-1.jpeg",
+  "size": 2548965,
+  "url": "/__l5e/assets-v1/eb7c748b-d334-41ee-a40c-fcfbd281f90a/house-of-stone-add-1.jpeg",
+  "version": 1
 }

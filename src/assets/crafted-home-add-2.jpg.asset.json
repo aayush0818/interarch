@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "885ac3b0-22b2-4449-b409-6603d58b989c",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/885ac3b0-22b2-4449-b409-6603d58b989c/crafted-home-add-2.jpg",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/885ac3b0-22b2-4449-b409-6603d58b989c/crafted-home-add-2.jpg",
-  "original_filename": "crafted-home-add-2.jpg",
-  "size": 567963,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-30T21:20:55Z"
+  "created_at": "2026-06-30T21:20:55Z",
+  "original_filename": "crafted-home-add-2.jpg",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/885ac3b0-22b2-4449-b409-6603d58b989c/crafted-home-add-2.jpg",
+  "size": 567963,
+  "url": "/__l5e/assets-v1/885ac3b0-22b2-4449-b409-6603d58b989c/crafted-home-add-2.jpg",
+  "version": 1
 }

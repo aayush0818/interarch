@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "1b90e660-c94a-4186-9037-d295ca21d56c",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/1b90e660-c94a-4186-9037-d295ca21d56c/house-of-symmetry-add-2.jpeg",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/1b90e660-c94a-4186-9037-d295ca21d56c/house-of-symmetry-add-2.jpeg",
-  "original_filename": "house-of-symmetry-add-2.jpeg",
-  "size": 2611180,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-30T19:53:17Z"
+  "created_at": "2026-06-30T19:53:17Z",
+  "original_filename": "house-of-symmetry-add-2.jpeg",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/1b90e660-c94a-4186-9037-d295ca21d56c/house-of-symmetry-add-2.jpeg",
+  "size": 2611180,
+  "url": "/__l5e/assets-v1/1b90e660-c94a-4186-9037-d295ca21d56c/house-of-symmetry-add-2.jpeg",
+  "version": 1
 }

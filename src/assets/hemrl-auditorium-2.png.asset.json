@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "e4c42858-2df4-49a9-a86b-2494a908a6fb",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/e4c42858-2df4-49a9-a86b-2494a908a6fb/hemrl-auditorium-2.png",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/e4c42858-2df4-49a9-a86b-2494a908a6fb/hemrl-auditorium-2.png",
-  "original_filename": "hemrl-auditorium-2.png",
-  "size": 1168230,
   "content_type": "image/png",
-  "created_at": "2026-06-30T19:04:23Z"
+  "created_at": "2026-06-30T19:04:23Z",
+  "original_filename": "hemrl-auditorium-2.png",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/e4c42858-2df4-49a9-a86b-2494a908a6fb/hemrl-auditorium-2.png",
+  "size": 1168230,
+  "url": "/__l5e/assets-v1/e4c42858-2df4-49a9-a86b-2494a908a6fb/hemrl-auditorium-2.png",
+  "version": 1
 }

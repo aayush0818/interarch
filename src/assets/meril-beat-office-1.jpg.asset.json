@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "b242274f-9999-4bce-b9e7-51bad2e9b481",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/b242274f-9999-4bce-b9e7-51bad2e9b481/meril-beat-office-1.jpg",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/b242274f-9999-4bce-b9e7-51bad2e9b481/meril-beat-office-1.jpg",
-  "original_filename": "meril-beat-office-1.jpg",
-  "size": 275961,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-30T16:54:05Z"
+  "created_at": "2026-06-30T16:54:05Z",
+  "original_filename": "meril-beat-office-1.jpg",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/b242274f-9999-4bce-b9e7-51bad2e9b481/meril-beat-office-1.jpg",
+  "size": 275961,
+  "url": "/__l5e/assets-v1/b242274f-9999-4bce-b9e7-51bad2e9b481/meril-beat-office-1.jpg",
+  "version": 1
 }

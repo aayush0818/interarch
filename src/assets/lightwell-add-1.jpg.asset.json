@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "9b1b0557-f3e3-4dec-bfa7-167804b482a7",
-  "project_id": "e48a2712-e0ff-4be9-af88-7301aad844a6",
-  "url": "/__l5e/assets-v1/9b1b0557-f3e3-4dec-bfa7-167804b482a7/lightwell-add-1.jpg",
-  "r2_key": "a/v1/e48a2712-e0ff-4be9-af88-7301aad844a6/9b1b0557-f3e3-4dec-bfa7-167804b482a7/lightwell-add-1.jpg",
-  "original_filename": "lightwell-add-1.jpg",
-  "size": 554671,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-30T21:20:55Z"
+  "created_at": "2026-06-30T21:20:55Z",
+  "original_filename": "lightwell-add-1.jpg",
+  "project_id": "7444a4e1-171b-41cc-aefd-791505abab3c",
+  "r2_key": "a/v1/7444a4e1-171b-41cc-aefd-791505abab3c/9b1b0557-f3e3-4dec-bfa7-167804b482a7/lightwell-add-1.jpg",
+  "size": 554671,
+  "url": "/__l5e/assets-v1/9b1b0557-f3e3-4dec-bfa7-167804b482a7/lightwell-add-1.jpg",
+  "version": 1
 }
