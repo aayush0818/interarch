@@ -2375,7 +2375,7 @@ a:hover .img-reveal-wrap .img-parallax {
 
 /* Project monograph */
 .idlx-mono-meta {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px;
   padding: clamp(60px, 8vw, 90px) clamp(28px, 6vw, 100px);
   border-top: 1px solid var(--idlx-line); border-bottom: 1px solid var(--idlx-line);
 }

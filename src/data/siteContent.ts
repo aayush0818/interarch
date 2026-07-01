@@ -377,6 +377,13 @@ export const milestones = [
       "The Academy of Architecture, Rachana Sansad (Mumbai), felicitated Ar. Dipak Thaker during their Diamond Jubilee celebrations, recognising his significant contributions to the profession and his role as an inspiring alumnus.",
   },
   {
+    year: "2025",
+    title: "Honoured Visionaries",
+    image: awardGrohe.url,
+    text:
+      "Recipient of the GROHE Bath & Design Awards (in association with Architectural Digest India), celebrating excellence in bath space design and visionary architecture.",
+  },
+  {
     year: "Today",
     title: "Interarch Design Labs",
     image: legacy9.url,
