@@ -163,6 +163,23 @@ function CategoryPage() {
         return 0;
       });
     }
+    if (cat === "interiors") {
+      const interiorCommercialOrder = [
+        "monster",
+        "body-goals-gym",
+        "jean-claude-biguine-salon-spa",
+        "jade-pink-ahmedabad",
+        "palak-jewellers",
+        "gold-cornet-boutique",
+        "ratanshi-kheraj-sarees-thane",
+        "solitaa-diamond-showroom",
+      ];
+      const intCommOrder = new Map(interiorCommercialOrder.map((s, i) => [s, i] as const));
+      return [...raw].sort((a, b) => {
+        if (a.sector === "Commercial" && b.sector === "Commercial") return (intCommOrder.get(a.slug) ?? 999) - (intCommOrder.get(b.slug) ?? 999);
+        return 0;
+      });
+    }
     return raw;
   }, [architectureFilter, cat, interiorFilter, list]);
 
@@ -295,7 +312,7 @@ function CategoryPage() {
                     <Reveal delay={(i % 3) * 0.05}>
                       <Link to="/project/$slug" params={{ slug: p.slug }} className="idlx-pcard2" data-hover>
                         <div className={imgCls}>
-                          <ProjectImage src={p.cardCover ?? p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.cardCover ?? p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 30%" }} />
+                          <ProjectImage src={p.listingCover ?? p.cardCover ?? p.cover} alt={p.name} loading="lazy" mask={projectImageMasks[p.listingCover ?? p.cardCover ?? p.cover]} style={{ objectPosition: p.coverPosition ?? "50% 30%" }} />
                         </div>
                         <div className="idlx-pcard2-cap">
                           <span className="idlx-pcard2-name">{p.name}</span>

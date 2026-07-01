@@ -37,7 +37,7 @@ function buildClip(p: number): string {
 function MobilePhilosophy() {
   return (
     <section className="sketch-philosophy-mobile">
-      <span className="sketch-mobile-eyebrow">(Our Philosophy)</span>
+      <span className="sketch-mobile-eyebrow">(Understanding Before Designing)</span>
       <h2 className="sketch-mobile-text">
         Design is not about creating landmarks.
         It is about creating places that people
@@ -179,10 +179,10 @@ export function SketchPhilosophy() {
     <div className="sketch-philosophy-outer" ref={outerRef}>
       <div className="sketch-philosophy-stage">
         <div className="sketch-top-label sketch-top-label--always">
-          (Our Philosophy)
+          (Understanding Before Designing)
         </div>
         <div className="sketch-top-label sketch-top-label--scroll" ref={topLabelRef}>
-          (Our Philosophy)
+          (Understanding Before Designing)
         </div>
 
         {/* Philosophy text overlay (upper-left) */}
@@ -190,7 +190,7 @@ export function SketchPhilosophy() {
           <div className="philosophy-text">
             <div className="reveal-line m-label-wrap">
               <span className="m-label-inner" ref={labelRef}>
-                (Our Philosophy)
+                (Understanding Before Designing)
               </span>
             </div>
             <div className="reveal-line">

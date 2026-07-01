@@ -104,7 +104,9 @@ import mb56_1 from "@/assets/meril-bld-5-6-1.png.asset.json";
 import mb56_2 from "@/assets/meril-bld-5-6-2.png.asset.json";
 
 // Meril Beat Office (Architecture · Commercial)
-import merilBeat1 from "@/assets/meril-beat-office-1.jpg.asset.json";
+import merilBeatHero from "@/assets/meril-beat-office-hero.jpg.asset.json";
+import merilBeat2 from "@/assets/meril-beat-office-2.jpg.asset.json";
+import merilBeat3 from "@/assets/meril-beat-office-3.jpg.asset.json";
 
 // Meril Park 1 (Architecture · Industrial)
 import mp1_front from "@/assets/meril-park-1-main-building-front-view-new.jpg.asset.json";
@@ -711,6 +713,7 @@ export type Project = {
   description: string;
   cover: string;
   cardCover?: string;
+  listingCover?: string;
   cardOrientation?: "portrait" | "landscape";
   gallery: string[];
   fullBleed?: string[];
@@ -1031,10 +1034,10 @@ export const projects: Project[] = [
     area: "",
     scope: "Architecture",
     category: "Architecture",
-    cover: merilBeat1.url,
+    cover: merilBeatHero.url,
     cardOrientation: "landscape",
-    coverPosition: "50% 40%",
-    gallery: [merilBeat1.url],
+    coverPosition: "50% 50%",
+    gallery: [merilBeatHero.url, merilBeat2.url, merilBeat3.url],
     description: "A contemporary corporate workspace expressing Meril's progressive identity through clean architectural lines and a confident street presence.",
   },
   {
@@ -1193,6 +1196,7 @@ export const projects: Project[] = [
     category: "Architecture",
     cover: panoramaHouseAerial2026.url,
     cardCover: panoramaHouseCard2026.url,
+    listingCover: panoramaHouseAerial2026.url,
     coverPosition: "50% 12%",
     heroZoom: "reduced",
     cardOrientation: "landscape",
@@ -1374,6 +1378,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: gcb1.url,
+    cardOrientation: "portrait",
     gallery: goldCornetBoutiqueGallery,
     description: "Layered with visual moments, the boutique unfolds like a curated collection - rich in character, immersive in atmosphere and distinctly memorable.",
   },
@@ -1387,6 +1392,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: jcb1.url,
+    cardOrientation: "portrait",
     gallery: biguineGallery,
     description: "",
   },
@@ -1400,6 +1406,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: sl1.url,
+    cardOrientation: "portrait",
     gallery: solitaaGallery,
     description: "A luxury retail destination designed to highlight the brilliance and prestige of fine diamonds. Refined materials, strategic lighting and understated elegance create an atmosphere of exclusivity and trust.",
   },
@@ -1413,6 +1420,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: rk1.url,
+    cardOrientation: "landscape",
     gallery: ratanshiKherajGallery,
     description: "Designed to celebrate colour, craft and movement, the space unfolds as a contemporary retail experience where every collection is given room to be seen, explored and remembered.",
   },
@@ -1426,6 +1434,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: pj1.url,
+    cardOrientation: "portrait",
     gallery: palakJewellersGallery,
     description: "Designed around privacy and precision, the project combines hospitality with professionalism - creating a setting where trust and craftsmanship become part of the experience.",
   },
@@ -1453,6 +1462,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: jp1.url,
+    cardOrientation: "landscape",
     gallery: jadePinkGallery,
     description: "Conceived as a contemporary retail experience, the space encourages discovery through openness, rhythm and display. Every corner is designed to let colour, craftsmanship and movement become part of the shopping journey.",
   },
@@ -1467,21 +1477,9 @@ export const projects: Project[] = [
     category: "Interiors",
     cover: mo3.url,
     coverPosition: "50% 38%",
+    cardOrientation: "landscape",
     gallery: monsterGallery,
     description: "Designed as an extension of the brand itself, the space blurs the line between workplace and experience. Bold graphics, layered lighting and collaborative zones create an environment that feels immersive and unmistakably distinct.",
-  },
-  {
-    slug: "noir-residence",
-    name: "Noir Residence",
-    sector: "Residential",
-    location: "",
-    year: "",
-    area: "",
-    scope: "",
-    category: "Interiors",
-    cover: noirResidenceCoverUpload.url,
-    gallery: noirResidenceGallery,
-    description: "",
   },
   {
     slug: "body-goals-gym",
@@ -1493,6 +1491,7 @@ export const projects: Project[] = [
     scope: "",
     category: "Interiors",
     cover: bg9.url,
+    cardOrientation: "portrait",
     gallery: bodyGoalsGallery,
     description: "The project reimagines fitness through clarity and focus - balancing high-performance zones with a clean spatial rhythm that encourages movement without distraction.",
   },
@@ -1559,6 +1558,58 @@ export const projects: Project[] = [
     cardOrientation: "portrait",
     gallery: tataRallisBangaloreGallery,
     description: "A research-driven campus designed to encourage innovation, collaboration, and scientific advancement. The architecture brings together efficiency, flexibility, and contemporary design to support future-focused work environments.",
+  },
+  {
+    slug: "mvvpl-clubhouse",
+    name: "MVVPL Clubhouse",
+    sector: "Hospitality",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: mvvplClub1.url,
+    gallery: [mvvplClub1.url, mvvplClub2.url, mvvplClub3.url, mvvplClub4.url, mvvplClub5.url],
+    description: "A vibrant social destination designed to foster community and shared experiences. The architecture blends recreation, wellness, and gathering spaces into a cohesive lifestyle environment.",
+  },
+  {
+    slug: "laxmi-kunj",
+    name: "Laxmi Kunj",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: laxmiKunj1.url,
+    gallery: [laxmiKunj1.url],
+    description: "A contemporary residential tower distinguished by its sculpted balconies and vertical articulation. Designed to maximise light, views, and urban living while maintaining a refined architectural identity.",
+  },
+  {
+    slug: "proximus",
+    name: "Proximus",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: proximus1.url,
+    gallery: [proximus1.url, proximus2.url],
+    description: "A high-rise residential development designed around efficiency, clarity, and long-term liveability. Clean proportions, generous openings, and a restrained material palette define its contemporary urban character.",
+  },
+  {
+    slug: "glasswood-retreat",
+    name: "Glasswood Retreat",
+    sector: "Residential",
+    location: "",
+    year: "",
+    area: "",
+    scope: "Architecture",
+    category: "Architecture",
+    cover: glasswood1.url,
+    gallery: [glasswood1.url, glasswood2.url, glasswood3.url],
+    description: "A low-slung residence where glass, timber tones, and landscape merge into a single architectural experience. Designed as a collection of transparent living spaces, the home blurs the line between indoors and outdoors.",
   },
 ];
 

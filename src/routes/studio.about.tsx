@@ -13,6 +13,8 @@ import bottomSplitOne from "@/assets/idl/PAB9081-HDR.jpg.asset.json";
 import bottomSplitTwo from "@/assets/idl/PAB9186-HDR.jpg.asset.json";
 import boardroomImg from "@/assets/idl/about-split-1.png.asset.json";
 import manifestoImg from "@/assets/PAB9021-HDR_1.jpg.asset.json";
+import convictionLeadImg from "@/assets/idl/PAB9126-HDR.jpg.asset.json";
+import cultureBesideImg from "@/assets/idl/PAB9211-HDR.jpg.asset.json";
 
 const studioHero = heroImg.url;
 
@@ -71,6 +73,13 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Image lead-in to Conviction */}
+      <div style={{ width: "100%", overflow: "hidden" }}>
+        <Reveal>
+          <img src={convictionLeadImg.url} alt="Interarch Design Labs studio workspace" loading="lazy" style={{ width: "100%", height: "auto", display: "block" }} />
+        </Reveal>
+      </div>
+
       {/* Mission / Vision */}
       <section className="idlx-section idlx-section--bordered">
         <Reveal>
@@ -125,6 +134,7 @@ function AboutPage() {
       {/* Split image break */}
       <div className="idlx-split">
         <div className="idlx-split-img"><img src={cultureLeftImg.url} alt="Studio interior" loading="lazy" /></div>
+        <div className="idlx-split-img"><img src={cultureBesideImg.url} alt="Studio interior detail" loading="lazy" /></div>
       </div>
 
       {/* Recognition */}

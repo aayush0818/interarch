@@ -1,5 +1,5 @@
 import type React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";
@@ -175,7 +175,7 @@ function ProjectPage() {
           </section>
         ) : (
           <section className="idlx-mono-photo">
-            <SmartGallery gallery={gallery} fullBleed={project.fullBleed} galleryPairs={project.galleryPairs} projectName={project.name} />
+            <SmartGallery gallery={gallery} fullBleed={project.fullBleed} galleryPairs={project.galleryPairs} projectName={project.name} pairOrphanPortraits={project.category === "Interiors" && project.sector === "Residential"} />
           </section>
         )}
 
@@ -195,7 +195,7 @@ function ProjectPage() {
   );
 }
 
-function SmartGallery({ gallery, fullBleed, galleryPairs, projectName }: { gallery: string[]; fullBleed?: string[]; galleryPairs?: Array<[string, string]>; projectName: string }) {
+function SmartGallery({ gallery: rawGallery, fullBleed, galleryPairs, projectName, pairOrphanPortraits }: { gallery: string[]; fullBleed?: string[]; galleryPairs?: Array<[string, string]>; projectName: string; pairOrphanPortraits?: boolean }) {
   const fullBleedSet = new Set(fullBleed ?? []);
   const pairMap = new Map<string, string>();
   (galleryPairs ?? []).forEach(([a, b]) => {
@@ -203,6 +203,36 @@ function SmartGallery({ gallery, fullBleed, galleryPairs, projectName }: { galle
     pairMap.set(b, a);
   });
   const [ratios, setRatios] = useState<Record<string, number>>({});
+
+  const orient0 = (src: string): "p" | "l" | "s" | "u" => {
+    const r = ratios[src];
+    if (r === undefined) return "u";
+    if (r < 0.92) return "p";
+    if (r > 1.12) return "l";
+    return "s";
+  };
+
+  // Optionally reorder so orphan portraits pair with the next portrait in the list.
+  const gallery = React.useMemo(() => {
+    if (!pairOrphanPortraits) return rawGallery;
+    const arr = [...rawGallery];
+    const fbSet = new Set(fullBleed ?? []);
+    for (let idx = 0; idx < arr.length - 1; idx++) {
+      const cur = arr[idx];
+      if (fbSet.has(cur) || orient0(cur) !== "p") continue;
+      const next = arr[idx + 1];
+      if (next && !fbSet.has(next) && orient0(next) === "p") continue;
+      // find next portrait after idx+1
+      for (let j = idx + 2; j < arr.length; j++) {
+        if (!fbSet.has(arr[j]) && orient0(arr[j]) === "p") {
+          const [moved] = arr.splice(j, 1);
+          arr.splice(idx + 1, 0, moved);
+          break;
+        }
+      }
+    }
+    return arr;
+  }, [rawGallery, pairOrphanPortraits, ratios, fullBleed]);
 
   useEffect(() => {
     let cancelled = false;
