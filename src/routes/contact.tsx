@@ -146,6 +146,9 @@ function ContactPage() {
             </motion.form>
           )}
 
+        </div>
+
+        <aside className="idlx-contact-info">
           <section className="idlx-careers-block">
             <Reveal>
               <span className="idlx-eyebrow"><span className="idlx-eyebrow-dot" /> Work With Us</span>
@@ -260,35 +263,11 @@ function ContactPage() {
               </motion.form>
             )}
           </section>
+        </aside>
+      </main>
 
-          <Reveal delay={0.3} className="idlx-ig-block">
-            <h3 className="idlx-ig-h">Instagram</h3>
-            <p className="idlx-ig-lead">
-              Follow our latest projects, publications, studio updates, and architectural insights.
-            </p>
-            <div className="idlx-ig-feed" suppressHydrationWarning>
-              {mounted ? (
-                <div
-                  className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
-                  data-elfsight-app-lazy
-                />
-              ) : null}
-            </div>
-            <div className="idlx-social-icons" aria-label="Social links">
-              <a href={contactCopy.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-hover>
-                <Instagram size={22} strokeWidth={1.5} />
-              </a>
-              <a href={contactCopy.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" data-hover>
-                <Linkedin size={22} strokeWidth={1.5} />
-              </a>
-              <a href={contactCopy.linktree} target="_blank" rel="noreferrer" aria-label="Linktree" data-hover>
-                <Link2 size={22} strokeWidth={1.5} />
-              </a>
-            </div>
-          </Reveal>
-        </div>
-
-        <aside className="idlx-contact-info">
+      <section className="idlx-contact-bottom">
+        <div className="idlx-contact-bottom-grid">
           <Reveal>
             <h3>Studios</h3>
             {contactCopy.studios.map((s) => (
@@ -306,9 +285,7 @@ function ContactPage() {
             <p style={{ marginTop: 6 }}>
               <a href={contactCopy.phoneHref} data-hover>{contactCopy.phone}</a>
             </p>
-          </Reveal>
-          <Reveal delay={0.18}>
-            <h3>Follow</h3>
+            <h3 style={{ marginTop: 24 }}>Follow</h3>
             <div className="idlx-social-icons" style={{ marginTop: 12 }} aria-label="Social links">
               <a href={contactCopy.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-hover>
                 <Instagram size={22} strokeWidth={1.5} />
@@ -339,8 +316,23 @@ function ContactPage() {
               <a href={contactCopy.mapLink} target="_blank" rel="noreferrer" data-hover>Open in Google Maps →</a>
             </p>
           </Reveal>
-        </aside>
-      </main>
+        </div>
+
+        <Reveal delay={0.3} className="idlx-ig-block">
+          <h3 className="idlx-ig-h">Instagram</h3>
+          <p className="idlx-ig-lead">
+            Follow our latest projects, publications, studio updates, and architectural insights.
+          </p>
+          <div className="idlx-ig-feed" suppressHydrationWarning>
+            {mounted ? (
+              <div
+                className="elfsight-app-41b2e8ed-d5a5-4d65-9789-65526979679e"
+                data-elfsight-app-lazy
+              />
+            ) : null}
+          </div>
+        </Reveal>
+      </section>
       <Footer />
     </>
   );

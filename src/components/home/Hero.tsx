@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import heroVideo from "@/assets/idl-hero-video.mp4.asset.json";
+import heroVideo from "@/assets/uploads/hero-video-2026.mp4.asset.json";
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
